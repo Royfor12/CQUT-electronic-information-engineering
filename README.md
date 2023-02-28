@@ -1,3 +1,3 @@
 # 物理实验
-你没有必要在物理实验上浪费太多的时间，你有更值得做的事情@
-Chongqing University of Technology University Physics Experiment
+你没有必要在物理学实验上花费太多的时间，你有更值得做的事情！
+重庆理工大学物理实验
