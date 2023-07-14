@@ -1,0 +1,582 @@
+Analysis & Synthesis report for WIFI_ESP8266
+Wed Aug 15 16:04:24 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |WIFI_ESP8266|state
+  9. State Machine - |WIFI_ESP8266|Segment_scan:Segment_scan_uut|state
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |WIFI_ESP8266
+ 16. Parameter Settings for User Entity Instance: Baud:Baud_tx
+ 17. Parameter Settings for User Entity Instance: Baud:Baud_rx
+ 18. Port Connectivity Checks: "Segment_scan:Segment_scan_uut"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Aug 15 16:04:24 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; WIFI_ESP8266                                ;
+; Top-level Entity Name              ; WIFI_ESP8266                                ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 555                                         ;
+;     Total combinational functions  ; 521                                         ;
+;     Dedicated logic registers      ; 223                                         ;
+; Total registers                    ; 223                                         ;
+; Total pins                         ; 8                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                                      ; WIFI_ESP8266       ; WIFI_ESP8266       ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; WIFI_ESP8266.v                   ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v     ;         ;
+; Uart_Bus/Baud.v                  ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Baud.v    ;         ;
+; Uart_Bus/Uart_Tx.v               ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Tx.v ;         ;
+; Uart_Bus/Uart_Rx.v               ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Rx.v ;         ;
+; Segment_scan.v                   ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Segment_scan.v     ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 555       ;
+;                                             ;           ;
+; Total combinational functions               ; 521       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 296       ;
+;     -- 3 input functions                    ; 79        ;
+;     -- <=2 input functions                  ; 146       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 453       ;
+;     -- arithmetic mode                      ; 68        ;
+;                                             ;           ;
+; Total registers                             ; 223       ;
+;     -- Dedicated logic registers            ; 223       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 8         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 193       ;
+; Total fan-out                               ; 2534      ;
+; Average fan-out                             ; 3.33      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                         ; Entity Name  ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+--------------+
+; |WIFI_ESP8266                      ; 521 (281)           ; 223 (115)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 8    ; 0            ; 0          ; |WIFI_ESP8266                               ; WIFI_ESP8266 ; work         ;
+;    |Baud:Baud_rx|                  ; 21 (21)             ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |WIFI_ESP8266|Baud:Baud_rx                  ; Baud         ; work         ;
+;    |Baud:Baud_tx|                  ; 21 (21)             ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |WIFI_ESP8266|Baud:Baud_tx                  ; Baud         ; work         ;
+;    |Segment_scan:Segment_scan_uut| ; 155 (155)           ; 41 (41)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |WIFI_ESP8266|Segment_scan:Segment_scan_uut ; Segment_scan ; work         ;
+;    |Uart_Rx:Uart_Rx_uut|           ; 25 (25)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |WIFI_ESP8266|Uart_Rx:Uart_Rx_uut           ; Uart_Rx      ; work         ;
+;    |Uart_Tx:Uart_Tx_uut|           ; 18 (18)             ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |WIFI_ESP8266|Uart_Tx:Uart_Tx_uut           ; Uart_Tx      ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |WIFI_ESP8266|state                                           ;
++-------------+------------+-------------+------------+------------+------------+
+; Name        ; state.IDLE ; state.DELAY ; state.REMD ; state.TXMD ; state.MAIN ;
++-------------+------------+-------------+------------+------------+------------+
+; state.IDLE  ; 0          ; 0           ; 0          ; 0          ; 0          ;
+; state.MAIN  ; 1          ; 0           ; 0          ; 0          ; 1          ;
+; state.TXMD  ; 1          ; 0           ; 0          ; 1          ; 0          ;
+; state.REMD  ; 1          ; 0           ; 1          ; 0          ; 0          ;
+; state.DELAY ; 1          ; 1           ; 0          ; 0          ; 0          ;
++-------------+------------+-------------+------------+------------+------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------+
+; State Machine - |WIFI_ESP8266|Segment_scan:Segment_scan_uut|state ;
++-------------+------------+-------------+--------------------------+
+; Name        ; state.IDLE ; state.WRITE ; state.MAIN               ;
++-------------+------------+-------------+--------------------------+
+; state.IDLE  ; 0          ; 0           ; 0                        ;
+; state.MAIN  ; 1          ; 0           ; 1                        ;
+; state.WRITE ; 1          ; 1           ; 0                        ;
++-------------+------------+-------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                                                                                                                                                                                                                                                                                                                          ; Reason for Removal                     ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; num_delay[23]                                                                                                                                                                                                                                                                                                                                                                                          ; Stuck at GND due to stuck port data_in ;
+; num_delay[19..22]                                                                                                                                                                                                                                                                                                                                                                                      ; Stuck at VCC due to stuck port data_in ;
+; num_delay[18]                                                                                                                                                                                                                                                                                                                                                                                          ; Stuck at GND due to stuck port data_in ;
+; num_delay[17]                                                                                                                                                                                                                                                                                                                                                                                          ; Stuck at VCC due to stuck port data_in ;
+; num_delay[13..16]                                                                                                                                                                                                                                                                                                                                                                                      ; Stuck at GND due to stuck port data_in ;
+; num_delay[12]                                                                                                                                                                                                                                                                                                                                                                                          ; Stuck at VCC due to stuck port data_in ;
+; num_delay[10,11]                                                                                                                                                                                                                                                                                                                                                                                       ; Stuck at GND due to stuck port data_in ;
+; num_delay[9]                                                                                                                                                                                                                                                                                                                                                                                           ; Stuck at VCC due to stuck port data_in ;
+; num_delay[0..8]                                                                                                                                                                                                                                                                                                                                                                                        ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[0][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[1][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[2][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[3][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[4][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[5][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[6][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[7][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[8][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][0]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][1]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][2]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][3]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][4]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][5]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[9][6]                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][0]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][1]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][2]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][3]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][4]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][5]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|seg[10][6]                                                                                                                                                                                                                                                                                                                                                               ; Stuck at GND due to stuck port data_in ;
+; Uart_Tx:Uart_Tx_uut|tx_data_r[0]                                                                                                                                                                                                                                                                                                                                                                       ; Stuck at GND due to stuck port data_in ;
+; char[23,31,39,47,55,57,63,71,75,79,87,88,91,95,98,99,103,107,111,114,115,119,120,122,123,127,129,132,135,138..140,143,146,148,151,155,157,159,161..163,165,167,168,171..173,175,181,183..187,189,191,193,195..197,199..201,203,205,207,210,211,213,215,216,218..220,222,223,225,230..235,237,239,241..245,247,250,251,253,255,259,261,263,266..269,271,274,276,278..281,283,285,287,289..293,295..319] ; Stuck at GND due to stuck port data_in ;
+; char[20]                                                                                                                                                                                                                                                                                                                                                                                               ; Stuck at VCC due to stuck port data_in ;
+; char[12..15,19]                                                                                                                                                                                                                                                                                                                                                                                        ; Stuck at GND due to stuck port data_in ;
+; char[10,11]                                                                                                                                                                                                                                                                                                                                                                                            ; Stuck at VCC due to stuck port data_in ;
+; char[9]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; char[8]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; char[4..7]                                                                                                                                                                                                                                                                                                                                                                                             ; Stuck at GND due to stuck port data_in ;
+; char[3]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; char[2]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; char[1]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at VCC due to stuck port data_in ;
+; char[0]                                                                                                                                                                                                                                                                                                                                                                                                ; Stuck at GND due to stuck port data_in ;
+; char[74,77,84,93,105,108,109,117,121,125,130,133,141,150,152,153,164,169,170,174,176..180,182,188,190,192,194,198,202,204,206,208,209,212,214,217,221,224,226..229,236,238,240,246,248,249,252,254,256..258,260,262,264,265,270,272,273,275,277,282,284,286,288,294]                                                                                                                                   ; Merged with char[101]                  ;
+; char[37,53,61,69,76,82,97,112,116,131,137,144,154,158,166]                                                                                                                                                                                                                                                                                                                                             ; Merged with char[100]                  ;
+; char[51,78,94]                                                                                                                                                                                                                                                                                                                                                                                         ; Merged with char[102]                  ;
+; char[27,29,64,73,80,90,92]                                                                                                                                                                                                                                                                                                                                                                             ; Merged with char[21]                   ;
+; char[86,89,106,110,113,118,124,126,128,134,136,142,145,147,149,156,160]                                                                                                                                                                                                                                                                                                                                ; Merged with char[104]                  ;
+; char[48,70,72,81,83]                                                                                                                                                                                                                                                                                                                                                                                   ; Merged with char[46]                   ;
+; char[38,54,62]                                                                                                                                                                                                                                                                                                                                                                                         ; Merged with char[24]                   ;
+; char[25,30,41,52]                                                                                                                                                                                                                                                                                                                                                                                      ; Merged with char[22]                   ;
+; char[42,85,96]                                                                                                                                                                                                                                                                                                                                                                                         ; Merged with char[26]                   ;
+; char[43,45]                                                                                                                                                                                                                                                                                                                                                                                            ; Merged with char[18]                   ;
+; char[66,68]                                                                                                                                                                                                                                                                                                                                                                                            ; Merged with char[34]                   ;
+; char[67]                                                                                                                                                                                                                                                                                                                                                                                               ; Merged with char[44]                   ;
+; char[50]                                                                                                                                                                                                                                                                                                                                                                                               ; Merged with char[28]                   ;
+; char[49,59,65]                                                                                                                                                                                                                                                                                                                                                                                         ; Merged with char[32]                   ;
+; char[35]                                                                                                                                                                                                                                                                                                                                                                                               ; Merged with char[16]                   ;
+; tx_data_in[7]                                                                                                                                                                                                                                                                                                                                                                                          ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|data[15]                                                                                                                                                                                                                                                                                                                                                                 ; Stuck at GND due to stuck port data_in ;
+; Uart_Tx:Uart_Tx_uut|tx_data_r[8]                                                                                                                                                                                                                                                                                                                                                                       ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:Segment_scan_uut|state~9                                                                                                                                                                                                                                                                                                                                                                  ; Lost fanout                            ;
+; cnt_main[3]                                                                                                                                                                                                                                                                                                                                                                                            ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 405                                                                                                                                                                                                                                                                                                                                                                ;                                        ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                 ;
++---------------+---------------------------+-------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register          ;
++---------------+---------------------------+-------------------------------------------------+
+; char[319]     ; Stuck at GND              ; tx_data_in[7], Uart_Tx:Uart_Tx_uut|tx_data_r[8] ;
+;               ; due to stuck port data_in ;                                                 ;
++---------------+---------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 223   ;
+; Number of registers using Synchronous Clear  ; 67    ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 162   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; Uart_Tx:Uart_Tx_uut|uart_tx             ; 2       ;
+; seg_data[9]                             ; 8       ;
+; seg_data[5]                             ; 8       ;
+; seg_data[13]                            ; 8       ;
+; seg_data[1]                             ; 8       ;
+; seg_data[21]                            ; 8       ;
+; seg_data[25]                            ; 8       ;
+; seg_data[29]                            ; 7       ;
+; seg_data[17]                            ; 8       ;
+; seg_data[11]                            ; 7       ;
+; seg_data[7]                             ; 7       ;
+; seg_data[15]                            ; 7       ;
+; seg_data[3]                             ; 7       ;
+; seg_data[23]                            ; 7       ;
+; seg_data[27]                            ; 7       ;
+; seg_data[31]                            ; 6       ;
+; seg_data[19]                            ; 7       ;
+; seg_data_r[1]                           ; 1       ;
+; seg_data_r[3]                           ; 1       ;
+; Total number of inverted registers = 19 ;         ;
++-----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |WIFI_ESP8266|seg_data[24]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |WIFI_ESP8266|Uart_Tx:Uart_Tx_uut|num[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |WIFI_ESP8266|Uart_Rx:Uart_Rx_uut|num[2] ;
+; 16:1               ; 22 bits   ; 220 LEs       ; 66 LEs               ; 154 LEs                ; Yes        ; |WIFI_ESP8266|char[56]                   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |WIFI_ESP8266|num[1]                     ;
+; 19:1               ; 5 bits    ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; Yes        ; |WIFI_ESP8266|num[2]                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |WIFI_ESP8266|seg_data[27]               ;
+; 128:1              ; 2 bits    ; 170 LEs       ; 4 LEs                ; 166 LEs                ; Yes        ; |WIFI_ESP8266|seg_data_r[3]              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |WIFI_ESP8266|Mux170                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |WIFI_ESP8266|Mux170                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |WIFI_ESP8266 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; BPS_PARA       ; 104   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Baud:Baud_tx ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; BPS_PARA       ; 104   ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Baud:Baud_rx ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; BPS_PARA       ; 104   ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "Segment_scan:Segment_scan_uut" ;
++--------+-------+----------+-------------------------------+
+; Port   ; Type  ; Severity ; Details                       ;
++--------+-------+----------+-------------------------------+
+; dat_en ; Input ; Info     ; Stuck at VCC                  ;
+; dot_en ; Input ; Info     ; Stuck at GND                  ;
++--------+-------+----------+-------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 223                         ;
+;     CLR               ; 49                          ;
+;     CLR SCLR          ; 36                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 32                          ;
+;     ENA CLR           ; 52                          ;
+;     ENA CLR SCLR      ; 24                          ;
+;     ENA SCLR          ; 7                           ;
+;     ENA SLD           ; 13                          ;
+;     plain             ; 9                           ;
+; cycloneiii_lcell_comb ; 522                         ;
+;     arith             ; 68                          ;
+;         2 data inputs ; 68                          ;
+;     normal            ; 454                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 66                          ;
+;         3 data inputs ; 79                          ;
+;         4 data inputs ; 296                         ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.05                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Aug 15 16:04:12 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WIFI_ESP8266 -c WIFI_ESP8266
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file wifi_esp8266.v
+    Info (12023): Found entity 1: WIFI_ESP8266 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file uart_bus/baud.v
+    Info (12023): Found entity 1: Baud File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Baud.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file uart_bus/uart_tx.v
+    Info (12023): Found entity 1: Uart_Tx File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Tx.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file uart_bus/uart_rx.v
+    Info (12023): Found entity 1: Uart_Rx File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Rx.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file segment_scan.v
+    Info (12023): Found entity 1: Segment_scan File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Segment_scan.v Line: 18
+Info (12127): Elaborating entity "WIFI_ESP8266" for the top level hierarchy
+Info (12128): Elaborating entity "Baud" for hierarchy "Baud:Baud_tx" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v Line: 127
+Info (12128): Elaborating entity "Uart_Tx" for hierarchy "Uart_Tx:Uart_Tx_uut" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v Line: 140
+Info (12128): Elaborating entity "Uart_Rx" for hierarchy "Uart_Rx:Uart_Rx_uut" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v Line: 166
+Info (12128): Elaborating entity "Segment_scan" for hierarchy "Segment_scan:Segment_scan_uut" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/WIFI_ESP8266.v Line: 243
+Info (13000): Registers with preset signals will power-up high File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Tx.v Line: 29
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 574 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 566 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Wed Aug 15 16:04:24 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
+
+

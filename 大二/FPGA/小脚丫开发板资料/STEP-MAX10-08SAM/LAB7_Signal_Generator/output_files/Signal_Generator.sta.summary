@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.671
+TNS   : -144.219
+
+Type  : Slow 1200mV 85C Model Setup 'DAC081S101_driver:u5|dac_done'
+Slack : -2.116
+TNS   : -30.287
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -0.870
+TNS   : -0.870
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -0.859
+TNS   : -0.859
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.675
+TNS   : -1.140
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DAC081S101_driver:u5|dac_done'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DAC081S101_driver:u5|dac_done'
+Slack : -3.901
+TNS   : -47.005
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -108.577
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.465
+TNS   : -130.732
+
+Type  : Slow 1200mV 0C Model Setup 'DAC081S101_driver:u5|dac_done'
+Slack : -1.859
+TNS   : -26.672
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -0.684
+TNS   : -0.684
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -0.676
+TNS   : -0.676
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.541
+TNS   : -0.891
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DAC081S101_driver:u5|dac_done'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DAC081S101_driver:u5|dac_done'
+Slack : -3.901
+TNS   : -47.005
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -108.577
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.878
+TNS   : -16.788
+
+Type  : Fast 1200mV 0C Model Setup 'DAC081S101_driver:u5|dac_done'
+Slack : -0.330
+TNS   : -2.806
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -0.069
+TNS   : -0.069
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.063
+TNS   : -0.063
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -0.044
+TNS   : -0.044
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.086
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DAC081S101_driver:u5|dac_done'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -86.061
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DAC081S101_driver:u5|dac_done'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.414
+TNS   : 0.000
+
+------------------------------------------------------------

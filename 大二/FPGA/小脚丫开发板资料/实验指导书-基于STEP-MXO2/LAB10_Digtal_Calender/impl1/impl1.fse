@@ -1,0 +1,26 @@
+
+fsm_encoding {11880881} sequential
+
+fsm_state_encoding {11880881} IDLE {00}
+
+fsm_state_encoding {11880881} MAIN {01}
+
+fsm_state_encoding {11880881} WRITE {10}
+
+fsm_registers {11880881} {state[1]}  {state[0]} 
+
+fsm_encoding {10930932} onehot
+
+fsm_state_encoding {10930932} IDLE {000001}
+
+fsm_state_encoding {10930932} MAIN {000010}
+
+fsm_state_encoding {10930932} START {000100}
+
+fsm_state_encoding {10930932} WRITE {001000}
+
+fsm_state_encoding {10930932} READ {010000}
+
+fsm_state_encoding {10930932} STOP {100000}
+
+fsm_registers {10930932} {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

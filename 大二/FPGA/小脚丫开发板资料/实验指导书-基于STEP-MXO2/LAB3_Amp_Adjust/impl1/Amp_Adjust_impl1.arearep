@@ -1,0 +1,58 @@
+----------------------------------------------------------------------
+Report for cell Amp_Adjust.TECH
+Register bits:  33 of 4635 (0.712%)
+I/O cells:      22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7          100.0
+                            FD1P3AX         6          100.0
+                            FD1P3AY         2          100.0
+                             FD1S1A         2          100.0
+                            FD1S3AX        11          100.0
+                            FD1S3IX        12          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                               LUT4        46          100.0
+                                 OB        18          100.0
+                              PFUMX         6          100.0
+SUB MODULES
+                            Decoder         1
+                            Encoder         1
+                        Segment_led         1
+                     Segment_led_U0         1
+                              TOTAL       119
+----------------------------------------------------------------------
+Report for cell Segment_led.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        11           23.9
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell Segment_led_U0.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           15.2
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell Encoder.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7          100.0
+                             FD1S1A         2          100.0
+                            FD1S3AX        11          100.0
+                            FD1S3IX        12          100.0
+                               LUT4        15           32.6
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell Decoder.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         6          100.0
+                            FD1P3AY         2          100.0
+                               LUT4        13           28.3
+                              PFUMX         6          100.0
+                              TOTAL        27

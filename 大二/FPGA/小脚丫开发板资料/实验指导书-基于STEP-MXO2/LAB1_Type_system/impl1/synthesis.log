@@ -1,0 +1,203 @@
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Jan 24 14:52:30 2019
+
+
+Command Line:  synthesis -f Type_system_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = Type_system.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/Fpga_Project/BaseBoard/LAB1_Type_system (searchpath added)
+-p C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB1_Type_system/impl1 (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB1_Type_system (searchpath added)
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB1_Type_system/Type_system.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB1_Type_system/Array_KeyBoard.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB1_Type_system/Decoder.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB1_Type_system/Segment_led.v
+NGD file = Type_system_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file f:/fpga_project/baseboard/lab1_type_system/type_system.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab1_type_system/array_keyboard.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab1_type_system/decoder.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab1_type_system/segment_led.v. VERI-1482
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Type_system
+INFO - synthesis: f:/fpga_project/baseboard/lab1_type_system/type_system.v(18): compiling module Type_system. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab1_type_system/array_keyboard.v(18): compiling module Array_KeyBoard. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab1_type_system/decoder.v(18): compiling module Decoder. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab1_type_system/segment_led.v(18): compiling module Segment_led. VERI-1018
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Type_system.
+INFO - synthesis: Extracted state machine for register '\u1/c_state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+WARNING - synthesis: f:/fpga_project/baseboard/lab1_type_system/decoder.v(50): Register \u2/seg_data_i0_i7 is stuck at Zero. VDB-5013
+Applying 1.000000 MHz constraint to all clocks
+
+Results of NGD DRC are available in Type_system_drc.log.
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Type_system_impl1.ngd.
+
+################### Begin Area Report (Type_system)######################
+Number of register bits => 93 of 4635 (2 % )
+CCU2D => 8
+FD1P3BX => 48
+FD1P3DX => 5
+FD1S3BX => 17
+FD1S3DX => 19
+GSR => 1
+IB => 6
+INV => 1
+LUT4 => 98
+OB => 22
+OFS1P3BX => 3
+OFS1P3DX => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 37
+  Net : u1/clk_200hz, loads : 10
+Clock Enable Nets
+Number of Clock Enables: 5
+Top 5 highest fanout Clock Enables:
+  Net : u1/clk_200hz_N_24_enable_39, loads : 20
+  Net : u1/clk_200hz_N_24_enable_48, loads : 12
+  Net : u1/clk_200hz_N_24_enable_45, loads : 12
+  Net : u1/clk_200hz_N_24_enable_46, loads : 12
+  Net : u2/clk_c_enable_5, loads : 5
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u2/rst_n_N_6, loads : 92
+  Net : u1/clk_200hz_N_24, loads : 48
+  Net : u1/clk_200hz_N_24_enable_39, loads : 20
+  Net : u1/clk_200hz_N_26, loads : 14
+  Net : u1/clk_200hz_N_24_enable_45, loads : 12
+  Net : u1/clk_200hz_N_24_enable_48, loads : 12
+  Net : u1/clk_200hz_N_24_enable_46, loads : 12
+  Net : u1/n70, loads : 7
+  Net : u2/seg_data_3, loads : 6
+  Net : u2/seg_data_2, loads : 6
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets clk_c]                   |    1.000 MHz|   58.658 MHz|    10  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets \u1/clk_200hz]           |    1.000 MHz|  104.954 MHz|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 63.250  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.672  secs
+--------------------------------------------------------------

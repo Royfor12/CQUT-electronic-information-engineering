@@ -1,0 +1,255 @@
+
+Loading design for application trce from file prox_detect_impl1_map.ncd.
+Design name: Prox_Detect
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2
+Tue Feb 12 09:10:51 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Prox_Detect_impl1.tw1 -gui -msgset C:/Users/wanga/Desktop/LAB8_Prox_Detect/promote.xml Prox_Detect_impl1_map.ncd Prox_Detect_impl1.prf 
+Design file:     prox_detect_impl1_map.ncd
+Preference file: prox_detect_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 169.492000 MHz ;
+            3166 items scored, 1297 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 4.339ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u1/state[4]  (from clk_c +)
+   Destination:    FF         Data in        u1/state[1]  (to clk_c +)
+
+   Delay:              10.073ns  (34.0% logic, 66.0% route), 7 logic levels.
+
+ Constraint Details:
+
+     10.073ns physical path delay u1/SLICE_104 to u1/SLICE_102 exceeds
+      5.900ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 5.734ns) by 4.339ns
+
+ Physical Path Details:
+
+      Data path u1/SLICE_104 to u1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_104.CLK to */SLICE_104.Q0 u1/SLICE_104 (from clk_c)
+ROUTE        20   e 1.234 */SLICE_104.Q0 to */SLICE_134.B0 u1/state[4]
+CTOF_DEL    ---     0.495 */SLICE_134.B0 to */SLICE_134.F0 u1/SLICE_134
+ROUTE         1   e 0.480 */SLICE_134.F0 to */SLICE_134.D1 u1/state_N_13_mux_i_a1_0_0
+CTOF_DEL    ---     0.495 */SLICE_134.D1 to */SLICE_134.F1 u1/SLICE_134
+ROUTE         1   e 1.234 */SLICE_134.F1 to */SLICE_179.C1 u1/state_ns_i_0_0_1[1]
+CTOF_DEL    ---     0.495 */SLICE_179.C1 to */SLICE_179.F1 u1/SLICE_179
+ROUTE         1   e 1.234 */SLICE_179.F1 to */SLICE_156.C1 u1/state_ns_i_0_0[1]
+CTOF_DEL    ---     0.495 */SLICE_156.C1 to */SLICE_156.F1 u1/SLICE_156
+ROUTE         1   e 1.234 */SLICE_156.F1 to */SLICE_184.D0 u1/state_ns_i_0_4[1]
+CTOF_DEL    ---     0.495 */SLICE_184.D0 to */SLICE_184.F0 u1/SLICE_184
+ROUTE         1   e 1.234 */SLICE_184.F0 to */SLICE_102.C1 u1/N_938_i_1
+CTOF_DEL    ---     0.495 */SLICE_102.C1 to */SLICE_102.F1 u1/SLICE_102
+ROUTE         1   e 0.001 */SLICE_102.F1 to *SLICE_102.DI1 u1/N_938_i (to clk_c)
+                  --------
+                   10.073   (34.0% logic, 66.0% route), 7 logic levels.
+
+Warning:  97.666MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 169.492000 MHz ;  |  169.492 MHz|   97.666 MHz|   7 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+u1/N_1041_1                             |      26|     431|     33.23%
+                                        |        |        |
+u1/un1_cnt_delay_cry_22                 |       1|     430|     33.15%
+                                        |        |        |
+u1/un1_cnt_delay_cry_20                 |       1|     402|     30.99%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_13_0_RNI76T73    |       2|     374|     28.84%
+                                        |        |        |
+u1/un1_cnt_delay_cry_18                 |       1|     374|     28.84%
+                                        |        |        |
+u1/un1_cnt_delay_cry_23_0_RNIL5PR8      |      12|     348|     26.83%
+                                        |        |        |
+u1/un1_cnt_delay_cry_16                 |       1|     346|     26.68%
+                                        |        |        |
+u1/un1_cnt_delay_cry_14                 |       1|     318|     24.52%
+                                        |        |        |
+u1/un1_cnt_delay_cry_12                 |       1|     266|     20.51%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_8                |       1|     252|     19.43%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_10               |       1|     220|     16.96%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_6                |       1|     196|     15.11%
+                                        |        |        |
+u1/un1_cnt_delay_cry_10                 |       1|     190|     14.65%
+                                        |        |        |
+u2/prox_dat2_cnv_4[7]                   |       1|     184|     14.19%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_12               |       1|     156|     12.03%
+                                        |        |        |
+u1/G_24_i_a3_0_0                        |       2|     144|     11.10%
+                                        |        |        |
+u2/un1_prox_dat0_1_cry_4                |       1|     140|     10.79%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 96
+   Covered under: FREQUENCY NET "clk_c" 169.492000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 1297  Score: 1564106
+Cumulative negative slack: 1564106
+
+Constraints cover 3166 paths, 1 nets, and 1456 connections (96.94% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.0.99.2
+Tue Feb 12 09:10:51 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Prox_Detect_impl1.tw1 -gui -msgset C:/Users/wanga/Desktop/LAB8_Prox_Detect/promote.xml Prox_Detect_impl1_map.ncd Prox_Detect_impl1.prf 
+Design file:     prox_detect_impl1_map.ncd
+Preference file: prox_detect_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 169.492000 MHz ;
+            3166 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u1/cnt_400khz[0]  (from clk_c +)
+   Destination:    FF         Data in        u1/cnt_400khz[0]  (to clk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay u1/SLICE_46 to u1/SLICE_46 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path u1/SLICE_46 to u1/SLICE_46:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_46.CLK to u1/SLICE_46.Q0 u1/SLICE_46 (from clk_c)
+ROUTE         4   e 0.199 u1/SLICE_46.Q0 to u1/SLICE_46.A0 u1/cnt_400khz[0]
+CTOF_DEL    ---     0.101 u1/SLICE_46.A0 to u1/SLICE_46.F0 u1/SLICE_46
+ROUTE         1   e 0.001 u1/SLICE_46.F0 to */SLICE_46.DI0 u1/cnt_400khz_3[0] (to clk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 169.492000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 96
+   Covered under: FREQUENCY NET "clk_c" 169.492000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 3166 paths, 1 nets, and 1456 connections (96.94% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 1297 (setup), 0 (hold)
+Score: 1564106 (setup), 0 (hold)
+Cumulative negative slack: 1564106 (1564106+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

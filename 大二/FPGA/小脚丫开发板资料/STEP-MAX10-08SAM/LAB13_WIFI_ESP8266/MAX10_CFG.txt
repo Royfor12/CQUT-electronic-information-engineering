@@ -1,0 +1,21 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//双列直插GPIO管脚，按照外设功能命名
+
+//CP2102接口，都是FPGA的tx和rx
+uart_tx		,	PIN_A5
+
+//ESP8266接口，都是FPGA的tx和rx
+wifi_rx		,	PIN_A7
+wifi_tx		,	PIN_B6
+
+//74HC595接口
+seg_rck		,	PIN_A14
+seg_sck		,	PIN_B13
+seg_din		,	PIN_B15

@@ -1,0 +1,1 @@
+@W: MT529 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":46:1:46:6|Found inferred clock Type_system|clk which controls 37 sequential elements including u1.cnt[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

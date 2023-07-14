@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at traffic.v(47): object "clk1h" differs only in case from object "CLK1H" in the same scope File: E:/fpgaproject/stepmax10/workshop/lab10/traffic.v Line: 47

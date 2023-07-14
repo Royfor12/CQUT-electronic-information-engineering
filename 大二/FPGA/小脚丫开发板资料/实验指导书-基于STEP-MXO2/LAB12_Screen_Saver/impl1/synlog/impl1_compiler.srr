@@ -1,0 +1,83 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Param_define.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\step_rom.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\pll_mxo2\pll_mxo2.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Screen_Saver
+@N: CG364 :"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+
+@N: CG364 :"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\pll_mxo2\pll_mxo2.v":8:7:8:14|Synthesizing module pll_mxo2 in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":18:7:18:16|Synthesizing module Vga_Module in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":58:19:58:23|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":79:14:79:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":101:16:101:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":110:15:110:19|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":117:16:117:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":126:15:126:19|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\step_rom.v":2:7:2:14|Synthesizing module step_rom in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Synthesizing module Screen_Saver in library work.
+
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":138:0:138:5|Trying to extract state machine for register color.
+Extracted state machine for register color
+State machine has 6 reachable states with original encodings of:
+   001
+   010
+   011
+   100
+   101
+   110
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:33:04 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Selected library: work cell: Screen_Saver view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Selected library: work cell: Screen_Saver view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:33:04 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:33:04 2019
+
+###########################################################]

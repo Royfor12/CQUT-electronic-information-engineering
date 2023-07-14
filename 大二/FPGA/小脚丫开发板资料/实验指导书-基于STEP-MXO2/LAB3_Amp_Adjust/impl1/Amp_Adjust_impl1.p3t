@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Amp_Adjust_impl1.log"
+-o "Amp_Adjust_impl1.csv"
+-pr "Amp_Adjust_impl1.prf"

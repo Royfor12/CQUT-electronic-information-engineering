@@ -1,0 +1,6 @@
+#Start recording tcl command: 1/24/2019 17:26:58
+#Project Location: F:/Fpga_Project/BaseBoard/LAB4_Game_Score; Project name: Game_Score
+prj_project new -name "Game_Score" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Counter.v" "F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Debounce.v" "F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Game_Score.v" "F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Segment_scan.v"
+prj_project save
+#Stop recording: 1/24/2019 17:41:48

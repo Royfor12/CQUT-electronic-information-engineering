@@ -1,0 +1,607 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+         Lattice Mapping Report File for Design Module 'Screen_Saver'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Screen_Saver_impl1.ngd -o Screen_Saver_impl1_map.ncd -pr
+     Screen_Saver_impl1.prf -mp Screen_Saver_impl1.mrp -lpf F:/Fpga_Project/Base
+     Board/LAB12_Screen_Saver/impl1/Screen_Saver_impl1_synplify.lpf -lpf
+     F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Screen_Saver.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/29/19  10:30:50
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    118 out of  4635 (3%)
+      PFU registers:          116 out of  4320 (3%)
+      PIO registers:            2 out of   315 (1%)
+   Number of SLICEs:       179 out of  2160 (8%)
+      SLICEs as Logic/ROM:    179 out of  2160 (8%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         90 out of  2160 (4%)
+   Number of LUT4s:        356 out of  4320 (8%)
+      Number used as logic LUTs:        176
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      180
+      Number used as shift registers:     0
+   Number of PIO sites used: 7 + 4(JTAG) out of 105 (10%)
+   Number of block RAMs:  8 out of 10 (80%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+     Net clk_240mhz_0_0: 78 loads, 78 rising, 0 falling (Driver: u1/PLLInst_0 )
+   Number of Clock Enables:  6
+
+     Net clk_40mhz_RNIQ02D: 64 loads, 46 LSLICEs
+     Net cnt[1]: 10 loads, 10 LSLICEs
+     Net u2/change_en_RNI9S0K: 2 loads, 2 LSLICEs
+     Net u2/x_flag_RNO: 1 loads, 1 LSLICEs
+     Net u2/y_flag_RNO_0: 1 loads, 1 LSLICEs
+     Net u2/un1_y_cnt_1_cry_15_0_RNIUH7K1: 4 loads, 4 LSLICEs
+   Number of LSRs:  1
+     Net rst_n_c: 8 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net clk_40mhz_RNIQ02D: 64 loads
+     Net u2/un1_x_cnt_3_reto[6]: 64 loads
+     Net u2/un1_x_cnt_3_reto[5]: 32 loads
+     Net u2/un1_cnt: 30 loads
+     Net cnt[1]: 18 loads
+     Net u2/un1_x_cnt_3_reto[4]: 16 loads
+     Net u2/x_flag: 15 loads
+     Net u2/y_flag: 15 loads
+     Net u2/x_set[7]: 13 loads
+     Net u2/x_set[8]: 11 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| sync_v              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| vga[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| vga[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| vga[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sync_h              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GND undriven or does not drive anything - clipped.
+Block VCC undriven or does not drive anything - clipped.
+Signal rst_n_c_i was merged into signal rst_n_c
+Signal u1/GND undriven or does not drive anything - clipped.
+Signal u2/GND undriven or does not drive anything - clipped.
+Signal u3/GND undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal u1/CLKINTFB undriven or does not drive anything - clipped.
+Signal u1/DPHSRC undriven or does not drive anything - clipped.
+Signal u1/PLLACK undriven or does not drive anything - clipped.
+Signal u1/PLLDATO0 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO1 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO2 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO3 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO4 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO5 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO6 undriven or does not drive anything - clipped.
+Signal u1/PLLDATO7 undriven or does not drive anything - clipped.
+Signal u1/REFCLK undriven or does not drive anything - clipped.
+Signal u1/INTLOCK undriven or does not drive anything - clipped.
+Signal u1/LOCK undriven or does not drive anything - clipped.
+Signal u1/CLKOS3 undriven or does not drive anything - clipped.
+Signal u1/CLKOS2 undriven or does not drive anything - clipped.
+Signal u1/CLKOS undriven or does not drive anything - clipped.
+Signal u2/cnt_cry_0_COUT[17] undriven or does not drive anything - clipped.
+Signal u2/un3_x_cnt_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un3_x_cnt_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_5 undriven or does not drive anything - clipped.
+Signal u2/un3_x_cnt_s_15_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un3_x_cnt_s_15_0_COUT undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_4_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_6 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_4_s_15_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_4_s_15_0_COUT undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_3_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_3_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_7 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_3_cry_5_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_set_2_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_set_2_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_8 undriven or does not drive anything - clipped.
+Signal u2/un1_x_set_2_s_15_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_set_2_s_15_0_COUT undriven or does not drive anything - clipped.
+     
+Signal u2/un2_rom_addr_cry_0_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un2_rom_addr_cry_0_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/N_9 undriven or does not drive anything - clipped.
+Signal u2/un2_rom_addr_cry_5_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_y_set_2_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_set_2_cry_0_0_S0 undriven or does not drive anything - clipped.
+
+Signal u2/N_10 undriven or does not drive anything - clipped.
+Signal u2/un1_y_set_2_s_15_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_set_2_s_15_0_COUT undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_11 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_1_cry_11_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_11_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_13_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_13_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_15_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_1_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_1_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_12 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_1_cry_11_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_1_cry_11_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_1_cry_13_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_1_cry_13_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_1_cry_15_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_x_cnt_1_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_y_cnt_3_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_0_0_S0 undriven or does not drive anything - clipped.
+
+Signal u2/N_13 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal u2/un1_y_cnt_3_cry_11_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_3_cry_11_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_3_cry_13_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_3_cry_13_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_3_cry_15_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_y_cnt_3_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_14 undriven or does not drive anything - clipped.
+Signal u2/un1_x_cnt_139_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_11_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_13_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_13_0_S0 undriven or does not drive anything -
+     clipped.
+
+Signal u2/un1_x_cnt_139_cry_15_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_x_cnt_139_cry_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/cnt_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal u2/N_1 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO17 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO16 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO15 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO14 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO13 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO12 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO11 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO8 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO7 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO6 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO5 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO4 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO3 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO2 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO1 undriven or does not drive anything - clipped.
+Signal u3/Q_1_0_7_DO0 undriven or does not drive anything - clipped.
+Block rst_n_pad_RNIQR5E was optimized away.
+Block u1/GND was optimized away.
+Block u2/GND was optimized away.
+Block u3/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/u3:
+    EBRs: 8
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR Q_1_0_0:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_7:  TYPE= PDPW8KC,  Width= 2,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_6:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_5:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_4:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_3:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_2:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+    -Contains EBR Q_1_0_1:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 128,  REGMODE=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED
+
+     
+
+
+
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u1/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      clk_c
+  Output Clock(P):                         NODE     clk_240mhz_0_0
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_240mhz_0_0
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      12.0000
+  Output Clock(P) Frequency (MHz):                  240.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    20
+  CLKOP Divider:                                    2
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: u3/Q_1_0_0
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_7
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_6
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_5
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_4
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_3
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_2
+         Type: PDPW8KC
+Instance Name: u3/Q_1_0_1
+         Type: PDPW8KC
+Instance Name: u1/PLLInst_0
+         Type: EHXPLLJ
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   PDPW8KC = 8
+
+     Type and instance name of component: 
+   PDPW8KC : u3/Q_1_0_0
+   PDPW8KC : u3/Q_1_0_7
+   PDPW8KC : u3/Q_1_0_6
+   PDPW8KC : u3/Q_1_0_5
+   PDPW8KC : u3/Q_1_0_4
+   PDPW8KC : u3/Q_1_0_3
+   PDPW8KC : u3/Q_1_0_2
+   PDPW8KC : u3/Q_1_0_1
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 51 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

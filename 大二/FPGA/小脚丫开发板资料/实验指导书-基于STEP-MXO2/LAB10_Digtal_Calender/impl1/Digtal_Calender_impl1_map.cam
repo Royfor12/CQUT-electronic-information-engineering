@@ -1,0 +1,86 @@
+[ START MERGED ]
+rst_n_c_i rst_n_c
+u1/key_a_r1_i u1/key_a_r1
+u1/key_b_r1_i u1/key_b_r1
+[ END MERGED ]
+[ START CLIPPED ]
+u1/GND
+u2/GND
+u3/GND
+u5/GND
+u4/GND
+VCC
+GND
+u1/un5_cnt_s_11_0_S1
+u1/un5_cnt_s_11_0_COUT
+u1/un5_cnt_cry_0_0_S1
+u1/un5_cnt_cry_0_0_S0
+u1/N_1
+u2/cnt_cry_0_S0[0]
+u2/N_2
+u2/cnt_s_0_S1[17]
+u2/cnt_s_0_COUT[17]
+u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S1
+u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S0
+u3/N_1
+u3/adj_day_35_1_i_m3_i_m3_s_7_0_S1
+u3/adj_day_35_1_i_m3_i_m3_s_7_0_COUT
+u3/un1_adj_year_6_cry_0_0_S1
+u3/un1_adj_year_6_cry_0_0_S0
+u3/N_2
+u3/un1_adj_year_6_s_7_0_S1
+u3/un1_adj_year_6_s_7_0_COUT
+u3/un1_adj_hour_4_cry_0_0_S1
+u3/un1_adj_hour_4_cry_0_0_S0
+u3/N_3
+u3/un1_adj_hour_4_s_7_0_S1
+u3/un1_adj_hour_4_s_7_0_COUT
+u3/un1_adj_min_6_cry_0_0_S1
+u3/un1_adj_min_6_cry_0_0_S0
+u3/N_4
+u3/un1_adj_min_6_s_7_0_S1
+u3/un1_adj_min_6_s_7_0_COUT
+u3/un1_adj_mon_7_cry_0_0_S1
+u3/un1_adj_mon_7_cry_0_0_S0
+u3/N_5
+u3/un1_adj_mon_7_s_7_0_S1
+u3/un1_adj_mon_7_s_7_0_COUT
+u3/un1_adj_week_1_cry_0_0_S1
+u3/un1_adj_week_1_cry_0_0_S0
+u3/N_6
+u3/un1_adj_week_1_s_7_0_S1
+u3/un1_adj_week_1_s_7_0_COUT
+u3/un1_adj_sec_6_cry_0_0_S1
+u3/un1_adj_sec_6_cry_0_0_S0
+u3/N_7
+u3/un1_adj_sec_6_s_7_0_S1
+u3/un1_adj_sec_6_s_7_0_COUT
+u5/cnt_cry_0_S0_0[0]
+u5/N_1
+u5/cnt_cry_0_COUT[7]
+u5/cnt_write_lcry_0_S1
+u5/cnt_write_lcry_0_S0
+u5/N_3
+u5/cnt_write_cry_0_COUT[4]
+u4/un1_cnt_main_3_cry_0_0_S0
+u4/N_1
+u4/un1_cnt_main_3_s_5_0_S1
+u4/un1_cnt_main_3_s_5_0_COUT
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.0.99.2 -- WARNING: Map write only section -- Tue Jan 29 09:53:38 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "i2c_sda" SITE "B8" ;
+LOCATE COMP "i2c_scl" SITE "C8" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "seg_din" SITE "P13" ;
+LOCATE COMP "seg_sck" SITE "M4" ;
+LOCATE COMP "seg_rck" SITE "P3" ;
+LOCATE COMP "key_o" SITE "G3" ;
+LOCATE COMP "key_b" SITE "F3" ;
+LOCATE COMP "key_a" SITE "E3" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

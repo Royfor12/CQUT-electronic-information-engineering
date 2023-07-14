@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seg_led_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_led_2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "hold",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

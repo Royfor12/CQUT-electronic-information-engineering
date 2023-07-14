@@ -1,0 +1,67 @@
+----------------------------------------------------------------------
+Report for cell Type_system.verilog
+
+Register bits: 91 of 4320 (2%)
+PIC Latch:       0
+I/O cells:       28
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8       100.0
+                            FD1P3BX       44       100.0
+                            FD1P3DX        6       100.0
+                            FD1S3BX       16       100.0
+                            FD1S3DX       17       100.0
+                                GSR        1       100.0
+                                 IB        6       100.0
+                           IFS1P3BX        4       100.0
+                                INV        3       100.0
+                                 OB       22       100.0
+                           OFS1P3BX        3       100.0
+                           OFS1P3DX        1       100.0
+                           ORCALUT4       88       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                     Array_KeyBoard        1       100.0
+                            Decoder        1       100.0
+                      Segment_led_0        1       100.0
+                            
+                         TOTAL           229           
+----------------------------------------------------------------------
+Report for cell Segment_led_0.netlist
+  Original Cell name Segment_led
+     Instance path:  u4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        7         8.0
+                            
+                         TOTAL             7           
+----------------------------------------------------------------------
+Report for cell Decoder.netlist
+     Instance path:  u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX        5        83.3
+                                INV        1        33.3
+                           ORCALUT4       33        37.5
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            41           
+----------------------------------------------------------------------
+Report for cell Array_KeyBoard.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8       100.0
+                            FD1P3BX       44       100.0
+                            FD1P3DX        1        16.7
+                            FD1S3BX       16       100.0
+                            FD1S3DX       17       100.0
+                                INV        1        33.3
+                           ORCALUT4       48        54.5
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL           137           

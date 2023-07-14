@@ -1,0 +1,62 @@
+----------------------------------------------------------------------
+Report for cell Picture_display.verilog
+
+Register bits: 109 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       7
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       40       100.0
+                            FD1P3AX       25       100.0
+                            FD1P3BX        4       100.0
+                            FD1P3DX       69       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        6       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                INV        4       100.0
+                            L6MUX21       10       100.0
+                                 OB        5       100.0
+                           OFS1P3DX        4       100.0
+                           ORCALUT4      233       100.0
+                            PDPW8KC        7       100.0
+                              PFUMX       26       100.0
+                                PUR        1       100.0
+                           ROM64X1A        9       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                            LCD_RAM        1       100.0
+                            LCD_RGB        1       100.0
+                            
+                         TOTAL           455           
+----------------------------------------------------------------------
+Report for cell LCD_RAM.netlist
+     Instance path:  LCD_RAM_uut
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            PDPW8KC        7       100.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL             9           
+----------------------------------------------------------------------
+Report for cell LCD_RGB.netlist
+     Instance path:  LCD_RGB_uut
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       40       100.0
+                            FD1P3AX       25       100.0
+                            FD1P3BX        4       100.0
+                            FD1P3DX       69       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        6       100.0
+                                INV        3        75.0
+                            L6MUX21       10       100.0
+                           ORCALUT4      233       100.0
+                              PFUMX       26       100.0
+                           ROM64X1A        9       100.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL           428           

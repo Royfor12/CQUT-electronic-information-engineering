@@ -1,0 +1,63 @@
+---------------------------------------------------
+Report for cell Digital_THM
+   Instance path: Digital_THM
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     496.00        100.0
+                                 IOLGC	       5.00        100.0
+                                  LUT4	     766.00        100.0
+                                 IOREG	          5        100.0
+                                 IOBUF	          7        100.0
+                                PFUREG	        299        100.0
+                                RIPPLE	        110        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          Segment_scan	          1        26.5
+                          SHT20_Driver	          1        26.4
+                             Calculate	          1        47.0
+---------------------------------------------------
+Report for cell SHT20_Driver
+   Instance path: Digital_THM/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     131.17        26.4
+                                  LUT4	     212.00        27.7
+                                PFUREG	        126        42.1
+                                RIPPLE	         24        21.8
+---------------------------------------------------
+Report for cell Segment_scan
+   Instance path: Digital_THM/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     131.58        26.5
+                                  LUT4	     222.00        29.0
+                                PFUREG	        129        43.1
+                                RIPPLE	          9         8.2
+---------------------------------------------------
+Report for cell Calculate
+   Instance path: Digital_THM/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     233.25        47.0
+                                  LUT4	     332.00        43.3
+                                PFUREG	         44        14.7
+                                RIPPLE	         77        70.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          bin_to_bcd_1	          1        17.0
+                          bin_to_bcd_0	          1         7.1
+---------------------------------------------------
+Report for cell bin_to_bcd_0
+   Instance path: Digital_THM/u2/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      35.33         7.1
+                                  LUT4	      79.00        10.3
+                                PFUREG	          3         1.0
+---------------------------------------------------
+Report for cell bin_to_bcd_1
+   Instance path: Digital_THM/u2/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      84.25        17.0
+                                  LUT4	     178.00        23.2

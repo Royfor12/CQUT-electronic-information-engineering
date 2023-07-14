@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Display_Ctl" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Display_Ctl"/>
+        <Source name="Display_Ctl.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Display_Ctl"/>
+        </Source>
+        <Source name="Uart_Bus/Uart_Bus.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Uart_Bus/Baud.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Uart_Bus/Uart_Rx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Decoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Segment_scan.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Display_Ctl.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Display_Ctl1.sty"/>
+</BaliProject>

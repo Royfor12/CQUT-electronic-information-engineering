@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/29/2019 09:22:20
+#Project Location: F:/Fpga_Project/BaseBoard/LAB8_Prox_Detect; Project name: Prox_Detect
+prj_project open "F:/Fpga_Project/BaseBoard/LAB8_Prox_Detect/Prox_Detect.ldf"
+launch_synplify_prj impl1
+#Stop recording: 1/29/2019 09:41:07

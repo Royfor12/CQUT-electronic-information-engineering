@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Picture_display" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Picture_display"/>
+        <Source name="Picture_display.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Picture_display"/>
+        </Source>
+        <Source name="LCD_RAM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="LCD_RGB.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Picture_display.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Picture_display1.sty"/>
+</BaliProject>

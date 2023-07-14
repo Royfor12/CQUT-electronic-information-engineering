@@ -1,0 +1,141 @@
+|Amp_Adjust
+clk => clk.IN2
+rst_n => rst_n.IN2
+key_a => key_a.IN1
+key_b => key_b.IN1
+seg_1[0] << Segment_led:u3.segment_led
+seg_1[1] << Segment_led:u3.segment_led
+seg_1[2] << Segment_led:u3.segment_led
+seg_1[3] << Segment_led:u3.segment_led
+seg_1[4] << Segment_led:u3.segment_led
+seg_1[5] << Segment_led:u3.segment_led
+seg_1[6] << Segment_led:u3.segment_led
+seg_1[7] << Segment_led:u3.segment_led
+seg_1[8] << Segment_led:u3.segment_led
+seg_2[0] << Segment_led:u4.segment_led
+seg_2[1] << Segment_led:u4.segment_led
+seg_2[2] << Segment_led:u4.segment_led
+seg_2[3] << Segment_led:u4.segment_led
+seg_2[4] << Segment_led:u4.segment_led
+seg_2[5] << Segment_led:u4.segment_led
+seg_2[6] << Segment_led:u4.segment_led
+seg_2[7] << Segment_led:u4.segment_led
+seg_2[8] << Segment_led:u4.segment_led
+
+
+|Amp_Adjust|Encoder:u1
+clk => R_pulse~reg0.CLK
+clk => L_pulse~reg0.CLK
+clk => A_state_r1.CLK
+clk => A_state_r.CLK
+clk => clk_500us.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+rst_n => cnt[0].ACLR
+rst_n => cnt[1].ACLR
+rst_n => cnt[2].ACLR
+rst_n => cnt[3].ACLR
+rst_n => cnt[4].ACLR
+rst_n => cnt[5].ACLR
+rst_n => cnt[6].ACLR
+rst_n => cnt[7].ACLR
+rst_n => cnt[8].ACLR
+rst_n => cnt[9].ACLR
+rst_n => cnt[10].ACLR
+rst_n => cnt[11].ACLR
+rst_n => cnt[12].ACLR
+rst_n => L_pulse~reg0.ACLR
+rst_n => R_pulse~reg0.ACLR
+rst_n => clk_500us.ACLR
+key_a => key_a_r.DATAIN
+key_b => key_b_r.DATAIN
+L_pulse <= L_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+R_pulse <= R_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Amp_Adjust|Decoder:u2
+clk => seg_data[0]~reg0.CLK
+clk => seg_data[1]~reg0.CLK
+clk => seg_data[2]~reg0.CLK
+clk => seg_data[3]~reg0.CLK
+clk => seg_data[4]~reg0.CLK
+clk => seg_data[5]~reg0.CLK
+clk => seg_data[6]~reg0.CLK
+clk => seg_data[7]~reg0.CLK
+rst_n => seg_data[0]~reg0.ACLR
+rst_n => seg_data[1]~reg0.ACLR
+rst_n => seg_data[2]~reg0.ACLR
+rst_n => seg_data[3]~reg0.ACLR
+rst_n => seg_data[4]~reg0.PRESET
+rst_n => seg_data[5]~reg0.ACLR
+rst_n => seg_data[6]~reg0.PRESET
+rst_n => seg_data[7]~reg0.ACLR
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+L_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+R_pulse => seg_data.OUTPUTSELECT
+seg_data[0] <= seg_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[1] <= seg_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[2] <= seg_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[3] <= seg_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[4] <= seg_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[5] <= seg_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[6] <= seg_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_data[7] <= seg_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Amp_Adjust|Segment_led:u3
+seg_data[0] => Decoder0.IN3
+seg_data[1] => Decoder0.IN2
+seg_data[2] => Decoder0.IN1
+seg_data[3] => Decoder0.IN0
+segment_led[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[7] <= <GND>
+segment_led[8] <= <GND>
+
+
+|Amp_Adjust|Segment_led:u4
+seg_data[0] => Decoder0.IN3
+seg_data[1] => Decoder0.IN2
+seg_data[2] => Decoder0.IN1
+seg_data[3] => Decoder0.IN0
+segment_led[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+segment_led[7] <= <GND>
+segment_led[8] <= <GND>
+
+

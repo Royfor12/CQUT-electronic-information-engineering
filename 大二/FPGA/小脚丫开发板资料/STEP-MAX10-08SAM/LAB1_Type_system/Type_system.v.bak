@@ -1,0 +1,78 @@
+// --------------------------------------------------------------------
+// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
+// --------------------------------------------------------------------
+// Module: Type_system
+// 
+// Author: Step
+// 
+// Description: Type_system
+// 
+// Web: www.stepfapga.com
+// 
+// --------------------------------------------------------------------
+// Code Revision History :
+// --------------------------------------------------------------------
+// Version: |Mod. Date:   |Changes Made:
+// V1.0     |2016/04/20   |Initial ver
+// --------------------------------------------------------------------
+module Type_system
+(
+input					clk_in,
+input					rst_n_in,
+input			[3:0]	col,
+output			[3:0]	row,
+output			[8:0]	segment_led_1,	//MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+output			[8:0]	segment_led_2	//MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+);
+
+wire			[15:0]	key_out;
+wire			[15:0]	key_pulse;
+//Array_KeyBoard 
+Array_KeyBoard Array_KeyBoard_uut
+(
+.clk_in					(clk_in			),
+.rst_n_in				(rst_n_in		),
+.col					(col			),
+.row					(row			),
+.key_out				(key_out		),
+.key_pulse				(key_pulse		)
+);
+
+reg				[7:0]	seg_data;
+//key_pulse transfer to seg_data
+always@(posedge clk_in or negedge rst_n_in) begin
+	if(!rst_n_in) begin
+		seg_data <= 8'h00;
+	end else begin
+		case(key_pulse)
+			16'h0001: seg_data <= 8'h01;
+			16'h0002: seg_data <= 8'h02;
+			16'h0004: seg_data <= 8'h03;
+			16'h0008: seg_data <= 8'h04;
+			16'h0010: seg_data <= 8'h05;
+			16'h0020: seg_data <= 8'h06;
+			16'h0040: seg_data <= 8'h07;
+			16'h0080: seg_data <= 8'h08;
+			16'h0100: seg_data <= 8'h09;
+			16'h0200: seg_data <= 8'h10;
+			16'h0400: seg_data <= 8'h11;
+			16'h0800: seg_data <= 8'h12;
+			16'h1000: seg_data <= 8'h13;
+			16'h2000: seg_data <= 8'h14;
+			16'h4000: seg_data <= 8'h15;
+			16'h8000: seg_data <= 8'h16;
+			default:  seg_data <= seg_data;
+		endcase
+	end
+end
+
+//Segment led display module
+Segment_led Segment_led_uut
+(
+.seg_data_1				(seg_data[7:4]	),  //seg_data input
+.seg_data_2				(seg_data[3:0]	),  //seg_data input
+.segment_led_1			(segment_led_1	),  //MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+.segment_led_2			(segment_led_2	)   //MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+);
+
+endmodule

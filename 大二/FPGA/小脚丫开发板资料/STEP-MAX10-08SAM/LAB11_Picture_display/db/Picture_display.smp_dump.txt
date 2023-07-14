@@ -1,0 +1,16 @@
+
+State Machine - |Picture_display|LCD_RGB:LCD_RGB_uut|state_back
+Name state_back.SCAN state_back.INIT state_back.MAIN state_back.IDLE 
+state_back.IDLE 0 0 0 0 
+state_back.MAIN 0 0 1 1 
+state_back.INIT 0 1 0 1 
+state_back.SCAN 1 0 0 1 
+
+State Machine - |Picture_display|LCD_RGB:LCD_RGB_uut|state
+Name state.DELAY state.WRITE state.SCAN state.INIT state.MAIN state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.MAIN 0 0 0 0 1 1 
+state.INIT 0 0 0 1 0 1 
+state.SCAN 0 0 1 0 0 1 
+state.WRITE 0 1 0 0 0 1 
+state.DELAY 1 0 0 0 0 1 

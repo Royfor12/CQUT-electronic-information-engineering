@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Screen_Saver" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="Screen_Saver"/>
+        <Source name="Param_define.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Screen_Saver.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Screen_Saver"/>
+        </Source>
+        <Source name="step_rom.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="pll_mxo2/pll_mxo2.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="Vga_Module.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Screen_Saver.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Screen_Saver1.sty"/>
+</BaliProject>

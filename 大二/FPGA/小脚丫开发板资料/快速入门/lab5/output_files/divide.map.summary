@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jan 07 10:51:57 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : divide
+Top-level Entity Name : divide
+Family : MAX 10
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

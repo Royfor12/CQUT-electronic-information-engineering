@@ -1,0 +1,2 @@
+CKID0001:@|S:u1.clk_500us@|E:u1.key_a_r1_0@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clk@|E:u4.data_wr[7]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

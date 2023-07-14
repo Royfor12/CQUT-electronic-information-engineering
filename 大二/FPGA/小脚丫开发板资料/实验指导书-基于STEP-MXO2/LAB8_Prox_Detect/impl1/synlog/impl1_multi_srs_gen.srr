@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:54 2019
+
+###########################################################]

@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":18:7:18:18|Selected library: work cell: WIFI_ESP8266 view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":18:7:18:18|Selected library: work cell: WIFI_ESP8266 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:49:13 2019
+
+###########################################################]

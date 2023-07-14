@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "wifi_tx",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx",
+					"strict" : false
+				},
+				{
+					"name" : "seg_rck",
+					"strict" : false
+				},
+				{
+					"name" : "seg_sck",
+					"strict" : false
+				},
+				{
+					"name" : "seg_din",
+					"strict" : false
+				},
+				{
+					"name" : "wifi_rx",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

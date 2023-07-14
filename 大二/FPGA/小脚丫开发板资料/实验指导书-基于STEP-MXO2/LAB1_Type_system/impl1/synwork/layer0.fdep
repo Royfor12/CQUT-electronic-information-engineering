@@ -1,0 +1,33 @@
+#OPTIONS:"|-layerid|0|-orig_srs|F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\impl1\\synwork\\Type_system_impl1_comp.srs|-top|Type_system|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system|-I|F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\impl1\\|-I|C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib|-v2001|-devicelib|C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\lucent\\machxo2.v|-devicelib|C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_ver.exe":1480963140
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\lucent\\machxo2.v":1480960424
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\lucent\\pmi_def.v":1480960424
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vlog\\hypermods.v":1480962754
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vlog\\umr_capim.v":1480962754
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1480962754
+#CUR:"C:\\Program Files (x86)\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1480962754
+#CUR:"F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\Type_system.v":1548298577
+#CUR:"F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\Array_KeyBoard.v":1548298577
+#CUR:"F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\Decoder.v":1548298577
+#CUR:"F:\\Fpga_Project\\BaseBoard\\LAB1_Type_system\\Segment_led.v":1548298577
+#numinternalfiles:6
+#defaultlanguage:verilog
+0			"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v" verilog
+1			"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v" verilog
+2			"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v" verilog
+3			"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v" verilog
+#Dependency Lists(Uses List)
+0 1 2 3
+1 -1
+2 -1
+3 -1
+#Dependency Lists(Users Of)
+0 -1
+1 0
+2 0
+3 0
+#Design Unit to File Association
+module work Array_KeyBoard 1
+module work Decoder 2
+module work Segment_led 3
+module work Type_system 0

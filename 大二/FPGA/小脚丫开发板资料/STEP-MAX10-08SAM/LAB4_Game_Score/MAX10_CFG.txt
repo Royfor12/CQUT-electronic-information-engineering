@@ -1,0 +1,15 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+key_red		,	PIN_J11
+key_blue	,	PIN_J14
+
+//74HC595接口
+seg_rck		,	PIN_A14
+seg_sck		,	PIN_B13
+seg_din		,	PIN_B15

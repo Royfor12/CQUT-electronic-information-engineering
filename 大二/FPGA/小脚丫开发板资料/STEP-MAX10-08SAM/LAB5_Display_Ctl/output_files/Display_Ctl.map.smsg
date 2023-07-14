@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Display_Ctl.v(46): always construct contains both blocking and non-blocking assignments File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB5_Display_Ctl/Display_Ctl.v Line: 46

@@ -1,0 +1,88 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="717929da39ba0edd14e0"/>
+  </project>
+  <file_info>
+    <file device="10CL006YU256C8G" path="music.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <hub_info hub_ir_width="8" ir_width="8" node_addr_width="1" node_count="1"/>
+  <node_info>
+    <node hpath="rom:inst1|altsyncram:altsyncram_component|altsyncram_etb1:auto_generated|sld_mod_ram_rom:mgl_prim2" instance_id="0" mfg_id="110" node_id="3" sld_node_info="0x10186E00" version="2">
+      <parameters>
+        <parameter name="SLD_NODE_INFO" type="dec" value="270036480"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="yes"/>
+        <parameter name="SLD_IP_VERSION" type="dec" value="1"/>
+        <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="3"/>
+        <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
+        <parameter name="width_word" type="unknown" value="4"/>
+        <parameter name="numwords" type="unknown" value="256"/>
+        <parameter name="widthad" type="unknown" value="8"/>
+        <parameter name="shift_count_bits" type="unknown" value="3"/>
+        <parameter name="cvalue" type="unknown" value="0000"/>
+        <parameter name="is_data_in_ram" type="unknown" value="1"/>
+        <parameter name="is_readable" type="unknown" value="1"/>
+        <parameter name="BACKPRESSURE_ENABLED" type="dec" value="0"/>
+        <parameter name="FIFO_SIZE" type="dec" value="16"/>
+        <parameter name="FIFO_SIZE_WIDTH" type="dec" value="5"/>
+        <parameter name="node_name" type="unknown" value="1919905024"/>
+      </parameters>
+      <inputs>
+        <port name="data_read[0]" source="rom:inst1|altsyncram:altsyncram_component|altsyncram_etb1:auto_generated|altsyncram_8dd2:altsyncram1|q_b[0]"/>
+        <port name="data_read[1]" source="rom:inst1|altsyncram:altsyncram_component|altsyncram_etb1:auto_generated|altsyncram_8dd2:altsyncram1|q_b[1]"/>
+        <port name="data_read[2]" source="rom:inst1|altsyncram:altsyncram_component|altsyncram_etb1:auto_generated|altsyncram_8dd2:altsyncram1|q_b[2]"/>
+        <port name="data_read[3]" source="rom:inst1|altsyncram:altsyncram_component|altsyncram_etb1:auto_generated|altsyncram_8dd2:altsyncram1|q_b[3]"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_raw_tck" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_raw_tck"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_tdi" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_tdi"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_usr1" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_usr1"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_cdr"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_sdr"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_udr"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_jtag_state_uir"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_clr" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_clr"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ena" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ena"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_0_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_1_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_2_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_3_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_4_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_5_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_5_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_6_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_6_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_7_" source="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_in_7_"/>
+      </inputs>
+      <outputs>
+        <port name="tck_usr"/>
+        <port name="address[0]"/>
+        <port name="address[1]"/>
+        <port name="address[2]"/>
+        <port name="address[3]"/>
+        <port name="address[4]"/>
+        <port name="address[5]"/>
+        <port name="address[6]"/>
+        <port name="address[7]"/>
+        <port name="enable_write"/>
+        <port name="data_write[0]"/>
+        <port name="data_write[1]"/>
+        <port name="data_write[2]"/>
+        <port name="data_write[3]"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_0_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_1_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_2_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_3_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_4_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_5_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_6_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_ir_out_7_"/>
+        <port name="jtag.bp.inst1_altsyncram_component_auto_generated_mgl_prim2_tdo"/>
+      </outputs>
+    </node>
+  </node_info>
+  <sld_infos>
+    <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME alt_sld_fab HAS_SOPCINFO 1"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

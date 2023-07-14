@@ -1,0 +1,9 @@
+
+State Machine - |Screen_Saver|Vga_Module:u2|color
+Name color.YELLOW color.PURPLE color.BLUE color.CYAN color.GREEN color.RED 
+color.RED 0 0 0 0 0 0 
+color.GREEN 0 0 0 0 1 1 
+color.CYAN 0 0 0 1 0 1 
+color.BLUE 0 0 1 0 0 1 
+color.PURPLE 0 1 0 0 0 1 
+color.YELLOW 1 0 0 0 0 1 

@@ -1,0 +1,23 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":18:7:18:22|Synthesizing module APDS_9901_Driver in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":155:56:155:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":158:56:158:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":170:53:170:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":177:54:177:56|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":180:54:180:56|Removing redundant assignment.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[6] is always 0.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":29:89:29:97|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Synthesizing module Prox_Detect in library work.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

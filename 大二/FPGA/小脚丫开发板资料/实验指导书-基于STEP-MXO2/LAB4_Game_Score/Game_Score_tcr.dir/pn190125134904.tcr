@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/25/2019 10:08:31
+#Project Location: F:/Fpga_Project/BaseBoard/LAB4_Game_Score; Project name: Game_Score
+prj_project open "F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Game_Score.ldf"
+prj_project close
+#Stop recording: 1/25/2019 13:49:04

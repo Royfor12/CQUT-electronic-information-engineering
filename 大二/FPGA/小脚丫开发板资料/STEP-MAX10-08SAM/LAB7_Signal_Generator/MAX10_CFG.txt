@@ -1,0 +1,17 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//旋转编码器接口
+key_a		,	PIN_M5
+key_b		,	PIN_R3
+key_o		,	PIN_L6
+
+//DAC接口
+dac_sync	,	PIN_D10
+dac_clk		,	PIN_A9
+dac_dat		,	PIN_A11

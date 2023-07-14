@@ -1,0 +1,13 @@
+#Start recording tcl command: 1/25/2019 15:02:55
+#Project Location: F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator; Project name: Signal_Generator
+prj_project new -name "Signal_Generator" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/DAC081S101_driver.v" "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/DDS.v" "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Debounce.v" "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Encoder.v" "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/logic_ctrl.v" "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Signal_Generator.v"
+prj_project save
+prj_src add "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/rom/rom.ipx"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 1/25/2019 16:58:34

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Digital_THM_impl1.log"
+-o "Digital_THM_impl1.csv"
+-pr "Digital_THM_impl1.prf"

@@ -1,0 +1,274 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Jan 24 15:09:09 2019
+
+
+Command Line:  synthesis -f Electric_Piano_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = Electric_Piano.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano (searchpath added)
+-p C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/impl1 (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano (searchpath added)
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Electric_Piano.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Array_KeyBoard.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Beeper.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/tone.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/PWM.v
+NGD file = Electric_Piano_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file f:/fpga_project/baseboard/lab2_electric_piano/electric_piano.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab2_electric_piano/array_keyboard.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab2_electric_piano/beeper.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab2_electric_piano/tone.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab2_electric_piano/pwm.v. VERI-1482
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Electric_Piano
+INFO - synthesis: f:/fpga_project/baseboard/lab2_electric_piano/electric_piano.v(18): compiling module Electric_Piano. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab2_electric_piano/array_keyboard.v(18): compiling module Array_KeyBoard. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab2_electric_piano/beeper.v(18): compiling module Beeper. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab2_electric_piano/tone.v(18): compiling module tone. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab2_electric_piano/pwm.v(18): compiling module PWM(WIDTH=16). VERI-1018
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Electric_Piano.
+INFO - synthesis: Extracted state machine for register '\u1/c_state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+GSR instance connected to net rst_n_c.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in Electric_Piano_drc.log.
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Electric_Piano_impl1.ngd.
+
+################### Begin Area Report (Electric_Piano)######################
+Number of register bits => 89 of 4635 (1 % )
+CCU2D => 35
+FD1P3AX => 4
+FD1P3AY => 50
+FD1P3JX => 2
+FD1S3AX => 1
+FD1S3AY => 1
+FD1S3IX => 30
+FD1S3JX => 1
+GSR => 1
+IB => 6
+INV => 1
+LUT4 => 162
+OB => 5
+PFUMX => 5
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 41
+  Net : u1/clk_200hz, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 5
+Top 5 highest fanout Clock Enables:
+  Net : u1/clk_200hz_N_40_enable_38, loads : 19
+  Net : u1/clk_200hz_N_40_enable_48, loads : 12
+  Net : u1/clk_200hz_N_40_enable_42, loads : 12
+  Net : u1/clk_200hz_N_40_enable_46, loads : 12
+  Net : clk_c_enable_8, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u1/clk_200hz_N_40, loads : 48
+  Net : u1/key_out_8, loads : 24
+  Net : u1/key_out_4, loads : 24
+  Net : u1/key_out_6, loads : 23
+  Net : u1/key_out_9, loads : 22
+  Net : u1/key_out_13, loads : 21
+  Net : u1/key_out_3, loads : 21
+  Net : u1/key_out_1, loads : 21
+  Net : u1/key_out_11, loads : 20
+  Net : u1/key_out_5, loads : 20
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets clk_200hz]               |    1.000 MHz|  309.023 MHz|     2  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |    1.000 MHz|   83.257 MHz|     7  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 60.152  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.766  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

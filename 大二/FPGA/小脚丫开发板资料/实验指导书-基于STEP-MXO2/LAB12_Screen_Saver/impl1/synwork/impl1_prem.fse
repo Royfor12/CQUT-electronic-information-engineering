@@ -1,0 +1,16 @@
+
+fsm_encoding {1113801381} sequential
+
+fsm_state_encoding {1113801381} BLUE {000}
+
+fsm_state_encoding {1113801381} GREEN {001}
+
+fsm_state_encoding {1113801381} CYAN {010}
+
+fsm_state_encoding {1113801381} RED {011}
+
+fsm_state_encoding {1113801381} PURPLE {100}
+
+fsm_state_encoding {1113801381} YELLOW {101}
+
+fsm_registers {1113801381} {color[2]}  {color[1]}  {color[0]} 

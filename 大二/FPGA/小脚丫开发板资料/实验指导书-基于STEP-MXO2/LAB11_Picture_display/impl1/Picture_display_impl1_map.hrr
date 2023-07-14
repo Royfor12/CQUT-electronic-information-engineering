@@ -1,0 +1,35 @@
+---------------------------------------------------
+Report for cell Picture_display
+   Instance path: Picture_display
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     306.00        100.0
+                                 IOLGC	       1.00        100.0
+                                  LUT4	     526.00        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	          7        100.0
+                                PFUREG	        178        100.0
+                                RIPPLE	         43        100.0
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               LCD_RGB	          1        73.5
+                               LCD_RAM	          1        17.5
+---------------------------------------------------
+Report for cell LCD_RGB
+   Instance path: Picture_display/LCD_RGB_uut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     224.80        73.5
+                                 IOLGC	       1.00        100.0
+                                  LUT4	     337.33        64.1
+                                 IOREG	          1        100.0
+                                PFUREG	        178        100.0
+                                RIPPLE	         43        100.0
+---------------------------------------------------
+Report for cell LCD_RAM
+   Instance path: Picture_display/LCD_RAM_uut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      53.53        17.5
+                                  LUT4	     133.00        25.3

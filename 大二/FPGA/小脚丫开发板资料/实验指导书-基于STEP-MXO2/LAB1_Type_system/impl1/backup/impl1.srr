@@ -1,0 +1,687 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Thu Jan 24 10:54:26 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Type_system
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":18:7:18:20|Synthesizing module Array_KeyBoard in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":56:17:56:25|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":48:25:48:32|Removing redundant assignment.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v":18:7:18:17|Synthesizing module Segment_led in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Synthesizing module Type_system in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":63:1:63:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 10:54:26 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 10:54:26 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 10:54:26 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 10:54:27 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Jan 24 10:54:27 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Type_system
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                      Requested     Requested     Clock                              Clock                     Clock
+Clock                                      Frequency     Period        Type                               Group                     Load 
+-----------------------------------------------------------------------------------------------------------------------------------------
+Array_KeyBoard|clk_200hz_derived_clock     1.0 MHz       1000.000      derived (from Type_system|clk)     Autoconstr_clkgroup_0     56   
+Type_system|clk                            1.0 MHz       1000.000      inferred                           Autoconstr_clkgroup_0     37   
+=========================================================================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":46:1:46:6|Found inferred clock Type_system|clk which controls 37 sequential elements including u1.cnt[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":63:1:63:6|There are no possible illegal states for state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog)); safe FSM implementation is not required.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jan 24 10:54:28 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Jan 24 10:54:28 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|Found ROM .delname. (in view: work.Type_system(verilog)) with 10 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|Found ROM .delname. (in view: work.Type_system(verilog)) with 2 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":63:1:63:6|There are no possible illegal states for state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog)); safe FSM implementation is not required.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.13ns		  96 /        91
+   2		0h:00m:00s		    -2.13ns		  95 /        91
+   3		0h:00m:00s		    -2.13ns		  95 /        91
+   4		0h:00m:00s		    -2.13ns		  95 /        91
+   5		0h:00m:00s		    -1.59ns		  95 /        91
+   6		0h:00m:00s		    -2.09ns		  95 /        91
+   7		0h:00m:00s		    -1.59ns		  95 /        91
+   8		0h:00m:00s		    -2.07ns		  95 /        91
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[6] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[10] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[11] (in view: work.Type_system(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[6] (in view: work.Type_system(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[10] (in view: work.Type_system(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[7] (in view: work.Type_system(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[3] (in view: work.Type_system(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[13] (in view: work.Type_system(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[7] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[9] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[3] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[11] (in view: work.Type_system(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[2] (in view: work.Type_system(verilog)) with 8 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[9] (in view: work.Type_system(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[0] (in view: work.Type_system(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[2] (in view: work.Type_system(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[0] (in view: work.Type_system(verilog)) with 6 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[14] (in view: work.Type_system(verilog)) with 9 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":99:1:99:6|Replicating instance u1.key_out_r[14] (in view: work.Type_system(verilog)) with 8 loads 1 time to improve timing.
+Timing driven replication report
+Added 19 Registers via timing driven replication
+Added 10 LUTs via timing driven replication
+
+   9		0h:00m:01s		    -2.91ns		 165 /       110
+
+@N: FX271 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":81:1:81:6|Replicating instance u1.key_out[15] (in view: work.Type_system(verilog)) with 4 loads 1 time to improve timing.
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+  10		0h:00m:01s		    -2.88ns		 158 /       111
+  11		0h:00m:01s		    -2.28ns		 158 /       111
+  12		0h:00m:01s		    -2.68ns		 160 /       111
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 152MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 152MB)
+
+@N: MT611 :|Automatically generated clock Array_KeyBoard|clk_200hz_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 111 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+65 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   111        u1_keyio[12]   
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 152MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 152MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 155MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 155MB)
+
+@W: MT420 |Found inferred clock Type_system|clk with period 6.09ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Jan 24 10:54:30 2019
+#
+
+
+Top view:               Type_system
+Requested Frequency:    164.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.298
+
+                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+Type_system|clk     164.3 MHz     156.7 MHz     6.085         6.383         -0.298     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------
+Type_system|clk  Type_system|clk  |  6.086       -0.298  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Type_system|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                     Arrival           
+Instance                Reference           Type        Pin     Net                  Time        Slack 
+                        Clock                                                                          
+-------------------------------------------------------------------------------------------------------
+u1.key_out[8]           Type_system|clk     FD1P3BX     Q       key_out[8]           1.180       -0.298
+u1.key_out_r[15]        Type_system|clk     FD1S3BX     Q       key_out_r[15]        1.188       -0.298
+u1.key_out_r[8]         Type_system|clk     FD1S3BX     Q       key_out_r[8]         1.148       -0.266
+u1.key_out_fast[15]     Type_system|clk     FD1P3BX     Q       key_out_fast[15]     1.148       -0.258
+u1.key_out_r[13]        Type_system|clk     FD1S3BX     Q       key_out_r[13]        1.108       -0.242
+u1.key_out[12]          Type_system|clk     FD1P3BX     Q       key_out[12]          1.044       -0.206
+u1.key_out[5]           Type_system|clk     FD1P3BX     Q       key_out[5]           1.044       -0.202
+u1.key_out[6]           Type_system|clk     FD1P3BX     Q       key_out[6]           1.188       -0.162
+u1.key_out_r[12]        Type_system|clk     FD1S3BX     Q       key_out_r[12]        0.972       -0.134
+u1.key_out[4]           Type_system|clk     FD1P3BX     Q       key_out[4]           1.228       -0.130
+=======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                              Required           
+Instance             Reference           Type        Pin     Net                           Time         Slack 
+                     Clock                                                                                    
+--------------------------------------------------------------------------------------------------------------
+u2.seg_data_1[0]     Type_system|clk     FD1P3DX     SP      N_5                           5.614        -0.298
+u2.seg_data_1[1]     Type_system|clk     FD1P3DX     SP      N_5                           5.614        -0.298
+u2.seg_data_1[2]     Type_system|clk     FD1P3DX     SP      N_5                           5.614        -0.298
+u2.seg_data_1[3]     Type_system|clk     FD1P3DX     SP      N_5                           5.614        -0.298
+u2.seg_data_1[4]     Type_system|clk     FD1P3DX     SP      N_5                           5.614        -0.298
+u1.cnt[13]           Type_system|clk     FD1S3DX     D       cnt_3[13]                     6.174        0.499 
+u1.cnt[14]           Type_system|clk     FD1S3DX     D       cnt_3[14]                     6.174        0.499 
+u1.cnt[12]           Type_system|clk     FD1S3DX     D       cnt_3[12]                     6.174        0.642 
+u1.cnt[10]           Type_system|clk     FD1S3DX     D       cnt_3[10]                     6.174        0.785 
+u1.key[0]            Type_system|clk     FD1P3BX     SP      un1_cntlto14_2_3_RNI4L6C2     5.614        0.848 
+==============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      6.085
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.614
+
+    - Propagation time:                      5.912
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.298
+
+    Number of logic level(s):                5
+    Starting point:                          u1.key_out[8] / Q
+    Ending point:                            u2.seg_data_1[0] / SP
+    The start point is clocked by            Type_system|clk [rising] on pin CK
+    The end   point is clocked by            Type_system|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.key_out[8]                 FD1P3BX      Q        Out     1.180     1.180       -         
+key_out[8]                    Net          -        -       -         -           5         
+u1.key_pulse[8]               ORCALUT4     A        In      0.000     1.180       -         
+u1.key_pulse[8]               ORCALUT4     Z        Out     1.233     2.413       -         
+key_pulse[8]                  Net          -        -       -         -           6         
+u1.key_out_r_RNIHTMA1[10]     ORCALUT4     A        In      0.000     2.413       -         
+u1.key_out_r_RNIHTMA1[10]     ORCALUT4     Z        Out     1.017     3.429       -         
+g0_2_5_1_0                    Net          -        -       -         -           1         
+u1.key_out_r_RNIN6BK3[10]     ORCALUT4     B        In      0.000     3.429       -         
+u1.key_out_r_RNIN6BK3[10]     ORCALUT4     Z        Out     1.017     4.446       -         
+g0_2_5                        Net          -        -       -         -           1         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     C        In      0.000     4.446       -         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     Z        Out     1.017     5.463       -         
+key_pulse_RNIC1GAF[13]        Net          -        -       -         -           1         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     C        In      0.000     5.463       -         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     Z        Out     0.449     5.912       -         
+N_5                           Net          -        -       -         -           5         
+u2.seg_data_1[0]              FD1P3DX      SP       In      0.000     5.912       -         
+============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      6.085
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.614
+
+    - Propagation time:                      5.912
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.298
+
+    Number of logic level(s):                5
+    Starting point:                          u1.key_out_r[15] / Q
+    Ending point:                            u2.seg_data_1[0] / SP
+    The start point is clocked by            Type_system|clk [rising] on pin CK
+    The end   point is clocked by            Type_system|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.key_out_r[15]              FD1S3BX      Q        Out     1.188     1.188       -         
+key_out_r[15]                 Net          -        -       -         -           6         
+u1.key_pulse[15]              ORCALUT4     B        In      0.000     1.188       -         
+u1.key_pulse[15]              ORCALUT4     Z        Out     1.225     2.413       -         
+key_pulse[15]                 Net          -        -       -         -           5         
+u1.key_pulse_RNIR5TP1[15]     ORCALUT4     C        In      0.000     2.413       -         
+u1.key_pulse_RNIR5TP1[15]     ORCALUT4     Z        Out     1.017     3.429       -         
+g0_5_6                        Net          -        -       -         -           1         
+u1.key_pulse_RNI2BEG3[12]     ORCALUT4     D        In      0.000     3.429       -         
+u1.key_pulse_RNI2BEG3[12]     ORCALUT4     Z        Out     1.017     4.446       -         
+m64_i_a2_7                    Net          -        -       -         -           1         
+u1.key_pulse_RNIH3ENO[12]     ORCALUT4     D        In      0.000     4.446       -         
+u1.key_pulse_RNIH3ENO[12]     ORCALUT4     Z        Out     1.017     5.463       -         
+m64_i_1                       Net          -        -       -         -           1         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     B        In      0.000     5.463       -         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     Z        Out     0.449     5.912       -         
+N_5                           Net          -        -       -         -           5         
+u2.seg_data_1[0]              FD1P3DX      SP       In      0.000     5.912       -         
+============================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      6.085
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.614
+
+    - Propagation time:                      5.912
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.298
+
+    Number of logic level(s):                5
+    Starting point:                          u1.key_out[8] / Q
+    Ending point:                            u2.seg_data_1[0] / SP
+    The start point is clocked by            Type_system|clk [rising] on pin CK
+    The end   point is clocked by            Type_system|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.key_out[8]                 FD1P3BX      Q        Out     1.180     1.180       -         
+key_out[8]                    Net          -        -       -         -           5         
+u1.key_pulse[8]               ORCALUT4     A        In      0.000     1.180       -         
+u1.key_pulse[8]               ORCALUT4     Z        Out     1.233     2.413       -         
+key_pulse[8]                  Net          -        -       -         -           6         
+u1.key_pulse_RNID5NT1[8]      ORCALUT4     B        In      0.000     2.413       -         
+u1.key_pulse_RNID5NT1[8]      ORCALUT4     Z        Out     1.017     3.429       -         
+key_pulse_RNID5NT1[8]         Net          -        -       -         -           1         
+u1.key_out_r_RNI6UOB8[4]      ORCALUT4     B        In      0.000     3.429       -         
+u1.key_out_r_RNI6UOB8[4]      ORCALUT4     Z        Out     1.017     4.446       -         
+N_4                           Net          -        -       -         -           1         
+u1.key_pulse_RNIH3ENO[12]     ORCALUT4     A        In      0.000     4.446       -         
+u1.key_pulse_RNIH3ENO[12]     ORCALUT4     Z        Out     1.017     5.463       -         
+m64_i_1                       Net          -        -       -         -           1         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     B        In      0.000     5.463       -         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     Z        Out     0.449     5.912       -         
+N_5                           Net          -        -       -         -           5         
+u2.seg_data_1[0]              FD1P3DX      SP       In      0.000     5.912       -         
+============================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      6.085
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.614
+
+    - Propagation time:                      5.912
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.298
+
+    Number of logic level(s):                5
+    Starting point:                          u1.key_out[8] / Q
+    Ending point:                            u2.seg_data_1[0] / SP
+    The start point is clocked by            Type_system|clk [rising] on pin CK
+    The end   point is clocked by            Type_system|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.key_out[8]                 FD1P3BX      Q        Out     1.180     1.180       -         
+key_out[8]                    Net          -        -       -         -           5         
+u1.key_pulse[8]               ORCALUT4     A        In      0.000     1.180       -         
+u1.key_pulse[8]               ORCALUT4     Z        Out     1.233     2.413       -         
+key_pulse[8]                  Net          -        -       -         -           6         
+u1.key_pulse_RNIFS8O2[8]      ORCALUT4     B        In      0.000     2.413       -         
+u1.key_pulse_RNIFS8O2[8]      ORCALUT4     Z        Out     1.017     3.429       -         
+g0_1_6_0                      Net          -        -       -         -           1         
+u1.key_out_RNIOGBU7[15]       ORCALUT4     C        In      0.000     3.429       -         
+u1.key_out_RNIOGBU7[15]       ORCALUT4     Z        Out     1.017     4.446       -         
+key_out_RNIOGBU7[15]          Net          -        -       -         -           1         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     A        In      0.000     4.446       -         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     Z        Out     1.017     5.463       -         
+key_pulse_RNIC1GAF[13]        Net          -        -       -         -           1         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     C        In      0.000     5.463       -         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     Z        Out     0.449     5.912       -         
+N_5                           Net          -        -       -         -           5         
+u2.seg_data_1[0]              FD1P3DX      SP       In      0.000     5.912       -         
+============================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      6.085
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.614
+
+    - Propagation time:                      5.912
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.298
+
+    Number of logic level(s):                5
+    Starting point:                          u1.key_out[8] / Q
+    Ending point:                            u2.seg_data_1[4] / SP
+    The start point is clocked by            Type_system|clk [rising] on pin CK
+    The end   point is clocked by            Type_system|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.key_out[8]                 FD1P3BX      Q        Out     1.180     1.180       -         
+key_out[8]                    Net          -        -       -         -           5         
+u1.key_pulse[8]               ORCALUT4     A        In      0.000     1.180       -         
+u1.key_pulse[8]               ORCALUT4     Z        Out     1.233     2.413       -         
+key_pulse[8]                  Net          -        -       -         -           6         
+u1.key_out_r_RNIHTMA1[10]     ORCALUT4     A        In      0.000     2.413       -         
+u1.key_out_r_RNIHTMA1[10]     ORCALUT4     Z        Out     1.017     3.429       -         
+g0_2_5_1_0                    Net          -        -       -         -           1         
+u1.key_out_r_RNIN6BK3[10]     ORCALUT4     B        In      0.000     3.429       -         
+u1.key_out_r_RNIN6BK3[10]     ORCALUT4     Z        Out     1.017     4.446       -         
+g0_2_5                        Net          -        -       -         -           1         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     C        In      0.000     4.446       -         
+u1.key_pulse_RNIC1GAF[13]     ORCALUT4     Z        Out     1.017     5.463       -         
+key_pulse_RNIC1GAF[13]        Net          -        -       -         -           1         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     C        In      0.000     5.463       -         
+u1.key_out_r_RNI2C65N1[7]     ORCALUT4     Z        Out     0.449     5.912       -         
+N_5                           Net          -        -       -         -           5         
+u2.seg_data_1[4]              FD1P3DX      SP       In      0.000     5.912       -         
+============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 155MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 155MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 111 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       28
+
+
+Details:
+CCU2D:          8
+FD1P3BX:        55
+FD1P3DX:        6
+FD1S3BX:        25
+FD1S3DX:        17
+GSR:            1
+IB:             6
+IFS1P3BX:       4
+INV:            3
+OB:             22
+OFS1P3BX:       3
+OFS1P3DX:       1
+ORCALUT4:       156
+PUR:            1
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 155MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Thu Jan 24 10:54:30 2019
+
+###########################################################]

@@ -1,0 +1,430 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+         Lattice Mapping Report File for Design Module 'Digital_THM'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Digital_THM_impl1.ngd -o Digital_THM_impl1_map.ncd -pr
+     Digital_THM_impl1.prf -mp Digital_THM_impl1.mrp -lpf F:/Fpga_Project/BaseBo
+     ard/LAB9_Digital_THM/impl1/Digital_THM_impl1_synplify.lpf -lpf
+     F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/Digital_THM.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/29/19  09:48:57
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    304 out of  4635 (7%)
+      PFU registers:          299 out of  4320 (7%)
+      PIO registers:            5 out of   315 (2%)
+   Number of SLICEs:       496 out of  2160 (23%)
+      SLICEs as Logic/ROM:    496 out of  2160 (23%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        110 out of  2160 (5%)
+   Number of LUT4s:        986 out of  4320 (23%)
+      Number used as logic LUTs:        766
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      220
+      Number used as shift registers:     0
+   Number of PIO sites used: 7 + 4(JTAG) out of 105 (10%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_c: 183 loads, 183 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  29
+     Net seg_sck_1_sqmuxa_i_a3_RNICG302: 1 loads, 0 LSLICEs
+
+     Net cnt_RNIHK5U3[0]: 1 loads, 0 LSLICEs
+     Net un1_scl_2_sqmuxa_0_2_RNIBKD93: 1 loads, 0 LSLICEs
+     Net u1/cnt_main_RNICOSO2[0]: 4 loads, 4 LSLICEs
+     Net u1/data_r_RNO[1]: 1 loads, 1 LSLICEs
+     Net u1/data_r_RNO[0]: 1 loads, 1 LSLICEs
+     Net u1/state_RNIJAPP1[2]: 1 loads, 1 LSLICEs
+     Net G_58: 31 loads, 31 LSLICEs
+     Net u1/sda_cl_1_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/sda_cl_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/sda_RNO: 1 loads, 1 LSLICEs
+     Net u1/cnt_main_RNI9J2O2_0[0]: 2 loads, 2 LSLICEs
+     Net u1/un1_data_wr_1_sqmuxa_0_a2_0_RNIS5DQ1: 3 loads, 3 LSLICEs
+     Net u1/data_rce[2]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[3]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[4]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[5]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[6]: 1 loads, 1 LSLICEs
+     Net u1/cnt_mode2_4_i_o2_0_RNI394N1[0]: 4 loads, 4 LSLICEs
+     Net u1/cnt_mode2_4_i_o2_0_RNIC20H1[1]: 4 loads, 4 LSLICEs
+     Net u1/state_RNII5PA1[1]: 2 loads, 2 LSLICEs
+     Net u1/ack_flag_RNO: 1 loads, 1 LSLICEs
+     Net u1/ack_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/cnt_main_RNI9J2O2[0]: 8 loads, 8 LSLICEs
+     Net T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62: 21 loads, 21 LSLICEs
+     Net u3/clk_40khz_RNIF6K71: 6 loads, 6 LSLICEs
+     Net state_RNI8L2V1[0]: 70 loads, 70 LSLICEs
+     Net un1_state_5_0_a3_RNIE1172: 1 loads, 0 LSLICEs
+     Net cnt_write_RNI0SKT1[5]: 1 loads, 0 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  103
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rst_n_c: 90 loads
+     Net state_RNI8L2V1[0]: 70 loads
+     Net G_58: 47 loads
+     Net u1/state[0]: 35 loads
+     Net u1/state[5]: 30 loads
+     Net u3/cnt_mainf[2]: 28 loads
+     Net u1/un1_state_15_0_i: 24 loads
+     Net T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62: 21 loads
+     Net u1/state[6]: 19 loads
+     Net u1/cnt_main[1]: 16 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'rst_n_c' to infer global GSR net.
+
+
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| i2c_sda             | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| i2c_scl             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_din             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| seg_sck             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| seg_rck             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block u2/u1/GND undriven or does not drive anything - clipped.
+Block u2/u2/GND undriven or does not drive anything - clipped.
+Block u2/u2/VCC undriven or does not drive anything - clipped.
+Block u1/VCC undriven or does not drive anything - clipped.
+Signal rst_n_c_i was merged into signal rst_n_c
+Signal u2/GND undriven or does not drive anything - clipped.
+Signal u3/VCC undriven or does not drive anything - clipped.
+Signal u3/GND undriven or does not drive anything - clipped.
+Signal u1/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal u2/c_s_13_0_S1 undriven or does not drive anything - clipped.
+Signal u2/c_s_13_0_COUT undriven or does not drive anything - clipped.
+Signal u2/un1_T_code_0_cry_0_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_0_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/N_3 undriven or does not drive anything - clipped.
+Signal u2/un1_T_code_0_cry_1_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_1_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_3_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_3_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_5_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_5_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_7_0_S1 undriven or does not drive anything - clipped.
+
+     
+Signal u2/un1_T_code_0_cry_7_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_9_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_9_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_T_code_0_cry_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_cry_11_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_cry_13_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_cry_27_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_4_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_4_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_4 undriven or does not drive anything - clipped.
+Signal u2/un1_T_code_0_4_cry_18_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_cry_4_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_4_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/N_5 undriven or does not drive anything - clipped.
+Signal u2/un1_H_code_0_cry_5_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_5_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_7_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_7_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_9_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_9_0_S0 undriven or does not drive anything - clipped.
+     
+Signal u2/un1_H_code_0_cry_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_cry_11_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_cry_13_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_cry_13_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_s_25_0_S1 undriven or does not drive anything - clipped.
+Signal u2/un1_H_code_0_s_25_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_5_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_5_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_6 undriven or does not drive anything - clipped.
+Signal u2/un1_H_code_0_5_cry_20_0_COUT undriven or does not drive anything -
+
+     clipped.
+Signal u2/H_code_i[4] undriven or does not drive anything - clipped.
+Signal u2/un1_H_code_0_4_cry_4_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_7 undriven or does not drive anything - clipped.
+Signal u2/un1_H_code_0_4_s_25_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_H_code_0_4_s_25_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_6_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_T_code_0_6_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_8 undriven or does not drive anything - clipped.
+Signal u2/un1_T_code_0_6_cry_19_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/c_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u2/c_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u2/N_2 undriven or does not drive anything - clipped.
+Signal u3/cnt_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal u3/N_2 undriven or does not drive anything - clipped.
+Signal u3/cnt_cry_0_COUT[7] undriven or does not drive anything - clipped.
+Signal u3/cnt_write_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal u3/cnt_write_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal u3/N_10 undriven or does not drive anything - clipped.
+Signal u3/cnt_write_cry_0_COUT[4] undriven or does not drive anything - clipped.
+     
+Signal u1/cnt_delay_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal u1/cnt_delay_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal u1/N_1 undriven or does not drive anything - clipped.
+Signal u1/cnt_delay_cry_0_COUT[22] undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_4_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_4_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/N_2 undriven or does not drive anything - clipped.
+Signal u1/un1_cnt_delay_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_11_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_13_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_13_0_S0 undriven or does not drive anything -
+
+     clipped.
+Signal u1/un1_cnt_delay_cry_15_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_15_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_17_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_17_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_19_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_19_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_21_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_23_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_23_0_COUT undriven or does not drive anything -
+     clipped.
+Block rst_n_pad_RNIQR5E was optimized away.
+Block u2/GND was optimized away.
+Block u3/VCC was optimized away.
+Block u3/GND was optimized away.
+Block u1/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'rst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 55 MB
+        
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

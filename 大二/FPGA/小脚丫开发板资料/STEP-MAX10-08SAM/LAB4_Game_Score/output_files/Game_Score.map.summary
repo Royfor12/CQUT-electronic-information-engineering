@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon May 28 17:01:10 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Game_Score
+Top-level Entity Name : Game_Score
+Family : MAX 10
+Total logic elements : 200
+    Total combinational functions : 193
+    Dedicated logic registers : 90
+Total registers : 90
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

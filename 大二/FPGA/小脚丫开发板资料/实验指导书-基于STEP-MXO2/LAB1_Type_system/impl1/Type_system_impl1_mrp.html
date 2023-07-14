@@ -1,0 +1,316 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+         Lattice Mapping Report File for Design Module 'Type_system'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Type_system_impl1.ngd -o Type_system_impl1_map.ncd -pr
+     Type_system_impl1.prf -mp Type_system_impl1.mrp -lpf
+     F:/Fpga_Project/BaseBoard/LAB1_Type_system/impl1/Type_system_impl1.lpf -lpf
+     F:/Fpga_Project/BaseBoard/LAB1_Type_system/Type_system.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/24/19  14:53:37
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     93 out of  4635 (2%)
+      PFU registers:           89 out of  4320 (2%)
+      PIO registers:            4 out of   315 (1%)
+   Number of SLICEs:        58 out of  2160 (3%)
+      SLICEs as Logic/ROM:     58 out of  2160 (3%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:          8 out of  2160 (0%)
+   Number of LUT4s:        115 out of  4320 (3%)
+      Number used as logic LUTs:         99
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       16
+      Number used as shift registers:     0
+   Number of PIO sites used: 28 + 4(JTAG) out of 105 (30%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 20 loads, 20 rising, 0 falling (Driver: PIO clk )
+     Net u1/clk_200hz: 30 loads, 6 rising, 24 falling (Driver: u1/clk_200hz_38 )
+     
+
+   Number of Clock Enables:  5
+     Net u2/clk_c_enable_5: 3 loads, 3 LSLICEs
+     Net u1/clk_200hz_N_24_enable_45: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_48: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_39: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_46: 6 loads, 6 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  93
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u1/clk_200hz_N_24_enable_39: 14 loads
+     Net u1/clk_200hz_N_26: 14 loads
+     Net seg_data_0: 7 loads
+     Net seg_data_1: 7 loads
+     Net seg_data_2: 7 loads
+     Net seg_data_3: 7 loads
+     Net u1/n70: 7 loads
+     Net u1/clk_200hz_N_24_enable_45: 6 loads
+     Net u1/clk_200hz_N_24_enable_46: 6 loads
+     Net u1/clk_200hz_N_24_enable_48: 6 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'rst_n_c' to infer global GSR net.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[3]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| seg_2[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal u1/clk_200hz_N_24 was merged into signal u1/clk_200hz
+Signal rst_n_N_6 was merged into signal rst_n_c
+Signal u1/cnt_115_116_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u1/cnt_115_116_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u1/cnt_115_116_add_4_15/CO undriven or does not drive anything - clipped.
+     
+Block u1/i900 was optimized away.
+Block u2/rst_n_I_0_1_lut was optimized away.
+
+
+
+
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'rst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 49 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

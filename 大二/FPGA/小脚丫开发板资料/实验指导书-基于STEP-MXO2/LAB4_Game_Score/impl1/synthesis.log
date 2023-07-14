@@ -1,0 +1,203 @@
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jan 25 09:06:06 2019
+
+
+Command Line:  synthesis -f Game_Score_impl1_lattice.synproj -gui -msgset F:/Fpga_Project/BaseBoard/LAB4_Game_Score/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = Game_Score.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/Fpga_Project/BaseBoard/LAB4_Game_Score (searchpath added)
+-p C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB4_Game_Score/impl1 (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB4_Game_Score (searchpath added)
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Game_Score.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Debounce.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Counter.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB4_Game_Score/Segment_scan.v
+NGD file = Game_Score_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file f:/fpga_project/baseboard/lab4_game_score/game_score.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab4_game_score/debounce.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab4_game_score/counter.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab4_game_score/segment_scan.v. VERI-1482
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Game_Score
+INFO - synthesis: f:/fpga_project/baseboard/lab4_game_score/game_score.v(18): compiling module Game_Score. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab4_game_score/debounce.v(18): compiling module Debounce(KEY_WIDTH=2'b10). VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab4_game_score/counter.v(18): compiling module Counter. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(18): compiling module Segment_scan. VERI-1018
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Game_Score.
+WARNING - synthesis: f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(65): Register \u4/seg[0]_i1 is stuck at One. VDB-5014
+WARNING - synthesis: f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(65): Register \u4/seg[0]_i7 is stuck at Zero. VDB-5013
+
+
+
+WARNING - synthesis: Bit 11 of Register \u4/data_i0 is stuck at One
+WARNING - synthesis: Bit 15 of Register \u4/data_i0 is stuck at One
+WARNING - synthesis: f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(162): Register \u4/state_i2 is stuck at Zero. VDB-5013
+GSR instance connected to net rst_n_c.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in Game_Score_drc.log.
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Game_Score_impl1.ngd.
+
+################### Begin Area Report (Game_Score)######################
+Number of register bits => 88 of 4635 (1 % )
+CCU2D => 15
+FD1P3AX => 16
+FD1P3AY => 2
+FD1P3IX => 25
+FD1P3JX => 2
+FD1S3AX => 8
+FD1S3IX => 35
+GSR => 1
+IB => 4
+INV => 2
+L6MUX21 => 6
+LUT4 => 169
+OB => 3
+PFUMX => 23
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : clk_c, loads : 36
+  Net : u4/clk_40khz, loads : 28
+  Net : u1/key_jit_1, loads : 1
+  Net : u1/key_jit_0, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 12
+Top 10 highest fanout Clock Enables:
+  Net : u4/clk_40khz_enable_27, loads : 14
+  Net : u3/key_pulse_1_N_5_0_enable_7, loads : 10
+  Net : u3/key_pulse_1_N_5_0_enable_8, loads : 8
+  Net : u4/clk_40khz_enable_26, loads : 6
+  Net : u4/clk_40khz_enable_25, loads : 3
+  Net : u1/clk_c_enable_2, loads : 2
+  Net : u4/clk_40khz_enable_16, loads : 1
+  Net : u4/key_pulse_1_N_5_1_enable_5, loads : 1
+  Net : u4/clk_40khz_enable_3, loads : 1
+  Net : u4/clk_40khz_enable_4, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u4/cnt_main_0, loads : 33
+  Net : u4/cnt_main_1, loads : 25
+  Net : u1/n3, loads : 18
+  Net : u4/cnt_main_2, loads : 16
+  Net : u4/cnt_write_1, loads : 15
+  Net : u3/blue_seg_4, loads : 14
+  Net : u4/clk_40khz_enable_27, loads : 14
+  Net : u4/state_0, loads : 14
+  Net : u3/blue_seg_8, loads : 13
+  Net : u3/blue_seg_6, loads : 13
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk3 [get_nets \u1/key_jit[1]]          |    1.000 MHz|  120.700 MHz|     4  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets \u1/key_jit[0]]          |    1.000 MHz|  148.721 MHz|     3  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets \u4/clk_40khz]           |    1.000 MHz|  133.494 MHz|     4  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |    1.000 MHz|  145.900 MHz|     4  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 61.840  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.797  secs
+--------------------------------------------------------------

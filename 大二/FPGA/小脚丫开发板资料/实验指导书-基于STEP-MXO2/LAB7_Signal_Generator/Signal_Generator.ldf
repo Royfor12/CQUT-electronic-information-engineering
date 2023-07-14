@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Signal_Generator" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Signal_Generator"/>
+        <Source name="Signal_Generator.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Signal_Generator"/>
+        </Source>
+        <Source name="Encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="logic_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="DDS.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="rom/rom.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="DAC081S101_driver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Signal_Generator.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Signal_Generator1.sty"/>
+</BaliProject>

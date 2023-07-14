@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jan 07 10:58:05 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : flashled
+Top-level Entity Name : flashled
+Family : MAX 10
+Total logic elements : 70
+    Total combinational functions : 70
+    Dedicated logic registers : 36
+Total registers : 36
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

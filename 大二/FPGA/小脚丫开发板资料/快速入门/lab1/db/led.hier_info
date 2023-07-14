@@ -1,0 +1,19 @@
+|led
+key[0] => led[4].DATAIN
+key[1] => led[5].DATAIN
+key[2] => led[6].DATAIN
+key[3] => led[7].DATAIN
+sw[0] => led[0].DATAIN
+sw[1] => led[1].DATAIN
+sw[2] => led[2].DATAIN
+sw[3] => led[3].DATAIN
+led[0] <= sw[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= sw[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= sw[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= sw[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= key[0].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= key[1].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= key[2].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= key[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

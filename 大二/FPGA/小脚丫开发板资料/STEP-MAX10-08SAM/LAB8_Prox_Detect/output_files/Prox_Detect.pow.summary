@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Thu Jun 21 10:09:42 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Prox_Detect
+Top-level Entity Name : Prox_Detect
+Family : MAX 10
+Device : 10M08SAM153C8G
+Power Models : Final
+Total Thermal Power Dissipation : 148.76 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 110.87 mW
+I/O Thermal Power Dissipation : 37.89 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

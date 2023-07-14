@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at DS1340Z_driver.v(54): object "ACK" differs only in case from object "ack" in the same scope File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/DS1340Z_driver.v Line: 54

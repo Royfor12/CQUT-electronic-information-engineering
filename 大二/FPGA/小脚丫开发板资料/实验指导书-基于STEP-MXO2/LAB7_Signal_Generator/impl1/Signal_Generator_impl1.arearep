@@ -1,0 +1,93 @@
+----------------------------------------------------------------------
+Report for cell Signal_Generator.TECH
+Register bits:  86 of 4635 (1.855%)
+I/O cells:      8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        30          100.0
+                              DP8KC         1          100.0
+                            FD1P3AX        13          100.0
+                            FD1P3AY         2          100.0
+                             FD1S1A         2          100.0
+                            FD1S3AX        28          100.0
+                            FD1S3AY         4          100.0
+                            FD1S3IX        37          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                               LUT4        78          100.0
+                                 OB         3          100.0
+                              PFUMX        10          100.0
+SUB MODULES
+                  DAC081S101_driver         1
+                                DDS         1
+                           Debounce         1
+                            Encoder         1
+                         logic_ctrl         1
+                                rom         1
+                              TOTAL       220
+----------------------------------------------------------------------
+Report for cell logic_ctrl.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           16.7
+                            FD1P3AX         3           23.1
+                            FD1P3AY         1           50.0
+                            FD1S3AX         6           21.4
+                            FD1S3AY         2           50.0
+                               LUT4        18           23.1
+                              TOTAL        35
+----------------------------------------------------------------------
+Report for cell DAC081S101_driver.v1
+Instance Path : u5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4           13.3
+                            FD1P3AX        10           76.9
+                            FD1S3AY         1           25.0
+                            FD1S3IX         7           18.9
+                               LUT4        36           46.2
+                              PFUMX        10          100.0
+                              TOTAL        68
+----------------------------------------------------------------------
+Report for cell Encoder.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           23.3
+                             FD1S1A         2          100.0
+                            FD1S3AX        11           39.3
+                            FD1S3IX        12           32.4
+                               LUT4        15           19.2
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell Debounce.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10           33.3
+                            FD1P3AY         1           50.0
+                            FD1S3AX         3           10.7
+                            FD1S3AY         1           25.0
+                            FD1S3IX        18           48.6
+                               LUT4         8           10.3
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell DDS.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4           13.3
+                              DP8KC         1          100.0
+                            FD1S3AX         8           28.6
+                               LUT4         1            1.3
+SUB MODULES
+                                rom         1
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : u4.u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1          100.0
+                              TOTAL         1

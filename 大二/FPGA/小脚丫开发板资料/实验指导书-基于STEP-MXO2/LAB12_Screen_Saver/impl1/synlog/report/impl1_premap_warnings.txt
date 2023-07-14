@@ -1,0 +1,1 @@
+@W: MT529 :"f:\fpga_project\baseboard\lab12_screen_saver\screen_saver.v":41:0:41:5|Found inferred clock pll_mxo2|CLKOP_inferred_clock which controls 3 sequential elements including clk_40mhz. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

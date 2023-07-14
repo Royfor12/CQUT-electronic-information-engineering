@@ -1,0 +1,808 @@
+Analysis & Synthesis report for Digital_THM
+Fri Jun 22 09:46:04 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Digital_THM|Segment_scan:u3|state
+  9. State Machine - |Digital_THM|SHT20_Driver:u1|state_back
+ 10. State Machine - |Digital_THM|SHT20_Driver:u1|state
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: SHT20_Driver:u1
+ 17. Parameter Settings for Inferred Entity Instance: Calculate:u2|lpm_mult:Mult0
+ 18. Parameter Settings for Inferred Entity Instance: Calculate:u2|lpm_mult:Mult1
+ 19. lpm_mult Parameter Settings by Entity Instance
+ 20. Port Connectivity Checks: "Calculate:u2|bin_to_bcd:u2"
+ 21. Port Connectivity Checks: "Calculate:u2|bin_to_bcd:u1"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jun 22 09:46:04 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Digital_THM                                 ;
+; Top-level Entity Name              ; Digital_THM                                 ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 950                                         ;
+;     Total combinational functions  ; 901                                         ;
+;     Dedicated logic registers      ; 190                                         ;
+; Total registers                    ; 190                                         ;
+; Total pins                         ; 7                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                                      ; Digital_THM        ; Digital_THM        ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; Digital_THM.v                    ; yes             ; User Verilog HDL File        ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Digital_THM.v               ;         ;
+; SHT20_Driver.v                   ; yes             ; User Verilog HDL File        ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/SHT20_Driver.v              ;         ;
+; Calculate.v                      ; yes             ; User Verilog HDL File        ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v                 ;         ;
+; bin_to_bcd.v                     ; yes             ; User Verilog HDL File        ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/bin_to_bcd.v                ;         ;
+; Segment_scan.v                   ; yes             ; User Verilog HDL File        ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Segment_scan.v              ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; multcore.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.tdf            ;         ;
+; csa_add.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/csa_add.inc             ;         ;
+; mpar_add.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.inc            ;         ;
+; muleabz.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/muleabz.inc             ;         ;
+; mul_lfrg.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mul_lfrg.inc            ;         ;
+; mul_boothc.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mul_boothc.inc          ;         ;
+; alt_ded_mult.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/alt_ded_mult.inc        ;         ;
+; alt_ded_mult_y.inc               ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/alt_ded_mult_y.inc      ;         ;
+; dffpipe.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/dffpipe.inc             ;         ;
+; mpar_add.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf            ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_irg.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_irg.tdf          ;         ;
+; db/add_sub_drg.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_drg.tdf          ;         ;
+; altshift.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.tdf            ;         ;
+; db/add_sub_erg.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_erg.tdf          ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 950         ;
+;                                             ;             ;
+; Total combinational functions               ; 901         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 543         ;
+;     -- 3 input functions                    ; 184         ;
+;     -- <=2 input functions                  ; 174         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 721         ;
+;     -- arithmetic mode                      ; 180         ;
+;                                             ;             ;
+; Total registers                             ; 190         ;
+;     -- Dedicated logic registers            ; 190         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 7           ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; rst_n~input ;
+; Maximum fan-out                             ; 149         ;
+; Total fan-out                               ; 3711        ;
+; Average fan-out                             ; 3.36        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                     ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                              ; Entity Name  ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------+
+; |Digital_THM                                      ; 901 (0)             ; 190 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 7    ; 0            ; 0          ; |Digital_THM                                                                                                                                     ; Digital_THM  ; work         ;
+;    |Calculate:u2|                                 ; 483 (73)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2                                                                                                                        ; Calculate    ; work         ;
+;       |bin_to_bcd:u1|                             ; 128 (128)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|bin_to_bcd:u1                                                                                                          ; bin_to_bcd   ; work         ;
+;       |bin_to_bcd:u2|                             ; 88 (88)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|bin_to_bcd:u2                                                                                                          ; bin_to_bcd   ; work         ;
+;       |lpm_mult:Mult0|                            ; 110 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0                                                                                                         ; lpm_mult     ; work         ;
+;          |multcore:mult_core|                     ; 110 (55)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore     ; work         ;
+;             |mpar_add:padder|                     ; 55 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add     ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 17 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub  ; work         ;
+;                   |add_sub_irg:auto_generated|    ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_irg:auto_generated                      ; add_sub_irg  ; work         ;
+;                |lpm_add_sub:adder[1]|             ; 17 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]                                                 ; lpm_add_sub  ; work         ;
+;                   |add_sub_irg:auto_generated|    ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]|add_sub_irg:auto_generated                      ; add_sub_irg  ; work         ;
+;                |mpar_add:sub_par_add|             ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add     ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub  ; work         ;
+;                      |add_sub_drg:auto_generated| ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_drg:auto_generated ; add_sub_drg  ; work         ;
+;       |lpm_mult:Mult1|                            ; 84 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1                                                                                                         ; lpm_mult     ; work         ;
+;          |multcore:mult_core|                     ; 84 (38)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core                                                                                      ; multcore     ; work         ;
+;             |mpar_add:padder|                     ; 46 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add     ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub  ; work         ;
+;                   |add_sub_erg:auto_generated|    ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_erg:auto_generated                      ; add_sub_erg  ; work         ;
+;                |lpm_add_sub:adder[1]|             ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]                                                 ; lpm_add_sub  ; work         ;
+;                   |add_sub_erg:auto_generated|    ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]|add_sub_erg:auto_generated                      ; add_sub_erg  ; work         ;
+;                |mpar_add:sub_par_add|             ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add     ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub  ; work         ;
+;                      |add_sub_irg:auto_generated| ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_irg:auto_generated ; add_sub_irg  ; work         ;
+;    |SHT20_Driver:u1|                              ; 259 (259)           ; 148 (148)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|SHT20_Driver:u1                                                                                                                     ; SHT20_Driver ; work         ;
+;    |Segment_scan:u3|                              ; 159 (159)           ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digital_THM|Segment_scan:u3                                                                                                                     ; Segment_scan ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------+
+; State Machine - |Digital_THM|Segment_scan:u3|state  ;
++-------------+------------+-------------+------------+
+; Name        ; state.IDLE ; state.WRITE ; state.MAIN ;
++-------------+------------+-------------+------------+
+; state.IDLE  ; 0          ; 0           ; 0          ;
+; state.MAIN  ; 1          ; 0           ; 1          ;
+; state.WRITE ; 1          ; 1           ; 0          ;
++-------------+------------+-------------+------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------+
+; State Machine - |Digital_THM|SHT20_Driver:u1|state_back                  ;
++------------------+------------------+-----------------+------------------+
+; Name             ; state_back.MODE1 ; state_back.IDLE ; state_back.MODE2 ;
++------------------+------------------+-----------------+------------------+
+; state_back.IDLE  ; 0                ; 0               ; 0                ;
+; state_back.MODE1 ; 1                ; 1               ; 0                ;
+; state_back.MODE2 ; 0                ; 1               ; 1                ;
++------------------+------------------+-----------------+------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Digital_THM|SHT20_Driver:u1|state                                                                                    ;
++-------------+------------+------------+-------------+-------------+-------------+-------------+------------+------------+-------------+
+; Name        ; state.STOP ; state.READ ; state.WRITE ; state.START ; state.MODE2 ; state.MODE1 ; state.MAIN ; state.IDLE ; state.DELAY ;
++-------------+------------+------------+-------------+-------------+-------------+-------------+------------+------------+-------------+
+; state.IDLE  ; 0          ; 0          ; 0           ; 0           ; 0           ; 0           ; 0          ; 0          ; 0           ;
+; state.MAIN  ; 0          ; 0          ; 0           ; 0           ; 0           ; 0           ; 1          ; 1          ; 0           ;
+; state.MODE1 ; 0          ; 0          ; 0           ; 0           ; 0           ; 1           ; 0          ; 1          ; 0           ;
+; state.MODE2 ; 0          ; 0          ; 0           ; 0           ; 1           ; 0           ; 0          ; 1          ; 0           ;
+; state.START ; 0          ; 0          ; 0           ; 1           ; 0           ; 0           ; 0          ; 1          ; 0           ;
+; state.WRITE ; 0          ; 0          ; 1           ; 0           ; 0           ; 0           ; 0          ; 1          ; 0           ;
+; state.READ  ; 0          ; 1          ; 0           ; 0           ; 0           ; 0           ; 0          ; 1          ; 0           ;
+; state.STOP  ; 1          ; 0          ; 0           ; 0           ; 0           ; 0           ; 0          ; 1          ; 0           ;
+; state.DELAY ; 0          ; 0          ; 0           ; 0           ; 0           ; 0           ; 0          ; 1          ; 1           ;
++-------------+------------+------------+-------------+-------------+-------------+-------------+------------+------------+-------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++-------------------------------------------+-------------------------------------------+
+; Register name                             ; Reason for Removal                        ;
++-------------------------------------------+-------------------------------------------+
+; Segment_scan:u3|seg[0][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][4]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[0][6]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][0]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][3]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][5]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[1][6]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][2]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][4]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][5]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[2][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][5]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[3][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][0]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][3]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[4][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][1]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[5][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][1]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][4]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[6][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][3]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][5]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[7][6]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][4]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[8][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][0]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][1]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][2]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][3]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][4]                 ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][5]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[9][6]                 ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][0]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][1]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][2]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][3]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][4]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][5]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[10][6]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][0]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][1]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][2]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][3]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][4]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][5]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[11][6]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][0]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][1]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][2]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][3]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][4]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][5]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[12][6]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][0]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][1]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][2]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][3]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][4]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][5]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[13][6]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][0]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][1]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][2]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][3]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][4]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][5]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[14][6]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][0]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][1]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][2]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][3]                ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][4]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][5]                ; Stuck at VCC due to stuck port data_in    ;
+; Segment_scan:u3|seg[15][6]                ; Stuck at VCC due to stuck port data_in    ;
+; SHT20_Driver:u1|dev_addr[6]               ; Stuck at VCC due to stuck port data_in    ;
+; SHT20_Driver:u1|dev_addr[0..5]            ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|reg_addr[4..7]            ; Stuck at VCC due to stuck port data_in    ;
+; SHT20_Driver:u1|num_delay[1..3,14,16..23] ; Merged with SHT20_Driver:u1|num_delay[0]  ;
+; SHT20_Driver:u1|num_delay[6]              ; Merged with SHT20_Driver:u1|num_delay[10] ;
+; SHT20_Driver:u1|data_wr[5,6]              ; Merged with SHT20_Driver:u1|data_wr[4]    ;
+; SHT20_Driver:u1|num_delay[13]             ; Merged with SHT20_Driver:u1|num_delay[11] ;
+; SHT20_Driver:u1|num_delay[8]              ; Merged with SHT20_Driver:u1|num_delay[12] ;
+; SHT20_Driver:u1|num_delay[0]              ; Stuck at GND due to stuck port data_in    ;
+; Segment_scan:u3|state~9                   ; Lost fanout                               ;
+; SHT20_Driver:u1|state_back~6              ; Lost fanout                               ;
+; SHT20_Driver:u1|state_back~7              ; Lost fanout                               ;
+; SHT20_Driver:u1|state~9                   ; Lost fanout                               ;
+; SHT20_Driver:u1|state~10                  ; Lost fanout                               ;
+; SHT20_Driver:u1|state~11                  ; Lost fanout                               ;
+; SHT20_Driver:u1|num_delay[5]              ; Merged with SHT20_Driver:u1|num_delay[15] ;
+; SHT20_Driver:u1|num_delay[4]              ; Merged with SHT20_Driver:u1|num_delay[11] ;
+; SHT20_Driver:u1|cnt_mode1[3]              ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|data_wr[7]                ; Stuck at VCC due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt[3]                    ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt_stop[3]               ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt_read[3]               ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt_write[3]              ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt_start[3]              ; Stuck at GND due to stuck port data_in    ;
+; SHT20_Driver:u1|cnt_mode2[3]              ; Stuck at GND due to stuck port data_in    ;
+; Total Number of Removed Registers = 157   ;                                           ;
++-------------------------------------------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                     ;
++------------------------------+---------------------------+------------------------------------------------------+
+; Register name                ; Reason for Removal        ; Registers Removed due to This Register               ;
++------------------------------+---------------------------+------------------------------------------------------+
+; SHT20_Driver:u1|num_delay[0] ; Stuck at GND              ; SHT20_Driver:u1|cnt[3], SHT20_Driver:u1|cnt_write[3] ;
+;                              ; due to stuck port data_in ;                                                      ;
+; SHT20_Driver:u1|dev_addr[6]  ; Stuck at VCC              ; SHT20_Driver:u1|data_wr[7]                           ;
+;                              ; due to stuck port data_in ;                                                      ;
++------------------------------+---------------------------+------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 190   ;
+; Number of registers using Synchronous Clear  ; 44    ;
+; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Asynchronous Clear ; 109   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 106   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; SHT20_Driver:u1|scl                    ; 6       ;
+; SHT20_Driver:u1|num_delay[15]          ; 2       ;
+; SHT20_Driver:u1|num_delay[11]          ; 3       ;
+; SHT20_Driver:u1|num_delay[12]          ; 2       ;
+; SHT20_Driver:u1|num_delay[7]           ; 1       ;
+; SHT20_Driver:u1|num_delay[9]           ; 1       ;
+; SHT20_Driver:u1|sda                    ; 1       ;
+; SHT20_Driver:u1|sda~en                 ; 1       ;
+; Total number of inverted registers = 8 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; Yes        ; |Digital_THM|Segment_scan:u3|data[9]                 ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |Digital_THM|SHT20_Driver:u1|reg_addr[3]             ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |Digital_THM|SHT20_Driver:u1|cnt[0]                  ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |Digital_THM|SHT20_Driver:u1|data_wr[0]              ;
+; 18:1               ; 5 bits    ; 60 LEs        ; 10 LEs               ; 50 LEs                 ; Yes        ; |Digital_THM|SHT20_Driver:u1|num_delay[15]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u1|bcd_code[15] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u1|bcd_code[12] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u1|bcd_code[8]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u2|bcd_code[14] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u2|bcd_code[12] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u2|bcd_code[8]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|bin_to_bcd:u2|bcd_code[4]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Digital_THM|Calculate:u2|T_data[13]                 ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; No         ; |Digital_THM|SHT20_Driver:u1|Mux11                   ;
+; 30:1               ; 3 bits    ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |Digital_THM|SHT20_Driver:u1|Selector109             ;
+; 86:1               ; 2 bits    ; 114 LEs       ; 18 LEs               ; 96 LEs                 ; No         ; |Digital_THM|SHT20_Driver:u1|Selector110             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SHT20_Driver:u1 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; CNT_NUM        ; 15    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Calculate:u2|lpm_mult:Mult0    ;
++------------------------------------------------+----------+---------------------+
+; Parameter Name                                 ; Value    ; Type                ;
++------------------------------------------------+----------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16       ; Untyped             ;
+; LPM_WIDTHB                                     ; 15       ; Untyped             ;
+; LPM_WIDTHP                                     ; 31       ; Untyped             ;
+; LPM_WIDTHR                                     ; 31       ; Untyped             ;
+; LPM_WIDTHS                                     ; 1        ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped             ;
+; LPM_PIPELINE                                   ; 0        ; Untyped             ;
+; LATENCY                                        ; 0        ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; YES      ; Untyped             ;
+; USE_EAB                                        ; OFF      ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6        ; Untyped             ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING  ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped             ;
++------------------------------------------------+----------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Calculate:u2|lpm_mult:Mult1    ;
++------------------------------------------------+----------+---------------------+
+; Parameter Name                                 ; Value    ; Type                ;
++------------------------------------------------+----------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16       ; Untyped             ;
+; LPM_WIDTHB                                     ; 11       ; Untyped             ;
+; LPM_WIDTHP                                     ; 27       ; Untyped             ;
+; LPM_WIDTHR                                     ; 27       ; Untyped             ;
+; LPM_WIDTHS                                     ; 1        ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped             ;
+; LPM_PIPELINE                                   ; 0        ; Untyped             ;
+; LATENCY                                        ; 0        ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; YES      ; Untyped             ;
+; USE_EAB                                        ; OFF      ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6        ; Untyped             ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING  ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped             ;
++------------------------------------------------+----------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                      ;
++---------------------------------------+-----------------------------+
+; Name                                  ; Value                       ;
++---------------------------------------+-----------------------------+
+; Number of entity instances            ; 2                           ;
+; Entity Instance                       ; Calculate:u2|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                          ;
+;     -- LPM_WIDTHB                     ; 15                          ;
+;     -- LPM_WIDTHP                     ; 31                          ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                          ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                         ;
+;     -- USE_EAB                        ; OFF                         ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                        ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                          ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                          ;
+; Entity Instance                       ; Calculate:u2|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 16                          ;
+;     -- LPM_WIDTHB                     ; 11                          ;
+;     -- LPM_WIDTHP                     ; 27                          ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                          ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                         ;
+;     -- USE_EAB                        ; OFF                         ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                        ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                          ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                          ;
++---------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Calculate:u2|bin_to_bcd:u2"                                                                     ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd_code[19..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Calculate:u2|bin_to_bcd:u1"                                                                   ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd_code[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 190                         ;
+;     CLR               ; 53                          ;
+;     CLR SCLR          ; 20                          ;
+;     CLR SLD           ; 2                           ;
+;     ENA               ; 72                          ;
+;     ENA CLR           ; 10                          ;
+;     ENA CLR SCLR      ; 24                          ;
+;     plain             ; 9                           ;
+; cycloneiii_io_obuf    ; 1                           ;
+; cycloneiii_lcell_comb ; 902                         ;
+;     arith             ; 180                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 110                         ;
+;         3 data inputs ; 69                          ;
+;     normal            ; 722                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 50                          ;
+;         3 data inputs ; 115                         ;
+;         4 data inputs ; 543                         ;
+;                       ;                             ;
+; Max LUT depth         ; 26.50                       ;
+; Average LUT depth     ; 14.89                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Jun 22 09:45:47 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Digital_THM -c Digital_THM
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file digital_thm.v
+    Info (12023): Found entity 1: Digital_THM File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Digital_THM.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file sht20_driver.v
+    Info (12023): Found entity 1: SHT20_Driver File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/SHT20_Driver.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file calculate.v
+    Info (12023): Found entity 1: Calculate File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file bin_to_bcd.v
+    Info (12023): Found entity 1: bin_to_bcd File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/bin_to_bcd.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file segment_scan.v
+    Info (12023): Found entity 1: Segment_scan File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Segment_scan.v Line: 18
+Info (12127): Elaborating entity "Digital_THM" for the top level hierarchy
+Info (12128): Elaborating entity "SHT20_Driver" for hierarchy "SHT20_Driver:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Digital_THM.v Line: 42
+Info (12128): Elaborating entity "Calculate" for hierarchy "Calculate:u2" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Digital_THM.v Line: 58
+Info (12128): Elaborating entity "bin_to_bcd" for hierarchy "Calculate:u2|bin_to_bcd:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 47
+Info (12128): Elaborating entity "Segment_scan" for hierarchy "Segment_scan:u3" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Digital_THM.v Line: 78
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Calculate:u2|Mult0" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 33
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Calculate:u2|Mult1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 64
+Info (12130): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 33
+Info (12133): Instantiated megafunction "Calculate:u2|lpm_mult:Mult0" with the following parameter: File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 33
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "15"
+    Info (12134): Parameter "LPM_WIDTHP" = "31"
+    Info (12134): Parameter "LPM_WIDTHR" = "31"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_irg.tdf
+    Info (12023): Found entity 1: add_sub_irg File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_irg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_drg.tdf
+    Info (12023): Found entity 1: add_sub_drg File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_drg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult0" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 64
+Info (12133): Instantiated megafunction "Calculate:u2|lpm_mult:Mult1" with the following parameter: File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/Calculate.v Line: 64
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "27"
+    Info (12134): Parameter "LPM_WIDTHR" = "27"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_erg.tdf
+    Info (12023): Found entity 1: add_sub_erg File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/db/add_sub_erg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12131): Elaborated megafunction instantiation "Calculate:u2|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "Calculate:u2|lpm_mult:Mult1" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (13000): Registers with preset signals will power-up high File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/SHT20_Driver.v Line: 74
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register SHT20_Driver:u1|sda~en will power up to High File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/SHT20_Driver.v Line: 60
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/output_files/Digital_THM.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 959 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 952 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Fri Jun 22 09:46:04 2018
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:30
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in F:/Fpga_Project/BaseBoard3.0_Demo/LAB9_Digital_THM/output_files/Digital_THM.map.smsg.
+
+

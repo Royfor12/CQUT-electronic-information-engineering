@@ -1,0 +1,13 @@
+#Start recording tcl command: 1/29/2019 09:59:38
+#Project Location: F:/Fpga_Project/BaseBoard/LAB11_Picture_display; Project name: Picture_display
+prj_project new -name "Picture_display" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "synplify"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB11_Picture_display/LCD_RAM.v" "F:/Fpga_Project/BaseBoard/LAB11_Picture_display/LCD_RGB.v" "F:/Fpga_Project/BaseBoard/LAB11_Picture_display/Picture_display.v"
+prj_project save
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 1/29/2019 10:09:02

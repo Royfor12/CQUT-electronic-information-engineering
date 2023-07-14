@@ -1,0 +1,270 @@
+
+          Lattice Mapping Report File for Design Module 'Amp_Adjust'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Amp_Adjust_impl1.ngd -o Amp_Adjust_impl1_map.ncd -pr Amp_Adjust_impl1.prf
+     -mp Amp_Adjust_impl1.mrp -lpf
+     F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/impl1/Amp_Adjust_impl1.lpf -lpf
+     F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/Amp_Adjust.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/24/19  17:22:51
+
+Design Summary
+--------------
+
+   Number of registers:     33 out of  4635 (1%)
+      PFU registers:           33 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        32 out of  2160 (1%)
+      SLICEs as Logic/ROM:     32 out of  2160 (1%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:          7 out of  2160 (0%)
+   Number of LUT4s:         61 out of  4320 (1%)
+      Number used as logic LUTs:         47
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       14
+      Number used as shift registers:     0
+   Number of PIO sites used: 22 + 4(JTAG) out of 105 (25%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  4
+     Net clk_c: 19 loads, 19 rising, 0 falling (Driver: PIO clk )
+     Net u1/B_state_N_39: 1 loads, 1 rising, 0 falling (Driver: u1/i254_2_lut )
+     Net u1/clk_500us: 3 loads, 3 rising, 0 falling (Driver: u1/clk_500us_61 )
+
+                                    Page 1
+
+
+
+
+Design:  Amp_Adjust                                    Date:  01/24/19  17:22:51
+
+Design Summary (cont)
+---------------------
+     Net u1/A_state_N_49: 1 loads, 1 rising, 0 falling (Driver: u1/i252_2_lut )
+   Number of Clock Enables:  2
+     Net clk_c_enable_5: 4 loads, 4 LSLICEs
+     Net u2/clk_c_enable_8: 4 loads, 4 LSLICEs
+   Number of LSRs:  1
+     Net u1/cnt_12__N_29: 7 loads, 7 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net seg_data_0: 15 loads
+     Net seg_data_4: 14 loads
+     Net seg_data_1: 13 loads
+     Net seg_data_2: 13 loads
+     Net L_pulse: 12 loads
+     Net seg_data_3: 12 loads
+     Net seg_data_6: 12 loads
+     Net seg_data_5: 11 loads
+     Net seg_data_7: 10 loads
+     Net u1/cnt_12__N_29: 7 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| key_b               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| key_a               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  Amp_Adjust                                    Date:  01/24/19  17:22:51
+
+IO (PIO) Attributes (cont)
+--------------------------
+| seg_2[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i668 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal u1/cnt_84_85_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u1/cnt_84_85_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u1/cnt_84_85_add_4_13/S1 undriven or does not drive anything - clipped.
+Signal u1/cnt_84_85_add_4_13/CO undriven or does not drive anything - clipped.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+                                    Page 3
+
+
+
+
+Design:  Amp_Adjust                                    Date:  01/24/19  17:22:51
+
+GSR Usage (cont)
+----------------
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 10 
+
+     Type and instance name of component: 
+   Register : u1/key_a_r_62
+   Register : u1/key_a_r1_63
+   Register : u1/key_a_r2_64
+   Register : u1/A_state_I_0
+   Register : u1/key_b_r_66
+   Register : u1/key_b_r1_67
+   Register : u1/key_b_r2_68
+   Register : u1/B_state_I_0_78
+   Register : u1/A_state_r_70
+   Register : u1/A_state_r1_71
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 12 
+
+     Type and instance name of component: 
+   Register : u1/cnt_84_85__i12
+   Register : u1/cnt_84_85__i11
+   Register : u1/cnt_84_85__i10
+   Register : u1/cnt_84_85__i9
+   Register : u1/cnt_84_85__i8
+   Register : u1/cnt_84_85__i7
+   Register : u1/cnt_84_85__i6
+   Register : u1/cnt_84_85__i5
+   Register : u1/cnt_84_85__i4
+   Register : u1/cnt_84_85__i1
+   Register : u1/cnt_84_85__i3
+   Register : u1/cnt_84_85__i2
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 49 MB
+        
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

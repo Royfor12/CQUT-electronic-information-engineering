@@ -1,0 +1,38 @@
+
+fsm_encoding {10830833} sequential
+
+fsm_state_encoding {10830833} IDLE {00}
+
+fsm_state_encoding {10830833} MAIN {01}
+
+fsm_state_encoding {10830833} WRITE {10}
+
+fsm_registers {10830833} {state[1]}  {state[0]} 
+
+fsm_encoding {6580582} onehot
+
+fsm_state_encoding {6580582} 000 {00001}
+
+fsm_state_encoding {6580582} 001 {00010}
+
+fsm_state_encoding {6580582} 010 {00100}
+
+fsm_state_encoding {6580582} 011 {01000}
+
+fsm_state_encoding {6580582} 100 {10000}
+
+fsm_registers {6580582} {cnt_txmd[4]}  {cnt_txmd[3]}  {cnt_txmd[2]}  {cnt_txmd[1]}  {cnt_txmd[0]} 
+
+fsm_encoding {6580581} onehot
+
+fsm_state_encoding {6580581} IDLE {00001}
+
+fsm_state_encoding {6580581} MAIN {00010}
+
+fsm_state_encoding {6580581} TXMD {00100}
+
+fsm_state_encoding {6580581} REMD {01000}
+
+fsm_state_encoding {6580581} DELAY {10000}
+
+fsm_registers {6580581} {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

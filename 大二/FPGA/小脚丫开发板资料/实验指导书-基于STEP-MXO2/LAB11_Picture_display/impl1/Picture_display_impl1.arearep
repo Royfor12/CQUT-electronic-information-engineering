@@ -1,0 +1,51 @@
+----------------------------------------------------------------------
+Report for cell Picture_display.TECH
+Register bits:  179 of 4635 (3.862%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        43          100.0
+                            FD1P3AX        16          100.0
+                            FD1P3BX         4          100.0
+                            FD1P3DX       100          100.0
+                            FD1P3IX        58          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                                INV         1          100.0
+                            L6MUX21         1          100.0
+                               LUT4       447          100.0
+                             MUX161         6          100.0
+                              MUX81         7          100.0
+                                 OB         5          100.0
+                           OFS1P3DX         1          100.0
+                            PDPW8KC         3          100.0
+                              PFUMX        52          100.0
+SUB MODULES
+                            LCD_RAM         1
+                            LCD_RGB         1
+                              TOTAL       749
+----------------------------------------------------------------------
+Report for cell LCD_RGB.v1
+Instance Path : LCD_RGB_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        43          100.0
+                            FD1P3AX        16          100.0
+                            FD1P3BX         4          100.0
+                            FD1P3DX       100          100.0
+                            FD1P3IX        58          100.0
+                                INV         1          100.0
+                               LUT4       279           62.4
+                             MUX161         6          100.0
+                              MUX81         3           42.9
+                           OFS1P3DX         1          100.0
+                              PFUMX        22           42.3
+                              TOTAL       533
+----------------------------------------------------------------------
+Report for cell LCD_RAM.v1
+Instance Path : LCD_RAM_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       131           29.3
+                              PFUMX        22           42.3
+                              TOTAL       153

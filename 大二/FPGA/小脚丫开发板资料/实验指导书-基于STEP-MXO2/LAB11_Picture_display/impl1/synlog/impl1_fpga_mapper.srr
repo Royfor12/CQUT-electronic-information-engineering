@@ -1,0 +1,541 @@
+# Tue Jan 29 10:02:47 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@N: FX493 |Applying initial value "00" on instance LCD_RGB_uut.state_back[1:0].
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Encoding state machine cnt_scan[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   00000000 -> 000001
+   00000001 -> 000010
+   00000010 -> 000100
+   00000011 -> 001000
+   00000100 -> 010000
+   00000101 -> 100000
+Encoding state machine state[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance x_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance y_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_init[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_write[4:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_delay[15:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[13] because it is equivalent to instance LCD_RGB_uut.num_delay[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[12] because it is equivalent to instance LCD_RGB_uut.num_delay[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[2] because it is equivalent to instance LCD_RGB_uut.num_delay[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[10] because it is equivalent to instance LCD_RGB_uut.num_delay[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[7] because it is equivalent to instance LCD_RGB_uut.num_delay[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[3] because it is equivalent to instance LCD_RGB_uut.num_delay[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[131] because it is equivalent to instance LCD_RGB_uut.ram_data_r[130]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[130] because it is equivalent to instance LCD_RGB_uut.ram_data_r[129]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[129] because it is equivalent to instance LCD_RGB_uut.ram_data_r[128]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[128] because it is equivalent to instance LCD_RGB_uut.ram_data_r[127]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_data_r[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance num_delay[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 147MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 153MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 154MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 154MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 154MB)
+
+@N: FX214 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_ram.v":25:2:25:5|Generating ROM LCD_RAM_uut.Q_1_0[131:22] (in view: work.Picture_display(verilog)).
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 157MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 158MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.46ns		 394 /       196
+   2		0h:00m:01s		    -2.46ns		 389 /       196
+   3		0h:00m:01s		    -1.55ns		 389 /       196
+   4		0h:00m:01s		    -1.85ns		 389 /       196
+   5		0h:00m:01s		    -1.55ns		 390 /       196
+   6		0h:00m:01s		    -1.55ns		 391 /       196
+   7		0h:00m:01s		    -1.55ns		 392 /       196
+
+   8		0h:00m:01s		    -1.55ns		 395 /       196
+   9		0h:00m:01s		    -1.38ns		 397 /       196
+  10		0h:00m:01s		    -1.23ns		 399 /       196
+  11		0h:00m:01s		    -1.23ns		 400 /       196
+  12		0h:00m:02s		    -1.23ns		 400 /       196
+  13		0h:00m:02s		    -1.23ns		 401 /       196
+  14		0h:00m:02s		    -1.23ns		 402 /       196
+
+  15		0h:00m:02s		    -1.23ns		 399 /       196
+  16		0h:00m:02s		    -1.23ns		 401 /       196
+  17		0h:00m:02s		    -1.23ns		 401 /       196
+  18		0h:00m:02s		    -1.23ns		 402 /       196
+  19		0h:00m:02s		    -1.23ns		 401 /       196
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 159MB peak: 160MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance LCD_RGB_uut.num_delay[4] (in view: work.Picture_display(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 160MB peak: 161MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 195 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+================================= Non-Gated/Non-Generated Clocks ==================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance            
+---------------------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   195        LCD_RAM_uut.Q_1_0_dreg[109]
+===================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 125MB peak: 161MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 158MB peak: 161MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 164MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 164MB)
+
+@W: MT420 |Found inferred clock Picture_display|clk with period 6.17ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 10:02:50 2019
+#
+
+
+Top view:               Picture_display
+Requested Frequency:    162.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.089
+
+                        Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock          Frequency     Frequency     Period        Period        Slack      Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk     162.0 MHz     137.7 MHz     6.172         7.261         -1.089     inferred     Autoconstr_clkgroup_0
+=============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk  Picture_display|clk  |  6.172       -1.089  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Picture_display|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                       Arrival           
+Instance                       Reference               Type        Pin     Net                Time        Slack 
+                               Clock                                                                            
+----------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[6]           Picture_display|clk     FD1P3DX     Q       x_cnt[6]           1.363       -1.089
+LCD_RGB_uut.x_cnt[5]           Picture_display|clk     FD1P3DX     Q       x_cnt[5]           1.302       -0.814
+LCD_RGB_uut.x_cnt[0]           Picture_display|clk     FD1P3DX     Q       x_cnt[0]           1.296       -0.808
+LCD_RGB_uut.x_cnt[2]           Picture_display|clk     FD1P3DX     Q       x_cnt[2]           1.296       -0.808
+LCD_RGB_uut.x_cnt[1]           Picture_display|clk     FD1P3DX     Q       x_cnt[1]           1.276       -0.788
+LCD_RGB_uut.x_cnt[4]           Picture_display|clk     FD1P3DX     Q       x_cnt[4]           1.272       -0.784
+LCD_RGB_uut.x_cnt[3]           Picture_display|clk     FD1P3DX     Q       x_cnt[3]           1.268       -0.780
+LCD_RAM_uut.Q_1_0_dreg[16]     Picture_display|clk     FD1P3AX     Q       ram_data_r[26]     0.972       -0.698
+LCD_RAM_uut.Q_1_0_dreg[17]     Picture_display|clk     FD1P3AX     Q       ram_data_r[27]     0.972       -0.698
+LCD_RAM_uut.Q_1_0_dreg[80]     Picture_display|clk     FD1P3AX     Q       ram_data_r[90]     0.972       -0.698
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                        Required           
+Instance                      Reference               Type        Pin     Net                 Time         Slack 
+                              Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.data_reg[0]       Picture_display|clk     FD1P3AX     D       data_reg_10[0]      6.261        -1.089
+LCD_RGB_uut.num_delay[1]      Picture_display|clk     FD1P3BX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.num_delay[5]      Picture_display|clk     FD1P3BX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.num_delay[8]      Picture_display|clk     FD1P3DX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.num_delay[11]     Picture_display|clk     FD1P3DX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.num_delay[14]     Picture_display|clk     FD1P3DX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.state_back[0]     Picture_display|clk     FD1P3DX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.state_back[1]     Picture_display|clk     FD1P3DX     SP      un27_i              5.700        -0.167
+LCD_RGB_uut.data_reg[5]       Picture_display|clk     FD1P3AX     D       ram_data_r_pmux     6.261        -0.072
+LCD_RGB_uut.cnt_init[2]       Picture_display|clk     FD1P3DX     D       cnt_init_lm[2]      6.261        -0.059
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      6.172
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.261
+
+    - Propagation time:                      7.350
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.089
+
+    Number of logic level(s):                7
+    Starting point:                          LCD_RGB_uut.x_cnt[6] / Q
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CK
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[6]                          FD1P3DX      Q        Out     1.363     1.363       -         
+x_cnt[6]                                      Net          -        -       -         -           56        
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6_am     ORCALUT4     C        In      0.000     1.363       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6_am     ORCALUT4     Z        Out     1.017     2.380       -         
+ram_data_r_pmux_131_0_m2_6_am                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6        PFUMX        BLUT     In      0.000     2.380       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6        PFUMX        Z        Out     0.214     2.594       -         
+N_375                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_13       ORCALUT4     D        In      0.000     2.594       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_13       ORCALUT4     Z        Out     1.017     3.611       -         
+N_570                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     D        In      0.000     3.611       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     Z        Out     1.017     4.628       -         
+ram_data_r_pmux_131_0_o2_11                   Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     D        In      0.000     4.628       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     Z        Out     1.089     5.716       -         
+ram_data_r_pmux_131_0_o2_1                    Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     A        In      0.000     5.716       -         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     Z        Out     1.017     6.733       -         
+data_reg_10_0_a2_1[0]                         Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     A        In      0.000     6.733       -         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     Z        Out     0.617     7.350       -         
+data_reg_10[0]                                Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg[0]                       FD1P3AX      D        In      0.000     7.350       -         
+============================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      6.172
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.261
+
+    - Propagation time:                      7.350
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.089
+
+    Number of logic level(s):                7
+    Starting point:                          LCD_RGB_uut.x_cnt[6] / Q
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CK
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[6]                          FD1P3DX      Q        Out     1.363     1.363       -         
+x_cnt[6]                                      Net          -        -       -         -           56        
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6_bm     ORCALUT4     C        In      0.000     1.363       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6_bm     ORCALUT4     Z        Out     1.017     2.380       -         
+ram_data_r_pmux_131_0_m2_6_bm                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6        PFUMX        ALUT     In      0.000     2.380       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_6        PFUMX        Z        Out     0.214     2.594       -         
+N_375                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_13       ORCALUT4     D        In      0.000     2.594       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_13       ORCALUT4     Z        Out     1.017     3.611       -         
+N_570                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     D        In      0.000     3.611       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     Z        Out     1.017     4.628       -         
+ram_data_r_pmux_131_0_o2_11                   Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     D        In      0.000     4.628       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     Z        Out     1.089     5.716       -         
+ram_data_r_pmux_131_0_o2_1                    Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     A        In      0.000     5.716       -         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     Z        Out     1.017     6.733       -         
+data_reg_10_0_a2_1[0]                         Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     A        In      0.000     6.733       -         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     Z        Out     0.617     7.350       -         
+data_reg_10[0]                                Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg[0]                       FD1P3AX      D        In      0.000     7.350       -         
+============================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      6.172
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.261
+
+    - Propagation time:                      7.075
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.814
+
+    Number of logic level(s):                6
+    Starting point:                          LCD_RGB_uut.x_cnt[5] / Q
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CK
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[5]                          FD1P3DX      Q        Out     1.302     1.302       -         
+x_cnt[5]                                      Net          -        -       -         -           26        
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10_2     ORCALUT4     D        In      0.000     1.302       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10_2     ORCALUT4     Z        Out     1.017     2.319       -         
+ram_data_r_pmux_131_0_a2_10_2                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10       ORCALUT4     A        In      0.000     2.319       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10       ORCALUT4     Z        Out     1.017     3.336       -         
+N_567                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     C        In      0.000     3.336       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     Z        Out     1.017     4.353       -         
+ram_data_r_pmux_131_0_o2_11                   Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     D        In      0.000     4.353       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     Z        Out     1.089     5.441       -         
+ram_data_r_pmux_131_0_o2_1                    Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     A        In      0.000     5.441       -         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     Z        Out     1.017     6.458       -         
+data_reg_10_0_a2_1[0]                         Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     A        In      0.000     6.458       -         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     Z        Out     0.617     7.075       -         
+data_reg_10[0]                                Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg[0]                       FD1P3AX      D        In      0.000     7.075       -         
+============================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      6.172
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.261
+
+    - Propagation time:                      7.069
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.808
+
+    Number of logic level(s):                6
+    Starting point:                          LCD_RGB_uut.x_cnt[0] / Q
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CK
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[0]                            FD1P3DX      Q        Out     1.296     1.296       -         
+x_cnt[0]                                        Net          -        -       -         -           24        
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2            ORCALUT4     C        In      0.000     1.296       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2            ORCALUT4     Z        Out     1.017     2.313       -         
+N_368                                           Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_8_tz_1     ORCALUT4     D        In      0.000     2.313       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_8_tz_1     ORCALUT4     Z        Out     1.017     3.329       -         
+ram_data_r_pmux_131_0_o2_8_tz_1                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_8_tz       ORCALUT4     B        In      0.000     3.329       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_8_tz       ORCALUT4     Z        Out     1.017     4.346       -         
+ram_data_r_pmux_131_0_o2_8_tz                   Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_7          ORCALUT4     B        In      0.000     4.346       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_7          ORCALUT4     Z        Out     1.089     5.435       -         
+ram_data_r_pmux_131_0_o2_7                      Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]               ORCALUT4     B        In      0.000     5.435       -         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]               ORCALUT4     Z        Out     1.017     6.452       -         
+data_reg_10_0_a2_1[0]                           Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_10_0_a2[0]                 ORCALUT4     A        In      0.000     6.452       -         
+LCD_RGB_uut.data_reg_10_0_a2[0]                 ORCALUT4     Z        Out     0.617     7.069       -         
+data_reg_10[0]                                  Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg[0]                         FD1P3AX      D        In      0.000     7.069       -         
+==============================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      6.172
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.261
+
+    - Propagation time:                      7.069
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.808
+
+    Number of logic level(s):                6
+    Starting point:                          LCD_RGB_uut.x_cnt[2] / Q
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CK
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.x_cnt[2]                          FD1P3DX      Q        Out     1.296     1.296       -         
+x_cnt[2]                                      Net          -        -       -         -           24        
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10_2     ORCALUT4     A        In      0.000     1.296       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10_2     ORCALUT4     Z        Out     1.017     2.313       -         
+ram_data_r_pmux_131_0_a2_10_2                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10       ORCALUT4     A        In      0.000     2.313       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_10       ORCALUT4     Z        Out     1.017     3.329       -         
+N_567                                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     C        In      0.000     3.329       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_11       ORCALUT4     Z        Out     1.017     4.346       -         
+ram_data_r_pmux_131_0_o2_11                   Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     D        In      0.000     4.346       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_1_0      ORCALUT4     Z        Out     1.089     5.435       -         
+ram_data_r_pmux_131_0_o2_1                    Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     A        In      0.000     5.435       -         
+LCD_RGB_uut.data_reg_10_0_a2_1[0]             ORCALUT4     Z        Out     1.017     6.452       -         
+data_reg_10_0_a2_1[0]                         Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     A        In      0.000     6.452       -         
+LCD_RGB_uut.data_reg_10_0_a2[0]               ORCALUT4     Z        Out     0.617     7.069       -         
+data_reg_10[0]                                Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg[0]                       FD1P3AX      D        In      0.000     7.069       -         
+============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 164MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 164MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 195 of 4320 (5%)
+PIC Latch:       0
+I/O cells:       7
+
+
+Details:
+CCU2D:          40
+FD1P3AX:        112
+FD1P3BX:        4
+FD1P3DX:        69
+FD1S3BX:        1
+FD1S3DX:        6
+GSR:            1
+IB:             2
+INV:            4
+L6MUX21:        6
+OB:             5
+OFS1P3DX:       3
+ORCALUT4:       390
+PFUMX:          29
+PUR:            1
+ROM128X1A:      76
+ROM64X1A:       34
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 34MB peak: 164MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Tue Jan 29 10:02:50 2019
+
+###########################################################]

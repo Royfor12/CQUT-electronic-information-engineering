@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab2_electric_piano/electric_piano.v(18): </Dynamic>
+            <Dynamic>Electric_Piano</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab2_electric_piano/electric_piano.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab2_electric_piano/array_keyboard.v(18): </Dynamic>
+            <Dynamic>Array_KeyBoard</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab2_electric_piano/array_keyboard.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab2_electric_piano/beeper.v(18): </Dynamic>
+            <Dynamic>Beeper</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab2_electric_piano/beeper.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab2_electric_piano/tone.v(18): </Dynamic>
+            <Dynamic>tone</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab2_electric_piano/tone.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab2_electric_piano/pwm.v(18): </Dynamic>
+            <Dynamic>PWM(WIDTH=16)</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab2_electric_piano/pwm.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\u1/c_state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

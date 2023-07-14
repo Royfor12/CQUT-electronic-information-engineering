@@ -1,0 +1,402 @@
+
+         Lattice Mapping Report File for Design Module 'Voltage_Meas'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Voltage_Meas_impl1.ngd -o Voltage_Meas_impl1_map.ncd -pr
+     Voltage_Meas_impl1.prf -mp Voltage_Meas_impl1.mrp -lpf
+     F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/impl1/Voltage_Meas_impl1.lpf
+     -lpf F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/Voltage_Meas.lpf -c 0 -gui
+     
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/25/19  14:26:39
+
+Design Summary
+--------------
+
+   Number of registers:     24 out of  4635 (1%)
+      PFU registers:           24 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       118 out of  2160 (5%)
+      SLICEs as Logic/ROM:    118 out of  2160 (5%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:          9 out of  2160 (0%)
+   Number of LUT4s:        236 out of  4320 (5%)
+      Number used as logic LUTs:        218
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       18
+      Number used as shift registers:     0
+   Number of PIO sites used: 23 + 4(JTAG) out of 105 (26%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+     Net clk_24mhz: 19 loads, 19 rising, 0 falling (Driver: u1/PLLInst_0 )
+
+                                    Page 1
+
+
+
+
+Design:  Voltage_Meas                                  Date:  01/25/19  14:26:39
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  9
+     Net u2/clk_24mhz_enable_1: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_2: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_3: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_4: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_5: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_14: 4 loads, 4 LSLICEs
+     Net u2/clk_24mhz_enable_8: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_15: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_16: 1 loads, 1 LSLICEs
+   Number of LSRs:  1
+     Net u2/cnt_7__N_35: 4 loads, 4 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rst_n_c: 27 loads
+     Net bin_code_15: 15 loads
+     Net u2/cnt_3: 14 loads
+     Net u2/cnt_1: 13 loads
+     Net u2/cnt_2: 13 loads
+     Net bin_code_12: 12 loads
+     Net bin_code_13: 11 loads
+     Net u3/bcd_code_19__N_139: 11 loads
+     Net u3/bcd_code_19__N_157: 11 loads
+     Net u3/bcd_code_19__N_175: 11 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| adc_clk             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| adc_dat             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  Voltage_Meas                                  Date:  01/25/19  14:26:39
+
+IO (PIO) Attributes (cont)
+--------------------------
+| seg_2[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_2[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[3]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[4]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[5]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[6]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[7]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_1[8]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| adc_cs              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal u2/cnt_257_258_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u2/cnt_257_258_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u2/cnt_257_258_add_4_7/S1 undriven or does not drive anything - clipped.
+Signal u2/cnt_257_258_add_4_7/CO undriven or does not drive anything - clipped.
+Signal add_1503_cout/S1 undriven or does not drive anything - clipped.
+Signal add_1503_cout/CO undriven or does not drive anything - clipped.
+Signal add_1503_2/S0 undriven or does not drive anything - clipped.
+Signal add_1503_2/CI undriven or does not drive anything - clipped.
+
+Memory Usage
+------------
+
+
+     
+
+
+
+
+
+                                    Page 3
+
+
+
+
+Design:  Voltage_Meas                                  Date:  01/25/19  14:26:39
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u1/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      clk_c
+  Output Clock(P):                         NODE     clk_24mhz
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_24mhz
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      12.0000
+  Output Clock(P) Frequency (MHz):                  24.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+
+                                    Page 4
+
+
+
+
+Design:  Voltage_Meas                                  Date:  01/25/19  14:26:39
+
+PLL/DLL Summary (cont)
+----------------------
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    2
+  CLKOP Divider:                                    22
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: u1/PLLInst_0
+         Type: EHXPLLJ
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 16 
+
+     Type and instance name of component: 
+   Register : u2/data_i0_i0
+   Register : u2/data_i0_i3
+   Register : u2/data_i0_i7
+   Register : u2/data_i0_i2
+   Register : u2/data_i0_i5
+   Register : u2/adc_data_i0_i7
+
+                                    Page 5
+
+
+
+
+Design:  Voltage_Meas                                  Date:  01/25/19  14:26:39
+
+GSR Usage (cont)
+----------------
+   Register : u2/adc_data_i0_i6
+   Register : u2/data_i0_i1
+   Register : u2/adc_data_i0_i5
+   Register : u2/adc_data_i0_i4
+   Register : u2/adc_data_i0_i3
+   Register : u2/adc_data_i0_i2
+   Register : u2/adc_data_i0_i1
+   Register : u2/adc_data_i0_i0
+   Register : u2/data_i0_i6
+   Register : u2/data_i0_i4
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 6 
+
+     Type and instance name of component: 
+   Register : u2/cnt_257_258__i6
+   Register : u2/cnt_257_258__i5
+   Register : u2/cnt_257_258__i4
+   Register : u2/cnt_257_258__i3
+   Register : u2/cnt_257_258__i2
+   Register : u2/cnt_257_258__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 50 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

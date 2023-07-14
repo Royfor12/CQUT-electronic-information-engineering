@@ -1,0 +1,7 @@
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

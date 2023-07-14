@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at APDS_9901_Driver.v(44): object "ACK" differs only in case from object "ack" in the same scope File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB8_Prox_Detect/APDS_9901_Driver.v Line: 44

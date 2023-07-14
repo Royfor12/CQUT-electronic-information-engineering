@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Jun 13 10:17:07 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Signal_Generator
+Top-level Entity Name : Signal_Generator
+Family : MAX 10
+Total logic elements : 144
+    Total combinational functions : 133
+    Dedicated logic registers : 85
+Total registers : 85
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

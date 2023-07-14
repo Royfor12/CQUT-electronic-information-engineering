@@ -1,0 +1,36 @@
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":62:40:62:47|Object reg_data is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL265 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Removing unused bit 7 of dev_addr[7:0]. Either assign all bits or reduce the width of the signal.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit state_back[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bits 7 to 4 of reg_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bits 3 to 2 of state_back[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":70:0:70:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":70:0:70:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":89:0:89:5|Initial value is not supported on state machine state
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_mode1[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_mode2[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_start[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_stop[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt_write[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Optimizing register bit cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_write[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_read[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_stop[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_start[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_mode2[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 3 of cnt_mode1[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bit 7 of data_wr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":48:1:48:6|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Pruning register bits 6 to 5 of data_wr[6:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

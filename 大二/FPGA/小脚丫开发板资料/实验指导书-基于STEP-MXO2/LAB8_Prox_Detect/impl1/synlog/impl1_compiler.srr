@@ -1,0 +1,130 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Prox_Detect
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":18:7:18:22|Synthesizing module APDS_9901_Driver in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":155:56:155:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":158:56:158:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":170:53:170:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":177:54:177:56|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":180:54:180:56|Removing redundant assignment.
+@W: CL265 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Removing unused bit 7 of dev_addr[7:0]. Either assign all bits or reduce the width of the signal.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dev_addr[6:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal reg_data[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal reg_addr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal prox_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal data_wr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal data_r[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_valid. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_l[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_h[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal ch1_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal ch0_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[7] is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit state_back[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[6] is always 0.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 7 to 6 of reg_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 3 to 2 of state_back[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":29:89:29:97|Removing redundant assignment.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":26:0:26:5|Pruning register bits 15 to 10 of prox_dat2[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":26:0:26:5|Pruning register bits 6 to 0 of prox_dat2[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Synthesizing module Prox_Detect in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_mode1[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_start[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_stop[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_write[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_write[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_read[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_stop[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_start[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_mode1[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 9 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 5 of reg_addr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 7 to 6 of reg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 3 to 2 of reg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 84MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]

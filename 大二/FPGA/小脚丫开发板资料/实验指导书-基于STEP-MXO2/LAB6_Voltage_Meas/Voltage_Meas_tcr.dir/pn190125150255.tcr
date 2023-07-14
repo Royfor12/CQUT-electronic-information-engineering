@@ -1,0 +1,11 @@
+#Start recording tcl command: 1/25/2019 13:49:04
+#Project Location: F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas; Project name: Voltage_Meas
+prj_project new -name "Voltage_Meas" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/ADC081S101_driver.v" "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/bin_to_bcd.v" "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/Segment_led.v" "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/Voltage_Meas.v"
+prj_project save
+prj_src add "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/pll/pll.ipx"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 1/25/2019 15:02:55

@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Thu Jun 01 17:56:08 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Electric_Piano
+Top-level Entity Name : Electric_Piano
+Family : MAX 10
+Device : 10M02SCM153I7G
+Power Models : Final
+Total Thermal Power Dissipation : 113.24 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 66.85 mW
+I/O Thermal Power Dissipation : 46.39 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

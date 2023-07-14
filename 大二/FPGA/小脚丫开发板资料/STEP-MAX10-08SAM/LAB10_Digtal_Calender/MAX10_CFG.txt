@@ -1,0 +1,21 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//I2C功能接口
+i2c_scl		,	PIN_M4
+i2c_sda		,	PIN_P3
+
+//旋转编码器接口
+key_a		,	PIN_M5
+key_b		,	PIN_R3
+key_o		,	PIN_L6
+
+//74HC595接口
+seg_rck		,	PIN_A14
+seg_sck		,	PIN_B13
+seg_din		,	PIN_B15

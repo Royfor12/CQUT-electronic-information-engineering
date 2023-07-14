@@ -1,0 +1,74 @@
+----------------------------------------------------------------------
+Report for cell Game_Score.TECH
+Register bits:  88 of 4635 (1.899%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15          100.0
+                            FD1P3AX        16          100.0
+                            FD1P3AY         2          100.0
+                            FD1P3IX        25          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         8          100.0
+                            FD1S3IX        35          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                                INV         2          100.0
+                            L6MUX21         6          100.0
+                               LUT4       169          100.0
+                                 OB         3          100.0
+                              PFUMX        23          100.0
+SUB MODULES
+                            Counter         1
+                         Counter_U0         1
+          Debounce(KEY_WIDTH=2'b10)         1
+                       Segment_scan         1
+                              TOTAL       315
+----------------------------------------------------------------------
+Report for cell Segment_scan.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           33.3
+                            FD1P3AX        16          100.0
+                            FD1P3IX         9           36.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         2           25.0
+                            FD1S3IX         9           25.7
+                            L6MUX21         5           83.3
+                               LUT4       107           63.3
+                              PFUMX        17           73.9
+                              TOTAL       172
+----------------------------------------------------------------------
+Report for cell Debounce(KEY_WIDTH=2'b10).v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10           66.7
+                            FD1P3AY         2          100.0
+                            FD1S3AX         6           75.0
+                            FD1S3IX        18           51.4
+                                INV         2          100.0
+                               LUT4         8            4.7
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell Counter_U0.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX         8           32.0
+                            FD1S3IX         4           11.4
+                            L6MUX21         1           16.7
+                               LUT4        21           12.4
+                              PFUMX         1            4.3
+                              TOTAL        35
+----------------------------------------------------------------------
+Report for cell Counter.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX         8           32.0
+                            FD1S3IX         4           11.4
+                               LUT4        33           19.5
+                              PFUMX         5           21.7
+                              TOTAL        50

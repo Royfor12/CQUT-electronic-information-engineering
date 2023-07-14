@@ -1,0 +1,18 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//双列直插GPIO管脚，按照外设功能命名
+
+//I2C功能接口
+i2c_scl		,	PIN_M4
+i2c_sda		,	PIN_P3
+
+//74HC595接口
+seg_rck		,	PIN_A14
+seg_sck		,	PIN_B13
+seg_din		,	PIN_B15

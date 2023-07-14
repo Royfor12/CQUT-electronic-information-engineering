@@ -1,0 +1,15 @@
+@P:  Worst Slack : -1.145
+@P:  Prox_Detect|clk - Estimated Frequency : 131.0 MHz
+@P:  Prox_Detect|clk - Requested Frequency : 154.1 MHz
+@P:  Prox_Detect|clk - Estimated Period : 7.635
+@P:  Prox_Detect|clk - Requested Period : 6.490
+@P:  Prox_Detect|clk - Slack : -1.145
+@P:  System - Estimated Frequency : NA
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : NA
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : NA
+@P:  Total Area : 289.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:03s

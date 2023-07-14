@@ -1,0 +1,245 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Thu Jan 24 11:02:26 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v" (library work)
+Verilog syntax check successful!
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v changed - recompiling
+Selecting top level module Type_system
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":18:7:18:20|Synthesizing module Array_KeyBoard in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":56:17:56:25|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":48:25:48:32|Removing redundant assignment.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v":18:7:18:17|Synthesizing module Segment_led in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Synthesizing module Type_system in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":63:1:63:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\layer0.srs changed - recompiling
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v" (library work)
+Verilog syntax check successful!
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v changed - recompiling
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v changed - recompiling
+Selecting top level module Type_system
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":18:7:18:20|Synthesizing module Array_KeyBoard in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":56:17:56:25|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":48:25:48:32|Removing redundant assignment.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v":18:7:18:17|Synthesizing module Segment_led in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Synthesizing module Type_system in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":63:1:63:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\layer0.srs changed - recompiling
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Selected library: work cell: Type_system view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:02:26 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Jan 24 11:02:28 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Type_system
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                      Requested     Requested     Clock                              Clock                     Clock
+Clock                                      Frequency     Period        Type                               Group                     Load 
+-----------------------------------------------------------------------------------------------------------------------------------------
+Array_KeyBoard|clk_200hz_derived_clock     1.0 MHz       1000.000      derived (from Type_system|clk)     Autoconstr_clkgroup_0     56   
+Type_system|clk                            1.0 MHz       1000.000      inferred                           Autoconstr_clkgroup_0     37   
+=========================================================================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":46:1:46:6|Found inferred clock Type_system|clk which controls 37 sequential elements including u1.cnt[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":63:1:63:6|There are no possible illegal states for state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog)); safe FSM implementation is not required.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jan 24 11:02:28 2019
+
+###########################################################]

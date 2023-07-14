@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dac_sync",
+					"strict" : false
+				},
+				{
+					"name" : "dac_clk",
+					"strict" : false
+				},
+				{
+					"name" : "dac_dat",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "key_o",
+					"strict" : false
+				},
+				{
+					"name" : "key_b",
+					"strict" : false
+				},
+				{
+					"name" : "key_a",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

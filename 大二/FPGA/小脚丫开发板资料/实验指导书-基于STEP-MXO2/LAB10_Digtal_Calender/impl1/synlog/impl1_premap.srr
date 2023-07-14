@@ -1,0 +1,82 @@
+# Tue Jan 29 09:54:06 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\debounce.v":66:0:66:5|Removing sequential instance key_state[0] (in view: work.Debounce(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Digtal_Calender
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                       Requested     Requested     Clock                                  Clock                     Clock
+Clock                                       Frequency     Period        Type                                   Group                     Load 
+----------------------------------------------------------------------------------------------------------------------------------------------
+DS1340Z_driver|clk_400khz_derived_clock     1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Autoconstr_clkgroup_0     104  
+Digtal_Calender|clk                         1.0 MHz       1000.000      inferred                               Autoconstr_clkgroup_0     121  
+Encoder|clk_500us_derived_clock             1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Autoconstr_clkgroup_0     6    
+Segment_scan|clk_40khz_derived_clock        1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Autoconstr_clkgroup_0     31   
+System                                      1.0 MHz       1000.000      system                                 system_clkgroup           2    
+==============================================================================================================================================
+
+@W: MT531 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":74:1:74:4|Found signal identified as System clock which controls 2 sequential elements including u1.B_state.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":32:0:32:5|Found inferred clock Digtal_Calender|clk which controls 121 sequential elements including u1.cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+Encoding state machine state[5:0] (in view: work.DS1340Z_driver(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 09:54:06 2019
+
+###########################################################]

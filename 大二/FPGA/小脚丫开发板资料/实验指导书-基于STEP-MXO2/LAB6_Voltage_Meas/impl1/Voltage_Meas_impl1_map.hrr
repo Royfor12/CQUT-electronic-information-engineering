@@ -1,0 +1,52 @@
+---------------------------------------------------
+Report for cell Voltage_Meas
+   Instance path: Voltage_Meas
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     118.00        100.0
+                                  LUT4	     218.00        100.0
+                                 IOBUF	         23        100.0
+                                PFUREG	         24        100.0
+                                RIPPLE	          9        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   pll	          1         0.0
+                            bin_to_bcd	          1        74.2
+                        Segment_led_U0	          1         1.3
+                           Segment_led	          1         3.4
+                     ADC081S101_driver	          1        12.3
+---------------------------------------------------
+Report for cell Segment_led_U0
+   Instance path: Voltage_Meas/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         1.3
+                                  LUT4	       3.00         1.4
+---------------------------------------------------
+Report for cell Segment_led
+   Instance path: Voltage_Meas/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         3.4
+                                  LUT4	       8.00         3.7
+---------------------------------------------------
+Report for cell bin_to_bcd
+   Instance path: Voltage_Meas/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      87.50        74.2
+                                  LUT4	     176.83        81.1
+---------------------------------------------------
+Report for cell pll
+   Instance path: Voltage_Meas/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ADC081S101_driver
+   Instance path: Voltage_Meas/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.50        12.3
+                                  LUT4	      18.00         8.3
+                                PFUREG	         24        100.0
+                                RIPPLE	          4        44.4

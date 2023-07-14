@@ -1,0 +1,77 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09L
+#--  Project file F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\impl1\impl1_syn.prj
+#--  Written on Tue Jan 29 10:33:01 2019
+
+
+#project files
+add_file -verilog "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Param_define.v"
+add_file -verilog "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Screen_Saver.v"
+add_file -verilog "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/step_rom.v"
+add_file -verilog "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/pll_mxo2/pll_mxo2.v"
+add_file -verilog "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Vga_Module.v"
+
+
+
+#implementation: "impl1"
+impl -add impl1 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std sysv
+set_option -project_relative_includes 1
+set_option -include_path {F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver}
+
+#device options
+set_option -technology MACHXO2
+set_option -part LCMXO2_4000HC
+set_option -package MG132C
+set_option -speed_grade -4
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr no
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./impl1.edi"
+impl -active "impl1"

@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seg_rck",
+					"strict" : false
+				},
+				{
+					"name" : "seg_sck",
+					"strict" : false
+				},
+				{
+					"name" : "seg_din",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "key_blue",
+					"strict" : false
+				},
+				{
+					"name" : "key_red",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

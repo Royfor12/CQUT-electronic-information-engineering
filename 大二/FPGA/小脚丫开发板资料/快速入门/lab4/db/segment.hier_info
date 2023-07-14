@@ -1,0 +1,29 @@
+|segment
+seg_data_1[0] => seg.RADDR
+seg_data_1[1] => seg.RADDR1
+seg_data_1[2] => seg.RADDR2
+seg_data_1[3] => seg.RADDR3
+seg_data_2[0] => seg.PORTBRADDR
+seg_data_2[1] => seg.PORTBRADDR1
+seg_data_2[2] => seg.PORTBRADDR2
+seg_data_2[3] => seg.PORTBRADDR3
+seg_led_1[0] << seg.DATAOUT
+seg_led_1[1] << seg.DATAOUT1
+seg_led_1[2] << seg.DATAOUT2
+seg_led_1[3] << seg.DATAOUT3
+seg_led_1[4] << seg.DATAOUT4
+seg_led_1[5] << seg.DATAOUT5
+seg_led_1[6] << seg.DATAOUT6
+seg_led_1[7] << seg.DATAOUT7
+seg_led_1[8] << seg.DATAOUT8
+seg_led_2[0] << seg.PORTBDATAOUT
+seg_led_2[1] << seg.PORTBDATAOUT1
+seg_led_2[2] << seg.PORTBDATAOUT2
+seg_led_2[3] << seg.PORTBDATAOUT3
+seg_led_2[4] << seg.PORTBDATAOUT4
+seg_led_2[5] << seg.PORTBDATAOUT5
+seg_led_2[6] << seg.PORTBDATAOUT6
+seg_led_2[7] << seg.PORTBDATAOUT7
+seg_led_2[8] << seg.PORTBDATAOUT8
+
+

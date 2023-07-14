@@ -1,0 +1,21 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\pll_mxo2\pll_mxo2.v":8:7:8:14|Synthesizing module pll_mxo2 in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":18:7:18:16|Synthesizing module Vga_Module in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":58:19:58:23|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":79:14:79:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":101:16:101:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":110:15:110:19|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":117:16:117:21|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":126:15:126:19|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\step_rom.v":2:7:2:14|Synthesizing module step_rom in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Synthesizing module Screen_Saver in library work.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Vga_Module.v":138:0:138:5|Trying to extract state machine for register color.
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Selected library: work cell: Screen_Saver view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\Screen_Saver.v":21:7:21:18|Selected library: work cell: Screen_Saver view verilog as top level
+

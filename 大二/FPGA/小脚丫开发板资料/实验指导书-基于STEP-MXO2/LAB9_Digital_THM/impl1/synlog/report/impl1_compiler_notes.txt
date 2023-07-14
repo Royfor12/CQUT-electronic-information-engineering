@@ -1,0 +1,144 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":18:7:18:18|Synthesizing module SHT20_Driver in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":146:56:146:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":149:56:149:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":161:53:161:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":168:54:168:56|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":171:54:171:56|Removing redundant assignment.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit reg_addr[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit reg_addr[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit reg_addr[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit reg_addr[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit dev_addr[6] is always 1.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\bin_to_bcd.v":18:7:18:16|Synthesizing module bin_to_bcd in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Calculate.v":18:7:18:15|Synthesizing module Calculate in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":18:7:18:18|Synthesizing module Segment_scan in library work.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_2_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_3_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_4_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_5_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_6_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_7_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_8_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_9_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_10_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_11_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_12_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_13_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_14_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":48:0:48:5|Register bit seg_15_[6] is always 1.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Digital_THM.v":18:7:18:17|Synthesizing module Digital_THM in library work.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Segment_scan.v":89:0:89:5|Trying to extract state machine for register state.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Register bit data_wr[7] is always 1.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\SHT20_Driver.v":66:1:66:6|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Digital_THM.v":18:7:18:17|Selected library: work cell: Digital_THM view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\Digital_THM.v":18:7:18:17|Selected library: work cell: Digital_THM view verilog as top level
+

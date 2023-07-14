@@ -1,0 +1,13 @@
+
+
+F:/data/FPGA/exp5/music.v
+
+Dec 07 02PM:38:46>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+music.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

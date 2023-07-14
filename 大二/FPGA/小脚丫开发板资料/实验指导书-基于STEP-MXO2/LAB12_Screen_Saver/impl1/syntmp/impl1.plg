@@ -1,0 +1,16 @@
+@P:  Worst Slack : -1.305
+@P:  pll_mxo2|CLKOP_inferred_clock - Estimated Frequency : 114.9 MHz
+@P:  pll_mxo2|CLKOP_inferred_clock - Requested Frequency : 135.2 MHz
+@P:  pll_mxo2|CLKOP_inferred_clock - Estimated Period : 8.700
+@P:  pll_mxo2|CLKOP_inferred_clock - Requested Period : 7.395
+@P:  pll_mxo2|CLKOP_inferred_clock - Slack : -1.305
+@P:  System - Estimated Frequency : NA
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : NA
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : NA
+@P:  Total Area : 177.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:04s

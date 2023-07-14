@@ -1,0 +1,10 @@
+#Start recording tcl command: 2/12/2019 09:09:43
+#Project Location: C:/Users/wanga/Desktop/LAB8_Prox_Detect; Project name: Prox_Detect
+prj_project open "C:/Users/wanga/Desktop/LAB8_Prox_Detect/Prox_Detect.ldf"
+prj_run Translate -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Export -impl impl1
+#Stop recording: 2/12/2019 09:13:03

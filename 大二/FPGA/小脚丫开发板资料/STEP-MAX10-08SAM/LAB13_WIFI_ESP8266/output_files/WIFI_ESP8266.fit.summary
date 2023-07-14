@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Aug 15 16:04:34 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : WIFI_ESP8266
+Top-level Entity Name : WIFI_ESP8266
+Family : MAX 10
+Device : 10M08SAM153C8G
+Timing Models : Final
+Total logic elements : 544 / 8,064 ( 7 % )
+    Total combinational functions : 524 / 8,064 ( 6 % )
+    Dedicated logic registers : 223 / 8,064 ( 3 % )
+Total registers : 223
+Total pins : 8 / 112 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,68 @@
+// --------------------------------------------------------------------
+// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
+// --------------------------------------------------------------------
+// Module: Amp_Adjust
+// 
+// Author: Step
+// 
+// Description: Amp_Adjust
+// 
+// Web: www.stepfapga.com
+// 
+// --------------------------------------------------------------------
+// Code Revision History :
+// --------------------------------------------------------------------
+// Version: |Mod. Date:   |Changes Made:
+// V1.0     |2016/04/20   |Initial ver
+// --------------------------------------------------------------------
+module Amp_Adjust 
+(
+input					clk_in,
+input					rst_n_in,
+input					key_a,		// 
+input					key_b,		// 
+input					key_ok,		// 
+output	reg		[7:0]	led_out
+);
+
+localparam				S0	=	8'b1111_1111;
+localparam				S1	=	8'b0111_1111;
+localparam				S2	=	8'b0011_1111;
+localparam				S3	=	8'b0001_1111;
+localparam				S4	=	8'b0000_1111;
+localparam				S5	=	8'b0000_0111;
+localparam				S6	=	8'b0000_0011;
+localparam				S7	=	8'b0000_0001;
+localparam				S8	=	8'b0000_0000;
+
+wire					Left_pulse,Right_pulse;
+//Encoder module
+Encoder Encoder_uut
+(
+.clk_in					(clk_in				),		// system clock
+.rst_n_in				(rst_n_in			),		// system reset, active low
+.key_a					(key_a				),		// 
+.key_b					(key_b				),		// 
+.key_ok					(key_ok				),		// 
+.Left_pulse				(Left_pulse			),		//
+.Right_pulse			(Right_pulse		),		// 
+.OK_pulse				(OK_pulse			)		// 
+);
+
+always@(posedge clk_in or negedge rst_n_in) begin
+	if(!rst_n_in || OK_pulse) led_out <= S0;
+	else case(led_out)
+			S0: begin if(Left_pulse) led_out<= S0; else if(Right_pulse) led_out<= S1; end
+			S1: begin if(Left_pulse) led_out<= S0; else if(Right_pulse) led_out<= S2; end
+			S2: begin if(Left_pulse) led_out<= S1; else if(Right_pulse) led_out<= S3; end
+			S3: begin if(Left_pulse) led_out<= S2; else if(Right_pulse) led_out<= S4; end
+			S4: begin if(Left_pulse) led_out<= S3; else if(Right_pulse) led_out<= S5; end
+			S5: begin if(Left_pulse) led_out<= S4; else if(Right_pulse) led_out<= S6; end
+			S6: begin if(Left_pulse) led_out<= S5; else if(Right_pulse) led_out<= S7; end
+			S7: begin if(Left_pulse) led_out<= S6; else if(Right_pulse) led_out<= S8; end
+			S8: begin if(Left_pulse) led_out<= S7; else if(Right_pulse) led_out<= S8; end
+			default: led_out<= led_out;
+		endcase
+end
+
+endmodule

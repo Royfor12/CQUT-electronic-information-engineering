@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Jan 07 13:52:40 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : traffic
+Top-level Entity Name : traffic
+Family : MAX 10
+Device : 10M08SCM153C8G
+Power Models : Final
+Total Thermal Power Dissipation : 115.18 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 110.73 mW
+I/O Thermal Power Dissipation : 4.44 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

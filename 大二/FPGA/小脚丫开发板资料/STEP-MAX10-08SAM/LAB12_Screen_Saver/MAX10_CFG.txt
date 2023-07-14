@@ -1,0 +1,14 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//vga管脚，与lcd管脚复用
+vga[0]		,	PIN_R11
+vga[1]		,	PIN_P12
+vga[2]		,	PIN_R14
+sync_h		,	PIN_P15
+sync_v		,	PIN_D7

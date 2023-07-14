@@ -1,0 +1,817 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Tue Jan 29 09:36:51 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Prox_Detect
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":18:7:18:22|Synthesizing module APDS_9901_Driver in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":155:56:155:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":158:56:158:58|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":170:53:170:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":177:54:177:56|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":180:54:180:56|Removing redundant assignment.
+@W: CL265 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Removing unused bit 7 of dev_addr[7:0]. Either assign all bits or reduce the width of the signal.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dev_addr[6:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal reg_data[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal reg_addr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal prox_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal data_wr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal data_r[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_valid. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_l[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal dat_h[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal ch1_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Feedback mux created for signal ch0_dat[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit reg_addr[7] is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit state_back[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Register bit dev_addr[6] is always 0.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 7 to 6 of reg_addr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 3 to 2 of state_back[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":29:89:29:97|Removing redundant assignment.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":26:0:26:5|Pruning register bits 15 to 10 of prox_dat2[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Decoder.v":26:0:26:5|Pruning register bits 6 to 0 of prox_dat2[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Synthesizing module Prox_Detect in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_mode1[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_start[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_stop[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt_write[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Optimizing register bit cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_write[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_read[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_stop[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_start[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 3 of cnt_mode1[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":50:1:50:6|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 9 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bit 5 of reg_addr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 7 to 6 of reg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\APDS_9901_Driver.v":68:1:68:6|Pruning register bits 3 to 2 of reg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 84MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:52 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\Prox_Detect.v":18:7:18:17|Selected library: work cell: Prox_Detect view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:36:54 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Jan 29 09:36:54 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch0_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch1_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Prox_Detect
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                         Requested     Requested     Clock                                                        Clock                     Clock
+Clock                                         Frequency     Period        Type                                                         Group                     Load 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+APDS_9901_Driver|clk_400khz_derived_clock     1.0 MHz       1000.000      derived (from Prox_Detect|clk)                               Autoconstr_clkgroup_0     149  
+APDS_9901_Driver|dat_valid_derived_clock      1.0 MHz       1000.000      derived (from APDS_9901_Driver|clk_400khz_derived_clock)     Autoconstr_clkgroup_0     35   
+Prox_Detect|clk                               1.0 MHz       1000.000      inferred                                                     Autoconstr_clkgroup_0     5    
+======================================================================================================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":50:1:50:6|Found inferred clock Prox_Detect|clk which controls 5 sequential elements including u1.cnt_400khz[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine state[8:0] (in view: work.APDS_9901_Driver(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0100 -> 000010000
+   0101 -> 000100000
+   0110 -> 001000000
+   0111 -> 010000000
+   1000 -> 100000000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 161MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 161MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 09:36:55 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Jan 29 09:36:55 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine state[8:0] (in view: work.APDS_9901_Driver(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0100 -> 000010000
+   0101 -> 000100000
+   0110 -> 001000000
+   0111 -> 010000000
+   1000 -> 100000000
+@N: MO231 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Found counter in view:work.APDS_9901_Driver(verilog) instance cnt_delay[23:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Found counter in view:work.APDS_9901_Driver(verilog) instance cnt_mode2[3:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Found counter in view:work.APDS_9901_Driver(verilog) instance cnt_main[3:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[23] because it is equivalent to instance u1.num_delay[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[22] because it is equivalent to instance u1.num_delay[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[21] because it is equivalent to instance u1.num_delay[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[20] because it is equivalent to instance u1.num_delay[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[19] because it is equivalent to instance u1.num_delay[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[18] because it is equivalent to instance u1.num_delay[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[17] because it is equivalent to instance u1.num_delay[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[16] because it is equivalent to instance u1.num_delay[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[15] because it is equivalent to instance u1.num_delay[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing instance u1.num_delay[14] because it is equivalent to instance u1.num_delay[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance num_delay[0] (in view: work.APDS_9901_Driver(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 161MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 151MB peak: 161MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 161MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 149MB peak: 161MB)
+
+@N: FA113 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":54:14:54:37|Pipelining module un1_cnt_400khz. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":50:1:50:6|Pushed in register cnt_400khz[3:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 150MB peak: 161MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 161MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 161MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 161MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 165MB peak: 167MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.85ns		 295 /       167
+   2		0h:00m:01s		    -2.85ns		 290 /       167
+   3		0h:00m:01s		    -2.23ns		 290 /       167
+@N: FX271 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Replicating instance u1.num_delay[12] (in view: work.Prox_Detect(verilog)) with 4 loads 1 time to improve timing.
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+   4		0h:00m:02s		    -2.13ns		 291 /       168
+   5		0h:00m:02s		    -1.69ns		 293 /       168
+   6		0h:00m:02s		    -1.80ns		 293 /       168
+
+
+   7		0h:00m:02s		    -2.13ns		 291 /       168
+   8		0h:00m:02s		    -1.54ns		 292 /       168
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 166MB peak: 167MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance u1.num_delay[12] (in view: work.Prox_Detect(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance u1.num_delay_fast[12] (in view: work.Prox_Detect(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 166MB peak: 167MB)
+
+@N: MT611 :|Automatically generated clock APDS_9901_Driver|clk_400khz_derived_clock is not used and is being removed
+@N: MT617 :|Automatically generated clock APDS_9901_Driver|dat_valid_derived_clock has lost its master clock APDS_9901_Driver|clk_400khz_derived_clock and is being removed
+@N: MT611 :|Automatically generated clock APDS_9901_Driver|dat_valid_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 166 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+160 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   166        u1.dat_h[7]    
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 131MB peak: 167MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 164MB peak: 167MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 170MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 167MB peak: 170MB)
+
+@W: MT420 |Found inferred clock Prox_Detect|clk with period 6.49ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 09:36:58 2019
+#
+
+
+Top view:               Prox_Detect
+Requested Frequency:    154.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.145
+
+                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+Prox_Detect|clk     154.1 MHz     131.0 MHz     6.490         7.635         -1.145     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------
+Prox_Detect|clk  Prox_Detect|clk  |  6.490       -1.145  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Prox_Detect|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                 Arrival           
+Instance            Reference           Type        Pin     Net              Time        Slack 
+                    Clock                                                                      
+-----------------------------------------------------------------------------------------------
+u2.prox_dat0[0]     Prox_Detect|clk     FD1P3AX     Q       prox_dat0[0]     1.044       -1.145
+u2.prox_dat1[0]     Prox_Detect|clk     FD1P3AX     Q       prox_dat1[0]     0.972       -1.073
+u2.prox_dat0[1]     Prox_Detect|clk     FD1P3AX     Q       prox_dat0[1]     1.044       -1.002
+u2.prox_dat0[2]     Prox_Detect|clk     FD1P3AX     Q       prox_dat0[2]     1.044       -1.002
+u2.prox_dat1[1]     Prox_Detect|clk     FD1P3AX     Q       prox_dat1[1]     0.972       -0.930
+u2.prox_dat1[2]     Prox_Detect|clk     FD1P3AX     Q       prox_dat1[2]     0.972       -0.930
+u2.prox_dat0[3]     Prox_Detect|clk     FD1P3AX     Q       prox_dat0[3]     1.044       -0.860
+u2.prox_dat0[4]     Prox_Detect|clk     FD1P3AX     Q       prox_dat0[4]     1.044       -0.860
+u1.cnt_delay[6]     Prox_Detect|clk     FD1P3DX     Q       cnt_delay[6]     1.044       -0.829
+u2.prox_dat1[3]     Prox_Detect|clk     FD1P3AX     Q       prox_dat1[3]     0.972       -0.788
+===============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                                      Required           
+Instance            Reference           Type        Pin     Net                                   Time         Slack 
+                    Clock                                                                                            
+---------------------------------------------------------------------------------------------------------------------
+u2.prox_dat2[7]     Prox_Detect|clk     FD1P3AX     SP      un1_prox_dat0_1_cry_13_0_RNI76T73     6.018        -1.145
+u2.prox_dat2[8]     Prox_Detect|clk     FD1P3AX     SP      un1_prox_dat0_1_cry_13_0_RNI76T73     6.018        -1.145
+u2.prox_dat2[9]     Prox_Detect|clk     FD1P3AX     SP      un1_prox_dat0_1_cry_13_0_RNI76T73     6.018        -1.145
+u1.cnt_delay[0]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[1]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[2]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[3]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[4]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[5]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+u1.cnt_delay[6]     Prox_Detect|clk     FD1P3DX     SP      un1_cnt_delay_cry_23_0_RNIL5PR8       6.018        -0.829
+=====================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      6.490
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.018
+
+    - Propagation time:                      7.164
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.145
+
+    Number of logic level(s):                10
+    Starting point:                          u2.prox_dat0[0] / Q
+    Ending point:                            u2.prox_dat2[7] / SP
+    The start point is clocked by            Prox_Detect|clk [rising] on pin CK
+    The end   point is clocked by            Prox_Detect|clk [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+u2.prox_dat0[0]                          FD1P3AX      Q        Out     1.044     1.044       -         
+prox_dat0[0]                             Net          -        -       -         -           2         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        B1       In      0.000     1.044       -         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        COUT     Out     1.545     2.588       -         
+un1_prox_dat0_1_cry_0                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        COUT     Out     0.143     2.731       -         
+un1_prox_dat0_1_cry_2                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        COUT     Out     0.143     2.874       -         
+un1_prox_dat0_1_cry_4                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        COUT     Out     0.143     3.017       -         
+un1_prox_dat0_1_cry_6                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        COUT     Out     0.143     3.160       -         
+un1_prox_dat0_1_cry_8                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        COUT     Out     0.143     3.302       -         
+un1_prox_dat0_1_cry_10                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        COUT     Out     0.143     3.445       -         
+un1_prox_dat0_1_cry_12                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        S1       Out     1.549     4.994       -         
+un1_prox_dat0_1[14]                      Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     B        In      0.000     4.994       -         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     Z        Out     1.017     6.011       -         
+prox_dat2_cnv_1[7]                       Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     A        In      0.000     6.011       -         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     Z        Out     1.153     7.164       -         
+un1_prox_dat0_1_cry_13_0_RNI76T73        Net          -        -       -         -           3         
+u2.prox_dat2[7]                          FD1P3AX      SP       In      0.000     7.164       -         
+=======================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      6.490
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.018
+
+    - Propagation time:                      7.164
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.145
+
+    Number of logic level(s):                10
+    Starting point:                          u2.prox_dat0[0] / Q
+    Ending point:                            u2.prox_dat2[9] / SP
+    The start point is clocked by            Prox_Detect|clk [rising] on pin CK
+    The end   point is clocked by            Prox_Detect|clk [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+u2.prox_dat0[0]                          FD1P3AX      Q        Out     1.044     1.044       -         
+prox_dat0[0]                             Net          -        -       -         -           2         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        B1       In      0.000     1.044       -         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        COUT     Out     1.545     2.588       -         
+un1_prox_dat0_1_cry_0                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        COUT     Out     0.143     2.731       -         
+un1_prox_dat0_1_cry_2                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        COUT     Out     0.143     2.874       -         
+un1_prox_dat0_1_cry_4                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        COUT     Out     0.143     3.017       -         
+un1_prox_dat0_1_cry_6                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        COUT     Out     0.143     3.160       -         
+un1_prox_dat0_1_cry_8                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        COUT     Out     0.143     3.302       -         
+un1_prox_dat0_1_cry_10                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        COUT     Out     0.143     3.445       -         
+un1_prox_dat0_1_cry_12                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        S1       Out     1.549     4.994       -         
+un1_prox_dat0_1[14]                      Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     B        In      0.000     4.994       -         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     Z        Out     1.017     6.011       -         
+prox_dat2_cnv_1[7]                       Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     A        In      0.000     6.011       -         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     Z        Out     1.153     7.164       -         
+un1_prox_dat0_1_cry_13_0_RNI76T73        Net          -        -       -         -           3         
+u2.prox_dat2[9]                          FD1P3AX      SP       In      0.000     7.164       -         
+=======================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      6.490
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.018
+
+    - Propagation time:                      7.164
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.145
+
+    Number of logic level(s):                10
+    Starting point:                          u2.prox_dat0[0] / Q
+    Ending point:                            u2.prox_dat2[8] / SP
+    The start point is clocked by            Prox_Detect|clk [rising] on pin CK
+    The end   point is clocked by            Prox_Detect|clk [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+u2.prox_dat0[0]                          FD1P3AX      Q        Out     1.044     1.044       -         
+prox_dat0[0]                             Net          -        -       -         -           2         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        B1       In      0.000     1.044       -         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        COUT     Out     1.545     2.588       -         
+un1_prox_dat0_1_cry_0                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        COUT     Out     0.143     2.731       -         
+un1_prox_dat0_1_cry_2                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        COUT     Out     0.143     2.874       -         
+un1_prox_dat0_1_cry_4                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        COUT     Out     0.143     3.017       -         
+un1_prox_dat0_1_cry_6                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        COUT     Out     0.143     3.160       -         
+un1_prox_dat0_1_cry_8                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        COUT     Out     0.143     3.302       -         
+un1_prox_dat0_1_cry_10                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        COUT     Out     0.143     3.445       -         
+un1_prox_dat0_1_cry_12                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        S1       Out     1.549     4.994       -         
+un1_prox_dat0_1[14]                      Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     B        In      0.000     4.994       -         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     Z        Out     1.017     6.011       -         
+prox_dat2_cnv_1[7]                       Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     A        In      0.000     6.011       -         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     Z        Out     1.153     7.164       -         
+un1_prox_dat0_1_cry_13_0_RNI76T73        Net          -        -       -         -           3         
+u2.prox_dat2[8]                          FD1P3AX      SP       In      0.000     7.164       -         
+=======================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      6.490
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.018
+
+    - Propagation time:                      7.092
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.073
+
+    Number of logic level(s):                10
+    Starting point:                          u2.prox_dat1[0] / Q
+    Ending point:                            u2.prox_dat2[7] / SP
+    The start point is clocked by            Prox_Detect|clk [rising] on pin CK
+    The end   point is clocked by            Prox_Detect|clk [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+u2.prox_dat1[0]                          FD1P3AX      Q        Out     0.972     0.972       -         
+prox_dat1[0]                             Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        A1       In      0.000     0.972       -         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        COUT     Out     1.545     2.516       -         
+un1_prox_dat0_1_cry_0                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        CIN      In      0.000     2.516       -         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        COUT     Out     0.143     2.659       -         
+un1_prox_dat0_1_cry_2                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        CIN      In      0.000     2.659       -         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        COUT     Out     0.143     2.802       -         
+un1_prox_dat0_1_cry_4                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        CIN      In      0.000     2.802       -         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        COUT     Out     0.143     2.945       -         
+un1_prox_dat0_1_cry_6                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        CIN      In      0.000     2.945       -         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        COUT     Out     0.143     3.087       -         
+un1_prox_dat0_1_cry_8                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        CIN      In      0.000     3.087       -         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        COUT     Out     0.143     3.230       -         
+un1_prox_dat0_1_cry_10                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        CIN      In      0.000     3.230       -         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        COUT     Out     0.143     3.373       -         
+un1_prox_dat0_1_cry_12                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        CIN      In      0.000     3.373       -         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        S1       Out     1.549     4.922       -         
+un1_prox_dat0_1[14]                      Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     B        In      0.000     4.922       -         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     Z        Out     1.017     5.939       -         
+prox_dat2_cnv_1[7]                       Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     A        In      0.000     5.939       -         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     Z        Out     1.153     7.092       -         
+un1_prox_dat0_1_cry_13_0_RNI76T73        Net          -        -       -         -           3         
+u2.prox_dat2[7]                          FD1P3AX      SP       In      0.000     7.092       -         
+=======================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      6.490
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.018
+
+    - Propagation time:                      7.092
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.073
+
+    Number of logic level(s):                10
+    Starting point:                          u2.prox_dat1[0] / Q
+    Ending point:                            u2.prox_dat2[9] / SP
+    The start point is clocked by            Prox_Detect|clk [rising] on pin CK
+    The end   point is clocked by            Prox_Detect|clk [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+u2.prox_dat1[0]                          FD1P3AX      Q        Out     0.972     0.972       -         
+prox_dat1[0]                             Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        A1       In      0.000     0.972       -         
+u2.un1_prox_dat0_1_cry_0_0               CCU2D        COUT     Out     1.545     2.516       -         
+un1_prox_dat0_1_cry_0                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        CIN      In      0.000     2.516       -         
+u2.un1_prox_dat0_1_cry_1_0               CCU2D        COUT     Out     0.143     2.659       -         
+un1_prox_dat0_1_cry_2                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        CIN      In      0.000     2.659       -         
+u2.un1_prox_dat0_1_cry_3_0               CCU2D        COUT     Out     0.143     2.802       -         
+un1_prox_dat0_1_cry_4                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        CIN      In      0.000     2.802       -         
+u2.un1_prox_dat0_1_cry_5_0               CCU2D        COUT     Out     0.143     2.945       -         
+un1_prox_dat0_1_cry_6                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        CIN      In      0.000     2.945       -         
+u2.un1_prox_dat0_1_cry_7_0               CCU2D        COUT     Out     0.143     3.087       -         
+un1_prox_dat0_1_cry_8                    Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        CIN      In      0.000     3.087       -         
+u2.un1_prox_dat0_1_cry_9_0               CCU2D        COUT     Out     0.143     3.230       -         
+un1_prox_dat0_1_cry_10                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        CIN      In      0.000     3.230       -         
+u2.un1_prox_dat0_1_cry_11_0              CCU2D        COUT     Out     0.143     3.373       -         
+un1_prox_dat0_1_cry_12                   Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        CIN      In      0.000     3.373       -         
+u2.un1_prox_dat0_1_cry_13_0              CCU2D        S1       Out     1.549     4.922       -         
+un1_prox_dat0_1[14]                      Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     B        In      0.000     4.922       -         
+u2.un1_prox_dat0_1_cry_13_0_RNIA3R52     ORCALUT4     Z        Out     1.017     5.939       -         
+prox_dat2_cnv_1[7]                       Net          -        -       -         -           1         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     A        In      0.000     5.939       -         
+u2.un1_prox_dat0_1_cry_13_0_RNI76T73     ORCALUT4     Z        Out     1.153     7.092       -         
+un1_prox_dat0_1_cry_13_0_RNI76T73        Net          -        -       -         -           3         
+u2.prox_dat2[9]                          FD1P3AX      SP       In      0.000     7.092       -         
+=======================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 170MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 170MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 166 of 4320 (4%)
+PIC Latch:       0
+I/O cells:       12
+
+
+Details:
+BB:             1
+CCU2D:          32
+FD1P3AX:        92
+FD1P3BX:        4
+FD1P3DX:        62
+FD1S3BX:        1
+FD1S3DX:        5
+GSR:            1
+IB:             2
+IFS1P3DX:       1
+INV:            2
+L6MUX21:        1
+OB:             9
+OFS1P3BX:       1
+ORCALUT4:       288
+PFUMX:          3
+PUR:            1
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 35MB peak: 170MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Tue Jan 29 09:36:58 2019
+
+###########################################################]

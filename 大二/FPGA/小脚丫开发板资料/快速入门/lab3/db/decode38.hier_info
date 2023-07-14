@@ -1,0 +1,14 @@
+|decode38
+sw[0] => Decoder0.IN2
+sw[1] => Decoder0.IN1
+sw[2] => Decoder0.IN0
+led[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

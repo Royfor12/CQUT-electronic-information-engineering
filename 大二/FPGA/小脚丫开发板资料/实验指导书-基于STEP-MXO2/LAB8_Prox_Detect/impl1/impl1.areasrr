@@ -1,0 +1,63 @@
+----------------------------------------------------------------------
+Report for cell Prox_Detect.verilog
+
+Register bits: 166 of 4320 (4%)
+PIC Latch:       0
+I/O cells:       12
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        1       100.0
+                              CCU2D       32       100.0
+                            FD1P3AX       92       100.0
+                            FD1P3BX        4       100.0
+                            FD1P3DX       62       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        5       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                           IFS1P3DX        1       100.0
+                                INV        2       100.0
+                            L6MUX21        1       100.0
+                                 OB        9       100.0
+                           OFS1P3BX        1       100.0
+                           ORCALUT4      288       100.0
+                              PFUMX        3       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                   APDS_9901_Driver        1       100.0
+                            Decoder        1       100.0
+                            
+                         TOTAL           514           
+----------------------------------------------------------------------
+Report for cell APDS_9901_Driver.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       23        71.9
+                            FD1P3AX       57        62.0
+                            FD1P3BX        4       100.0
+                            FD1P3DX       62       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        5       100.0
+                            L6MUX21        1       100.0
+                           ORCALUT4      279        96.9
+                              PFUMX        3       100.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL           437           
+----------------------------------------------------------------------
+Report for cell Decoder.netlist
+     Instance path:  u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        28.1
+                            FD1P3AX       35        38.0
+                                INV        1        50.0
+                           ORCALUT4        9         3.1
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            56           

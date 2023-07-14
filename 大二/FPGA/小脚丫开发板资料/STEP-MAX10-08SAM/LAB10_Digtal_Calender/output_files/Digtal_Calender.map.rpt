@@ -1,0 +1,623 @@
+Analysis & Synthesis report for Digtal_Calender
+Tue Jun 26 13:35:02 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Digtal_Calender|Segment_scan:u5|state
+  9. State Machine - |Digtal_Calender|DS1340Z_driver:u4|state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: Debounce:u2
+ 16. Parameter Settings for User Entity Instance: DS1340Z_driver:u4
+ 17. Port Connectivity Checks: "Segment_scan:u5"
+ 18. Port Connectivity Checks: "Debounce:u2"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 26 13:35:02 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Digtal_Calender                             ;
+; Top-level Entity Name              ; Digtal_Calender                             ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 939                                         ;
+;     Total combinational functions  ; 869                                         ;
+;     Dedicated logic registers      ; 271                                         ;
+; Total registers                    ; 271                                         ;
+; Total pins                         ; 10                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                                      ; Digtal_Calender    ; Digtal_Calender    ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; Digtal_Calender.v                ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v ;         ;
+; Debounce.v                       ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Debounce.v        ;         ;
+; Encoder.v                        ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v         ;         ;
+; mode_ctrl.v                      ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/mode_ctrl.v       ;         ;
+; DS1340Z_driver.v                 ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/DS1340Z_driver.v  ;         ;
+; Segment_scan.v                   ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Segment_scan.v    ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 939         ;
+;                                             ;             ;
+; Total combinational functions               ; 869         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 499         ;
+;     -- 3 input functions                    ; 123         ;
+;     -- <=2 input functions                  ; 247         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 710         ;
+;     -- arithmetic mode                      ; 159         ;
+;                                             ;             ;
+; Total registers                             ; 271         ;
+;     -- Dedicated logic registers            ; 271         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 10          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; rst_n~input ;
+; Maximum fan-out                             ; 177         ;
+; Total fan-out                               ; 3873        ;
+; Average fan-out                             ; 3.34        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+; |Digtal_Calender           ; 869 (59)            ; 271 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 10   ; 0            ; 0          ; |Digtal_Calender                   ; Digtal_Calender ; work         ;
+;    |DS1340Z_driver:u4|     ; 209 (209)           ; 117 (117)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digtal_Calender|DS1340Z_driver:u4 ; DS1340Z_driver  ; work         ;
+;    |Debounce:u2|           ; 27 (27)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digtal_Calender|Debounce:u2       ; Debounce        ; work         ;
+;    |Encoder:u1|            ; 30 (30)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digtal_Calender|Encoder:u1        ; Encoder         ; work         ;
+;    |Segment_scan:u5|       ; 156 (156)           ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digtal_Calender|Segment_scan:u5   ; Segment_scan    ; work         ;
+;    |mode_ctrl:u3|          ; 388 (388)           ; 65 (65)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Digtal_Calender|mode_ctrl:u3      ; mode_ctrl       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------+
+; State Machine - |Digtal_Calender|Segment_scan:u5|state ;
++-------------+------------+-------------+---------------+
+; Name        ; state.IDLE ; state.WRITE ; state.MAIN    ;
++-------------+------------+-------------+---------------+
+; state.IDLE  ; 0          ; 0           ; 0             ;
+; state.MAIN  ; 1          ; 0           ; 1             ;
+; state.WRITE ; 1          ; 1           ; 0             ;
++-------------+------------+-------------+---------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------+
+; State Machine - |Digtal_Calender|DS1340Z_driver:u4|state                                    ;
++-------------+------------+------------+-------------+-------------+------------+------------+
+; Name        ; state.STOP ; state.READ ; state.WRITE ; state.START ; state.MAIN ; state.IDLE ;
++-------------+------------+------------+-------------+-------------+------------+------------+
+; state.IDLE  ; 0          ; 0          ; 0           ; 0           ; 0          ; 0          ;
+; state.MAIN  ; 0          ; 0          ; 0           ; 0           ; 1          ; 1          ;
+; state.START ; 0          ; 0          ; 0           ; 1           ; 0          ; 1          ;
+; state.WRITE ; 0          ; 0          ; 1           ; 0           ; 0          ; 1          ;
+; state.READ  ; 0          ; 1          ; 0           ; 0           ; 0          ; 1          ;
+; state.STOP  ; 1          ; 0          ; 0           ; 0           ; 0          ; 1          ;
++-------------+------------+------------+-------------+-------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; Encoder:u1|B_state                                 ; Encoder:u1|WideNor1 ; yes                    ;
+; Encoder:u1|A_state                                 ; Encoder:u1|WideNor0 ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; Segment_scan:u5|seg[0][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[0][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[1][0]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[1][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[1][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[1][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[1][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[1][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[1][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[2][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[2][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[2][2]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[2][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[2][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[2][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[2][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[3][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[3][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[3][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[3][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[3][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[3][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[3][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[4][0]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[4][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[4][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[4][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[4][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[4][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[4][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[5][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[5][1]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[5][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[5][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[5][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[5][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[5][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][1]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[6][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[6][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[7][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[7][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[7][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[7][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[7][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[7][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[7][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[8][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[8][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[9][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[9][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][1]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][3]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[10][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[10][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[11][0]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[11][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[11][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[11][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[11][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[11][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[11][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[12][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[12][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[12][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[12][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[12][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[12][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[12][6]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[13][0]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[13][1]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[13][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[13][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[13][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[13][5]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[13][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[14][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[14][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[14][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[14][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[14][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[14][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[14][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[15][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[15][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[15][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[15][3]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u5|seg[15][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[15][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|seg[15][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u5|state~9                 ; Lost fanout                            ;
+; DS1340Z_driver:u4|state~5               ; Lost fanout                            ;
+; DS1340Z_driver:u4|state~6               ; Lost fanout                            ;
+; DS1340Z_driver:u4|state~7               ; Lost fanout                            ;
+; Total Number of Removed Registers = 116 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 271   ;
+; Number of registers using Synchronous Clear  ; 68    ;
+; Number of registers using Synchronous Load   ; 43    ;
+; Number of registers using Asynchronous Clear ; 172   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 156   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; DS1340Z_driver:u4|cnt_main[2]           ; 30      ;
+; DS1340Z_driver:u4|cnt_main[3]           ; 33      ;
+; DS1340Z_driver:u4|scl_out_r             ; 7       ;
+; mode_ctrl:u3|disp_en[2]                 ; 4       ;
+; mode_ctrl:u3|disp_en[1]                 ; 4       ;
+; mode_ctrl:u3|disp_en[0]                 ; 6       ;
+; mode_ctrl:u3|adj_min[0]                 ; 8       ;
+; mode_ctrl:u3|adj_day[0]                 ; 15      ;
+; mode_ctrl:u3|adj_sec[0]                 ; 8       ;
+; mode_ctrl:u3|adj_week[0]                ; 7       ;
+; mode_ctrl:u3|adj_year[3]                ; 8       ;
+; mode_ctrl:u3|adj_year[4]                ; 12      ;
+; mode_ctrl:u3|adj_hour[0]                ; 7       ;
+; mode_ctrl:u3|adj_mon[0]                 ; 11      ;
+; DS1340Z_driver:u4|sda_out_r             ; 1       ;
+; DS1340Z_driver:u4|sda_out_r~en          ; 1       ;
+; Debounce:u2|key_jit[0]                  ; 7       ;
+; Debounce:u2|key_jit_r[0]                ; 5       ;
+; Total number of inverted registers = 18 ;         ;
++-----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; Yes        ; |Digtal_Calender|Segment_scan:u5|data[14]      ;
+; 64:1               ; 8 bits    ; 336 LEs       ; 64 LEs               ; 272 LEs                ; Yes        ; |Digtal_Calender|DS1340Z_driver:u4|data_wr[6]  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |Digtal_Calender|DS1340Z_driver:u4|cnt[2]      ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 9 LEs                ; 15 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_year[0]      ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_min[3]       ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_sec[3]       ;
+; 11:1               ; 7 bits    ; 49 LEs        ; 21 LEs               ; 28 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_week[4]      ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_hour[3]      ;
+; 15:1               ; 3 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_year[7]      ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_min[6]       ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_sec[5]       ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_hour[7]      ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_mon[2]       ;
+; 13:1               ; 3 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_mon[5]       ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_day[1]       ;
+; 19:1               ; 3 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |Digtal_Calender|mode_ctrl:u3|adj_day[6]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Digtal_Calender|DS1340Z_driver:u4|cnt_main[2] ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Digtal_Calender|data_5[3]                     ;
+; 73:1               ; 3 bits    ; 144 LEs       ; 42 LEs               ; 102 LEs                ; No         ; |Digtal_Calender|DS1340Z_driver:u4|Selector47  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Debounce:u2 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; KEY_WIDTH      ; 1     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DS1340Z_driver:u4 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; CNT_NUM        ; 15    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "Segment_scan:u5" ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; dot_en[7] ; Input ; Info     ; Stuck at GND ;
+; dot_en[5] ; Input ; Info     ; Stuck at GND ;
+; dot_en[4] ; Input ; Info     ; Stuck at VCC ;
+; dot_en[3] ; Input ; Info     ; Stuck at GND ;
+; dot_en[2] ; Input ; Info     ; Stuck at VCC ;
+; dot_en[1] ; Input ; Info     ; Stuck at GND ;
+; dot_en[0] ; Input ; Info     ; Stuck at VCC ;
++-----------+-------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Debounce:u2"                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; key_jit   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; key_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 10                          ;
+; cycloneiii_ff         ; 271                         ;
+;     CLR               ; 45                          ;
+;     CLR SCLR          ; 51                          ;
+;     ENA               ; 71                          ;
+;     ENA CLR           ; 25                          ;
+;     ENA CLR SCLR      ; 12                          ;
+;     ENA CLR SLD       ; 39                          ;
+;     ENA SCLR          ; 5                           ;
+;     ENA SLD           ; 4                           ;
+;     plain             ; 19                          ;
+; cycloneiii_io_obuf    ; 1                           ;
+; cycloneiii_lcell_comb ; 870                         ;
+;     arith             ; 159                         ;
+;         2 data inputs ; 159                         ;
+;     normal            ; 711                         ;
+;         1 data inputs ; 23                          ;
+;         2 data inputs ; 66                          ;
+;         3 data inputs ; 123                         ;
+;         4 data inputs ; 499                         ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.95                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Jun 26 13:34:48 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Digtal_Calender -c Digtal_Calender
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file digtal_calender.v
+    Info (12023): Found entity 1: Digtal_Calender File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.v
+    Info (12023): Found entity 1: Debounce File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Debounce.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
+    Info (12023): Found entity 1: Encoder File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file mode_ctrl.v
+    Info (12023): Found entity 1: mode_ctrl File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/mode_ctrl.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file ds1340z_driver.v
+    Info (12023): Found entity 1: DS1340Z_driver File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/DS1340Z_driver.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file segment_scan.v
+    Info (12023): Found entity 1: Segment_scan File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Segment_scan.v Line: 18
+Info (12127): Elaborating entity "Digtal_Calender" for the top level hierarchy
+Info (12128): Elaborating entity "Encoder" for hierarchy "Encoder:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 44
+Warning (10235): Verilog HDL Always Construct warning at Encoder.v(59): variable "A_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 59
+Warning (10240): Verilog HDL Always Construct warning at Encoder.v(55): inferring latch(es) for variable "A_state", which holds its previous value in one or more paths through the always construct File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 55
+Warning (10235): Verilog HDL Always Construct warning at Encoder.v(77): variable "B_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 77
+Warning (10240): Verilog HDL Always Construct warning at Encoder.v(73): inferring latch(es) for variable "B_state", which holds its previous value in one or more paths through the always construct File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 73
+Info (10041): Inferred latch for "B_state" at Encoder.v(73) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 73
+Info (10041): Inferred latch for "A_state" at Encoder.v(55) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 55
+Info (12128): Elaborating entity "Debounce" for hierarchy "Debounce:u2" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 56
+Info (12128): Elaborating entity "mode_ctrl" for hierarchy "mode_ctrl:u3" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 87
+Info (12128): Elaborating entity "DS1340Z_driver" for hierarchy "DS1340Z_driver:u4" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 112
+Info (12128): Elaborating entity "Segment_scan" for hierarchy "Segment_scan:u5" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Digtal_Calender.v Line: 139
+Warning (13012): Latch Encoder:u1|B_state has unsafe behavior File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 71
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Encoder:u1|key_b_r1 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 63
+Warning (13012): Latch Encoder:u1|A_state has unsafe behavior File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Encoder:u1|key_a_r1 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/Encoder.v Line: 45
+Info (13000): Registers with preset signals will power-up high File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/DS1340Z_driver.v Line: 106
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register DS1340Z_driver:u4|sda_out_r~en will power up to High File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/DS1340Z_driver.v Line: 82
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/output_files/Digtal_Calender.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 950 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 940 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Tue Jun 26 13:35:02 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:27
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in F:/Fpga_Project/BaseBoard3.0_Demo/LAB10_Digtal_Calender/output_files/Digtal_Calender.map.smsg.
+
+

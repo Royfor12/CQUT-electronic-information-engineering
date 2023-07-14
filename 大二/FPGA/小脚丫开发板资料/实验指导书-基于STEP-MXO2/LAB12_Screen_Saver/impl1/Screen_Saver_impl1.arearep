@@ -1,0 +1,59 @@
+----------------------------------------------------------------------
+Report for cell Screen_Saver.TECH
+Register bits:  106 of 4635 (2.287%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       100          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        82          100.0
+                            FD1P3AY        10          100.0
+                            FD1P3IX         3          100.0
+                            FD1S3AX         4          100.0
+                            FD1S3AY         4          100.0
+                            FD1S3IX         2          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                            L6MUX21        19          100.0
+                               LUT4       393          100.0
+                                 OB         5          100.0
+                              PFUMX        82          100.0
+                          ROM128X1A         6          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                         Vga_Module         1
+                           pll_mxo2         1
+                           step_rom         1
+                              TOTAL       719
+----------------------------------------------------------------------
+Report for cell step_rom.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       212           53.9
+                              PFUMX        25           30.5
+                              TOTAL       237
+----------------------------------------------------------------------
+Report for cell Vga_Module.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        82           82.0
+                            FD1P3AX        82          100.0
+                            FD1P3AY        10          100.0
+                            FD1P3IX         3          100.0
+                            FD1S3AX         3           75.0
+                            FD1S3AY         4          100.0
+                            FD1S3JX         1          100.0
+                            L6MUX21        19          100.0
+                               LUT4       172           43.8
+                              PFUMX        57           69.5
+                              TOTAL       433
+----------------------------------------------------------------------
+Report for cell pll_mxo2.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

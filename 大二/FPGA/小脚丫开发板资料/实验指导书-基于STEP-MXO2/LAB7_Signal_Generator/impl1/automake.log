@@ -1,0 +1,666 @@
+
+synthesis -f "Signal_Generator_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jan 25 16:52:17 2019
+
+
+Command Line:  synthesis -f Signal_Generator_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = Signal_Generator.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator (searchpath added)
+-p C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/impl1 (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator (searchpath added)
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Signal_Generator.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Encoder.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Debounce.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/logic_ctrl.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/DDS.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/rom/rom.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/DAC081S101_driver.v
+NGD file = Signal_Generator_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/encoder.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/debounce.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/dds.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/rom/rom.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab7_signal_generator/dac081s101_driver.v. VERI-1482
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Signal_Generator
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v(18): " arg1="Signal_Generator" arg2="f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(18): " arg1="Encoder" arg2="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v" arg3="18"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(59): " arg1="A_state" arg2="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v" arg3="59"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(77): " arg1="B_state" arg2="f:/fpga_project/baseboard/lab7_signal_generator/encoder.v" arg3="77"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/debounce.v(18): " arg1="Debounce" arg2="f:/fpga_project/baseboard/lab7_signal_generator/debounce.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v(18): " arg1="logic_ctrl" arg2="f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/dds.v(18): " arg1="DDS" arg2="f:/fpga_project/baseboard/lab7_signal_generator/dds.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/rom/rom.v(8): " arg1="rom" arg2="f:/fpga_project/baseboard/lab7_signal_generator/rom/rom.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_1" arg2="C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901330" type="Warning" dynamic="4" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v(76): " arg1="1" arg2="24" arg3="p_inc" arg4="f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v" arg5="76"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/dac081s101_driver.v(18): " arg1="DAC081S101_driver" arg2="f:/fpga_project/baseboard/lab7_signal_generator/dac081s101_driver.v" arg3="18"  />
+Last elaborated design is Signal_Generator()
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Signal_Generator.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u3/wave" arg1="one-hot"  />
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v(56): " arg1="\u3/f_inc_i13" arg2="f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v" arg3="56"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="f:/fpga_project/baseboard/lab7_signal_generator/dds.v(35): " arg1="\u4/phase_acc_478__i15" arg2="f:/fpga_project/baseboard/lab7_signal_generator/dds.v" arg3="35"  />
+GSR instance connected to net rst_n_c.
+Applying 1.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in Signal_Generator_drc.log.
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    217 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Signal_Generator_impl1.ngd.
+
+################### Begin Area Report (Signal_Generator)######################
+Number of register bits => 86 of 4635 (1 % )
+CCU2D => 30
+DP8KC => 1
+FD1P3AX => 13
+FD1P3AY => 2
+FD1S1A => 2
+FD1S3AX => 28
+FD1S3AY => 4
+FD1S3IX => 37
+GSR => 1
+IB => 5
+LUT4 => 78
+OB => 3
+PFUMX => 10
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : clk_c, loads : 70
+  Net : u5/dac_done, loads : 9
+  Net : u1/clk_500us, loads : 7
+  Net : u1/A_state_N_49, loads : 1
+  Net : u1/B_state_N_39, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 5
+Top 5 highest fanout Clock Enables:
+  Net : u5/clk_c_enable_11, loads : 8
+  Net : u2/clk_c_enable_2, loads : 1
+  Net : u5/clk_c_enable_4, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u2/key_edge, loads : 18
+  Net : u4/squ_dat_7, loads : 16
+  Net : u5/cnt_2, loads : 15
+  Net : u5/cnt_4, loads : 14
+  Net : u5/cnt_3, loads : 14
+  Net : u5/cnt_0, loads : 12
+  Net : u1/cnt_12__N_29, loads : 12
+  Net : u3/n62, loads : 10
+  Net : u3/f_inc_17, loads : 9
+  Net : u5/cnt_5, loads : 9
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk4 [get_nets \u1/A_state_N_49]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk3 [get_nets \u1/B_state_N_39]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk2 [get_nets \u1/clk_500us]           |    1.000 MHz|  521.105 MHz|     1  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk1 [get_nets dac_done]                |    1.000 MHz|  208.073 MHz|     5  
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |    1.000 MHz|  106.135 MHz|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 61.605  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.859  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "Signal_Generator_impl1.ngd" -o "Signal_Generator_impl1_map.ncd" -pr "Signal_Generator_impl1.prf" -mp "Signal_Generator_impl1.mrp" -lpf "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/impl1/Signal_Generator_impl1.lpf" -lpf "F:/Fpga_Project/BaseBoard/LAB7_Signal_Generator/Signal_Generator.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Signal_Generator_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     86 out of  4635 (2%)
+      PFU registers:           86 out of  4320 (2%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        70 out of  2160 (3%)
+      SLICEs as Logic/ROM:     70 out of  2160 (3%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         30 out of  2160 (1%)
+   Number of LUT4s:        138 out of  4320 (3%)
+      Number used as logic LUTs:         78
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       60
+      Number used as shift registers:     0
+   Number of PIO sites used: 8 + 4(JTAG) out of 105 (11%)
+   Number of block RAMs:  1 out of 10 (10%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  5
+     Net clk_c: 47 loads, 47 rising, 0 falling (Driver: PIO clk )
+     Net dac_done: 6 loads, 6 rising, 0 falling (Driver: u5/dac_done_71 )
+     Net u1/clk_500us: 3 loads, 3 rising, 0 falling (Driver: u1/clk_500us_61 )
+     Net u1/A_state_N_49: 1 loads, 1 rising, 0 falling (Driver: u1/i576_2_lut )
+     Net u1/B_state_N_39: 1 loads, 1 rising, 0 falling (Driver: u1/i574_2_lut )
+   Number of Clock Enables:  5
+     Net key_pulse: 2 loads, 2 LSLICEs
+     Net clk_c_enable_1: 1 loads, 1 LSLICEs
+     Net u5/clk_c_enable_11: 8 loads, 8 LSLICEs
+     Net u5/clk_c_enable_4: 1 loads, 1 LSLICEs
+     Net u2/clk_c_enable_2: 1 loads, 1 LSLICEs
+   Number of LSRs:  5
+     Net rst_n_c: 1 loads, 0 LSLICEs
+     Net cnt_0: 1 loads, 1 LSLICEs
+     Net u5/cnt_7__N_236: 4 loads, 4 LSLICEs
+     Net u1/cnt_12__N_29: 7 loads, 7 LSLICEs
+     Net u2/key_edge: 10 loads, 10 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net squ_dat_7: 17 loads
+     Net u5/cnt_2: 15 loads
+     Net u5/cnt_3: 14 loads
+     Net u5/cnt_4: 14 loads
+     Net cnt_0: 13 loads
+     Net n62: 11 loads
+     Net cnt_1: 10 loads
+     Net cnt_5: 10 loads
+     Net f_inc_17: 10 loads
+     Net u2/key_edge: 10 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 49 MB
+
+Dumping design to file Signal_Generator_impl1_map.ncd.
+
+ncd2vdb "Signal_Generator_impl1_map.ncd" ".vdbs/Signal_Generator_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+
+mpartrce -p "Signal_Generator_impl1.p2t" -f "Signal_Generator_impl1.p3t" -tf "Signal_Generator_impl1.pt" "Signal_Generator_impl1_map.ncd" "Signal_Generator_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Signal_Generator_impl1_map.ncd"
+Fri Jan 25 16:52:20 2019
+
+PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Signal_Generator_impl1_map.ncd Signal_Generator_impl1.dir/5_1.ncd Signal_Generator_impl1.prf
+Preference file: Signal_Generator_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Signal_Generator_impl1_map.ncd.
+Design name: Signal_Generator
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    8+4(JTAG)/280     4% used
+                   8+4(JTAG)/105     11% bonded
+
+   SLICE             70/2160          3% used
+
+   GSR                1/1           100% used
+   EBR                1/10           10% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 244
+Number of Connections: 582
+
+Pin Constraint Summary:
+   8 out of 8 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 47)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 2 signals are selected to use the secondary clock routing resources:
+    dac_done (driver: u5/SLICE_34, clk load #: 6, sr load #: 0, ce load #: 0)
+    u2/key_edge (driver: u2/SLICE_51, clk load #: 0, sr load #: 10, ce load #: 0)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+.........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..................
+Placer score = 19744.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  19202
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 47
+  SECONDARY "dac_done" from Q0 on comp "u5/SLICE_34" on site "R12C17D", clk load = 6, ce load = 0, sr load = 0
+  SECONDARY "u2/key_edge" from F0 on comp "u2/SLICE_51" on site "R12C15A", clk load = 0, ce load = 0, sr load = 10
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 2 out of 8 (25%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   8 + 4(JTAG) out of 280 (4.3%) PIO sites used.
+   8 + 4(JTAG) out of 105 (11.4%) bonded PIO sites used.
+   Number of PIO comps: 8; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 4 / 26 ( 15%) | 3.3V       | -         |
+| 2        | 0 / 28 (  0%) | -          | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 2 / 8 ( 25%)  | 3.3V       | -         |
+| 5        | 2 / 10 ( 20%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file Signal_Generator_impl1.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 582 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=u1/clk_500us loads=4 clock_loads=3&#xA;   Signal=u1/A_state_N_49 loads=1 clock_loads=1&#xA;   Signal=u1/B_state_N_39 loads=1 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 2 secs 
+
+Start NBR router at 16:52:22 01/25/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:52:22 01/25/19
+
+Start NBR section for initial routing at 16:52:22 01/25/19
+Level 4, iteration 1
+17(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:52:22 01/25/19
+Level 4, iteration 1
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+Level 4, iteration 2
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+
+Start NBR section for re-routing at 16:52:22 01/25/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+
+Start NBR section for post-routing at 16:52:22 01/25/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=u1/clk_500us loads=4 clock_loads=3&#xA;   Signal=u1/A_state_N_49 loads=1 clock_loads=1&#xA;   Signal=u1/B_state_N_39 loads=1 clock_loads=1"  />
+
+Total CPU time 2 secs 
+Total REAL time: 2 secs 
+Completely routed.
+End of route.  582 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Signal_Generator_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 3 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Signal_Generator_impl1.t2b" -w "Signal_Generator_impl1.ncd" -jedec "Signal_Generator_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Signal_Generator_impl1.ncd.
+Design name: Signal_Generator
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Signal_Generator_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Signal_Generator_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

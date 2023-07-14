@@ -1,0 +1,24 @@
+Selecting top level module Type_system
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":18:7:18:20|Synthesizing module Array_KeyBoard in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":56:17:56:25|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":48:25:48:32|Removing redundant assignment.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v":18:7:18:17|Synthesizing module Segment_led in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Synthesizing module Type_system in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":63:1:63:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11

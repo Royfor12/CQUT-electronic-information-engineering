@@ -1,0 +1,24 @@
+
+State Machine - |Digital_THM|Segment_scan:u3|state
+Name state.IDLE state.WRITE state.MAIN 
+state.IDLE 0 0 0 
+state.MAIN 1 0 1 
+state.WRITE 1 1 0 
+
+State Machine - |Digital_THM|SHT20_Driver:u1|state_back
+Name state_back.MODE1 state_back.IDLE state_back.MODE2 
+state_back.IDLE 0 0 0 
+state_back.MODE1 1 1 0 
+state_back.MODE2 0 1 1 
+
+State Machine - |Digital_THM|SHT20_Driver:u1|state
+Name state.STOP state.READ state.WRITE state.START state.MODE2 state.MODE1 state.MAIN state.IDLE state.DELAY 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.MAIN 0 0 0 0 0 0 1 1 0 
+state.MODE1 0 0 0 0 0 1 0 1 0 
+state.MODE2 0 0 0 0 1 0 0 1 0 
+state.START 0 0 0 1 0 0 0 1 0 
+state.WRITE 0 0 1 0 0 0 0 1 0 
+state.READ 0 1 0 0 0 0 0 1 0 
+state.STOP 1 0 0 0 0 0 0 1 0 
+state.DELAY 0 0 0 0 0 0 0 1 1 

@@ -1,0 +1,63 @@
+----------------------------------------------------------------------
+Report for cell Voltage_Meas.TECH
+Register bits:  24 of 4635 (0.518%)
+I/O cells:      23
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        16          100.0
+                            FD1S3AY         2          100.0
+                            FD1S3IX         6          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4       218          100.0
+                                 OB        20          100.0
+                              PFUMX        12          100.0
+SUB MODULES
+                  ADC081S101_driver         1
+                        Segment_led         1
+                     Segment_led_U0         1
+                         bin_to_bcd         1
+                                pll         1
+                              TOTAL       293
+----------------------------------------------------------------------
+Report for cell Segment_led_U0.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            1.4
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Segment_led.v1
+Instance Path : u5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8            3.7
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell bin_to_bcd.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       180           82.6
+                              PFUMX         8           66.7
+                              TOTAL       188
+----------------------------------------------------------------------
+Report for cell pll.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ADC081S101_driver.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4           44.4
+                            FD1P3AX        16          100.0
+                            FD1S3AY         2          100.0
+                            FD1S3IX         6          100.0
+                               LUT4        18            8.3
+                              TOTAL        46

@@ -1,0 +1,31 @@
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+Running in Lattice mode
+
+Starting:    C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synplify.exe
+Install:     C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+Hostname:    LAPTOP-PB48E8ID
+Date:        Thu Jan 24 14:48:52 2019
+Version:     L-2016.09L
+
+Arguments:   -product synplify_pro -tcl F:/Fpga_Project/BaseBoard/LAB1_Type_system/impl1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+auto_infer_blackbox is not supported in current product.
+Removed file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v
+Removed file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v
+Removed file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v
+Removed file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v
+TCL script complete: "F:/Fpga_Project/BaseBoard/LAB1_Type_system/impl1/launch_synplify.tcl"
+New HDL Analyst: enabled
+Note: Opening local project RTL file 'F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1.srs'
+No nets matching filter "@.is_clock" found.
+Note: Opening local project RTL file 'F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\impl1.srs'
+exit status=0

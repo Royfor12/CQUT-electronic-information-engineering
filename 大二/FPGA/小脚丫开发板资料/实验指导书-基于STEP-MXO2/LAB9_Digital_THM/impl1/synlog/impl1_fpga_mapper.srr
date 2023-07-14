@@ -1,0 +1,1140 @@
+# Tue Jan 29 09:47:02 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":114:32:114:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":113:32:113:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":112:32:112:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":111:32:111:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":110:32:110:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":109:32:109:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":108:32:108:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":107:32:107:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":114:32:114:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":114:32:114:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":113:32:113:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":113:32:113:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":112:32:112:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":112:32:112:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":111:32:111:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":111:32:111:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":110:32:110:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":110:32:110:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":109:32:109:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":109:32:109:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":108:32:108:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":108:32:108:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":107:32:107:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":107:32:107:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Found counter in view:work.Segment_scan(verilog) instance cnt_write[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":70:0:70:5|Found counter in view:work.Segment_scan(verilog) instance cnt[8:0] 
+Encoding state machine state[8:0] (in view: work.SHT20_Driver(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0100 -> 000010000
+   0101 -> 000100000
+   0110 -> 001000000
+   0111 -> 010000000
+   1000 -> 100000000
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Found counter in view:work.SHT20_Driver(verilog) instance cnt_delay[23:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Found counter in view:work.SHT20_Driver(verilog) instance cnt_main[3:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[6] because it is equivalent to instance u1.num_delay[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[23] because it is equivalent to instance u1.num_delay[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[22] because it is equivalent to instance u1.num_delay[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[21] because it is equivalent to instance u1.num_delay[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[20] because it is equivalent to instance u1.num_delay[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[19] because it is equivalent to instance u1.num_delay[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[18] because it is equivalent to instance u1.num_delay[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[17] because it is equivalent to instance u1.num_delay[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[16] because it is equivalent to instance u1.num_delay[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing instance u1.num_delay[3] because it is equivalent to instance u1.num_delay[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing sequential instance num_delay[0] (in view: work.SHT20_Driver(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 162MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 158MB peak: 162MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 162MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 164MB)
+
+@N: FA113 :"f:\fpga_project\baseboard\lab9_digital_thm\calculate.v":64:16:64:33|Pipelining module un1_H_code[25:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register H_code[15:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register dat_l[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register dat_h[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register T_code[15:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register data_r[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Pushed in register cnt_main[2:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Pushed in register data[15:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 153MB peak: 164MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 185MB peak: 185MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 184MB peak: 185MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 185MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 197MB peak: 239MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:13s		   -13.83ns		 733 /       306
+   2		0h:00m:13s		   -13.05ns		 718 /       306
+   3		0h:00m:13s		   -12.88ns		 718 /       306
+   4		0h:00m:13s		   -12.88ns		 718 /       306
+   5		0h:00m:13s		   -12.41ns		 718 /       306
+   6		0h:00m:13s		   -12.88ns		 718 /       306
+   7		0h:00m:13s		   -12.41ns		 718 /       306
+   8		0h:00m:14s		   -12.88ns		 718 /       306
+   9		0h:00m:14s		   -12.41ns		 718 /       306
+
+  10		0h:00m:14s		   -11.93ns		 725 /       306
+  11		0h:00m:14s		    -9.22ns		 735 /       306
+  12		0h:00m:14s		    -8.98ns		 742 /       306
+  13		0h:00m:14s		    -9.32ns		 745 /       306
+  14		0h:00m:14s		    -8.84ns		 747 /       306
+  15		0h:00m:14s		    -8.59ns		 752 /       306
+  16		0h:00m:14s		    -8.05ns		 754 /       306
+  17		0h:00m:14s		    -7.63ns		 757 /       306
+  18		0h:00m:14s		    -7.63ns		 759 /       306
+  19		0h:00m:14s		    -7.57ns		 761 /       306
+  20		0h:00m:15s		    -8.09ns		 762 /       306
+  21		0h:00m:15s		    -7.40ns		 766 /       306
+  22		0h:00m:15s		    -7.41ns		 767 /       306
+  23		0h:00m:15s		    -7.98ns		 770 /       306
+  24		0h:00m:15s		    -8.39ns		 770 /       306
+  25		0h:00m:15s		    -8.46ns		 768 /       306
+
+
+  26		0h:00m:15s		    -7.11ns		 767 /       306
+  27		0h:00m:15s		    -7.53ns		 776 /       306
+  28		0h:00m:15s		    -7.13ns		 777 /       306
+  29		0h:00m:15s		    -7.36ns		 777 /       306
+  30		0h:00m:15s		    -6.27ns		 777 /       306
+  31		0h:00m:15s		    -7.03ns		 782 /       306
+  32		0h:00m:15s		    -6.61ns		 783 /       306
+  33		0h:00m:15s		    -6.52ns		 782 /       306
+  34		0h:00m:15s		    -7.22ns		 783 /       306
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 198MB peak: 239MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 198MB peak: 239MB)
+
+@N: MT611 :|Automatically generated clock SHT20_Driver|clk_400khz_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Segment_scan|clk_40khz_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 304 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+146 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   304        u1.H_code[15]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 160MB peak: 239MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 198MB peak: 239MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\impl1\impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 202MB peak: 239MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 198MB peak: 239MB)
+
+@W: MT420 |Found inferred clock Digital_THM|clk with period 30.23ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 09:47:19 2019
+#
+
+
+Top view:               Digital_THM
+Requested Frequency:    33.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -4.431
+
+                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+Digital_THM|clk     33.1 MHz      28.9 MHz      30.230        34.660        -4.431     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------
+Digital_THM|clk  Digital_THM|clk  |  30.230      -4.431  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Digital_THM|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                                      Arrival           
+Instance              Reference           Type        Pin     Net                   Time        Slack 
+                      Clock                                                                           
+------------------------------------------------------------------------------------------------------
+u2.T_code_pipe        Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[0]     1.044       -4.431
+u2.T_code_pipe_1      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[1]     1.044       -4.288
+u2.T_code_pipe_2      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[2]     1.044       -4.288
+u2.T_code_pipe_3      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[3]     0.972       -4.073
+u2.T_code_pipe_4      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[4]     0.972       -4.073
+u2.T_code_pipe_5      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[5]     0.972       -3.930
+u2.T_code_pipe_6      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[6]     0.972       -3.930
+u2.T_code_pipe_7      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[7]     0.972       -3.787
+u2.T_code_pipe_8      Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_4[8]     0.972       -3.787
+u2.T_code_pipe_28     Digital_THM|clk     FD1P3AX     Q       un1_T_code_0_6[8]     0.972       -3.787
+======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                               Required           
+Instance                         Reference           Type        Pin     Net            Time         Slack 
+                                 Clock                                                                     
+-----------------------------------------------------------------------------------------------------------
+u3.data_pipe_47                  Digital_THM|clk     FD1P3AX     D       data_5[9]      30.318       -4.431
+u3.data_5_14_8_.data_pipe_2      Digital_THM|clk     FD1P3AX     D       N_5_2          30.124       -3.944
+u3.data_5_14_8_.data_pipe_11     Digital_THM|clk     FD1P3AX     D       i3_mux_0       30.318       -3.727
+u3.data_5_14_8_.data_pipe_12     Digital_THM|clk     FD1P3AX     D       N_27_3         30.318       -3.727
+u3.data[1]                       Digital_THM|clk     FD1P3AX     D       data_12[1]     30.318       -3.634
+u3.data_pipe_54                  Digital_THM|clk     FD1P3AX     D       data_4[9]      30.318       -3.534
+u3.data_5_14_8_.data_pipe_3      Digital_THM|clk     FD1P3AX     D       N_4_0          30.318       -3.414
+u3.data_5_14_8_.data_pipe_16     Digital_THM|clk     FD1P3AX     D       N_22_3         30.318       -3.414
+u3.data_5_14_8_.data_pipe_15     Digital_THM|clk     FD1P3AX     D       T_data[2]      30.124       -3.304
+u3.data_4_14_8_.data_pipe_7      Digital_THM|clk     FD1P3AX     D       N_4_1          30.318       -3.278
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      30.230
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         30.318
+
+    - Propagation time:                      34.749
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.431
+
+    Number of logic level(s):                44
+    Starting point:                          u2.T_code_pipe / Q
+    Ending point:                            u3.data_pipe_47 / D
+    The start point is clocked by            Digital_THM|clk [rising] on pin CK
+    The end   point is clocked by            Digital_THM|clk [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u2.T_code_pipe                            FD1P3AX      Q        Out     1.044     1.044       -         
+un1_T_code_0_4[0]                         Net          -        -       -         -           2         
+u2.un1_T_code_0_cry_0_0                   CCU2D        A1       In      0.000     1.044       -         
+u2.un1_T_code_0_cry_0_0                   CCU2D        COUT     Out     1.545     2.588       -         
+un1_T_code_0_cry_0                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_1_0                   CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_T_code_0_cry_1_0                   CCU2D        COUT     Out     0.143     2.731       -         
+un1_T_code_0_cry_2                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_3_0                   CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_T_code_0_cry_3_0                   CCU2D        COUT     Out     0.143     2.874       -         
+un1_T_code_0_cry_4                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_5_0                   CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_T_code_0_cry_5_0                   CCU2D        COUT     Out     0.143     3.017       -         
+un1_T_code_0_cry_6                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_7_0                   CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_T_code_0_cry_7_0                   CCU2D        COUT     Out     0.143     3.160       -         
+un1_T_code_0_cry_8                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_9_0                   CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_T_code_0_cry_9_0                   CCU2D        COUT     Out     0.143     3.302       -         
+un1_T_code_0_cry_10                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_11_0                  CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_T_code_0_cry_11_0                  CCU2D        COUT     Out     0.143     3.445       -         
+un1_T_code_0_cry_12                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_13_0                  CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_T_code_0_cry_13_0                  CCU2D        COUT     Out     0.143     3.588       -         
+un1_T_code_0_cry_14                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_15_0                  CCU2D        CIN      In      0.000     3.588       -         
+u2.un1_T_code_0_cry_15_0                  CCU2D        COUT     Out     0.143     3.731       -         
+un1_T_code_0_cry_16                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_17_0                  CCU2D        CIN      In      0.000     3.731       -         
+u2.un1_T_code_0_cry_17_0                  CCU2D        COUT     Out     0.143     3.873       -         
+un1_T_code_0_cry_18                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_19_0                  CCU2D        CIN      In      0.000     3.873       -         
+u2.un1_T_code_0_cry_19_0                  CCU2D        COUT     Out     0.143     4.016       -         
+un1_T_code_0_cry_20                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_21_0                  CCU2D        CIN      In      0.000     4.016       -         
+u2.un1_T_code_0_cry_21_0                  CCU2D        COUT     Out     0.143     4.159       -         
+un1_T_code_0_cry_22                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_23_0                  CCU2D        CIN      In      0.000     4.159       -         
+u2.un1_T_code_0_cry_23_0                  CCU2D        S0       Out     1.781     5.940       -         
+c_16                                      Net          -        -       -         -           7         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     B        In      0.000     5.940       -         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     Z        Out     1.017     6.957       -         
+un1_T_datalto12_0_N_3L3_1                 Net          -        -       -         -           1         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     C        In      0.000     6.957       -         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     Z        Out     1.089     8.046       -         
+un1_T_datalto12_0_N_4L5_0                 Net          -        -       -         -           2         
+u2.un1_T_datalto12_0                      ORCALUT4     B        In      0.000     8.046       -         
+u2.un1_T_datalto12_0                      ORCALUT4     Z        Out     1.289     9.335       -         
+c_1                                       Net          -        -       -         -           12        
+u2.c_cry_0_0                              CCU2D        A1       In      0.000     9.335       -         
+u2.c_cry_0_0                              CCU2D        COUT     Out     1.545     10.879      -         
+c_cry_0                                   Net          -        -       -         -           1         
+u2.c_cry_1_0                              CCU2D        CIN      In      0.000     10.879      -         
+u2.c_cry_1_0                              CCU2D        COUT     Out     0.143     11.022      -         
+c_cry_2                                   Net          -        -       -         -           1         
+u2.c_cry_3_0                              CCU2D        CIN      In      0.000     11.022      -         
+u2.c_cry_3_0                              CCU2D        COUT     Out     0.143     11.165      -         
+c_cry_4                                   Net          -        -       -         -           1         
+u2.c_cry_5_0                              CCU2D        CIN      In      0.000     11.165      -         
+u2.c_cry_5_0                              CCU2D        COUT     Out     0.143     11.307      -         
+c_cry_6                                   Net          -        -       -         -           1         
+u2.c_cry_7_0                              CCU2D        CIN      In      0.000     11.307      -         
+u2.c_cry_7_0                              CCU2D        COUT     Out     0.143     11.450      -         
+c_cry_8                                   Net          -        -       -         -           1         
+u2.c_cry_9_0                              CCU2D        CIN      In      0.000     11.450      -         
+u2.c_cry_9_0                              CCU2D        COUT     Out     0.143     11.593      -         
+c_cry_10                                  Net          -        -       -         -           1         
+u2.c_cry_11_0                             CCU2D        CIN      In      0.000     11.593      -         
+u2.c_cry_11_0                             CCU2D        COUT     Out     0.143     11.736      -         
+c_cry_12                                  Net          -        -       -         -           1         
+u2.c_s_13_0                               CCU2D        CIN      In      0.000     11.736      -         
+u2.c_s_13_0                               CCU2D        S0       Out     0.981     12.717      -         
+c[13]                                     Net          -        -       -         -           16        
+u2.u1.CO2_11_N_2L1                        ORCALUT4     D        In      0.000     12.717      -         
+u2.u1.CO2_11_N_2L1                        ORCALUT4     Z        Out     1.089     13.806      -         
+CO2_11_N_2L1                              Net          -        -       -         -           2         
+u2.u1.CO2_11                              ORCALUT4     C        In      0.000     13.806      -         
+u2.u1.CO2_11                              ORCALUT4     Z        Out     1.089     14.894      -         
+CO2_24                                    Net          -        -       -         -           2         
+u2.u1.shift_reg_27[18]                    ORCALUT4     A        In      0.000     14.894      -         
+u2.u1.shift_reg_27[18]                    ORCALUT4     Z        Out     1.153     16.047      -         
+shift_reg_27[18]                          Net          -        -       -         -           3         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     D        In      0.000     16.047      -         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     Z        Out     1.233     17.280      -         
+N_226                                     Net          -        -       -         -           6         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     A        In      0.000     17.280      -         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     Z        Out     1.017     18.297      -         
+shift_reg_27_i_RNIPU0C4[16]               Net          -        -       -         -           1         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     B        In      0.000     18.297      -         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     Z        Out     1.265     19.562      -         
+N_214                                     Net          -        -       -         -           8         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     B        In      0.000     19.562      -         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     Z        Out     1.017     20.578      -         
+shift_reg_41_N_2L1_RNIT5FH5_0             Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     B        In      0.000     20.578      -         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     Z        Out     1.017     21.595      -         
+CO2_15_N_2L1_0_mb_1                       Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     A        In      0.000     21.595      -         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     Z        Out     1.089     22.684      -         
+shift_reg_41_i_RNITEVRB[16]               Net          -        -       -         -           2         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     B        In      0.000     22.684      -         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     Z        Out     1.089     23.773      -         
+shift_reg_61_sn[17]                       Net          -        -       -         -           2         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     C        In      0.000     23.773      -         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     Z        Out     1.193     24.966      -         
+g0_13_1_0                                 Net          -        -       -         -           4         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     A        In      0.000     24.966      -         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     Z        Out     1.265     26.230      -         
+CO2_11                                    Net          -        -       -         -           8         
+u2.u1.shift_reg_71[17]                    ORCALUT4     A        In      0.000     26.230      -         
+u2.u1.shift_reg_71[17]                    ORCALUT4     Z        Out     1.249     27.479      -         
+shift_reg_71[17]                          Net          -        -       -         -           7         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     C        In      0.000     27.479      -         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     Z        Out     1.017     28.496      -         
+shift_reg_71_RNIPAKN1[17]                 Net          -        -       -         -           1         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     A        In      0.000     28.496      -         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     Z        Out     1.273     29.769      -         
+CO1_5                                     Net          -        -       -         -           9         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     A        In      0.000     29.769      -         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     Z        Out     1.017     30.786      -         
+shift_reg_87_RNI6KEEH_0[22]               Net          -        -       -         -           1         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        C0       In      0.000     30.786      -         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        Z        Out     1.177     31.963      -         
+shift_reg_100[22]                         Net          -        -       -         -           11        
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     C        In      0.000     31.963      -         
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     Z        Out     1.153     33.115      -         
+g0_1_1                                    Net          -        -       -         -           3         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     C        In      0.000     33.115      -         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     Z        Out     1.017     34.132      -         
+g0_N_2L1                                  Net          -        -       -         -           1         
+u3.data_5_14_8_.g0                        ORCALUT4     D        In      0.000     34.132      -         
+u3.data_5_14_8_.g0                        ORCALUT4     Z        Out     0.617     34.749      -         
+data_5[9]                                 Net          -        -       -         -           1         
+u3.data_pipe_47                           FD1P3AX      D        In      0.000     34.749      -         
+========================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      30.230
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         30.318
+
+    - Propagation time:                      34.685
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.367
+
+    Number of logic level(s):                44
+    Starting point:                          u2.T_code_pipe / Q
+    Ending point:                            u3.data_pipe_47 / D
+    The start point is clocked by            Digital_THM|clk [rising] on pin CK
+    The end   point is clocked by            Digital_THM|clk [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u2.T_code_pipe                            FD1P3AX      Q        Out     1.044     1.044       -         
+un1_T_code_0_4[0]                         Net          -        -       -         -           2         
+u2.un1_T_code_0_cry_0_0                   CCU2D        A1       In      0.000     1.044       -         
+u2.un1_T_code_0_cry_0_0                   CCU2D        COUT     Out     1.545     2.588       -         
+un1_T_code_0_cry_0                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_1_0                   CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_T_code_0_cry_1_0                   CCU2D        COUT     Out     0.143     2.731       -         
+un1_T_code_0_cry_2                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_3_0                   CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_T_code_0_cry_3_0                   CCU2D        COUT     Out     0.143     2.874       -         
+un1_T_code_0_cry_4                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_5_0                   CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_T_code_0_cry_5_0                   CCU2D        COUT     Out     0.143     3.017       -         
+un1_T_code_0_cry_6                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_7_0                   CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_T_code_0_cry_7_0                   CCU2D        COUT     Out     0.143     3.160       -         
+un1_T_code_0_cry_8                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_9_0                   CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_T_code_0_cry_9_0                   CCU2D        COUT     Out     0.143     3.302       -         
+un1_T_code_0_cry_10                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_11_0                  CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_T_code_0_cry_11_0                  CCU2D        COUT     Out     0.143     3.445       -         
+un1_T_code_0_cry_12                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_13_0                  CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_T_code_0_cry_13_0                  CCU2D        COUT     Out     0.143     3.588       -         
+un1_T_code_0_cry_14                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_15_0                  CCU2D        CIN      In      0.000     3.588       -         
+u2.un1_T_code_0_cry_15_0                  CCU2D        COUT     Out     0.143     3.731       -         
+un1_T_code_0_cry_16                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_17_0                  CCU2D        CIN      In      0.000     3.731       -         
+u2.un1_T_code_0_cry_17_0                  CCU2D        COUT     Out     0.143     3.873       -         
+un1_T_code_0_cry_18                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_19_0                  CCU2D        CIN      In      0.000     3.873       -         
+u2.un1_T_code_0_cry_19_0                  CCU2D        COUT     Out     0.143     4.016       -         
+un1_T_code_0_cry_20                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_21_0                  CCU2D        CIN      In      0.000     4.016       -         
+u2.un1_T_code_0_cry_21_0                  CCU2D        COUT     Out     0.143     4.159       -         
+un1_T_code_0_cry_22                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_23_0                  CCU2D        CIN      In      0.000     4.159       -         
+u2.un1_T_code_0_cry_23_0                  CCU2D        S0       Out     1.781     5.940       -         
+c_16                                      Net          -        -       -         -           7         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     B        In      0.000     5.940       -         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     Z        Out     1.017     6.957       -         
+un1_T_datalto12_0_N_3L3_1                 Net          -        -       -         -           1         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     C        In      0.000     6.957       -         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     Z        Out     1.089     8.046       -         
+un1_T_datalto12_0_N_4L5_0                 Net          -        -       -         -           2         
+u2.un1_T_datalto12_0                      ORCALUT4     B        In      0.000     8.046       -         
+u2.un1_T_datalto12_0                      ORCALUT4     Z        Out     1.289     9.335       -         
+c_1                                       Net          -        -       -         -           12        
+u2.c_cry_0_0                              CCU2D        A1       In      0.000     9.335       -         
+u2.c_cry_0_0                              CCU2D        COUT     Out     1.545     10.879      -         
+c_cry_0                                   Net          -        -       -         -           1         
+u2.c_cry_1_0                              CCU2D        CIN      In      0.000     10.879      -         
+u2.c_cry_1_0                              CCU2D        COUT     Out     0.143     11.022      -         
+c_cry_2                                   Net          -        -       -         -           1         
+u2.c_cry_3_0                              CCU2D        CIN      In      0.000     11.022      -         
+u2.c_cry_3_0                              CCU2D        COUT     Out     0.143     11.165      -         
+c_cry_4                                   Net          -        -       -         -           1         
+u2.c_cry_5_0                              CCU2D        CIN      In      0.000     11.165      -         
+u2.c_cry_5_0                              CCU2D        COUT     Out     0.143     11.307      -         
+c_cry_6                                   Net          -        -       -         -           1         
+u2.c_cry_7_0                              CCU2D        CIN      In      0.000     11.307      -         
+u2.c_cry_7_0                              CCU2D        COUT     Out     0.143     11.450      -         
+c_cry_8                                   Net          -        -       -         -           1         
+u2.c_cry_9_0                              CCU2D        CIN      In      0.000     11.450      -         
+u2.c_cry_9_0                              CCU2D        COUT     Out     0.143     11.593      -         
+c_cry_10                                  Net          -        -       -         -           1         
+u2.c_cry_11_0                             CCU2D        CIN      In      0.000     11.593      -         
+u2.c_cry_11_0                             CCU2D        COUT     Out     0.143     11.736      -         
+c_cry_12                                  Net          -        -       -         -           1         
+u2.c_s_13_0                               CCU2D        CIN      In      0.000     11.736      -         
+u2.c_s_13_0                               CCU2D        S0       Out     0.981     12.717      -         
+c[13]                                     Net          -        -       -         -           16        
+u2.u1.CO2_11_N_2L1                        ORCALUT4     D        In      0.000     12.717      -         
+u2.u1.CO2_11_N_2L1                        ORCALUT4     Z        Out     1.089     13.806      -         
+CO2_11_N_2L1                              Net          -        -       -         -           2         
+u2.u1.CO2_11                              ORCALUT4     C        In      0.000     13.806      -         
+u2.u1.CO2_11                              ORCALUT4     Z        Out     1.089     14.894      -         
+CO2_24                                    Net          -        -       -         -           2         
+u2.u1.shift_reg_27[18]                    ORCALUT4     A        In      0.000     14.894      -         
+u2.u1.shift_reg_27[18]                    ORCALUT4     Z        Out     1.153     16.047      -         
+shift_reg_27[18]                          Net          -        -       -         -           3         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     D        In      0.000     16.047      -         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     Z        Out     1.233     17.280      -         
+N_226                                     Net          -        -       -         -           6         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     A        In      0.000     17.280      -         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     Z        Out     1.017     18.297      -         
+shift_reg_27_i_RNIPU0C4[16]               Net          -        -       -         -           1         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     B        In      0.000     18.297      -         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     Z        Out     1.265     19.562      -         
+N_214                                     Net          -        -       -         -           8         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     B        In      0.000     19.562      -         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     Z        Out     1.017     20.578      -         
+shift_reg_41_N_2L1_RNIT5FH5_0             Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     B        In      0.000     20.578      -         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     Z        Out     1.017     21.595      -         
+CO2_15_N_2L1_0_mb_1                       Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     A        In      0.000     21.595      -         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     Z        Out     1.089     22.684      -         
+shift_reg_41_i_RNITEVRB[16]               Net          -        -       -         -           2         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     B        In      0.000     22.684      -         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     Z        Out     1.089     23.773      -         
+shift_reg_61_sn[17]                       Net          -        -       -         -           2         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     C        In      0.000     23.773      -         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     Z        Out     1.193     24.966      -         
+g0_13_1_0                                 Net          -        -       -         -           4         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     A        In      0.000     24.966      -         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     Z        Out     1.265     26.230      -         
+CO2_11                                    Net          -        -       -         -           8         
+u2.u1.shift_reg_71[17]                    ORCALUT4     A        In      0.000     26.230      -         
+u2.u1.shift_reg_71[17]                    ORCALUT4     Z        Out     1.249     27.479      -         
+shift_reg_71[17]                          Net          -        -       -         -           7         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     C        In      0.000     27.479      -         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     Z        Out     1.017     28.496      -         
+shift_reg_71_RNIPAKN1[17]                 Net          -        -       -         -           1         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     A        In      0.000     28.496      -         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     Z        Out     1.273     29.769      -         
+CO1_5                                     Net          -        -       -         -           9         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     A        In      0.000     29.769      -         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     Z        Out     1.017     30.786      -         
+shift_reg_87_RNI6KEEH_0[22]               Net          -        -       -         -           1         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        C0       In      0.000     30.786      -         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        Z        Out     1.177     31.963      -         
+shift_reg_100[22]                         Net          -        -       -         -           11        
+u3.data_5_14_8_.g0_0_1                    ORCALUT4     C        In      0.000     31.963      -         
+u3.data_5_14_8_.g0_0_1                    ORCALUT4     Z        Out     1.017     32.979      -         
+g0_1                                      Net          -        -       -         -           1         
+u3.data_5_14_8_.g0_0                      ORCALUT4     D        In      0.000     32.979      -         
+u3.data_5_14_8_.g0_0                      ORCALUT4     Z        Out     1.089     34.068      -         
+N_5_2                                     Net          -        -       -         -           2         
+u3.data_5_14_8_.g0                        ORCALUT4     C        In      0.000     34.068      -         
+u3.data_5_14_8_.g0                        ORCALUT4     Z        Out     0.617     34.685      -         
+data_5[9]                                 Net          -        -       -         -           1         
+u3.data_pipe_47                           FD1P3AX      D        In      0.000     34.685      -         
+========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      30.230
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         30.318
+
+    - Propagation time:                      34.606
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.288
+
+    Number of logic level(s):                43
+    Starting point:                          u2.T_code_pipe_1 / Q
+    Ending point:                            u3.data_pipe_47 / D
+    The start point is clocked by            Digital_THM|clk [rising] on pin CK
+    The end   point is clocked by            Digital_THM|clk [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u2.T_code_pipe_1                          FD1P3AX      Q        Out     1.044     1.044       -         
+un1_T_code_0_4[1]                         Net          -        -       -         -           2         
+u2.un1_T_code_0_cry_1_0                   CCU2D        A0       In      0.000     1.044       -         
+u2.un1_T_code_0_cry_1_0                   CCU2D        COUT     Out     1.545     2.588       -         
+un1_T_code_0_cry_2                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_3_0                   CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_T_code_0_cry_3_0                   CCU2D        COUT     Out     0.143     2.731       -         
+un1_T_code_0_cry_4                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_5_0                   CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_T_code_0_cry_5_0                   CCU2D        COUT     Out     0.143     2.874       -         
+un1_T_code_0_cry_6                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_7_0                   CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_T_code_0_cry_7_0                   CCU2D        COUT     Out     0.143     3.017       -         
+un1_T_code_0_cry_8                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_9_0                   CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_T_code_0_cry_9_0                   CCU2D        COUT     Out     0.143     3.160       -         
+un1_T_code_0_cry_10                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_11_0                  CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_T_code_0_cry_11_0                  CCU2D        COUT     Out     0.143     3.302       -         
+un1_T_code_0_cry_12                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_13_0                  CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_T_code_0_cry_13_0                  CCU2D        COUT     Out     0.143     3.445       -         
+un1_T_code_0_cry_14                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_15_0                  CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_T_code_0_cry_15_0                  CCU2D        COUT     Out     0.143     3.588       -         
+un1_T_code_0_cry_16                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_17_0                  CCU2D        CIN      In      0.000     3.588       -         
+u2.un1_T_code_0_cry_17_0                  CCU2D        COUT     Out     0.143     3.731       -         
+un1_T_code_0_cry_18                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_19_0                  CCU2D        CIN      In      0.000     3.731       -         
+u2.un1_T_code_0_cry_19_0                  CCU2D        COUT     Out     0.143     3.873       -         
+un1_T_code_0_cry_20                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_21_0                  CCU2D        CIN      In      0.000     3.873       -         
+u2.un1_T_code_0_cry_21_0                  CCU2D        COUT     Out     0.143     4.016       -         
+un1_T_code_0_cry_22                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_23_0                  CCU2D        CIN      In      0.000     4.016       -         
+u2.un1_T_code_0_cry_23_0                  CCU2D        S0       Out     1.781     5.797       -         
+c_16                                      Net          -        -       -         -           7         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     B        In      0.000     5.797       -         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     Z        Out     1.017     6.814       -         
+un1_T_datalto12_0_N_3L3_1                 Net          -        -       -         -           1         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     C        In      0.000     6.814       -         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     Z        Out     1.089     7.903       -         
+un1_T_datalto12_0_N_4L5_0                 Net          -        -       -         -           2         
+u2.un1_T_datalto12_0                      ORCALUT4     B        In      0.000     7.903       -         
+u2.un1_T_datalto12_0                      ORCALUT4     Z        Out     1.289     9.192       -         
+c_1                                       Net          -        -       -         -           12        
+u2.c_cry_0_0                              CCU2D        A1       In      0.000     9.192       -         
+u2.c_cry_0_0                              CCU2D        COUT     Out     1.545     10.736      -         
+c_cry_0                                   Net          -        -       -         -           1         
+u2.c_cry_1_0                              CCU2D        CIN      In      0.000     10.736      -         
+u2.c_cry_1_0                              CCU2D        COUT     Out     0.143     10.879      -         
+c_cry_2                                   Net          -        -       -         -           1         
+u2.c_cry_3_0                              CCU2D        CIN      In      0.000     10.879      -         
+u2.c_cry_3_0                              CCU2D        COUT     Out     0.143     11.022      -         
+c_cry_4                                   Net          -        -       -         -           1         
+u2.c_cry_5_0                              CCU2D        CIN      In      0.000     11.022      -         
+u2.c_cry_5_0                              CCU2D        COUT     Out     0.143     11.165      -         
+c_cry_6                                   Net          -        -       -         -           1         
+u2.c_cry_7_0                              CCU2D        CIN      In      0.000     11.165      -         
+u2.c_cry_7_0                              CCU2D        COUT     Out     0.143     11.307      -         
+c_cry_8                                   Net          -        -       -         -           1         
+u2.c_cry_9_0                              CCU2D        CIN      In      0.000     11.307      -         
+u2.c_cry_9_0                              CCU2D        COUT     Out     0.143     11.450      -         
+c_cry_10                                  Net          -        -       -         -           1         
+u2.c_cry_11_0                             CCU2D        CIN      In      0.000     11.450      -         
+u2.c_cry_11_0                             CCU2D        COUT     Out     0.143     11.593      -         
+c_cry_12                                  Net          -        -       -         -           1         
+u2.c_s_13_0                               CCU2D        CIN      In      0.000     11.593      -         
+u2.c_s_13_0                               CCU2D        S0       Out     0.981     12.574      -         
+c[13]                                     Net          -        -       -         -           16        
+u2.u1.CO2_11_N_2L1                        ORCALUT4     D        In      0.000     12.574      -         
+u2.u1.CO2_11_N_2L1                        ORCALUT4     Z        Out     1.089     13.663      -         
+CO2_11_N_2L1                              Net          -        -       -         -           2         
+u2.u1.CO2_11                              ORCALUT4     C        In      0.000     13.663      -         
+u2.u1.CO2_11                              ORCALUT4     Z        Out     1.089     14.752      -         
+CO2_24                                    Net          -        -       -         -           2         
+u2.u1.shift_reg_27[18]                    ORCALUT4     A        In      0.000     14.752      -         
+u2.u1.shift_reg_27[18]                    ORCALUT4     Z        Out     1.153     15.904      -         
+shift_reg_27[18]                          Net          -        -       -         -           3         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     D        In      0.000     15.904      -         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     Z        Out     1.233     17.137      -         
+N_226                                     Net          -        -       -         -           6         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     A        In      0.000     17.137      -         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     Z        Out     1.017     18.154      -         
+shift_reg_27_i_RNIPU0C4[16]               Net          -        -       -         -           1         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     B        In      0.000     18.154      -         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     Z        Out     1.265     19.419      -         
+N_214                                     Net          -        -       -         -           8         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     B        In      0.000     19.419      -         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     Z        Out     1.017     20.436      -         
+shift_reg_41_N_2L1_RNIT5FH5_0             Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     B        In      0.000     20.436      -         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     Z        Out     1.017     21.452      -         
+CO2_15_N_2L1_0_mb_1                       Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     A        In      0.000     21.452      -         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     Z        Out     1.089     22.541      -         
+shift_reg_41_i_RNITEVRB[16]               Net          -        -       -         -           2         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     B        In      0.000     22.541      -         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     Z        Out     1.089     23.630      -         
+shift_reg_61_sn[17]                       Net          -        -       -         -           2         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     C        In      0.000     23.630      -         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     Z        Out     1.193     24.823      -         
+g0_13_1_0                                 Net          -        -       -         -           4         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     A        In      0.000     24.823      -         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     Z        Out     1.265     26.088      -         
+CO2_11                                    Net          -        -       -         -           8         
+u2.u1.shift_reg_71[17]                    ORCALUT4     A        In      0.000     26.088      -         
+u2.u1.shift_reg_71[17]                    ORCALUT4     Z        Out     1.249     27.336      -         
+shift_reg_71[17]                          Net          -        -       -         -           7         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     C        In      0.000     27.336      -         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     Z        Out     1.017     28.353      -         
+shift_reg_71_RNIPAKN1[17]                 Net          -        -       -         -           1         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     A        In      0.000     28.353      -         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     Z        Out     1.273     29.626      -         
+CO1_5                                     Net          -        -       -         -           9         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     A        In      0.000     29.626      -         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     Z        Out     1.017     30.643      -         
+shift_reg_87_RNI6KEEH_0[22]               Net          -        -       -         -           1         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        C0       In      0.000     30.643      -         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        Z        Out     1.177     31.820      -         
+shift_reg_100[22]                         Net          -        -       -         -           11        
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     C        In      0.000     31.820      -         
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     Z        Out     1.153     32.973      -         
+g0_1_1                                    Net          -        -       -         -           3         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     C        In      0.000     32.973      -         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     Z        Out     1.017     33.989      -         
+g0_N_2L1                                  Net          -        -       -         -           1         
+u3.data_5_14_8_.g0                        ORCALUT4     D        In      0.000     33.989      -         
+u3.data_5_14_8_.g0                        ORCALUT4     Z        Out     0.617     34.606      -         
+data_5[9]                                 Net          -        -       -         -           1         
+u3.data_pipe_47                           FD1P3AX      D        In      0.000     34.606      -         
+========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      30.230
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         30.318
+
+    - Propagation time:                      34.606
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.288
+
+    Number of logic level(s):                43
+    Starting point:                          u2.T_code_pipe_2 / Q
+    Ending point:                            u3.data_pipe_47 / D
+    The start point is clocked by            Digital_THM|clk [rising] on pin CK
+    The end   point is clocked by            Digital_THM|clk [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u2.T_code_pipe_2                          FD1P3AX      Q        Out     1.044     1.044       -         
+un1_T_code_0_4[2]                         Net          -        -       -         -           2         
+u2.un1_T_code_0_cry_1_0                   CCU2D        A1       In      0.000     1.044       -         
+u2.un1_T_code_0_cry_1_0                   CCU2D        COUT     Out     1.545     2.588       -         
+un1_T_code_0_cry_2                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_3_0                   CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_T_code_0_cry_3_0                   CCU2D        COUT     Out     0.143     2.731       -         
+un1_T_code_0_cry_4                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_5_0                   CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_T_code_0_cry_5_0                   CCU2D        COUT     Out     0.143     2.874       -         
+un1_T_code_0_cry_6                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_7_0                   CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_T_code_0_cry_7_0                   CCU2D        COUT     Out     0.143     3.017       -         
+un1_T_code_0_cry_8                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_9_0                   CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_T_code_0_cry_9_0                   CCU2D        COUT     Out     0.143     3.160       -         
+un1_T_code_0_cry_10                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_11_0                  CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_T_code_0_cry_11_0                  CCU2D        COUT     Out     0.143     3.302       -         
+un1_T_code_0_cry_12                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_13_0                  CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_T_code_0_cry_13_0                  CCU2D        COUT     Out     0.143     3.445       -         
+un1_T_code_0_cry_14                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_15_0                  CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_T_code_0_cry_15_0                  CCU2D        COUT     Out     0.143     3.588       -         
+un1_T_code_0_cry_16                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_17_0                  CCU2D        CIN      In      0.000     3.588       -         
+u2.un1_T_code_0_cry_17_0                  CCU2D        COUT     Out     0.143     3.731       -         
+un1_T_code_0_cry_18                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_19_0                  CCU2D        CIN      In      0.000     3.731       -         
+u2.un1_T_code_0_cry_19_0                  CCU2D        COUT     Out     0.143     3.873       -         
+un1_T_code_0_cry_20                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_21_0                  CCU2D        CIN      In      0.000     3.873       -         
+u2.un1_T_code_0_cry_21_0                  CCU2D        COUT     Out     0.143     4.016       -         
+un1_T_code_0_cry_22                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_23_0                  CCU2D        CIN      In      0.000     4.016       -         
+u2.un1_T_code_0_cry_23_0                  CCU2D        S0       Out     1.781     5.797       -         
+c_16                                      Net          -        -       -         -           7         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     B        In      0.000     5.797       -         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     Z        Out     1.017     6.814       -         
+un1_T_datalto12_0_N_3L3_1                 Net          -        -       -         -           1         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     C        In      0.000     6.814       -         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     Z        Out     1.089     7.903       -         
+un1_T_datalto12_0_N_4L5_0                 Net          -        -       -         -           2         
+u2.un1_T_datalto12_0                      ORCALUT4     B        In      0.000     7.903       -         
+u2.un1_T_datalto12_0                      ORCALUT4     Z        Out     1.289     9.192       -         
+c_1                                       Net          -        -       -         -           12        
+u2.c_cry_0_0                              CCU2D        A1       In      0.000     9.192       -         
+u2.c_cry_0_0                              CCU2D        COUT     Out     1.545     10.736      -         
+c_cry_0                                   Net          -        -       -         -           1         
+u2.c_cry_1_0                              CCU2D        CIN      In      0.000     10.736      -         
+u2.c_cry_1_0                              CCU2D        COUT     Out     0.143     10.879      -         
+c_cry_2                                   Net          -        -       -         -           1         
+u2.c_cry_3_0                              CCU2D        CIN      In      0.000     10.879      -         
+u2.c_cry_3_0                              CCU2D        COUT     Out     0.143     11.022      -         
+c_cry_4                                   Net          -        -       -         -           1         
+u2.c_cry_5_0                              CCU2D        CIN      In      0.000     11.022      -         
+u2.c_cry_5_0                              CCU2D        COUT     Out     0.143     11.165      -         
+c_cry_6                                   Net          -        -       -         -           1         
+u2.c_cry_7_0                              CCU2D        CIN      In      0.000     11.165      -         
+u2.c_cry_7_0                              CCU2D        COUT     Out     0.143     11.307      -         
+c_cry_8                                   Net          -        -       -         -           1         
+u2.c_cry_9_0                              CCU2D        CIN      In      0.000     11.307      -         
+u2.c_cry_9_0                              CCU2D        COUT     Out     0.143     11.450      -         
+c_cry_10                                  Net          -        -       -         -           1         
+u2.c_cry_11_0                             CCU2D        CIN      In      0.000     11.450      -         
+u2.c_cry_11_0                             CCU2D        COUT     Out     0.143     11.593      -         
+c_cry_12                                  Net          -        -       -         -           1         
+u2.c_s_13_0                               CCU2D        CIN      In      0.000     11.593      -         
+u2.c_s_13_0                               CCU2D        S0       Out     0.981     12.574      -         
+c[13]                                     Net          -        -       -         -           16        
+u2.u1.CO2_11_N_2L1                        ORCALUT4     D        In      0.000     12.574      -         
+u2.u1.CO2_11_N_2L1                        ORCALUT4     Z        Out     1.089     13.663      -         
+CO2_11_N_2L1                              Net          -        -       -         -           2         
+u2.u1.CO2_11                              ORCALUT4     C        In      0.000     13.663      -         
+u2.u1.CO2_11                              ORCALUT4     Z        Out     1.089     14.752      -         
+CO2_24                                    Net          -        -       -         -           2         
+u2.u1.shift_reg_27[18]                    ORCALUT4     A        In      0.000     14.752      -         
+u2.u1.shift_reg_27[18]                    ORCALUT4     Z        Out     1.153     15.904      -         
+shift_reg_27[18]                          Net          -        -       -         -           3         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     D        In      0.000     15.904      -         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     Z        Out     1.233     17.137      -         
+N_226                                     Net          -        -       -         -           6         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     A        In      0.000     17.137      -         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     Z        Out     1.017     18.154      -         
+shift_reg_27_i_RNIPU0C4[16]               Net          -        -       -         -           1         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     B        In      0.000     18.154      -         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     Z        Out     1.265     19.419      -         
+N_214                                     Net          -        -       -         -           8         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     B        In      0.000     19.419      -         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     Z        Out     1.017     20.436      -         
+shift_reg_41_N_2L1_RNIT5FH5_0             Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     B        In      0.000     20.436      -         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     Z        Out     1.017     21.452      -         
+CO2_15_N_2L1_0_mb_1                       Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     A        In      0.000     21.452      -         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     Z        Out     1.089     22.541      -         
+shift_reg_41_i_RNITEVRB[16]               Net          -        -       -         -           2         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     B        In      0.000     22.541      -         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     Z        Out     1.089     23.630      -         
+shift_reg_61_sn[17]                       Net          -        -       -         -           2         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     C        In      0.000     23.630      -         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     Z        Out     1.193     24.823      -         
+g0_13_1_0                                 Net          -        -       -         -           4         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     A        In      0.000     24.823      -         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     Z        Out     1.265     26.088      -         
+CO2_11                                    Net          -        -       -         -           8         
+u2.u1.shift_reg_71[17]                    ORCALUT4     A        In      0.000     26.088      -         
+u2.u1.shift_reg_71[17]                    ORCALUT4     Z        Out     1.249     27.336      -         
+shift_reg_71[17]                          Net          -        -       -         -           7         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     C        In      0.000     27.336      -         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     Z        Out     1.017     28.353      -         
+shift_reg_71_RNIPAKN1[17]                 Net          -        -       -         -           1         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     A        In      0.000     28.353      -         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     Z        Out     1.273     29.626      -         
+CO1_5                                     Net          -        -       -         -           9         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     A        In      0.000     29.626      -         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     Z        Out     1.017     30.643      -         
+shift_reg_87_RNI6KEEH_0[22]               Net          -        -       -         -           1         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        C0       In      0.000     30.643      -         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        Z        Out     1.177     31.820      -         
+shift_reg_100[22]                         Net          -        -       -         -           11        
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     C        In      0.000     31.820      -         
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     Z        Out     1.153     32.973      -         
+g0_1_1                                    Net          -        -       -         -           3         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     C        In      0.000     32.973      -         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     Z        Out     1.017     33.989      -         
+g0_N_2L1                                  Net          -        -       -         -           1         
+u3.data_5_14_8_.g0                        ORCALUT4     D        In      0.000     33.989      -         
+u3.data_5_14_8_.g0                        ORCALUT4     Z        Out     0.617     34.606      -         
+data_5[9]                                 Net          -        -       -         -           1         
+u3.data_pipe_47                           FD1P3AX      D        In      0.000     34.606      -         
+========================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      30.230
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         30.318
+
+    - Propagation time:                      34.606
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.288
+
+    Number of logic level(s):                43
+    Starting point:                          u2.T_code_pipe / Q
+    Ending point:                            u3.data_pipe_47 / D
+    The start point is clocked by            Digital_THM|clk [rising] on pin CK
+    The end   point is clocked by            Digital_THM|clk [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u2.T_code_pipe                            FD1P3AX      Q        Out     1.044     1.044       -         
+un1_T_code_0_4[0]                         Net          -        -       -         -           2         
+u2.un1_T_code_0_cry_0_0                   CCU2D        A1       In      0.000     1.044       -         
+u2.un1_T_code_0_cry_0_0                   CCU2D        COUT     Out     1.545     2.588       -         
+un1_T_code_0_cry_0                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_1_0                   CCU2D        CIN      In      0.000     2.588       -         
+u2.un1_T_code_0_cry_1_0                   CCU2D        COUT     Out     0.143     2.731       -         
+un1_T_code_0_cry_2                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_3_0                   CCU2D        CIN      In      0.000     2.731       -         
+u2.un1_T_code_0_cry_3_0                   CCU2D        COUT     Out     0.143     2.874       -         
+un1_T_code_0_cry_4                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_5_0                   CCU2D        CIN      In      0.000     2.874       -         
+u2.un1_T_code_0_cry_5_0                   CCU2D        COUT     Out     0.143     3.017       -         
+un1_T_code_0_cry_6                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_7_0                   CCU2D        CIN      In      0.000     3.017       -         
+u2.un1_T_code_0_cry_7_0                   CCU2D        COUT     Out     0.143     3.160       -         
+un1_T_code_0_cry_8                        Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_9_0                   CCU2D        CIN      In      0.000     3.160       -         
+u2.un1_T_code_0_cry_9_0                   CCU2D        COUT     Out     0.143     3.302       -         
+un1_T_code_0_cry_10                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_11_0                  CCU2D        CIN      In      0.000     3.302       -         
+u2.un1_T_code_0_cry_11_0                  CCU2D        COUT     Out     0.143     3.445       -         
+un1_T_code_0_cry_12                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_13_0                  CCU2D        CIN      In      0.000     3.445       -         
+u2.un1_T_code_0_cry_13_0                  CCU2D        COUT     Out     0.143     3.588       -         
+un1_T_code_0_cry_14                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_15_0                  CCU2D        CIN      In      0.000     3.588       -         
+u2.un1_T_code_0_cry_15_0                  CCU2D        COUT     Out     0.143     3.731       -         
+un1_T_code_0_cry_16                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_17_0                  CCU2D        CIN      In      0.000     3.731       -         
+u2.un1_T_code_0_cry_17_0                  CCU2D        COUT     Out     0.143     3.873       -         
+un1_T_code_0_cry_18                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_19_0                  CCU2D        CIN      In      0.000     3.873       -         
+u2.un1_T_code_0_cry_19_0                  CCU2D        COUT     Out     0.143     4.016       -         
+un1_T_code_0_cry_20                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_21_0                  CCU2D        CIN      In      0.000     4.016       -         
+u2.un1_T_code_0_cry_21_0                  CCU2D        COUT     Out     0.143     4.159       -         
+un1_T_code_0_cry_22                       Net          -        -       -         -           1         
+u2.un1_T_code_0_cry_23_0                  CCU2D        CIN      In      0.000     4.159       -         
+u2.un1_T_code_0_cry_23_0                  CCU2D        S0       Out     1.781     5.940       -         
+c_16                                      Net          -        -       -         -           7         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     B        In      0.000     5.940       -         
+u2.un1_T_datalto12_0_N_3L3_1              ORCALUT4     Z        Out     1.017     6.957       -         
+un1_T_datalto12_0_N_3L3_1                 Net          -        -       -         -           1         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     C        In      0.000     6.957       -         
+u2.un1_T_datalto12_0_N_4L5_0              ORCALUT4     Z        Out     1.089     8.046       -         
+un1_T_datalto12_0_N_4L5_0                 Net          -        -       -         -           2         
+u2.un1_T_datalto12_0                      ORCALUT4     B        In      0.000     8.046       -         
+u2.un1_T_datalto12_0                      ORCALUT4     Z        Out     1.289     9.335       -         
+c_1                                       Net          -        -       -         -           12        
+u2.c_cry_1_0                              CCU2D        A0       In      0.000     9.335       -         
+u2.c_cry_1_0                              CCU2D        COUT     Out     1.545     10.879      -         
+c_cry_2                                   Net          -        -       -         -           1         
+u2.c_cry_3_0                              CCU2D        CIN      In      0.000     10.879      -         
+u2.c_cry_3_0                              CCU2D        COUT     Out     0.143     11.022      -         
+c_cry_4                                   Net          -        -       -         -           1         
+u2.c_cry_5_0                              CCU2D        CIN      In      0.000     11.022      -         
+u2.c_cry_5_0                              CCU2D        COUT     Out     0.143     11.165      -         
+c_cry_6                                   Net          -        -       -         -           1         
+u2.c_cry_7_0                              CCU2D        CIN      In      0.000     11.165      -         
+u2.c_cry_7_0                              CCU2D        COUT     Out     0.143     11.307      -         
+c_cry_8                                   Net          -        -       -         -           1         
+u2.c_cry_9_0                              CCU2D        CIN      In      0.000     11.307      -         
+u2.c_cry_9_0                              CCU2D        COUT     Out     0.143     11.450      -         
+c_cry_10                                  Net          -        -       -         -           1         
+u2.c_cry_11_0                             CCU2D        CIN      In      0.000     11.450      -         
+u2.c_cry_11_0                             CCU2D        COUT     Out     0.143     11.593      -         
+c_cry_12                                  Net          -        -       -         -           1         
+u2.c_s_13_0                               CCU2D        CIN      In      0.000     11.593      -         
+u2.c_s_13_0                               CCU2D        S0       Out     0.981     12.574      -         
+c[13]                                     Net          -        -       -         -           16        
+u2.u1.CO2_11_N_2L1                        ORCALUT4     D        In      0.000     12.574      -         
+u2.u1.CO2_11_N_2L1                        ORCALUT4     Z        Out     1.089     13.663      -         
+CO2_11_N_2L1                              Net          -        -       -         -           2         
+u2.u1.CO2_11                              ORCALUT4     C        In      0.000     13.663      -         
+u2.u1.CO2_11                              ORCALUT4     Z        Out     1.089     14.752      -         
+CO2_24                                    Net          -        -       -         -           2         
+u2.u1.shift_reg_27[18]                    ORCALUT4     A        In      0.000     14.752      -         
+u2.u1.shift_reg_27[18]                    ORCALUT4     Z        Out     1.153     15.904      -         
+shift_reg_27[18]                          Net          -        -       -         -           3         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     D        In      0.000     15.904      -         
+u2.u1.shift_reg_27_RNI46981[18]           ORCALUT4     Z        Out     1.233     17.137      -         
+N_226                                     Net          -        -       -         -           6         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     A        In      0.000     17.137      -         
+u2.u1.shift_reg_27_i_RNIPU0C4[16]         ORCALUT4     Z        Out     1.017     18.154      -         
+shift_reg_27_i_RNIPU0C4[16]               Net          -        -       -         -           1         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     B        In      0.000     18.154      -         
+u2.u1.shift_reg_34_RNIVGFR4[18]           ORCALUT4     Z        Out     1.265     19.419      -         
+N_214                                     Net          -        -       -         -           8         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     B        In      0.000     19.419      -         
+u2.u1.shift_reg_41_N_2L1_RNIT5FH5_0       ORCALUT4     Z        Out     1.017     20.436      -         
+shift_reg_41_N_2L1_RNIT5FH5_0             Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     B        In      0.000     20.436      -         
+u2.u1.shift_reg_41_i_RNIKTU26_0[16]       ORCALUT4     Z        Out     1.017     21.452      -         
+CO2_15_N_2L1_0_mb_1                       Net          -        -       -         -           1         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     A        In      0.000     21.452      -         
+u2.u1.shift_reg_41_i_RNITEVRB[16]         ORCALUT4     Z        Out     1.089     22.541      -         
+shift_reg_41_i_RNITEVRB[16]               Net          -        -       -         -           2         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     B        In      0.000     22.541      -         
+u2.u1.shift_reg_61_sn[17]                 ORCALUT4     Z        Out     1.089     23.630      -         
+shift_reg_61_sn[17]                       Net          -        -       -         -           2         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     C        In      0.000     23.630      -         
+u2.u1.shift_reg_61_mb_mb[17]              ORCALUT4     Z        Out     1.193     24.823      -         
+g0_13_1_0                                 Net          -        -       -         -           4         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     A        In      0.000     24.823      -         
+u2.u1.shift_reg_61_mb_mb_RNIKF282[17]     ORCALUT4     Z        Out     1.265     26.088      -         
+CO2_11                                    Net          -        -       -         -           8         
+u2.u1.shift_reg_71[17]                    ORCALUT4     A        In      0.000     26.088      -         
+u2.u1.shift_reg_71[17]                    ORCALUT4     Z        Out     1.249     27.336      -         
+shift_reg_71[17]                          Net          -        -       -         -           7         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     C        In      0.000     27.336      -         
+u2.u1.shift_reg_71_RNIPAKN1[17]           ORCALUT4     Z        Out     1.017     28.353      -         
+shift_reg_71_RNIPAKN1[17]                 Net          -        -       -         -           1         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     A        In      0.000     28.353      -         
+u2.u1.shift_reg_71_RNI8FJC9[17]           ORCALUT4     Z        Out     1.273     29.626      -         
+CO1_5                                     Net          -        -       -         -           9         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     A        In      0.000     29.626      -         
+u2.u1.shift_reg_87_RNI6KEEH_0[22]         ORCALUT4     Z        Out     1.017     30.643      -         
+shift_reg_87_RNI6KEEH_0[22]               Net          -        -       -         -           1         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        C0       In      0.000     30.643      -         
+u2.u1.shift_reg_87_RNI32D2V[22]           PFUMX        Z        Out     1.177     31.820      -         
+shift_reg_100[22]                         Net          -        -       -         -           11        
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     C        In      0.000     31.820      -         
+u3.data_5_14_8_.g0_1_1                    ORCALUT4     Z        Out     1.153     32.973      -         
+g0_1_1                                    Net          -        -       -         -           3         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     C        In      0.000     32.973      -         
+u3.data_5_14_8_.g0_N_2L1                  ORCALUT4     Z        Out     1.017     33.989      -         
+g0_N_2L1                                  Net          -        -       -         -           1         
+u3.data_5_14_8_.g0                        ORCALUT4     D        In      0.000     33.989      -         
+u3.data_5_14_8_.g0                        ORCALUT4     Z        Out     0.617     34.606      -         
+data_5[9]                                 Net          -        -       -         -           1         
+u3.data_pipe_47                           FD1P3AX      D        In      0.000     34.606      -         
+========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 198MB peak: 239MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 198MB peak: 239MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 304 of 4320 (7%)
+PIC Latch:       0
+I/O cells:       7
+
+
+Details:
+BB:             1
+CCU2D:          110
+FD1P3AX:        200
+FD1P3BX:        9
+FD1P3DX:        75
+FD1S3DX:        15
+GSR:            1
+IB:             2
+IFS1P3DX:       1
+INV:            6
+L6MUX21:        9
+OB:             4
+OFS1P3BX:       1
+OFS1P3DX:       3
+ORCALUT4:       764
+PFUMX:          30
+PUR:            1
+VHI:            5
+VLO:            6
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 36MB peak: 239MB)
+
+Process took 0h:00m:17s realtime, 0h:00m:16s cputime
+# Tue Jan 29 09:47:19 2019
+
+###########################################################]

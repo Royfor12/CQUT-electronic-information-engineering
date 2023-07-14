@@ -1,0 +1,375 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+         Lattice Mapping Report File for Design Module 'Prox_Detect'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Prox_Detect_impl1.ngd -o Prox_Detect_impl1_map.ncd -pr
+     Prox_Detect_impl1.prf -mp Prox_Detect_impl1.mrp -lpf C:/Users/wanga/Desktop
+     /LAB8_Prox_Detect/impl1/Prox_Detect_impl1_synplify.lpf -lpf
+     C:/Users/wanga/Desktop/LAB8_Prox_Detect/Prox_Detect.lpf -c 0 -gui -msgset
+     C:/Users/wanga/Desktop/LAB8_Prox_Detect/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  02/12/19  09:10:48
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    166 out of  4635 (4%)
+      PFU registers:          164 out of  4320 (4%)
+      PIO registers:            2 out of   315 (1%)
+   Number of SLICEs:       177 out of  2160 (8%)
+      SLICEs as Logic/ROM:    177 out of  2160 (8%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         32 out of  2160 (1%)
+   Number of LUT4s:        352 out of  4320 (8%)
+      Number used as logic LUTs:        288
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       64
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_c: 96 loads, 96 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  27
+
+     Net cnt_RNI1VSU3[0]: 1 loads, 0 LSLICEs
+     Net un1_scl_2_sqmuxa_0_2_RNI9S911: 1 loads, 0 LSLICEs
+     Net u1/clk_400khz_RNI4IGB1: 3 loads, 3 LSLICEs
+     Net u1/sda_RNO: 1 loads, 1 LSLICEs
+     Net u1/data_r_RNO[3]: 1 loads, 1 LSLICEs
+     Net u1/data_r_RNO[0]: 1 loads, 1 LSLICEs
+     Net u1/data_r_RNO[4]: 1 loads, 1 LSLICEs
+     Net u1/un1_cnt_delay_cry_23_0_RNIL5PR8: 12 loads, 12 LSLICEs
+     Net u1/state_RNI3LGQ1[3]: 1 loads, 1 LSLICEs
+     Net u1/clk_400khz_RNI7DGD: 17 loads, 17 LSLICEs
+     Net u1/sda_cl_1_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/sda_cl_RNO: 1 loads, 1 LSLICEs
+     Net u1/state_ns_0_0_o2_RNI42532[2]: 2 loads, 2 LSLICEs
+     Net u1/un1_cnt_400khz12_2_0_a2_RNIG57L1: 3 loads, 3 LSLICEs
+     Net u1/cnt_main_RNIPTPO2[0]: 8 loads, 8 LSLICEs
+     Net u1/un1_cnt_400khz12_4_0_o2_RNIRVP54: 4 loads, 4 LSLICEs
+     Net u1/data_rce[1]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[2]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[5]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[6]: 1 loads, 1 LSLICEs
+     Net u1/N_287: 1 loads, 1 LSLICEs
+     Net u1/cnt_mode2_RNI3E732[3]: 4 loads, 4 LSLICEs
+     Net u1/un1_cnt_400khz12_4_0_a2_2_RNIFPF31: 4 loads, 4 LSLICEs
+     Net u1/un1_cnt_400khz12_4_0_o2_RNIHK281: 2 loads, 2 LSLICEs
+     Net u1/ack_flag_RNO: 1 loads, 1 LSLICEs
+     Net dat_valid_RNI2Q242: 16 loads, 16 LSLICEs
+     Net u2/un1_prox_dat0_1_cry_13_0_RNI76T73: 2 loads, 2 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  73
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u1/state[0]: 52 loads
+     Net u1/clk_400khz_RNI7DGD: 27 loads
+     Net u1/state[8]: 27 loads
+     Net u1/N_1041_1: 26 loads
+     Net u1/state[5]: 25 loads
+     Net u1/cnt_main[3]: 22 loads
+     Net u1/state[2]: 21 loads
+     Net u1/cnt_main[1]: 20 loads
+     Net u1/state[1]: 20 loads
+     Net u1/state[4]: 20 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'rst_n_c' to infer global GSR net.
+
+
+
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| i2c_sda             | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| i2c_scl             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Signal rst_n_c_i was merged into signal rst_n_c
+Signal u2/GND undriven or does not drive anything - clipped.
+Signal u1/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal u2/un1_prox_dat0_1_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_s_15_0_S1 undriven or does not drive anything -
+     clipped.
+
+Signal u2/un1_prox_dat0_1_s_15_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u2/un1_prox_dat0_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u2/N_2 undriven or does not drive anything - clipped.
+Signal u1/cnt_delay_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal u1/N_33 undriven or does not drive anything - clipped.
+Signal u1/cnt_delay_s_0_S1[23] undriven or does not drive anything - clipped.
+Signal u1/cnt_delay_s_0_COUT[23] undriven or does not drive anything - clipped.
+Signal u1/un1_cnt_delay_cry_6_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_6_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/N_34 undriven or does not drive anything - clipped.
+Signal u1/un1_cnt_delay_cry_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_7_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_9_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_11_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_13_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_13_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_15_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_15_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_17_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_17_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_19_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_19_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_21_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_23_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u1/un1_cnt_delay_cry_23_0_COUT undriven or does not drive anything -
+     clipped.
+Block rst_n_pad_RNIQR5E was optimized away.
+Block u2/GND was optimized away.
+Block u1/GND was optimized away.
+
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'rst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 51 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab1_type_system/type_system.v(18): </Dynamic>
+            <Dynamic>Type_system</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab1_type_system/type_system.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab1_type_system/array_keyboard.v(18): </Dynamic>
+            <Dynamic>Array_KeyBoard</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab1_type_system/array_keyboard.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab1_type_system/decoder.v(18): </Dynamic>
+            <Dynamic>Decoder</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab1_type_system/decoder.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab1_type_system/segment_led.v(18): </Dynamic>
+            <Dynamic>Segment_led</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab1_type_system/segment_led.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\u1/c_state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab1_type_system/decoder.v(50): </Dynamic>
+            <Dynamic>\u2/seg_data_i0_i7</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab1_type_system/decoder.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STATE3</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STATE2</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STATE1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STATE0</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CNT_200HZ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un3_cnt_cry_13_0_COUT</Dynamic>
+            <Navigation>u1/un3_cnt_cry_13_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un3_cnt_cry_0_0_S0</Dynamic>
+            <Navigation>u1/un3_cnt_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un3_cnt_cry_0_0_S1</Dynamic>
+            <Navigation>u1/un3_cnt_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v&quot;:27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v&quot;:27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v&quot;:27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v&quot;:27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v&quot;:46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v&quot;:46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v&quot;:46:1:46:6|Found inferred clock Type_system|clk which controls 37 sequential elements including u1.cnt[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock Type_system|clk which controls 37 sequential elements including u1.cnt[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab1_type_system\segment_led.v&quot;:25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab1_type_system\segment_led.v</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab1_type_system\segment_led.v&quot;:25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab1_type_system\segment_led.v</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab1_type_system\segment_led.v&quot;:25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab1_type_system\segment_led.v</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab1_type_system\segment_led.v&quot;:25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab1_type_system\segment_led.v</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock Type_system|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Type_system|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

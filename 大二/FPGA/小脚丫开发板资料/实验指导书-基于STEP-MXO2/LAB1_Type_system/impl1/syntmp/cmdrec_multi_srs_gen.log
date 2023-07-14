@@ -1,0 +1,7 @@
+C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  Type_system  -multisrs  F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_comp.srs  -osyn  F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_mult.srs  -log  F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synlog\Type_system_impl1_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+file:F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_comp.srs|io:i|time:1548299079|size:7134|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_mult.srs|io:o|time:1548299080|size:2849|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synlog\Type_system_impl1_multi_srs_gen.srr|io:o|time:1548299080|size:521|exec:0
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1480962996|size:3128320|exec:1
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1480963264|size:3947520|exec:1

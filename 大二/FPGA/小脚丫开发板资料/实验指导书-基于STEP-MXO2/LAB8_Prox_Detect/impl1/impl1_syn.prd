@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09L
+#--  Project file F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1_syn.prd
+#--  Written on Tue Jan 29 09:41:03 2019
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

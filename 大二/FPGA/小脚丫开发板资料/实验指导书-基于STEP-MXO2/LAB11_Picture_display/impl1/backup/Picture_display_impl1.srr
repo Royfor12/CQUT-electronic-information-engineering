@@ -1,0 +1,651 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Tue Jan 29 10:01:36 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v" (library work)
+Verilog syntax check successful!
+Selecting top level module Picture_display
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":18:7:18:13|Synthesizing module LCD_RGB in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":90:23:90:30|Removing redundant assignment.
+@W: CG532 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_0_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_1_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_2_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_3_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_4_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_5_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_6_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_7_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_8_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_9_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_10_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Some of the address location in the memory "reg_setxy" are not assigned.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_0_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_1_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_2_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_3_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_4_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_5_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_6_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_7_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_8_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_9_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_10_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_11_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_12_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_13_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_14_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_15_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_16_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_17_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_18_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_19_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_20_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_21_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_22_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_23_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_24_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_25_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_26_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_27_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_28_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_29_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_30_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_31_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_32_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_33_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_34_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_35_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_36_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_37_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_38_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_39_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_40_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_41_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_42_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_43_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_44_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_45_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_46_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_47_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_48_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_49_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_50_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_51_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_52_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_53_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_54_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_55_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_56_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_57_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_58_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_59_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_60_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_61_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_62_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_63_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_64_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_65_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_66_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_67_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_68_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_69_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_70_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_71_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_72_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Some of the address location in the memory "reg_init" are not assigned.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal ram_data_r[131:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_res. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_din. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_dc. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_clk. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal data_reg[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit data_reg[8] is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bit 2 of state_back[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bit 8 of data_reg[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v":19:7:19:13|Synthesizing module LCD_RAM in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Synthesizing module Picture_display in library work.
+
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit lcd_dc is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 15 to 6 of cnt[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 5 of cnt_write[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 1 of cnt_main[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Initial value is not supported on state machine state
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register cnt_scan.
+Extracted state machine for register cnt_scan
+State machine has 6 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+   00000100
+   00000101
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 6 of data_reg[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 4 to 1 of data_reg[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 85MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:01:36 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:01:36 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:01:37 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:01:38 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Jan 29 10:01:38 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_clk_en (in view: work.LCD_RGB(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Picture_display
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                   Requested     Requested     Clock        Clock                   Clock
+Clock                   Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------
+Picture_display|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     228  
+==============================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found inferred clock Picture_display|clk which controls 228 sequential elements including LCD_RGB_uut.state_back[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine cnt_scan[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   00000000 -> 000001
+   00000001 -> 000010
+   00000010 -> 000100
+   00000011 -> 001000
+   00000100 -> 010000
+   00000101 -> 100000
+Encoding state machine state[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 10:01:38 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Jan 29 10:01:39 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FX493 |Applying initial value "00" on instance LCD_RGB_uut.state_back[1:0].
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Encoding state machine cnt_scan[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   00000000 -> 000001
+   00000001 -> 000010
+   00000010 -> 000100
+   00000011 -> 001000
+   00000100 -> 010000
+   00000101 -> 100000
+Encoding state machine state[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance x_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance y_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_init[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_write[4:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_delay[15:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[13] because it is equivalent to instance LCD_RGB_uut.num_delay[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[12] because it is equivalent to instance LCD_RGB_uut.num_delay[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[2] because it is equivalent to instance LCD_RGB_uut.num_delay[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[10] because it is equivalent to instance LCD_RGB_uut.num_delay[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[7] because it is equivalent to instance LCD_RGB_uut.num_delay[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.num_delay[3] because it is equivalent to instance LCD_RGB_uut.num_delay[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[131] because it is equivalent to instance LCD_RGB_uut.ram_data_r[130]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[130] because it is equivalent to instance LCD_RGB_uut.ram_data_r[129]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[129] because it is equivalent to instance LCD_RGB_uut.ram_data_r[128]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[128] because it is equivalent to instance LCD_RGB_uut.ram_data_r[127]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_data_r[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance num_delay[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 153MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 153MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 153MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 153MB)
+
+@N: FX211 |Packed ROM LCD_RAM_uut.Q_1_0[131:22] (8 input, 110 output) to Block SelectRAM 
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 154MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 156MB peak: 158MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   987.66ns		 220 /        86
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 158MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance LCD_RGB_uut.num_delay[4] (in view: work.Picture_display(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 158MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 92 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=============================== Non-Gated/Non-Generated Clocks ================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance        
+-----------------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   92         LCD_RGB_uut.data_reg[5]
+===============================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 158MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\synwork\Picture_display_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 158MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 159MB peak: 161MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 158MB peak: 161MB)
+
+@W: MT420 |Found inferred clock Picture_display|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 10:01:41 2019
+#
+
+
+Top view:               Picture_display
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 985.407
+
+                        Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock          Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk     1.0 MHz       68.5 MHz      1000.000      14.593        985.407     inferred     Inferred_clkgroup_0
+============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk  Picture_display|clk  |  1000.000    985.407  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Picture_display|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                         Arrival            
+Instance                Reference               Type        Pin      Net                 Time        Slack  
+                        Clock                                                                               
+------------------------------------------------------------------------------------------------------------
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO2      ram_data_r[21]      8.210       985.407
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO16     ram_data_r[17]      8.210       985.407
+LCD_RAM_uut.Q_1_0_3     Picture_display|clk     PDPW8KC     DO8      ram_data_r[81]      8.210       985.407
+LCD_RAM_uut.Q_1_0_4     Picture_display|clk     PDPW8KC     DO12     ram_data_r[85]      8.210       985.407
+LCD_RAM_uut.Q_1_0_2     Picture_display|clk     PDPW8KC     DO12     ram_data_r[49]      8.210       985.438
+LCD_RAM_uut.Q_1_0_2     Picture_display|clk     PDPW8KC     DO16     ram_data_r[53]      8.210       985.438
+LCD_RAM_uut.Q_1_0_5     Picture_display|clk     PDPW8KC     DO4      ram_data_r[113]     8.210       985.438
+LCD_RAM_uut.Q_1_0_5     Picture_display|clk     PDPW8KC     DO8      ram_data_r[117]     8.210       985.438
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO5      ram_data_r[24]      8.210       985.892
+LCD_RAM_uut.Q_1_0_1     Picture_display|clk     PDPW8KC     DO0      ram_data_r[37]      8.210       985.892
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                        Required            
+Instance                      Reference               Type        Pin     Net                 Time         Slack  
+                              Clock                                                                               
+------------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.data_reg[0]       Picture_display|clk     FD1P3AX     D       data_reg_10[0]      1000.089     985.407
+LCD_RGB_uut.data_reg[5]       Picture_display|clk     FD1P3AX     D       ram_data_r_pmux     999.894      985.830
+LCD_RGB_uut.cnt_delay[15]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[15]     999.894      989.144
+LCD_RGB_uut.cnt_delay[13]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[13]     999.894      989.286
+LCD_RGB_uut.cnt_delay[14]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[14]     999.894      989.286
+LCD_RGB_uut.cnt_delay[11]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[11]     999.894      989.429
+LCD_RGB_uut.cnt_delay[12]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[12]     999.894      989.429
+LCD_RGB_uut.cnt[5]            Picture_display|clk     FD1P3DX     D       cnt_s[5]            999.894      989.539
+LCD_RGB_uut.cnt_delay[9]      Picture_display|clk     FD1P3DX     D       cnt_delay_s[9]      999.894      989.572
+LCD_RGB_uut.cnt_delay[10]     Picture_display|clk     FD1P3DX     D       cnt_delay_s[10]     999.894      989.572
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      14.681
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     985.407
+
+    Number of logic level(s):                8
+    Starting point:                          LCD_RAM_uut.Q_1_0_0 / DO2
+    Ending point:                            LCD_RGB_uut.data_reg[0] / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CLKR
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin                Arrival     No. of    
+Name                                        Type         Name     Dir     Delay      Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+LCD_RAM_uut.Q_1_0_0                         PDPW8KC      DO2      Out     8.210      8.210       -         
+ram_data_r[21]                              Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_87_i_m2_am      ORCALUT4     A        In      0.000      8.210       -         
+LCD_RGB_uut.ram_data_r_pmux_87_i_m2_am      ORCALUT4     Z        Out     1.017      9.227       -         
+ram_data_r_pmux_87_i_m2_am                  Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_87_i_m2         PFUMX        BLUT     In      0.000      9.227       -         
+LCD_RGB_uut.ram_data_r_pmux_87_i_m2         PFUMX        Z        Out     -0.033     9.194       -         
+N_435                                       Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_11     L6MUX21      D1       In      0.000      9.194       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_m2_11     L6MUX21      Z        Out     0.732      9.925       -         
+N_396                                       Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_8      ORCALUT4     C        In      0.000      9.925       -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_a2_8      ORCALUT4     Z        Out     1.017      10.942      -         
+N_565                                       Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_15     ORCALUT4     C        In      0.000      10.942      -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_15     ORCALUT4     Z        Out     1.017      11.959      -         
+ram_data_r_pmux_131_0_o2_15                 Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_19     ORCALUT4     D        In      0.000      11.959      -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2_19     ORCALUT4     Z        Out     1.017      12.976      -         
+ram_data_r_pmux_131_0_o2_19                 Net          -        -       -          -           1         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2        ORCALUT4     D        In      0.000      12.976      -         
+LCD_RGB_uut.ram_data_r_pmux_131_0_o2        ORCALUT4     Z        Out     1.089      14.065      -         
+ram_data_r_pmux                             Net          -        -       -          -           2         
+LCD_RGB_uut.data_reg_10_0_a2[0]             ORCALUT4     B        In      0.000      14.065      -         
+LCD_RGB_uut.data_reg_10_0_a2[0]             ORCALUT4     Z        Out     0.617      14.681      -         
+data_reg_10[0]                              Net          -        -       -          -           1         
+LCD_RGB_uut.data_reg[0]                     FD1P3AX      D        In      0.000      14.681      -         
+===========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 159MB peak: 161MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 159MB peak: 161MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 85 of 4320 (2%)
+PIC Latch:       0
+I/O cells:       7
+Block Rams : 7 of 10 (70%)
+
+
+Details:
+CCU2D:          40
+FD1P3AX:        2
+FD1P3BX:        4
+FD1P3DX:        69
+FD1S3BX:        1
+FD1S3DX:        6
+GSR:            1
+IB:             2
+INV:            4
+L6MUX21:        6
+OB:             5
+OFS1P3DX:       3
+ORCALUT4:       209
+PDPW8KC:        7
+PFUMX:          26
+PUR:            1
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 161MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 10:01:41 2019
+
+###########################################################]

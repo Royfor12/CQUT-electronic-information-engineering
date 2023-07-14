@@ -1,0 +1,722 @@
+TimeQuest Timing Analyzer report for Digtal_Calender
+Tue Jun 26 13:35:24 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Slow 1200mV 85C Model Setup Summary
+  7. Slow 1200mV 85C Model Hold Summary
+  8. Slow 1200mV 85C Model Recovery Summary
+  9. Slow 1200mV 85C Model Removal Summary
+ 10. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 11. Slow 1200mV 85C Model Metastability Summary
+ 12. Slow 1200mV 0C Model Fmax Summary
+ 13. Slow 1200mV 0C Model Setup Summary
+ 14. Slow 1200mV 0C Model Hold Summary
+ 15. Slow 1200mV 0C Model Recovery Summary
+ 16. Slow 1200mV 0C Model Removal Summary
+ 17. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 18. Slow 1200mV 0C Model Metastability Summary
+ 19. Fast 1200mV 0C Model Setup Summary
+ 20. Fast 1200mV 0C Model Hold Summary
+ 21. Fast 1200mV 0C Model Recovery Summary
+ 22. Fast 1200mV 0C Model Removal Summary
+ 23. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 24. Fast 1200mV 0C Model Metastability Summary
+ 25. Multicorner Timing Analysis Summary
+ 26. Board Trace Model Assignments
+ 27. Input Transition Times
+ 28. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 29. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 30. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 31. Setup Transfers
+ 32. Hold Transfers
+ 33. Report TCCS
+ 34. Report RSKM
+ 35. Unconstrained Paths Summary
+ 36. Clock Status Summary
+ 37. Unconstrained Input Ports
+ 38. Unconstrained Output Ports
+ 39. Unconstrained Input Ports
+ 40. Unconstrained Output Ports
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; Digtal_Calender                                     ;
+; Device Family         ; MAX 10                                              ;
+; Device Name           ; 10M08SAM153C8G                                      ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.43        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  14.9%      ;
+;     Processors 3-4         ;  14.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                     ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+; Clock Name                   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                          ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+; clk                          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                          ;
+; DS1340Z_driver:u4|clk_400khz ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DS1340Z_driver:u4|clk_400khz } ;
+; Encoder:u1|clk_500us         ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Encoder:u1|clk_500us }         ;
+; Encoder:u1|key_a_r1          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Encoder:u1|key_a_r1 }          ;
+; Encoder:u1|key_b_r1          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Encoder:u1|key_b_r1 }          ;
+; Segment_scan:u5|clk_40khz    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Segment_scan:u5|clk_40khz }    ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                            ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                   ; Note                                           ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+; 163.32 MHz  ; 163.32 MHz      ; clk                          ;                                                ;
+; 198.89 MHz  ; 198.89 MHz      ; DS1340Z_driver:u4|clk_400khz ;                                                ;
+; 232.88 MHz  ; 232.88 MHz      ; Segment_scan:u5|clk_40khz    ;                                                ;
+; 319.49 MHz  ; 319.49 MHz      ; Encoder:u1|key_b_r1          ;                                                ;
+; 350.39 MHz  ; 350.39 MHz      ; Encoder:u1|key_a_r1          ;                                                ;
+; 1074.11 MHz ; 402.09 MHz      ; Encoder:u1|clk_500us         ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                   ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; Segment_scan:u5|clk_40khz    ; -6.815 ; -84.369       ;
+; clk                          ; -5.123 ; -380.503      ;
+; DS1340Z_driver:u4|clk_400khz ; -4.028 ; -314.099      ;
+; Encoder:u1|key_b_r1          ; -1.065 ; -1.065        ;
+; Encoder:u1|key_a_r1          ; -0.949 ; -0.949        ;
+; Encoder:u1|clk_500us         ; -0.672 ; -1.327        ;
++------------------------------+--------+---------------+
+
+
++------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                   ;
++------------------------------+-------+---------------+
+; Clock                        ; Slack ; End Point TNS ;
++------------------------------+-------+---------------+
+; Encoder:u1|key_a_r1          ; 0.281 ; 0.000         ;
+; DS1340Z_driver:u4|clk_400khz ; 0.343 ; 0.000         ;
+; Segment_scan:u5|clk_40khz    ; 0.360 ; 0.000         ;
+; clk                          ; 0.362 ; 0.000         ;
+; Encoder:u1|key_b_r1          ; 0.450 ; 0.000         ;
+; Encoder:u1|clk_500us         ; 0.486 ; 0.000         ;
++------------------------------+-------+---------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary     ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; clk                          ; -3.000 ; -194.823      ;
+; DS1340Z_driver:u4|clk_400khz ; -1.487 ; -156.135      ;
+; Segment_scan:u5|clk_40khz    ; -1.487 ; -46.097       ;
+; Encoder:u1|clk_500us         ; -1.487 ; -8.922        ;
+; Encoder:u1|key_a_r1          ; 0.428  ; 0.000         ;
+; Encoder:u1|key_b_r1          ; 0.466  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                             ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                   ; Note                                           ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+; 174.76 MHz  ; 174.76 MHz      ; clk                          ;                                                ;
+; 210.17 MHz  ; 210.17 MHz      ; DS1340Z_driver:u4|clk_400khz ;                                                ;
+; 243.9 MHz   ; 243.9 MHz       ; Segment_scan:u5|clk_40khz    ;                                                ;
+; 366.84 MHz  ; 366.84 MHz      ; Encoder:u1|key_b_r1          ;                                                ;
+; 399.04 MHz  ; 399.04 MHz      ; Encoder:u1|key_a_r1          ;                                                ;
+; 1177.86 MHz ; 402.09 MHz      ; Encoder:u1|clk_500us         ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+------------------------------+------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                    ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; Segment_scan:u5|clk_40khz    ; -6.496 ; -78.375       ;
+; clk                          ; -4.722 ; -353.957      ;
+; DS1340Z_driver:u4|clk_400khz ; -3.758 ; -289.302      ;
+; Encoder:u1|key_b_r1          ; -0.908 ; -0.908        ;
+; Encoder:u1|key_a_r1          ; -0.807 ; -0.807        ;
+; Encoder:u1|clk_500us         ; -0.546 ; -1.073        ;
++------------------------------+--------+---------------+
+
+
++------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                    ;
++------------------------------+-------+---------------+
+; Clock                        ; Slack ; End Point TNS ;
++------------------------------+-------+---------------+
+; Encoder:u1|key_a_r1          ; 0.275 ; 0.000         ;
+; DS1340Z_driver:u4|clk_400khz ; 0.306 ; 0.000         ;
+; Segment_scan:u5|clk_40khz    ; 0.323 ; 0.000         ;
+; clk                          ; 0.324 ; 0.000         ;
+; Encoder:u1|key_b_r1          ; 0.445 ; 0.000         ;
+; Encoder:u1|clk_500us         ; 0.459 ; 0.000         ;
++------------------------------+-------+---------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary      ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; clk                          ; -3.000 ; -194.823      ;
+; DS1340Z_driver:u4|clk_400khz ; -1.487 ; -156.135      ;
+; Segment_scan:u5|clk_40khz    ; -1.487 ; -46.097       ;
+; Encoder:u1|clk_500us         ; -1.487 ; -8.922        ;
+; Encoder:u1|key_b_r1          ; 0.397  ; 0.000         ;
+; Encoder:u1|key_a_r1          ; 0.437  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                    ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; Segment_scan:u5|clk_40khz    ; -1.923 ; -15.450       ;
+; clk                          ; -1.393 ; -76.677       ;
+; DS1340Z_driver:u4|clk_400khz ; -0.998 ; -62.828       ;
+; Encoder:u1|key_b_r1          ; -0.149 ; -0.149        ;
+; Encoder:u1|key_a_r1          ; -0.063 ; -0.063        ;
+; Encoder:u1|clk_500us         ; -0.032 ; -0.050        ;
++------------------------------+--------+---------------+
+
+
++------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                    ;
++------------------------------+-------+---------------+
+; Clock                        ; Slack ; End Point TNS ;
++------------------------------+-------+---------------+
+; Encoder:u1|key_a_r1          ; 0.081 ; 0.000         ;
+; DS1340Z_driver:u4|clk_400khz ; 0.145 ; 0.000         ;
+; clk                          ; 0.148 ; 0.000         ;
+; Segment_scan:u5|clk_40khz    ; 0.151 ; 0.000         ;
+; Encoder:u1|key_b_r1          ; 0.155 ; 0.000         ;
+; Encoder:u1|clk_500us         ; 0.164 ; 0.000         ;
++------------------------------+-------+---------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary      ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; clk                          ; -3.000 ; -153.725      ;
+; DS1340Z_driver:u4|clk_400khz ; -1.000 ; -105.000      ;
+; Segment_scan:u5|clk_40khz    ; -1.000 ; -31.000       ;
+; Encoder:u1|clk_500us         ; -1.000 ; -6.000        ;
+; Encoder:u1|key_a_r1          ; 0.415  ; 0.000         ;
+; Encoder:u1|key_b_r1          ; 0.430  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++---------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                         ;
++-------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                         ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack              ; -6.815   ; 0.081 ; N/A      ; N/A     ; -3.000              ;
+;  DS1340Z_driver:u4|clk_400khz ; -4.028   ; 0.145 ; N/A      ; N/A     ; -1.487              ;
+;  Encoder:u1|clk_500us         ; -0.672   ; 0.164 ; N/A      ; N/A     ; -1.487              ;
+;  Encoder:u1|key_a_r1          ; -0.949   ; 0.081 ; N/A      ; N/A     ; 0.415               ;
+;  Encoder:u1|key_b_r1          ; -1.065   ; 0.155 ; N/A      ; N/A     ; 0.397               ;
+;  Segment_scan:u5|clk_40khz    ; -6.815   ; 0.151 ; N/A      ; N/A     ; -1.487              ;
+;  clk                          ; -5.123   ; 0.148 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS               ; -782.312 ; 0.0   ; 0.0      ; 0.0     ; -405.977            ;
+;  DS1340Z_driver:u4|clk_400khz ; -314.099 ; 0.000 ; N/A      ; N/A     ; -156.135            ;
+;  Encoder:u1|clk_500us         ; -1.327   ; 0.000 ; N/A      ; N/A     ; -8.922              ;
+;  Encoder:u1|key_a_r1          ; -0.949   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  Encoder:u1|key_b_r1          ; -1.065   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  Segment_scan:u5|clk_40khz    ; -84.369  ; 0.000 ; N/A      ; N/A     ; -46.097             ;
+;  clk                          ; -380.503 ; 0.000 ; N/A      ; N/A     ; -194.823            ;
++-------------------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                   ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin          ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; i2c_scl      ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_rck      ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_sck      ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; seg_din      ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; i2c_sda      ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_TDO~ ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++---------------------------------------------------------------------------------+
+; Input Transition Times                                                          ;
++---------------------+-----------------------+-----------------+-----------------+
+; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
++---------------------+-----------------------+-----------------+-----------------+
+; i2c_sda             ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; rst_n               ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; clk                 ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; key_o               ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; key_b               ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; key_a               ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_TMS~        ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_TCK~        ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_TDI~        ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_CONFIG_SEL~ ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_nCONFIG~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_nSTATUS~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_CONF_DONE~  ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
++---------------------+-----------------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; i2c_scl      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0417 V           ; 0.287 V                              ; 0.209 V                              ; 8.99e-10 s                  ; 1.03e-09 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0417 V          ; 0.287 V                             ; 0.209 V                             ; 8.99e-10 s                 ; 1.03e-09 s                 ; No                        ; No                        ;
+; seg_rck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; seg_sck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0464 V           ; 0.207 V                              ; 0.276 V                              ; 8.51e-10 s                  ; 8.52e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0464 V          ; 0.207 V                             ; 0.276 V                             ; 8.51e-10 s                 ; 8.52e-10 s                 ; No                        ; No                        ;
+; seg_din      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0464 V           ; 0.207 V                              ; 0.276 V                              ; 8.51e-10 s                  ; 8.52e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0464 V          ; 0.207 V                             ; 0.276 V                             ; 8.51e-10 s                 ; 8.52e-10 s                 ; No                        ; No                        ;
+; i2c_sda      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; ~ALTERA_TDO~ ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; i2c_scl      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.018 V            ; 0.27 V                               ; 0.217 V                              ; 1.11e-09 s                  ; 1.22e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.018 V           ; 0.27 V                              ; 0.217 V                             ; 1.11e-09 s                 ; 1.22e-09 s                 ; Yes                       ; Yes                       ;
+; seg_rck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; seg_sck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0196 V           ; 0.191 V                              ; 0.261 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0196 V          ; 0.191 V                             ; 0.261 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; seg_din      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0196 V           ; 0.191 V                              ; 0.261 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0196 V          ; 0.191 V                             ; 0.261 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; i2c_sda      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_TDO~ ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; i2c_scl      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0325 V           ; 0.324 V                              ; 0.176 V                              ; 6.87e-10 s                  ; 8.14e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0325 V          ; 0.324 V                             ; 0.176 V                             ; 6.87e-10 s                 ; 8.14e-10 s                 ; No                        ; Yes                       ;
+; seg_rck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; seg_sck      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.252 V                              ; 6.55e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.252 V                             ; 6.55e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; seg_din      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.252 V                              ; 6.55e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.252 V                             ; 6.55e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; i2c_sda      ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_TDO~ ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                         ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; From Clock                   ; To Clock                     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; clk                          ; clk                          ; 3423     ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; clk                          ; 64       ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; clk                          ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; clk                          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; clk                          ; 2        ; 0        ; 0        ; 0        ;
+; clk                          ; DS1340Z_driver:u4|clk_400khz ; 58       ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; DS1340Z_driver:u4|clk_400khz ; 1269     ; 0        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|clk_500us         ; 2        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; Encoder:u1|clk_500us         ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; Encoder:u1|clk_500us         ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|key_a_r1          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; Encoder:u1|key_a_r1          ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|key_b_r1          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; Encoder:u1|key_b_r1          ; 1        ; 1        ; 0        ; 0        ;
+; clk                          ; Segment_scan:u5|clk_40khz    ; 3204     ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; Segment_scan:u5|clk_40khz    ; 392      ; 0        ; 0        ; 0        ;
+; Segment_scan:u5|clk_40khz    ; Segment_scan:u5|clk_40khz    ; 257      ; 0        ; 0        ; 0        ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                          ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; From Clock                   ; To Clock                     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; clk                          ; clk                          ; 3423     ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; clk                          ; 64       ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; clk                          ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; clk                          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; clk                          ; 2        ; 0        ; 0        ; 0        ;
+; clk                          ; DS1340Z_driver:u4|clk_400khz ; 58       ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; DS1340Z_driver:u4|clk_400khz ; 1269     ; 0        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|clk_500us         ; 2        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; Encoder:u1|clk_500us         ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; Encoder:u1|clk_500us         ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|key_a_r1          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_a_r1          ; Encoder:u1|key_a_r1          ; 1        ; 1        ; 0        ; 0        ;
+; Encoder:u1|clk_500us         ; Encoder:u1|key_b_r1          ; 1        ; 0        ; 0        ; 0        ;
+; Encoder:u1|key_b_r1          ; Encoder:u1|key_b_r1          ; 1        ; 1        ; 0        ; 0        ;
+; clk                          ; Segment_scan:u5|clk_40khz    ; 3204     ; 0        ; 0        ; 0        ;
+; DS1340Z_driver:u4|clk_400khz ; Segment_scan:u5|clk_40khz    ; 392      ; 0        ; 0        ; 0        ;
+; Segment_scan:u5|clk_40khz    ; Segment_scan:u5|clk_40khz    ; 257      ; 0        ; 0        ; 0        ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 273   ; 273  ;
+; Unconstrained Output Ports      ; 5     ; 5    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------+
+; Clock Status Summary                                                             ;
++------------------------------+------------------------------+------+-------------+
+; Target                       ; Clock                        ; Type ; Status      ;
++------------------------------+------------------------------+------+-------------+
+; DS1340Z_driver:u4|clk_400khz ; DS1340Z_driver:u4|clk_400khz ; Base ; Constrained ;
+; Encoder:u1|clk_500us         ; Encoder:u1|clk_500us         ; Base ; Constrained ;
+; Encoder:u1|key_a_r1          ; Encoder:u1|key_a_r1          ; Base ; Constrained ;
+; Encoder:u1|key_b_r1          ; Encoder:u1|key_b_r1          ; Base ; Constrained ;
+; Segment_scan:u5|clk_40khz    ; Segment_scan:u5|clk_40khz    ; Base ; Constrained ;
+; clk                          ; clk                          ; Base ; Constrained ;
++------------------------------+------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; i2c_sda    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_a      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_b      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_o      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst_n      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; i2c_scl     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i2c_sda     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_din     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_rck     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sck     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; i2c_sda    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_a      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_b      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key_o      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst_n      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; i2c_scl     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; i2c_sda     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_din     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_rck     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seg_sck     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Jun 26 13:35:21 2018
+Info: Command: quartus_sta Digtal_Calender -c Digtal_Calender
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 2 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Digtal_Calender.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name DS1340Z_driver:u4|clk_400khz DS1340Z_driver:u4|clk_400khz
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name Segment_scan:u5|clk_40khz Segment_scan:u5|clk_40khz
+    Info (332105): create_clock -period 1.000 -name Encoder:u1|clk_500us Encoder:u1|clk_500us
+    Info (332105): create_clock -period 1.000 -name Encoder:u1|key_a_r1 Encoder:u1|key_a_r1
+    Info (332105): create_clock -period 1.000 -name Encoder:u1|key_b_r1 Encoder:u1|key_b_r1
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: u1|WideNor0~0  from: datab  to: combout
+    Info (332098): Cell: u1|WideNor1~0  from: datac  to: combout
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -6.815
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.815             -84.369 Segment_scan:u5|clk_40khz 
+    Info (332119):    -5.123            -380.503 clk 
+    Info (332119):    -4.028            -314.099 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -1.065              -1.065 Encoder:u1|key_b_r1 
+    Info (332119):    -0.949              -0.949 Encoder:u1|key_a_r1 
+    Info (332119):    -0.672              -1.327 Encoder:u1|clk_500us 
+Info (332146): Worst-case hold slack is 0.281
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.281               0.000 Encoder:u1|key_a_r1 
+    Info (332119):     0.343               0.000 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):     0.360               0.000 Segment_scan:u5|clk_40khz 
+    Info (332119):     0.362               0.000 clk 
+    Info (332119):     0.450               0.000 Encoder:u1|key_b_r1 
+    Info (332119):     0.486               0.000 Encoder:u1|clk_500us 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -194.823 clk 
+    Info (332119):    -1.487            -156.135 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -1.487             -46.097 Segment_scan:u5|clk_40khz 
+    Info (332119):    -1.487              -8.922 Encoder:u1|clk_500us 
+    Info (332119):     0.428               0.000 Encoder:u1|key_a_r1 
+    Info (332119):     0.466               0.000 Encoder:u1|key_b_r1 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: u1|WideNor0~0  from: datab  to: combout
+    Info (332098): Cell: u1|WideNor1~0  from: datac  to: combout
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -6.496
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.496             -78.375 Segment_scan:u5|clk_40khz 
+    Info (332119):    -4.722            -353.957 clk 
+    Info (332119):    -3.758            -289.302 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -0.908              -0.908 Encoder:u1|key_b_r1 
+    Info (332119):    -0.807              -0.807 Encoder:u1|key_a_r1 
+    Info (332119):    -0.546              -1.073 Encoder:u1|clk_500us 
+Info (332146): Worst-case hold slack is 0.275
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.275               0.000 Encoder:u1|key_a_r1 
+    Info (332119):     0.306               0.000 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):     0.323               0.000 Segment_scan:u5|clk_40khz 
+    Info (332119):     0.324               0.000 clk 
+    Info (332119):     0.445               0.000 Encoder:u1|key_b_r1 
+    Info (332119):     0.459               0.000 Encoder:u1|clk_500us 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -194.823 clk 
+    Info (332119):    -1.487            -156.135 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -1.487             -46.097 Segment_scan:u5|clk_40khz 
+    Info (332119):    -1.487              -8.922 Encoder:u1|clk_500us 
+    Info (332119):     0.397               0.000 Encoder:u1|key_b_r1 
+    Info (332119):     0.437               0.000 Encoder:u1|key_a_r1 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1200mV 0C Model
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: u1|WideNor0~0  from: datab  to: combout
+    Info (332098): Cell: u1|WideNor1~0  from: datac  to: combout
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.923
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.923             -15.450 Segment_scan:u5|clk_40khz 
+    Info (332119):    -1.393             -76.677 clk 
+    Info (332119):    -0.998             -62.828 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -0.149              -0.149 Encoder:u1|key_b_r1 
+    Info (332119):    -0.063              -0.063 Encoder:u1|key_a_r1 
+    Info (332119):    -0.032              -0.050 Encoder:u1|clk_500us 
+Info (332146): Worst-case hold slack is 0.081
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.081               0.000 Encoder:u1|key_a_r1 
+    Info (332119):     0.145               0.000 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):     0.148               0.000 clk 
+    Info (332119):     0.151               0.000 Segment_scan:u5|clk_40khz 
+    Info (332119):     0.155               0.000 Encoder:u1|key_b_r1 
+    Info (332119):     0.164               0.000 Encoder:u1|clk_500us 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -153.725 clk 
+    Info (332119):    -1.000            -105.000 DS1340Z_driver:u4|clk_400khz 
+    Info (332119):    -1.000             -31.000 Segment_scan:u5|clk_40khz 
+    Info (332119):    -1.000              -6.000 Encoder:u1|clk_500us 
+    Info (332119):     0.415               0.000 Encoder:u1|key_a_r1 
+    Info (332119):     0.430               0.000 Encoder:u1|key_b_r1 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Tue Jun 26 13:35:24 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
+
+

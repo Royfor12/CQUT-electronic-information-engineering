@@ -1,0 +1,15 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jan 29 09:49:06 2019 *
+NOTE DESIGN NAME: Digital_THM *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS i2c_sda : B8 : inout *
+NOTE PINS i2c_scl : C8 : out *
+NOTE PINS clk : C1 : in *
+NOTE PINS seg_din : P13 : out *
+NOTE PINS seg_sck : M4 : out *
+NOTE PINS seg_rck : P3 : out *
+NOTE PINS rst_n : L14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

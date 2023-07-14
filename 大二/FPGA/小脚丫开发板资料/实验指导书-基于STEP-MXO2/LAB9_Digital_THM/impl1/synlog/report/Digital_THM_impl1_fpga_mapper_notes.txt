@@ -1,0 +1,30 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":114:32:114:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":113:32:113:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":112:32:112:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":111:32:111:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":110:32:110:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":109:32:109:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":108:32:108:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":107:32:107:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Found counter in view:work.Segment_scan(verilog) instance cnt_write[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":70:0:70:5|Found counter in view:work.Segment_scan(verilog) instance cnt[8:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Found counter in view:work.SHT20_Driver(verilog) instance cnt_delay[23:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Found counter in view:work.SHT20_Driver(verilog) instance cnt_main[3:0] 
+@N: BN362 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Removing sequential instance num_delay[0] (in view: work.SHT20_Driver(verilog)) because it does not drive other instances.
+@N: FA113 :"f:\fpga_project\baseboard\lab9_digital_thm\calculate.v":64:16:64:33|Pipelining module un1_H_code[25:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register H_code[15:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register dat_l[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register dat_h[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register T_code[15:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\sht20_driver.v":66:1:66:6|Pushed in register data_r[7:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Pushed in register cnt_main[2:0].
+@N: MF169 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":89:0:89:5|Pushed in register data[15:0].
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock SHT20_Driver|clk_400khz_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Segment_scan|clk_40khz_derived_clock is not used and is being removed
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB9_Digital_THM\impl1\Digital_THM_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

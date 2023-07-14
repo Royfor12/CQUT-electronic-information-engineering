@@ -1,0 +1,61 @@
+---------------------------------------------------
+Report for cell Display_Ctl
+   Instance path: Display_Ctl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     106.00        100.0
+                                  LUT4	     132.00        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	        110        100.0
+                                RIPPLE	         12        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              Uart_Bus	          1        17.8
+                          Segment_scan	          1        65.3
+                               Decoder	          1        16.7
+---------------------------------------------------
+Report for cell Uart_Bus
+   Instance path: Display_Ctl/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.83        17.8
+                                  LUT4	      24.00        18.2
+                                PFUREG	         31        28.2
+                                RIPPLE	          7        58.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               Uart_Rx	          1         7.2
+                                  Baud	          1        10.5
+---------------------------------------------------
+Report for cell Uart_Rx
+   Instance path: Display_Ctl/u1/Uart_Rx_uut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67         7.2
+                                  LUT4	      10.00         7.6
+                                PFUREG	         17        15.5
+---------------------------------------------------
+Report for cell Baud
+   Instance path: Display_Ctl/u1/Baud_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.17        10.5
+                                  LUT4	      14.00        10.6
+                                PFUREG	         14        12.7
+                                RIPPLE	          7        58.3
+---------------------------------------------------
+Report for cell Segment_scan
+   Instance path: Display_Ctl/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      69.17        65.3
+                                  LUT4	     107.00        81.1
+                                PFUREG	         39        35.5
+                                RIPPLE	          5        41.7
+---------------------------------------------------
+Report for cell Decoder
+   Instance path: Display_Ctl/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.67        16.7
+                                PFUREG	         40        36.4

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/game_score.v(18): </Dynamic>
+            <Dynamic>Game_Score</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/game_score.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/debounce.v(18): </Dynamic>
+            <Dynamic>Debounce(KEY_WIDTH=2'b10)</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/debounce.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/counter.v(18): </Dynamic>
+            <Dynamic>Counter</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/counter.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(18): </Dynamic>
+            <Dynamic>Segment_scan</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(65): </Dynamic>
+            <Dynamic>\u4/seg[0]_i1</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(65): </Dynamic>
+            <Dynamic>\u4/seg[0]_i7</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>11</Dynamic>
+            <Dynamic>\u4/data_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>15</Dynamic>
+            <Dynamic>\u4/data_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v(162): </Dynamic>
+            <Dynamic>\u4/state_i2</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab4_game_score/segment_scan.v</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

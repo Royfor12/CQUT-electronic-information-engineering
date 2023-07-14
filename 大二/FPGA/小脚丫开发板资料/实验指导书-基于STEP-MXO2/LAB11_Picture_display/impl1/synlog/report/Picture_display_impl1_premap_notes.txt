@@ -1,0 +1,3 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_clk_en (in view: work.LCD_RGB(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.

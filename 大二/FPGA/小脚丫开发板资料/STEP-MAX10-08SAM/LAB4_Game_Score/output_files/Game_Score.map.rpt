@@ -1,0 +1,518 @@
+Analysis & Synthesis report for Game_Score
+Mon May 28 17:01:10 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Game_Score|Segment_scan:u4|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Debounce:u1
+ 14. Port Connectivity Checks: "Segment_scan:u4"
+ 15. Port Connectivity Checks: "Debounce:u1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon May 28 17:01:10 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Game_Score                                  ;
+; Top-level Entity Name              ; Game_Score                                  ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 200                                         ;
+;     Total combinational functions  ; 193                                         ;
+;     Dedicated logic registers      ; 90                                          ;
+; Total registers                    ; 90                                          ;
+; Total pins                         ; 7                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                                      ; Game_Score         ; Game_Score         ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; Game_Score.v                     ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Game_Score.v   ;         ;
+; Debounce.v                       ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Debounce.v     ;         ;
+; Counter.v                        ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Counter.v      ;         ;
+; Segment_scan.v                   ; yes             ; User Verilog HDL File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Segment_scan.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 200         ;
+;                                             ;             ;
+; Total combinational functions               ; 193         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 129         ;
+;     -- 3 input functions                    ; 14          ;
+;     -- <=2 input functions                  ; 50          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 162         ;
+;     -- arithmetic mode                      ; 31          ;
+;                                             ;             ;
+; Total registers                             ; 90          ;
+;     -- Dedicated logic registers            ; 90          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 7           ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; rst_n~input ;
+; Maximum fan-out                             ; 71          ;
+; Total fan-out                               ; 962         ;
+; Average fan-out                             ; 3.24        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name         ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
+; |Game_Score                ; 193 (4)             ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 7    ; 0            ; 0          ; |Game_Score                 ; Game_Score   ; work         ;
+;    |Counter:u2|            ; 15 (15)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Game_Score|Counter:u2      ; Counter      ; work         ;
+;    |Counter:u3|            ; 15 (15)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Game_Score|Counter:u3      ; Counter      ; work         ;
+;    |Debounce:u1|           ; 27 (27)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Game_Score|Debounce:u1     ; Debounce     ; work         ;
+;    |Segment_scan:u4|       ; 132 (132)           ; 40 (40)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Game_Score|Segment_scan:u4 ; Segment_scan ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------+
+; State Machine - |Game_Score|Segment_scan:u4|state   ;
++-------------+------------+-------------+------------+
+; Name        ; state.IDLE ; state.WRITE ; state.MAIN ;
++-------------+------------+-------------+------------+
+; state.IDLE  ; 0          ; 0           ; 0          ;
+; state.MAIN  ; 1          ; 0           ; 1          ;
+; state.WRITE ; 1          ; 1           ; 0          ;
++-------------+------------+-------------+------------+
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; Segment_scan:u4|seg[0][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[0][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[1][0]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[1][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[1][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[1][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[1][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[1][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[1][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[2][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[2][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[2][2]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[2][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[2][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[2][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[2][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[3][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[3][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[3][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[3][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[3][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[3][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[3][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[4][0]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[4][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[4][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[4][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[4][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[4][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[4][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[5][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[5][1]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[5][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[5][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[5][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[5][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[5][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][1]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[6][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[6][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[7][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[7][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[7][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[7][3]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[7][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[7][5]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[7][6]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[8][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[8][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][0]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][1]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][2]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][3]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][4]               ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[9][5]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[9][6]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][1]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][3]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[10][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[10][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[11][0]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[11][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[11][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[11][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[11][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[11][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[11][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[12][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[12][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[12][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[12][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[12][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[12][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[12][6]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[13][0]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[13][1]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[13][2]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[13][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[13][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[13][5]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[13][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[14][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[14][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[14][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[14][3]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[14][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[14][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[14][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[15][0]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[15][1]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[15][2]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[15][3]              ; Stuck at GND due to stuck port data_in ;
+; Segment_scan:u4|seg[15][4]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[15][5]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|seg[15][6]              ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|data[0,4]               ; Stuck at VCC due to stuck port data_in ;
+; Segment_scan:u4|state~9                 ; Lost fanout                            ;
+; Total Number of Removed Registers = 115 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 90    ;
+; Number of registers using Synchronous Clear  ; 28    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 70    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Debounce:u1|key_jit[0]                 ; 12      ;
+; Debounce:u1|key_jit[1]                 ; 12      ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |Game_Score|Segment_scan:u4|data[8] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Debounce:u1 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; KEY_WIDTH      ; 10    ; Unsigned Binary                 ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Segment_scan:u4"                                                                                                                                                                          ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; dat_1        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; dat_1[3..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dat_5        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; dat_5[3..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dat_en[7]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dat_en[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; dat_en[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dat_en[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; dot_en[7..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dot_en[3..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; dot_en[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; dot_en[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Debounce:u1"                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; key_pulse ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; key_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 90                          ;
+;     CLR               ; 28                          ;
+;     CLR SCLR          ; 28                          ;
+;     ENA               ; 14                          ;
+;     ENA CLR           ; 14                          ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 193                         ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 162                         ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 129                         ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.68                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Mon May 28 17:00:57 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Game_Score -c Game_Score
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file game_score.v
+    Info (12023): Found entity 1: Game_Score File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Game_Score.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.v
+    Info (12023): Found entity 1: Debounce File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Debounce.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file counter.v
+    Info (12023): Found entity 1: Counter File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Counter.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file segment_scan.v
+    Info (12023): Found entity 1: Segment_scan File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Segment_scan.v Line: 18
+Info (12127): Elaborating entity "Game_Score" for the top level hierarchy
+Info (12128): Elaborating entity "Debounce" for hierarchy "Debounce:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Game_Score.v Line: 43
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:u2" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Game_Score.v Line: 52
+Info (12128): Elaborating entity "Segment_scan" for hierarchy "Segment_scan:u4" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Game_Score.v Line: 92
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB4_Game_Score/Debounce.v Line: 54
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 208 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 201 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Mon May 28 17:01:10 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:25
+
+

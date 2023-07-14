@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -24.230
+TNS   : -287.859
+
+Type  : Slow 1200mV 85C Model Setup 'SHT20_Driver:u1|clk_400khz'
+Slack : -6.445
+TNS   : -489.720
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.848
+TNS   : -40.541
+
+Type  : Slow 1200mV 85C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SHT20_Driver:u1|clk_400khz'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.471
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -35.714
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SHT20_Driver:u1|clk_400khz'
+Slack : -1.487
+TNS   : -203.719
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.487
+TNS   : -46.097
+
+Type  : Slow 1200mV 0C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -22.651
+TNS   : -268.782
+
+Type  : Slow 1200mV 0C Model Setup 'SHT20_Driver:u1|clk_400khz'
+Slack : -6.008
+TNS   : -459.027
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.660
+TNS   : -36.558
+
+Type  : Slow 1200mV 0C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SHT20_Driver:u1|clk_400khz'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -35.714
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SHT20_Driver:u1|clk_400khz'
+Slack : -1.487
+TNS   : -203.719
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.487
+TNS   : -46.097
+
+Type  : Fast 1200mV 0C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -8.558
+TNS   : -92.220
+
+Type  : Fast 1200mV 0C Model Setup 'SHT20_Driver:u1|clk_400khz'
+Slack : -1.719
+TNS   : -115.349
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.508
+TNS   : -2.328
+
+Type  : Fast 1200mV 0C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SHT20_Driver:u1|clk_400khz'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -28.707
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SHT20_Driver:u1|clk_400khz'
+Slack : -1.000
+TNS   : -137.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.000
+TNS   : -31.000
+
+------------------------------------------------------------

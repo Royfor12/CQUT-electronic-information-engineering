@@ -1,0 +1,402 @@
+
+       Lattice Mapping Report File for Design Module 'Digtal_Calender'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Digtal_Calender_impl1.ngd -o Digtal_Calender_impl1_map.ncd -pr
+     Digtal_Calender_impl1.prf -mp Digtal_Calender_impl1.mrp -lpf F:/Fpga_Projec
+     t/BaseBoard/LAB10_Digtal_Calender/impl1/Digtal_Calender_impl1_synplify.lpf
+     -lpf F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/Digtal_Calender.lpf -c
+     0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/29/19  09:53:37
+
+Design Summary
+--------------
+
+   Number of registers:    265 out of  4635 (6%)
+      PFU registers:          257 out of  4320 (6%)
+      PIO registers:            8 out of   315 (3%)
+   Number of SLICEs:       432 out of  2160 (20%)
+      SLICEs as Logic/ROM:    432 out of  2160 (20%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         65 out of  2160 (3%)
+   Number of LUT4s:        861 out of  4320 (20%)
+      Number used as logic LUTs:        731
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      130
+      Number used as shift registers:     0
+   Number of PIO sites used: 10 + 4(JTAG) out of 105 (13%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 150 loads, 150 rising, 0 falling (Driver: PIO clk )
+     Net u1.clk_500us: 8 loads, 8 rising, 0 falling (Driver: u1/clk_500us )
+
+                                    Page 1
+
+
+
+
+Design:  Digtal_Calender                               Date:  01/29/19  09:53:37
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  30
+     Net seg_sck_1_sqmuxa_i_a3_RNIQE6H1: 1 loads, 0 LSLICEs
+     Net un1_scl_out_r_2_sqmuxa_0_2_RNIESD52: 1 loads, 0 LSLICEs
+     Net G_109: 16 loads, 16 LSLICEs
+     Net u4/sda_out_r_cl_RNO: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_r_RNO[1]: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_r_RNO[0]: 1 loads, 1 LSLICEs
+     Net u4/un1_key_set_0: 1 loads, 1 LSLICEs
+     Net u4/sda_out_r_cl_1_RNO_0: 1 loads, 1 LSLICEs
+     Net u4/sda_out_r_RNO: 1 loads, 1 LSLICEs
+     Net u4/cnt_main_RNIT5P52_1[3]: 4 loads, 4 LSLICEs
+     Net u4/rtc_week_1_sqmuxa_0_a3_0_o2_RNIK5IU1: 4 loads, 4 LSLICEs
+     Net u4/rtc_sec_1_sqmuxa_0_a3_0_a2_1_RNICUGI1: 4 loads, 4 LSLICEs
+     Net u4/cnt_main_RNIT5P52[3]: 4 loads, 4 LSLICEs
+     Net u4/cnt_main_RNIT5P52_0[3]: 4 loads, 4 LSLICEs
+     Net u4/rtc_sec_1_sqmuxa_0_a3_0_a2_0_RNI315S1: 4 loads, 4 LSLICEs
+     Net u4/state42_2_0_a3_0_a3_RNIRTHT1: 4 loads, 4 LSLICEs
+     Net u4/rtc_data_rce[2]: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_rce[3]: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_rce[4]: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_rce[5]: 1 loads, 1 LSLICEs
+     Net u4/rtc_data_rce[6]: 1 loads, 1 LSLICEs
+     Net u4/state_ns_0_0_o2_RNIEN9P2[2]: 4 loads, 4 LSLICEs
+     Net u4/ack_RNO: 1 loads, 1 LSLICEs
+     Net rtc_data_rce[7]: 1 loads, 0 LSLICEs
+     Net u5/state_RNIILDF1[0]: 10 loads, 10 LSLICEs
+     Net u5/clk_40khz_RNINKMT: 6 loads, 6 LSLICEs
+     Net un1_state_5_0_a3_RNISL5A1: 1 loads, 0 LSLICEs
+     Net cnt_write_RNIE8591[5]: 1 loads, 0 LSLICEs
+     Net u3/disp_en_2_sqmuxa_i: 2 loads, 2 LSLICEs
+     Net u2/key_jit5: 1 loads, 1 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  162
+   Number of LSRs:  4
+     Net u1/A_state5: 1 loads, 1 LSLICEs
+     Net u1/key_a_r1: 1 loads, 1 LSLICEs
+     Net u1/key_b_r1: 1 loads, 1 LSLICEs
+     Net u1/B_state5: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net data_2: 72 loads
+     Net state[2]: 47 loads
+     Net u3/adj_week_0_sqmuxa: 46 loads
+     Net u5/cnt_main[2]: 39 loads
+     Net u4/cnt_main[2]: 38 loads
+     Net L_pulse: 34 loads
+     Net u4/cnt_main[0]: 32 loads
+     Net G_109: 30 loads
+     Net u4/cnt_main[1]: 30 loads
+     Net u4/cnt_main[3]: 28 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+                                    Page 2
+
+
+
+
+Design:  Digtal_Calender                               Date:  01/29/19  09:53:37
+
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'rst_n_c' to infer global GSR net.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| i2c_sda             | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| i2c_scl             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| seg_din             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| seg_sck             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| seg_rck             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| key_o               | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| key_b               | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| key_a               | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block u2/VCC undriven or does not drive anything - clipped.
+Block u3/VCC undriven or does not drive anything - clipped.
+Block u5/VCC undriven or does not drive anything - clipped.
+Block u4/VCC undriven or does not drive anything - clipped.
+Signal rst_n_c_i was merged into signal rst_n_c
+Signal u1/key_b_r1_i was merged into signal u1/key_b_r1
+Signal u1/key_a_r1_i was merged into signal u1/key_a_r1
+Signal u1/GND undriven or does not drive anything - clipped.
+Signal u2/GND undriven or does not drive anything - clipped.
+Signal u3/GND undriven or does not drive anything - clipped.
+Signal u5/GND undriven or does not drive anything - clipped.
+Signal u4/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal u1/un5_cnt_s_11_0_S1 undriven or does not drive anything - clipped.
+Signal u1/un5_cnt_s_11_0_COUT undriven or does not drive anything - clipped.
+Signal u1/un5_cnt_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal u1/un5_cnt_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal u1/N_1 undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  Digtal_Calender                               Date:  01/29/19  09:53:37
+
+Removed logic (cont)
+--------------------
+Signal u2/cnt_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal u2/N_2 undriven or does not drive anything - clipped.
+Signal u2/cnt_s_0_S1[17] undriven or does not drive anything - clipped.
+Signal u2/cnt_s_0_COUT[17] undriven or does not drive anything - clipped.
+Signal u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal u3/N_1 undriven or does not drive anything - clipped.
+Signal u3/adj_day_35_1_i_m3_i_m3_s_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/adj_day_35_1_i_m3_i_m3_s_7_0_COUT undriven or does not drive anything
+     - clipped.
+Signal u3/un1_adj_year_6_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_year_6_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_2 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_year_6_s_7_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u3/un1_adj_year_6_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_hour_4_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_hour_4_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_3 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_hour_4_s_7_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u3/un1_adj_hour_4_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_min_6_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_min_6_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_4 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_min_6_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_min_6_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_mon_7_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_mon_7_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_5 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_mon_7_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_mon_7_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_week_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_week_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_6 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_week_1_s_7_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u3/un1_adj_week_1_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+
+                                    Page 4
+
+
+
+
+Design:  Digtal_Calender                               Date:  01/29/19  09:53:37
+
+Removed logic (cont)
+--------------------
+Signal u3/un1_adj_sec_6_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal u3/un1_adj_sec_6_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u3/N_7 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_sec_6_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal u3/un1_adj_sec_6_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal u5/cnt_cry_0_S0_0[0] undriven or does not drive anything - clipped.
+Signal u5/N_1 undriven or does not drive anything - clipped.
+Signal u5/cnt_cry_0_COUT[7] undriven or does not drive anything - clipped.
+Signal u5/cnt_write_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal u5/cnt_write_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal u5/N_3 undriven or does not drive anything - clipped.
+Signal u5/cnt_write_cry_0_COUT[4] undriven or does not drive anything - clipped.
+     
+Signal u4/un1_cnt_main_3_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal u4/N_1 undriven or does not drive anything - clipped.
+Signal u4/un1_cnt_main_3_s_5_0_S1 undriven or does not drive anything - clipped.
+     
+Signal u4/un1_cnt_main_3_s_5_0_COUT undriven or does not drive anything -
+     clipped.
+Block rst_n_pad_RNIQR5E was optimized away.
+Block u1/key_b_r2_ret_1_RNO was optimized away.
+Block u1/key_a_r2_ret_1_RNO was optimized away.
+Block u1/GND was optimized away.
+Block u2/GND was optimized away.
+Block u3/GND was optimized away.
+Block u5/GND was optimized away.
+Block u4/GND was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'rst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+
+                                    Page 5
+
+
+
+
+Design:  Digtal_Calender                               Date:  01/29/19  09:53:37
+
+Run Time and Memory Usage (cont)
+--------------------------------
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 55 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

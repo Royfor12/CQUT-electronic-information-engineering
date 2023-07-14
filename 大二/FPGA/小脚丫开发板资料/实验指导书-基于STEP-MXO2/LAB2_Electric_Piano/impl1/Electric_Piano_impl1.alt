@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Jan 24 15:29:53 2019 *
+NOTE DESIGN NAME: Electric_Piano *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS row[3] : K3 : out *
+NOTE PINS row[2] : L3 : out *
+NOTE PINS row[1] : N5 : out *
+NOTE PINS row[0] : P6 : out *
+NOTE PINS beeper : N4 : out *
+NOTE PINS clk : C1 : in *
+NOTE PINS rst_n : L14 : in *
+NOTE PINS col[3] : K2 : in *
+NOTE PINS col[2] : J3 : in *
+NOTE PINS col[1] : J2 : in *
+NOTE PINS col[0] : H3 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

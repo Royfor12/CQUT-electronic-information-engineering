@@ -1,0 +1,8 @@
+#Start recording tcl command: 1/24/2019 17:21:09
+#Project Location: F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust; Project name: Amp_Adjust
+prj_project new -name "Amp_Adjust" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/Amp_Adjust.v" "F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/Decoder.v" "F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/Encoder.v" "F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust/Segment_led.v"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 1/24/2019 17:25:39

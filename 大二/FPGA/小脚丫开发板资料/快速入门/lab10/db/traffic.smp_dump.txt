@@ -1,0 +1,7 @@
+
+State Machine - |traffic|cur_state
+Name cur_state.S4 cur_state.S3 cur_state.S2 cur_state.S1 
+cur_state.S1 0 0 0 0 
+cur_state.S2 0 0 1 1 
+cur_state.S3 0 1 0 1 
+cur_state.S4 1 0 0 1 

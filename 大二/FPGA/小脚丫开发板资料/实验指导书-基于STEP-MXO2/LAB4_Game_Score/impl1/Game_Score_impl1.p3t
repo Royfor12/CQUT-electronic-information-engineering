@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Game_Score_impl1.log"
+-o "Game_Score_impl1.csv"
+-pr "Game_Score_impl1.prf"

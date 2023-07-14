@@ -1,0 +1,77 @@
+# Tue Jan 29 09:36:54 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB8_Prox_Detect\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch0_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch1_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Prox_Detect
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                         Requested     Requested     Clock                                                        Clock                     Clock
+Clock                                         Frequency     Period        Type                                                         Group                     Load 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+APDS_9901_Driver|clk_400khz_derived_clock     1.0 MHz       1000.000      derived (from Prox_Detect|clk)                               Autoconstr_clkgroup_0     149  
+APDS_9901_Driver|dat_valid_derived_clock      1.0 MHz       1000.000      derived (from APDS_9901_Driver|clk_400khz_derived_clock)     Autoconstr_clkgroup_0     35   
+Prox_Detect|clk                               1.0 MHz       1000.000      inferred                                                     Autoconstr_clkgroup_0     5    
+======================================================================================================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":50:1:50:6|Found inferred clock Prox_Detect|clk which controls 5 sequential elements including u1.cnt_400khz[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine state[8:0] (in view: work.APDS_9901_Driver(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0100 -> 000010000
+   0101 -> 000100000
+   0110 -> 001000000
+   0111 -> 010000000
+   1000 -> 100000000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 161MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 161MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 09:36:55 2019
+
+###########################################################]

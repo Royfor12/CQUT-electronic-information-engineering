@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/display_ctl.v(18): </Dynamic>
+            <Dynamic>Display_Ctl</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/display_ctl.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/uart_bus.v(18): </Dynamic>
+            <Dynamic>Uart_Bus</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/uart_bus.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/baud.v(18): </Dynamic>
+            <Dynamic>Baud</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/baud.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/uart_rx.v(18): </Dynamic>
+            <Dynamic>Uart_Rx</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/uart_bus/uart_rx.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/decoder.v(1): </Dynamic>
+            <Dynamic>Decoder</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/decoder.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v(18): </Dynamic>
+            <Dynamic>Segment_scan</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v(65): </Dynamic>
+            <Dynamic>\u3/seg[0]_i1</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v(65): </Dynamic>
+            <Dynamic>\u3/seg[0]_i7</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\u3/data_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v(162): </Dynamic>
+            <Dynamic>\u3/state_i2</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab5_display_ctl/segment_scan.v</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

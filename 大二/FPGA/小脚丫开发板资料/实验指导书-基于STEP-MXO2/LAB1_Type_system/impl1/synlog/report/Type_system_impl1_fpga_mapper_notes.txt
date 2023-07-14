@@ -1,0 +1,11 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO106 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|Found ROM .delname. (in view: work.Type_system(verilog)) with 10 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|Found ROM .delname. (in view: work.Type_system(verilog)) with 2 words by 7 bits.
+@N: MO225 :"f:\fpga_project\baseboard\lab1_type_system\array_keyboard.v":63:1:63:6|There are no possible illegal states for state machine c_state[3:0] (in view: work.Array_KeyBoard(verilog)); safe FSM implementation is not required.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock Array_KeyBoard|clk_200hz_derived_clock is not used and is being removed
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

@@ -1,0 +1,19 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: FX493 |Applying initial value "00" on instance LCD_RGB_uut.state_back[1:0].
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance x_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance y_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_init[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_write[4:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_delay[15:0] 
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_data_r[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance num_delay[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+@N: FX214 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_ram.v":25:2:25:5|Generating ROM LCD_RAM_uut.Q_1_0[131:22] (in view: work.Picture_display(verilog)).
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance LCD_RGB_uut.num_delay[4] (in view: work.Picture_display(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

@@ -1,0 +1,5 @@
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u4.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab1_type_system\segment_led.v":25:1:25:4|ROM u3.segment_led_1[6:0] (in view: work.Type_system(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: MT420 |Found inferred clock Type_system|clk with period 6.09ns. Please declare a user-defined clock on object "p:clk"

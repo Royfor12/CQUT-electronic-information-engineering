@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Segment_scan:u4|clk_40khz'
+Slack : -3.555
+TNS   : -63.230
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.667
+TNS   : -59.411
+
+Type  : Slow 1200mV 85C Model Setup 'Debounce:u1|key_jit[0]'
+Slack : -1.954
+TNS   : -19.390
+
+Type  : Slow 1200mV 85C Model Setup 'Debounce:u1|key_jit[1]'
+Slack : -1.831
+TNS   : -16.997
+
+Type  : Slow 1200mV 85C Model Hold 'Segment_scan:u4|clk_40khz'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Debounce:u1|key_jit[0]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Debounce:u1|key_jit[1]'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -58.019
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Segment_scan:u4|clk_40khz'
+Slack : -1.487
+TNS   : -43.123
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Debounce:u1|key_jit[0]'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Debounce:u1|key_jit[1]'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 0C Model Setup 'Segment_scan:u4|clk_40khz'
+Slack : -3.322
+TNS   : -58.529
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.462
+TNS   : -52.641
+
+Type  : Slow 1200mV 0C Model Setup 'Debounce:u1|key_jit[0]'
+Slack : -1.793
+TNS   : -17.560
+
+Type  : Slow 1200mV 0C Model Setup 'Debounce:u1|key_jit[1]'
+Slack : -1.644
+TNS   : -15.171
+
+Type  : Slow 1200mV 0C Model Hold 'Segment_scan:u4|clk_40khz'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Debounce:u1|key_jit[0]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Debounce:u1|key_jit[1]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -58.019
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u4|clk_40khz'
+Slack : -1.487
+TNS   : -43.123
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Debounce:u1|key_jit[0]'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Debounce:u1|key_jit[1]'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Fast 1200mV 0C Model Setup 'Segment_scan:u4|clk_40khz'
+Slack : -0.814
+TNS   : -9.026
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.494
+TNS   : -4.839
+
+Type  : Fast 1200mV 0C Model Setup 'Debounce:u1|key_jit[0]'
+Slack : -0.224
+TNS   : -1.273
+
+Type  : Fast 1200mV 0C Model Setup 'Debounce:u1|key_jit[1]'
+Slack : -0.141
+TNS   : -0.498
+
+Type  : Fast 1200mV 0C Model Hold 'Segment_scan:u4|clk_40khz'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Debounce:u1|key_jit[0]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Debounce:u1|key_jit[1]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -46.247
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u4|clk_40khz'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Debounce:u1|key_jit[0]'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Debounce:u1|key_jit[1]'
+Slack : -1.000
+TNS   : -12.000
+
+------------------------------------------------------------

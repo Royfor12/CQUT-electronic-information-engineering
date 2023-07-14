@@ -1,0 +1,65 @@
+[ START MERGED ]
+rst_n_c_i rst_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+u2/GND
+u1/GND
+VCC
+u2/un1_prox_dat0_1_cry_1_0_S1
+u2/un1_prox_dat0_1_cry_1_0_S0
+u2/un1_prox_dat0_1_cry_3_0_S1
+u2/un1_prox_dat0_1_cry_3_0_S0
+u2/un1_prox_dat0_1_cry_5_0_S1
+u2/un1_prox_dat0_1_cry_5_0_S0
+u2/un1_prox_dat0_1_cry_7_0_S1
+u2/un1_prox_dat0_1_cry_7_0_S0
+u2/un1_prox_dat0_1_s_15_0_S1
+u2/un1_prox_dat0_1_s_15_0_COUT
+u2/un1_prox_dat0_1_cry_0_0_S1
+u2/un1_prox_dat0_1_cry_0_0_S0
+u2/N_2
+u1/cnt_delay_cry_0_S0[0]
+u1/N_33
+u1/cnt_delay_s_0_S1[23]
+u1/cnt_delay_s_0_COUT[23]
+u1/un1_cnt_delay_cry_6_0_S1
+u1/un1_cnt_delay_cry_6_0_S0
+u1/N_34
+u1/un1_cnt_delay_cry_7_0_S1
+u1/un1_cnt_delay_cry_7_0_S0
+u1/un1_cnt_delay_cry_9_0_S1
+u1/un1_cnt_delay_cry_9_0_S0
+u1/un1_cnt_delay_cry_11_0_S1
+u1/un1_cnt_delay_cry_11_0_S0
+u1/un1_cnt_delay_cry_13_0_S1
+u1/un1_cnt_delay_cry_13_0_S0
+u1/un1_cnt_delay_cry_15_0_S1
+u1/un1_cnt_delay_cry_15_0_S0
+u1/un1_cnt_delay_cry_17_0_S1
+u1/un1_cnt_delay_cry_17_0_S0
+u1/un1_cnt_delay_cry_19_0_S1
+u1/un1_cnt_delay_cry_19_0_S0
+u1/un1_cnt_delay_cry_21_0_S1
+u1/un1_cnt_delay_cry_21_0_S0
+u1/un1_cnt_delay_cry_23_0_S0
+u1/un1_cnt_delay_cry_23_0_COUT
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.0.99.2 -- WARNING: Map write only section -- Tue Feb 12 09:10:48 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "i2c_sda" SITE "B8" ;
+LOCATE COMP "i2c_scl" SITE "C8" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "led[7]" SITE "P9" ;
+LOCATE COMP "led[6]" SITE "N9" ;
+LOCATE COMP "led[5]" SITE "N10" ;
+LOCATE COMP "led[4]" SITE "P11" ;
+LOCATE COMP "led[3]" SITE "M11" ;
+LOCATE COMP "led[2]" SITE "P12" ;
+LOCATE COMP "led[1]" SITE "M12" ;
+LOCATE COMP "led[0]" SITE "N13" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

@@ -1,0 +1,21 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO231 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":92:0:92:5|Found counter in view:work.Vga_Module(verilog) instance cnt[18:0] 
+@N: FX211 |Packed ROM u3.Q_1_0[127:0] (7 input, 128 output) to Block SelectRAM 
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":120:0:120:5|Replicating instance u2.y_set[7] (in view: work.Screen_Saver(verilog)) with 11 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":120:0:120:5|Replicating instance u2.y_set[8] (in view: work.Screen_Saver(verilog)) with 8 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":120:0:120:5|Replicating instance u2.y_set[9] (in view: work.Screen_Saver(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":47:0:47:5|Replicating instance u2.x_cnt[12] (in view: work.Screen_Saver(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":47:0:47:5|Replicating instance u2.x_cnt[11] (in view: work.Screen_Saver(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":47:0:47:5|Replicating instance u2.x_cnt[13] (in view: work.Screen_Saver(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab12_screen_saver\vga_module.v":47:0:47:5|Replicating instance u2.x_cnt[14] (in view: work.Screen_Saver(verilog)) with 4 loads 1 time to improve timing.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock Screen_Saver|clk_40mhz_derived_clock is not used and is being removed
+@N: MT617 :|Automatically generated clock Vga_Module|change_en_derived_clock has lost its master clock Screen_Saver|clk_40mhz_derived_clock and is being removed
+@N: MT611 :|Automatically generated clock Vga_Module|change_en_derived_clock is not used and is being removed
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB12_Screen_Saver\impl1\impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

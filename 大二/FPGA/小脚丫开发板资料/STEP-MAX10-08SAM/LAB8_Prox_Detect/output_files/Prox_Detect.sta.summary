@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'APDS_9901_Driver:u1|dat_valid'
+Slack : -4.707
+TNS   : -33.458
+
+Type  : Slow 1200mV 85C Model Setup 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -3.964
+TNS   : -329.766
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.900
+TNS   : -20.152
+
+Type  : Slow 1200mV 85C Model Hold 'APDS_9901_Driver:u1|clk_400khz'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'APDS_9901_Driver:u1|dat_valid'
+Slack : 0.633
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.662
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -19.357
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -1.487
+TNS   : -185.875
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APDS_9901_Driver:u1|dat_valid'
+Slack : -1.487
+TNS   : -52.045
+
+Type  : Slow 1200mV 0C Model Setup 'APDS_9901_Driver:u1|dat_valid'
+Slack : -4.397
+TNS   : -29.968
+
+Type  : Slow 1200mV 0C Model Setup 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -3.702
+TNS   : -304.155
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.709
+TNS   : -17.729
+
+Type  : Slow 1200mV 0C Model Hold 'APDS_9901_Driver:u1|clk_400khz'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'APDS_9901_Driver:u1|dat_valid'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -19.357
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -1.487
+TNS   : -185.875
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APDS_9901_Driver:u1|dat_valid'
+Slack : -1.487
+TNS   : -52.045
+
+Type  : Fast 1200mV 0C Model Setup 'APDS_9901_Driver:u1|dat_valid'
+Slack : -1.238
+TNS   : -3.518
+
+Type  : Fast 1200mV 0C Model Setup 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -0.989
+TNS   : -61.471
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.532
+TNS   : -1.171
+
+Type  : Fast 1200mV 0C Model Hold 'APDS_9901_Driver:u1|clk_400khz'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'APDS_9901_Driver:u1|dat_valid'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -15.847
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APDS_9901_Driver:u1|clk_400khz'
+Slack : -1.000
+TNS   : -125.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APDS_9901_Driver:u1|dat_valid'
+Slack : -1.000
+TNS   : -35.000
+
+------------------------------------------------------------

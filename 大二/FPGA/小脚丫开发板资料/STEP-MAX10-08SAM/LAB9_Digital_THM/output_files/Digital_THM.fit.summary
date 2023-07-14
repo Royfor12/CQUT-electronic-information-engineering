@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Jun 22 09:46:17 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Digital_THM
+Top-level Entity Name : Digital_THM
+Family : MAX 10
+Device : 10M08SAM153C8G
+Timing Models : Final
+Total logic elements : 920 / 8,064 ( 11 % )
+    Total combinational functions : 903 / 8,064 ( 11 % )
+    Dedicated logic registers : 190 / 8,064 ( 2 % )
+Total registers : 190
+Total pins : 7 / 112 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,16 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Jan 25 16:52:25 2019 *
+NOTE DESIGN NAME: Signal_Generator *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS clk : C1 : in *
+NOTE PINS dac_dat : K14 : out *
+NOTE PINS rst_n : L14 : in *
+NOTE PINS dac_clk : K12 : out *
+NOTE PINS dac_sync : J14 : out *
+NOTE PINS key_o : G3 : in *
+NOTE PINS key_b : F3 : in *
+NOTE PINS key_a : E3 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

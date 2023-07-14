@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab6_voltage_meas/voltage_meas.v(18): </Dynamic>
+            <Dynamic>Voltage_Meas</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab6_voltage_meas/voltage_meas.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab6_voltage_meas/pll/pll.v(8): </Dynamic>
+            <Dynamic>pll</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab6_voltage_meas/pll/pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=2,CLKOP_DIV=22,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=21,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab6_voltage_meas/adc081s101_driver.v(18): </Dynamic>
+            <Dynamic>ADC081S101_driver</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab6_voltage_meas/adc081s101_driver.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab6_voltage_meas/bin_to_bcd.v(18): </Dynamic>
+            <Dynamic>bin_to_bcd</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab6_voltage_meas/bin_to_bcd.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab6_voltage_meas/segment_led.v(18): </Dynamic>
+            <Dynamic>Segment_led</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab6_voltage_meas/segment_led.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

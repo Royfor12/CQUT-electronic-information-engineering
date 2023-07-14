@@ -1,0 +1,116 @@
+----------------------------------------------------------------------
+Report for cell Digtal_Calender.verilog
+
+Register bits: 279 of 4320 (6%)
+PIC Latch:       0
+I/O cells:       10
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        1       100.0
+                              CCU2D       65       100.0
+                            FD1P3AX       87       100.0
+                            FD1P3BX       10       100.0
+                            FD1P3DX       38       100.0
+                            FD1S3AX       10       100.0
+                            FD1S3BX        9       100.0
+                            FD1S3DX      117       100.0
+                                GSR        1       100.0
+                                 IB        5       100.0
+                           IFS1P3DX        4       100.0
+                                INV        3       100.0
+                            L6MUX21       21       100.0
+                                 OB        4       100.0
+                           OFS1P3BX        1       100.0
+                           OFS1P3DX        3       100.0
+                           ORCALUT4      797       100.0
+                              PFUMX       72       100.0
+                                PUR        1       100.0
+                                VHI        6       100.0
+                                VLO        6       100.0
+SUB MODULES 
+                     DS1340Z_driver        1       100.0
+                           Debounce        1       100.0
+                            Encoder        1       100.0
+                       Segment_scan        1       100.0
+                          mode_ctrl        1       100.0
+                            
+                         TOTAL          1266           
+----------------------------------------------------------------------
+Report for cell DS1340Z_driver.netlist
+     Instance path:  u4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        4         6.2
+                            FD1P3AX       71        81.6
+                            FD1P3BX        6        60.0
+                            FD1P3DX       26        68.4
+                            FD1S3DX        5         4.3
+                            L6MUX21        1         4.8
+                           ORCALUT4      205        25.7
+                              PFUMX        4         5.6
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL           324           
+----------------------------------------------------------------------
+Report for cell Segment_scan.netlist
+     Instance path:  u5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        13.8
+                            FD1P3AX       16        18.4
+                            FD1P3DX       11        28.9
+                            FD1S3DX       10         8.5
+                                INV        1        33.3
+                            L6MUX21       20        95.2
+                           ORCALUT4      167        21.0
+                              PFUMX       40        55.6
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL           276           
+----------------------------------------------------------------------
+Report for cell mode_ctrl.netlist
+     Instance path:  u3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       35        53.8
+                            FD1P3BX        3        30.0
+                            FD1P3DX        1         2.6
+                            FD1S3BX        8        88.9
+                            FD1S3DX       64        54.7
+                           ORCALUT4      334        41.9
+                              PFUMX       10        13.9
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL           457           
+----------------------------------------------------------------------
+Report for cell Debounce.netlist
+     Instance path:  u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10        15.4
+                            FD1P3BX        1        10.0
+                            FD1S3AX        2        20.0
+                            FD1S3BX        1        11.1
+                            FD1S3DX       18        15.4
+                           ORCALUT4        8         1.0
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            42           
+----------------------------------------------------------------------
+Report for cell Encoder.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        7        10.8
+                            FD1S3AX        8        80.0
+                            FD1S3DX       20        17.1
+                                INV        1        33.3
+                           ORCALUT4       26         3.3
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            64           

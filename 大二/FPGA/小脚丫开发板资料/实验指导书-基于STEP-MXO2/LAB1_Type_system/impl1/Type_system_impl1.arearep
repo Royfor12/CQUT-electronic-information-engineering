@@ -1,0 +1,60 @@
+----------------------------------------------------------------------
+Report for cell Type_system.TECH
+Register bits:  93 of 4635 (2.006%)
+I/O cells:      28
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8          100.0
+                            FD1P3BX        48          100.0
+                            FD1P3DX         5          100.0
+                            FD1S3BX        17          100.0
+                            FD1S3DX        19          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                                INV         1          100.0
+                               LUT4        98          100.0
+                                 OB        22          100.0
+                           OFS1P3BX         3          100.0
+                           OFS1P3DX         1          100.0
+SUB MODULES
+                     Array_KeyBoard         1
+                            Decoder         1
+                        Segment_led         1
+                     Segment_led_U0         1
+                              TOTAL       233
+----------------------------------------------------------------------
+Report for cell Decoder.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         5          100.0
+                               LUT4        43           43.9
+                              TOTAL        48
+----------------------------------------------------------------------
+Report for cell Segment_led.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7            7.1
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell Segment_led_U0.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            1.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Array_KeyBoard.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8          100.0
+                            FD1P3BX        48          100.0
+                            FD1S3BX        17          100.0
+                            FD1S3DX        19          100.0
+                                INV         1          100.0
+                               LUT4        46           46.9
+                           OFS1P3BX         3          100.0
+                           OFS1P3DX         1          100.0
+                              TOTAL       143

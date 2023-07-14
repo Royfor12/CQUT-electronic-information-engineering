@@ -1,0 +1,82 @@
+----------------------------------------------------------------------
+Report for cell Display_Ctl.TECH
+Register bits:  110 of 4635 (2.373%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12          100.0
+                            FD1P3AX        26          100.0
+                            FD1P3IX        10          100.0
+                            FD1S3AX        48          100.0
+                            FD1S3IX        26          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                            L6MUX21        33          100.0
+                               LUT4       159          100.0
+                                 OB         3          100.0
+                              PFUMX        45          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                               Baud         1
+                            Decoder         1
+                       Segment_scan         1
+                           Uart_Bus         1
+                            Uart_Rx         1
+                              TOTAL       372
+----------------------------------------------------------------------
+Report for cell Uart_Bus.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           58.3
+                            FD1P3AX         8           30.8
+                            FD1S3AX         6           12.5
+                            FD1S3IX        17           65.4
+                               LUT4        25           15.7
+                              PFUMX         1            2.2
+SUB MODULES
+                               Baud         1
+                            Uart_Rx         1
+                              TOTAL        66
+----------------------------------------------------------------------
+Report for cell Uart_Rx.v1
+Instance Path : u1.Uart_Rx_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           30.8
+                            FD1S3AX         5           10.4
+                            FD1S3IX         4           15.4
+                               LUT4        11            6.9
+                              PFUMX         1            2.2
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell Baud.v1
+Instance Path : u1.Baud_rx
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           58.3
+                            FD1S3AX         1            2.1
+                            FD1S3IX        13           50.0
+                               LUT4        14            8.8
+                              TOTAL        35
+----------------------------------------------------------------------
+Report for cell Segment_scan.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           41.7
+                            FD1P3AX        18           69.2
+                            FD1P3IX        10          100.0
+                            FD1S3AX         2            4.2
+                            FD1S3IX         9           34.6
+                            L6MUX21        33          100.0
+                               LUT4       133           83.6
+                              PFUMX        44           97.8
+                              TOTAL       254
+----------------------------------------------------------------------
+Report for cell Decoder.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        40           83.3
+                              TOTAL        40

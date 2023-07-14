@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Game_Score" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Game_Score"/>
+        <Source name="Game_Score.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Game_Score"/>
+        </Source>
+        <Source name="Debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Counter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Segment_scan.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Game_Score.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Game_Score1.sty"/>
+</BaliProject>

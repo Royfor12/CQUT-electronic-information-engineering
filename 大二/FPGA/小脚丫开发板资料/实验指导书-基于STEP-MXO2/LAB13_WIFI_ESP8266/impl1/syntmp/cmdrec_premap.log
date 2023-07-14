@@ -1,0 +1,13 @@
+C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1   -part LCMXO2_4000HC  -package MG132C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synlog\report\impl1_premap.xml  -oedif  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.edi  -conchk_prepass  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1_cck.rpt   -autoconstraint  -freq 1.000   F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_mult.srs  -flow prepass  -gcc_prepass  -osrd  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_prem.srd  -devicelib  "C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v"  -devicelib  "C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v"  -ologparam  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\syntmp\impl1.plg  -osyn  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_prem.srd  -prjdir  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\  -prjname  impl1_syn  -log  F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synlog\impl1_premap.srr 
+rc:1 success:1 runtime:1
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.edi|io:o|time:0|size:0|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1_cck.rpt|io:o|time:1548730154|size:2777|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_mult.srs|io:i|time:1548730153|size:13311|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_prem.srd|io:o|time:1548730154|size:29447|exec:0
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1480960424|size:54295|exec:0
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1480960424|size:40584|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\syntmp\impl1.plg|io:o|time:1548730153|size:0|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_prem.srd|io:o|time:1548730154|size:29447|exec:0
+file:F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synlog\impl1_premap.srr|io:o|time:1548730154|size:6832|exec:0
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin\m_gen_lattice.exe|io:i|time:1480961290|size:19188224|exec:1
+file:C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1480962888|size:23047168|exec:1

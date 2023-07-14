@@ -1,0 +1,35 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//八段数码管1 MSB~LSB = {SEG,DP,G,F,E,D,C,B,A}
+seg_1[0]	,	PIN_E1
+seg_1[1]	,	PIN_D2
+seg_1[2]	,	PIN_K2
+seg_1[3]	,	PIN_J2
+seg_1[4]	,	PIN_G2
+seg_1[5]	,	PIN_F5
+seg_1[6]	,	PIN_G5
+seg_1[7]	,	PIN_L1
+seg_1[8]	,	PIN_E2
+
+//八段数码管2 MSB~LSB = {SEG,DP,G,F,E,D,C,B,A}
+seg_2[0]	,	PIN_A3
+seg_2[1]	,	PIN_A2
+seg_2[2]	,	PIN_P2
+seg_2[3]	,	PIN_P1
+seg_2[4]	,	PIN_N1
+seg_2[5]	,	PIN_C1
+seg_2[6]	,	PIN_C2
+seg_2[7]	,	PIN_R2
+seg_2[8]	,	PIN_B1
+
+//双列直插GPIO管脚，按照外设功能命名
+
+//旋转编码器接口
+key_a		,	PIN_M5
+key_b		,	PIN_R3

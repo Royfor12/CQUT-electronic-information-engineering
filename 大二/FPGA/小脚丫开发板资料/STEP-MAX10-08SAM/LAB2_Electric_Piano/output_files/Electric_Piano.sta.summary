@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -9.236
+TNS   : -205.951
+
+Type  : Slow 1200mV 100C Model Setup 'Array_KeyBoard:u1|clk_200hz'
+Slack : -1.651
+TNS   : -61.163
+
+Type  : Slow 1200mV 100C Model Hold 'Array_KeyBoard:u1|clk_200hz'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : 0.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Array_KeyBoard:u1|clk_200hz'
+Slack : -1.403
+TNS   : -78.568
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -7.987
+TNS   : -177.706
+
+Type  : Slow 1200mV -40C Model Setup 'Array_KeyBoard:u1|clk_200hz'
+Slack : -1.546
+TNS   : -55.840
+
+Type  : Slow 1200mV -40C Model Hold 'Array_KeyBoard:u1|clk_200hz'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Array_KeyBoard:u1|clk_200hz'
+Slack : -1.403
+TNS   : -78.568
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -3.602
+TNS   : -70.165
+
+Type  : Fast 1200mV -40C Model Setup 'Array_KeyBoard:u1|clk_200hz'
+Slack : -0.416
+TNS   : -9.600
+
+Type  : Fast 1200mV -40C Model Hold 'Array_KeyBoard:u1|clk_200hz'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -43.086
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Array_KeyBoard:u1|clk_200hz'
+Slack : -1.000
+TNS   : -56.000
+
+------------------------------------------------------------

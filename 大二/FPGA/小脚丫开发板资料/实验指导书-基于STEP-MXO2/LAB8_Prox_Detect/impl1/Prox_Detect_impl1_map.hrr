@@ -1,0 +1,34 @@
+---------------------------------------------------
+Report for cell Prox_Detect
+   Instance path: Prox_Detect
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     177.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	     288.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	        164        100.0
+                                RIPPLE	         32        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               Decoder	          1         9.6
+                      APDS_9901_Driver	          1        90.2
+---------------------------------------------------
+Report for cell APDS_9901_Driver
+   Instance path: Prox_Detect/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     159.67        90.2
+                                  LUT4	     277.00        96.2
+                                PFUREG	        129        78.7
+                                RIPPLE	         23        71.9
+---------------------------------------------------
+Report for cell Decoder
+   Instance path: Prox_Detect/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.00         9.6
+                                  LUT4	      10.00         3.5
+                                PFUREG	         35        21.3
+                                RIPPLE	          9        28.1

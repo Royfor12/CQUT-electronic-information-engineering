@@ -1,0 +1,2 @@
+@W: MT246 :"f:\fpga_project\baseboard\lab12_screen_saver\pll_mxo2\pll_mxo2.v":64:12:64:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock pll_mxo2|CLKOP_inferred_clock with period 7.40ns. Please declare a user-defined clock on object "n:u1.CLKOP"

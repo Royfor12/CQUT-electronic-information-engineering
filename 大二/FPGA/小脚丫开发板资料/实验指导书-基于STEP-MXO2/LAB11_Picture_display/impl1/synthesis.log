@@ -1,0 +1,319 @@
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jan 29 10:07:55 2019
+
+
+Command Line:  synthesis -f Picture_display_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = Picture_display.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/Fpga_Project/BaseBoard/LAB11_Picture_display (searchpath added)
+-p C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB11_Picture_display/impl1 (searchpath added)
+-p F:/Fpga_Project/BaseBoard/LAB11_Picture_display (searchpath added)
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB11_Picture_display/Picture_display.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB11_Picture_display/LCD_RAM.v
+Verilog design file = F:/Fpga_Project/BaseBoard/LAB11_Picture_display/LCD_RGB.v
+NGD file = Picture_display_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file f:/fpga_project/baseboard/lab11_picture_display/picture_display.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab11_picture_display/lcd_ram.v. VERI-1482
+Analyzing Verilog file f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v. VERI-1482
+Analyzing Verilog file C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Picture_display
+INFO - synthesis: f:/fpga_project/baseboard/lab11_picture_display/picture_display.v(18): compiling module Picture_display. VERI-1018
+INFO - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(18): compiling module LCD_RGB. VERI-1018
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(185): expression size 33 truncated to fit in target size 9. VERI-1209
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(190): expression size 33 truncated to fit in target size 9. VERI-1209
+INFO - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_ram.v(19): compiling module LCD_RAM. VERI-1018
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Picture_display.
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(50): Register reg_setxy_0_0 is stuck at Zero. VDB-5013
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(50): Register reg_setxy_0_1 is stuck at One. VDB-5014
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(51): Register reg_init_0_0 is stuck at One. VDB-5014
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(51): Register reg_init_0_1 is stuck at Zero. VDB-5013
+WARNING - synthesis: f:/fpga_project/baseboard/lab11_picture_display/lcd_rgb.v(51): net \i328/reg_init_62_0 does not have a driver. VDB-1002
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_62_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_63_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_64_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_65_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_66_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_67_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_68_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_69_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_70_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_71_8. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_0. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_1. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_2. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_3. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_4. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_5. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_6. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_7. Patching with GND.
+######## Missing driver on net \LCD_RGB_uut/\i328/reg_init_72_8. Patching with GND.
+
+
+
+WARNING - synthesis: Bit 0 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 122 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 123 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 124 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 125 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 126 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 127 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 128 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 129 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 130 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: Bit 131 of Register \LCD_RGB_uut/ram_data_r is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i6 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i7 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i5 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i4 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i3 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i2 is stuck at Zero
+WARNING - synthesis: mRegister \LCD_RGB_uut/cnt_main_i1 is stuck at Zero
+Applying 1.000000 MHz constraint to all clocks
+
+Results of NGD DRC are available in Picture_display_drc.log.
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Picture_display_impl1.ngd.
+
+################### Begin Area Report (Picture_display)######################
+Number of register bits => 179 of 4635 (3 % )
+CCU2D => 43
+FD1P3AX => 16
+FD1P3BX => 4
+FD1P3DX => 100
+FD1P3IX => 58
+GSR => 1
+IB => 2
+INV => 1
+L6MUX21 => 1
+LUT4 => 447
+MUX161 => 6
+MUX81 => 7
+OB => 5
+OFS1P3DX => 1
+PDPW8KC => 3
+PFUMX => 52
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 182
+  Net : rst_n_c, loads : 6
+Clock Enable Nets
+Number of Clock Enables: 17
+Top 10 highest fanout Clock Enables:
+  Net : LCD_RGB_uut/clk_c_enable_182, loads : 65
+  Net : LCD_RGB_uut/clk_c_enable_69, loads : 19
+  Net : LCD_RGB_uut/clk_c_enable_39, loads : 16
+  Net : LCD_RGB_uut/clk_c_enable_54, loads : 16
+  Net : LCD_RGB_uut/clk_c_enable_97, loads : 9
+  Net : LCD_RGB_uut/clk_c_enable_20, loads : 9
+  Net : LCD_RGB_uut/clk_c_enable_83, loads : 8
+  Net : LCD_RGB_uut/clk_c_enable_90, loads : 8
+  Net : LCD_RGB_uut/clk_c_enable_173, loads : 8
+  Net : LCD_RGB_uut/clk_c_enable_76, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LCD_RGB_uut/rst_n_N_10, loads : 104
+  Net : LCD_RGB_uut/ram_addr_3, loads : 71
+  Net : LCD_RGB_uut/ram_addr_4, loads : 69
+  Net : LCD_RGB_uut/clk_c_enable_182, loads : 67
+  Net : LCD_RGB_uut/state_1, loads : 62
+  Net : LCD_RGB_uut/ram_addr_2, loads : 59
+  Net : LCD_RGB_uut/ram_addr_5, loads : 57
+  Net : LCD_RGB_uut/cnt_2, loads : 55
+  Net : LCD_RGB_uut/cnt_1, loads : 55
+  Net : LCD_RGB_uut/cnt_0, loads : 53
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |    1.000 MHz|   33.712 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 140.375  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 5.094  secs
+--------------------------------------------------------------

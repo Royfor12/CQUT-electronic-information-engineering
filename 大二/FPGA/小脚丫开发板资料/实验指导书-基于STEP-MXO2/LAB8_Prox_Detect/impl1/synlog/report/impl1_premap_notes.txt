@@ -1,0 +1,4 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch0_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":68:1:68:6|Removing sequential instance ch1_dat[15:0] (in view: work.APDS_9901_Driver(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.

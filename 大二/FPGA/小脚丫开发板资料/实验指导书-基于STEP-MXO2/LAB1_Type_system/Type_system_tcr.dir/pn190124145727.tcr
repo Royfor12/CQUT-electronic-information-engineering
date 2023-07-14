@@ -1,0 +1,16 @@
+#Start recording tcl command: 1/24/2019 10:52:30
+#Project Location: F:/Fpga_Project/BaseBoard/LAB1_Type_system; Project name: Type_system
+prj_project new -name "Type_system" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "synplify"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB1_Type_system/Array_KeyBoard.v" "F:/Fpga_Project/BaseBoard/LAB1_Type_system/Decoder.v" "F:/Fpga_Project/BaseBoard/LAB1_Type_system/Segment_led.v" "F:/Fpga_Project/BaseBoard/LAB1_Type_system/Type_system.v"
+prj_project save
+prj_run Synthesis -impl impl1
+launch_synplify_prj impl1
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 1/24/2019 14:57:27

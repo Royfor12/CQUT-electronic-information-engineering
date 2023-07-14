@@ -1,0 +1,204 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Picture_display
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":18:7:18:13|Synthesizing module LCD_RGB in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":90:23:90:30|Removing redundant assignment.
+@W: CG532 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_0_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_1_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_2_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_3_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_4_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_5_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_6_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_7_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_8_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_9_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Object reg_setxy_10_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":50:10:50:18|Some of the address location in the memory "reg_setxy" are not assigned.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_0_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_1_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_2_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_3_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_4_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_5_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_6_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_7_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_8_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_9_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_10_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_11_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_12_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_13_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_14_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_15_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_16_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_17_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_18_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_19_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_20_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_21_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_22_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_23_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_24_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_25_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_26_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_27_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_28_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_29_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_30_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_31_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_32_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_33_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_34_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_35_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_36_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_37_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_38_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_39_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_40_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_41_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_42_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_43_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_44_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_45_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_46_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_47_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_48_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_49_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_50_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_51_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_52_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_53_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_54_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_55_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_56_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_57_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_58_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_59_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_60_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_61_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_62_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_63_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_64_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_65_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_66_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_67_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_68_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_69_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_70_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_71_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_72_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Some of the address location in the memory "reg_init" are not assigned.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal ram_data_r[131:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_res. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_din. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_dc. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_clk. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal data_reg[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit data_reg[8] is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bit 2 of state_back[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bit 8 of data_reg[8:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v":19:7:19:13|Synthesizing module LCD_RAM in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Synthesizing module Picture_display in library work.
+
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit lcd_dc is always 1.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 15 to 6 of cnt[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 5 of cnt_write[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 1 of cnt_main[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Initial value is not supported on state machine state
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register cnt_scan.
+Extracted state machine for register cnt_scan
+State machine has 6 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+   00000100
+   00000101
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 6 of data_reg[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 4 to 1 of data_reg[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 85MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:02:45 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Selected library: work cell: Picture_display view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Selected library: work cell: Picture_display view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:02:45 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:02:45 2019
+
+###########################################################]

@@ -1,0 +1,64 @@
+---------------------------------------------------
+Report for cell Digtal_Calender
+   Instance path: Digtal_Calender
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     432.00        100.0
+                                 IOLGC	       8.00        100.0
+                                  LUT4	     731.00        100.0
+                                 IOREG	          8        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	        257        100.0
+                                RIPPLE	         65        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             mode_ctrl	          1        40.4
+                               Encoder	          1         4.2
+                        DS1340Z_driver	          1        25.8
+                              Debounce	          1         3.9
+                          Segment_scan	          1        19.6
+---------------------------------------------------
+Report for cell DS1340Z_driver
+   Instance path: Digtal_Calender/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     111.58        25.8
+                                  LUT4	     210.00        28.7
+                                PFUREG	        108        42.0
+                                RIPPLE	          4         6.2
+---------------------------------------------------
+Report for cell Segment_scan
+   Instance path: Digtal_Calender/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      84.67        19.6
+                                  LUT4	     151.50        20.7
+                                PFUREG	         37        14.4
+                                RIPPLE	          9        13.8
+---------------------------------------------------
+Report for cell mode_ctrl
+   Instance path: Digtal_Calender/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     174.33        40.4
+                                  LUT4	     282.50        38.6
+                                PFUREG	         65        25.3
+                                RIPPLE	         35        53.8
+---------------------------------------------------
+Report for cell Debounce
+   Instance path: Digtal_Calender/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.67         3.9
+                                  LUT4	      11.00         1.5
+                                PFUREG	         22         8.6
+                                RIPPLE	         10        15.4
+---------------------------------------------------
+Report for cell Encoder
+   Instance path: Digtal_Calender/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.00         4.2
+                                  LUT4	      22.00         3.0
+                                PFUREG	         25         9.7
+                                RIPPLE	          7        10.8

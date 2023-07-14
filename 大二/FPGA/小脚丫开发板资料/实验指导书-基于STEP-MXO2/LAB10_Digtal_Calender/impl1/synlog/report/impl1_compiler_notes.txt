@@ -1,0 +1,150 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":18:7:18:13|Synthesizing module Encoder in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":42:19:42:27|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":59:22:59:28|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":77:22:77:28|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Debounce.v":18:7:18:14|Synthesizing module Debounce in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Debounce.v":69:19:69:27|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":18:7:18:15|Synthesizing module mode_ctrl in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":51:15:51:19|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":74:19:74:25|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":158:24:158:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":170:24:170:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":182:25:182:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":192:25:192:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":205:25:205:31|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":216:26:216:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":226:26:226:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":237:25:237:31|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":250:24:250:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":262:25:262:32|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":18:7:18:20|Synthesizing module DS1340Z_driver in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":77:18:77:25|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":178:55:178:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":181:55:181:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":192:59:192:63|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":200:53:200:55|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":203:53:203:55|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":18:7:18:18|Synthesizing module Segment_scan in library work.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[6] is always 1.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Digtal_Calender.v":18:7:18:21|Synthesizing module Digtal_Calender in library work.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":88:0:88:5|Trying to extract state machine for register state.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Digtal_Calender.v":18:7:18:21|Selected library: work cell: Digtal_Calender view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Digtal_Calender.v":18:7:18:21|Selected library: work cell: Digtal_Calender view verilog as top level
+

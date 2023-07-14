@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "F:/Fpga_Project/BaseBoard/LAB3_Amp_Adjust"  

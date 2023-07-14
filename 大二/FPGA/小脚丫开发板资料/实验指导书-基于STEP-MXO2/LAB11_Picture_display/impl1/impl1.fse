@@ -1,0 +1,32 @@
+
+fsm_encoding {8600602} onehot
+
+fsm_state_encoding {8600602} 00000000 {000001}
+
+fsm_state_encoding {8600602} 00000001 {000010}
+
+fsm_state_encoding {8600602} 00000010 {000100}
+
+fsm_state_encoding {8600602} 00000011 {001000}
+
+fsm_state_encoding {8600602} 00000100 {010000}
+
+fsm_state_encoding {8600602} 00000101 {100000}
+
+fsm_registers {8600602} {cnt_scan[5]}  {cnt_scan[4]}  {cnt_scan[3]}  {cnt_scan[2]}  {cnt_scan[1]}  {cnt_scan[0]} 
+
+fsm_encoding {8600601} onehot
+
+fsm_state_encoding {8600601} IDLE {000001}
+
+fsm_state_encoding {8600601} MAIN {000010}
+
+fsm_state_encoding {8600601} INIT {000100}
+
+fsm_state_encoding {8600601} SCAN {001000}
+
+fsm_state_encoding {8600601} WRITE {010000}
+
+fsm_state_encoding {8600601} DELAY {100000}
+
+fsm_registers {8600601} {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

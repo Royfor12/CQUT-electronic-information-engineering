@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jan 07 10:38:49 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : segment
+Top-level Entity Name : segment
+Family : MAX 10
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pll_mxo2" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 07 03 15:06:16.631" version="5.8" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="pll_mxo2.lpc" type="lpc" modified="2017 07 03 15:06:12.580"/>
+		<File name="pll_mxo2.v" type="top_level_verilog" modified="2017 07 03 15:06:13.146"/>
+		<File name="pll_mxo2_tmpl.v" type="template_verilog" modified="2017 07 03 15:06:13.156"/>
+  </Package>
+</DiamondModule>

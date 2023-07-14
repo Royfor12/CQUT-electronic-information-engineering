@@ -1,0 +1,297 @@
+(edif pll_mxo2
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2017 7 3 15 6 12)
+      (program "SCUBA" (version "Diamond (64-bit) 3.9.0.99.2"))))
+      (comment "C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n pll_mxo2 -lang verilog -synth lse -arch xo2c00 -type pll -fin 12 -fclkop 240 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell EHXPLLJ
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CLKI
+            (direction INPUT))
+          (port CLKFB
+            (direction INPUT))
+          (port PHASESEL1
+            (direction INPUT))
+          (port PHASESEL0
+            (direction INPUT))
+          (port PHASEDIR
+            (direction INPUT))
+          (port PHASESTEP
+            (direction INPUT))
+          (port LOADREG
+            (direction INPUT))
+          (port STDBY
+            (direction INPUT))
+          (port PLLWAKESYNC
+            (direction INPUT))
+          (port RST
+            (direction INPUT))
+          (port RESETM
+            (direction INPUT))
+          (port RESETC
+            (direction INPUT))
+          (port RESETD
+            (direction INPUT))
+          (port ENCLKOP
+            (direction INPUT))
+          (port ENCLKOS
+            (direction INPUT))
+          (port ENCLKOS2
+            (direction INPUT))
+          (port ENCLKOS3
+            (direction INPUT))
+          (port PLLCLK
+            (direction INPUT))
+          (port PLLRST
+            (direction INPUT))
+          (port PLLSTB
+            (direction INPUT))
+          (port PLLWE
+            (direction INPUT))
+          (port PLLADDR4
+            (direction INPUT))
+          (port PLLADDR3
+            (direction INPUT))
+          (port PLLADDR2
+            (direction INPUT))
+          (port PLLADDR1
+            (direction INPUT))
+          (port PLLADDR0
+            (direction INPUT))
+          (port PLLDATI7
+            (direction INPUT))
+          (port PLLDATI6
+            (direction INPUT))
+          (port PLLDATI5
+            (direction INPUT))
+          (port PLLDATI4
+            (direction INPUT))
+          (port PLLDATI3
+            (direction INPUT))
+          (port PLLDATI2
+            (direction INPUT))
+          (port PLLDATI1
+            (direction INPUT))
+          (port PLLDATI0
+            (direction INPUT))
+          (port CLKOP
+            (direction OUTPUT))
+          (port CLKOS
+            (direction OUTPUT))
+          (port CLKOS2
+            (direction OUTPUT))
+          (port CLKOS3
+            (direction OUTPUT))
+          (port LOCK
+            (direction OUTPUT))
+          (port INTLOCK
+            (direction OUTPUT))
+          (port REFCLK
+            (direction OUTPUT))
+          (port CLKINTFB
+            (direction OUTPUT))
+          (port DPHSRC
+            (direction OUTPUT))
+          (port PLLACK
+            (direction OUTPUT))
+          (port PLLDATO7
+            (direction OUTPUT))
+          (port PLLDATO6
+            (direction OUTPUT))
+          (port PLLDATO5
+            (direction OUTPUT))
+          (port PLLDATO4
+            (direction OUTPUT))
+          (port PLLDATO3
+            (direction OUTPUT))
+          (port PLLDATO2
+            (direction OUTPUT))
+          (port PLLDATO1
+            (direction OUTPUT))
+          (port PLLDATO0
+            (direction OUTPUT)))))
+    (cell pll_mxo2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CLKI
+            (direction INPUT))
+          (port CLKOP
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance PLLInst_0
+            (viewRef view1 
+              (cellRef EHXPLLJ))
+            (property DDRST_ENA
+              (string "DISABLED"))
+            (property DCRST_ENA
+              (string "DISABLED"))
+            (property MRST_ENA
+              (string "DISABLED"))
+            (property PLLRST_ENA
+              (string "DISABLED"))
+            (property INTFB_WAKE
+              (string "DISABLED"))
+            (property STDBY_ENABLE
+              (string "DISABLED"))
+            (property DPHASE_SOURCE
+              (string "DISABLED"))
+            (property PLL_USE_WB
+              (string "DISABLED"))
+            (property CLKOS3_FPHASE
+              (string "0"))
+            (property CLKOS3_CPHASE
+              (string "0"))
+            (property CLKOS2_FPHASE
+              (string "0"))
+            (property CLKOS2_CPHASE
+              (string "0"))
+            (property CLKOS_FPHASE
+              (string "0"))
+            (property CLKOS_CPHASE
+              (string "0"))
+            (property CLKOP_FPHASE
+              (string "0"))
+            (property CLKOP_CPHASE
+              (string "1"))
+            (property PLL_LOCK_MODE
+              (string "0"))
+            (property CLKOS_TRIM_DELAY
+              (string "0"))
+            (property CLKOS_TRIM_POL
+              (string "FALLING"))
+            (property CLKOP_TRIM_DELAY
+              (string "0"))
+            (property CLKOP_TRIM_POL
+              (string "RISING"))
+            (property FRACN_DIV
+              (string "0"))
+            (property FRACN_ENABLE
+              (string "DISABLED"))
+            (property OUTDIVIDER_MUXD2
+              (string "DIVD"))
+            (property PREDIVIDER_MUXD1
+              (string "0"))
+            (property VCO_BYPASS_D0
+              (string "DISABLED"))
+            (property CLKOS3_ENABLE
+              (string "DISABLED"))
+            (property OUTDIVIDER_MUXC2
+              (string "DIVC"))
+            (property PREDIVIDER_MUXC1
+              (string "0"))
+            (property VCO_BYPASS_C0
+              (string "DISABLED"))
+            (property CLKOS2_ENABLE
+              (string "DISABLED"))
+            (property OUTDIVIDER_MUXB2
+              (string "DIVB"))
+            (property PREDIVIDER_MUXB1
+              (string "0"))
+            (property VCO_BYPASS_B0
+              (string "DISABLED"))
+            (property CLKOS_ENABLE
+              (string "DISABLED"))
+            (property FREQUENCY_PIN_CLKOP
+              (string "240.000000"))
+            (property OUTDIVIDER_MUXA2
+              (string "DIVA"))
+            (property PREDIVIDER_MUXA1
+              (string "0"))
+            (property VCO_BYPASS_A0
+              (string "DISABLED"))
+            (property CLKOP_ENABLE
+              (string "ENABLED"))
+            (property FREQUENCY_PIN_CLKI
+              (string "12.000000"))
+            (property ICP_CURRENT
+              (string "7"))
+            (property LPF_RESISTOR
+              (string "8"))
+            (property CLKOS3_DIV
+              (string "1"))
+            (property CLKOS2_DIV
+              (string "1"))
+            (property CLKOS_DIV
+              (string "1"))
+            (property CLKOP_DIV
+              (string "2"))
+            (property CLKFB_DIV
+              (string "20"))
+            (property CLKI_DIV
+              (string "1"))
+            (property FEEDBK_PATH
+              (string "CLKOP")))
+          (net LOCK
+            (joined
+              (portRef LOCK (instanceRef PLLInst_0))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef PLLADDR4 (instanceRef PLLInst_0))
+              (portRef PLLADDR3 (instanceRef PLLInst_0))
+              (portRef PLLADDR2 (instanceRef PLLInst_0))
+              (portRef PLLADDR1 (instanceRef PLLInst_0))
+              (portRef PLLADDR0 (instanceRef PLLInst_0))
+              (portRef PLLDATI7 (instanceRef PLLInst_0))
+              (portRef PLLDATI6 (instanceRef PLLInst_0))
+              (portRef PLLDATI5 (instanceRef PLLInst_0))
+              (portRef PLLDATI4 (instanceRef PLLInst_0))
+              (portRef PLLDATI3 (instanceRef PLLInst_0))
+              (portRef PLLDATI2 (instanceRef PLLInst_0))
+              (portRef PLLDATI1 (instanceRef PLLInst_0))
+              (portRef PLLDATI0 (instanceRef PLLInst_0))
+              (portRef PLLWE (instanceRef PLLInst_0))
+              (portRef PLLSTB (instanceRef PLLInst_0))
+              (portRef PLLRST (instanceRef PLLInst_0))
+              (portRef PLLCLK (instanceRef PLLInst_0))
+              (portRef ENCLKOS3 (instanceRef PLLInst_0))
+              (portRef ENCLKOS2 (instanceRef PLLInst_0))
+              (portRef ENCLKOS (instanceRef PLLInst_0))
+              (portRef ENCLKOP (instanceRef PLLInst_0))
+              (portRef RESETD (instanceRef PLLInst_0))
+              (portRef RESETC (instanceRef PLLInst_0))
+              (portRef RESETM (instanceRef PLLInst_0))
+              (portRef RST (instanceRef PLLInst_0))
+              (portRef PLLWAKESYNC (instanceRef PLLInst_0))
+              (portRef STDBY (instanceRef PLLInst_0))
+              (portRef LOADREG (instanceRef PLLInst_0))
+              (portRef PHASESTEP (instanceRef PLLInst_0))
+              (portRef PHASEDIR (instanceRef PLLInst_0))
+              (portRef PHASESEL1 (instanceRef PLLInst_0))
+              (portRef PHASESEL0 (instanceRef PLLInst_0))))
+          (net CLKOP
+            (joined
+              (portRef CLKOP)
+              (portRef CLKFB (instanceRef PLLInst_0))
+              (portRef CLKOP (instanceRef PLLInst_0))))
+          (net CLKI
+            (joined
+              (portRef CLKI)
+              (portRef CLKI (instanceRef PLLInst_0))))))))
+  (design pll_mxo2
+    (cellRef pll_mxo2
+      (libraryRef ORCLIB)))
+)

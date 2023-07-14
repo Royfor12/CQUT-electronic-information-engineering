@@ -1,0 +1,404 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "Type_system_impl1.ngd" -o "Type_system_impl1_map.ncd" -pr "Type_system_impl1.prf" -mp "Type_system_impl1.mrp" -lpf "F:/Fpga_Project/BaseBoard/LAB1_Type_system/impl1/Type_system_impl1.lpf" -lpf "F:/Fpga_Project/BaseBoard/LAB1_Type_system/Type_system.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Type_system_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="rst_n_c"  />
+
+
+
+Design Summary:
+   Number of registers:     93 out of  4635 (2%)
+      PFU registers:           89 out of  4320 (2%)
+      PIO registers:            4 out of   315 (1%)
+   Number of SLICEs:        58 out of  2160 (3%)
+      SLICEs as Logic/ROM:     58 out of  2160 (3%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:          8 out of  2160 (0%)
+   Number of LUT4s:        115 out of  4320 (3%)
+      Number used as logic LUTs:         99
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       16
+      Number used as shift registers:     0
+   Number of PIO sites used: 28 + 4(JTAG) out of 105 (30%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net clk_c: 20 loads, 20 rising, 0 falling (Driver: PIO clk )
+     Net u1/clk_200hz: 30 loads, 6 rising, 24 falling (Driver: u1/clk_200hz_38 )
+   Number of Clock Enables:  5
+     Net u2/clk_c_enable_5: 3 loads, 3 LSLICEs
+     Net u1/clk_200hz_N_24_enable_45: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_48: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_39: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_24_enable_46: 6 loads, 6 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  93
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u1/clk_200hz_N_24_enable_39: 14 loads
+     Net u1/clk_200hz_N_26: 14 loads
+     Net seg_data_0: 7 loads
+     Net seg_data_1: 7 loads
+     Net seg_data_2: 7 loads
+     Net seg_data_3: 7 loads
+     Net u1/n70: 7 loads
+     Net u1/clk_200hz_N_24_enable_45: 6 loads
+     Net u1/clk_200hz_N_24_enable_46: 6 loads
+     Net u1/clk_200hz_N_24_enable_48: 6 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 49 MB
+
+Dumping design to file Type_system_impl1_map.ncd.
+
+ncd2vdb "Type_system_impl1_map.ncd" ".vdbs/Type_system_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+
+mpartrce -p "Type_system_impl1.p2t" -f "Type_system_impl1.p3t" -tf "Type_system_impl1.pt" "Type_system_impl1_map.ncd" "Type_system_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Type_system_impl1_map.ncd"
+Thu Jan 24 14:53:39 2019
+
+PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Type_system_impl1_map.ncd Type_system_impl1.dir/5_1.ncd Type_system_impl1.prf
+Preference file: Type_system_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Type_system_impl1_map.ncd.
+Design name: Type_system
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   28+4(JTAG)/280     11% used
+                  28+4(JTAG)/105     30% bonded
+   IOLOGIC            4/280           1% used
+
+   SLICE             58/2160          2% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 220
+Number of Connections: 533
+
+Pin Constraint Summary:
+   28 out of 28 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    u1/clk_200hz (driver: u1/SLICE_21, clk load #: 30)
+    clk_c (driver: clk, clk load #: 20)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+No signal is selected as secondary clock.
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..................
+Placer score = 37159.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  37123
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "u1/clk_200hz" from Q0 on comp "u1/SLICE_21" on site "R2C16C", clk load = 30
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 20
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   28 + 4(JTAG) out of 280 (11.4%) PIO sites used.
+   28 + 4(JTAG) out of 105 (30.5%) bonded PIO sites used.
+   Number of PIO comps: 28; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 9 / 26 ( 34%) | 3.3V       | -         |
+| 1        | 2 / 26 (  7%) | 3.3V       | -         |
+| 2        | 2 / 28 (  7%) | 3.3V       | -         |
+| 3        | 5 / 7 ( 71%)  | 3.3V       | -         |
+| 4        | 6 / 8 ( 75%)  | 3.3V       | -         |
+| 5        | 4 / 10 ( 40%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 1 secs 
+
+Dumping design to file Type_system_impl1.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 533 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 2 secs 
+
+Start NBR router at 14:53:41 01/24/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 14:53:41 01/24/19
+
+Start NBR section for initial routing at 14:53:41 01/24/19
+Level 4, iteration 1
+37(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 14:53:41 01/24/19
+Level 4, iteration 1
+19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+Level 4, iteration 2
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 3
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+
+Start NBR section for re-routing at 14:53:42 01/24/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+
+Start NBR section for post-routing at 14:53:42 01/24/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 2 secs 
+Total REAL time: 3 secs 
+Completely routed.
+End of route.  533 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Type_system_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 3 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Type_system_impl1.t2b" -w "Type_system_impl1.ncd" -jedec "Type_system_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Type_system_impl1.ncd.
+Design name: Type_system
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Type_system_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Type_system_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

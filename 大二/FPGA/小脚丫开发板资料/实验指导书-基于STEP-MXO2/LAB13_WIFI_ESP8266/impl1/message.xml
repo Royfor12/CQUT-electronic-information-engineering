@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MAIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CNT_40KHz</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BPS_PARA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BPS_PARA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BPS_PARA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BPS_PARA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DELAY</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>REMD</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TXMD</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MAIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BPS_PARA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Segment_scan_uut/cnt_write_cry_0_COUT[4]</Dynamic>
+            <Navigation>Segment_scan_uut/cnt_write_cry_0_COUT[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Segment_scan_uut/cnt_write_lcry_0_S0</Dynamic>
+            <Navigation>Segment_scan_uut/cnt_write_lcry_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Segment_scan_uut/cnt_write_lcry_0_S1</Dynamic>
+            <Navigation>Segment_scan_uut/cnt_write_lcry_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Segment_scan_uut/cnt_cry_0_COUT[7]</Dynamic>
+            <Navigation>Segment_scan_uut/cnt_cry_0_COUT[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Segment_scan_uut/cnt_cry_0_S0_1[0]</Dynamic>
+            <Navigation>Segment_scan_uut/cnt_cry_0_S0_1[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Baud_rx/cnt_cry_0_COUT_0[5]</Dynamic>
+            <Navigation>Baud_rx/cnt_cry_0_COUT_0[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Baud_rx/cnt_cry_0_S0_0[0]</Dynamic>
+            <Navigation>Baud_rx/cnt_cry_0_S0_0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Baud_tx/cnt_cry_0_COUT[5]</Dynamic>
+            <Navigation>Baud_tx/cnt_cry_0_COUT[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Baud_tx/cnt_cry_0_S0[0]</Dynamic>
+            <Navigation>Baud_tx/cnt_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_9_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_9_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_delay_cry_0_S0[0]</Dynamic>
+            <Navigation>cnt_delay_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_delay_s_0_S1[23]</Dynamic>
+            <Navigation>cnt_delay_s_0_S1[23]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_delay_s_0_COUT[23]</Dynamic>
+            <Navigation>cnt_delay_s_0_COUT[23]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>num_cry_0_S0[0]</Dynamic>
+            <Navigation>num_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>num_s_0_S1[7]</Dynamic>
+            <Navigation>num_s_0_S1[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>num_s_0_COUT[7]</Dynamic>
+            <Navigation>num_s_0_COUT[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_9_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_9_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_10_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_10_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_10_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_10_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_12_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_12_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_12_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_12_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_14_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_14_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_14_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_14_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_16_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_16_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_16_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_16_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_18_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_18_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_18_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_18_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_20_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_20_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_20_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_20_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_22_0_S0</Dynamic>
+            <Navigation>un1_cnt_delay_cry_22_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_22_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_22_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_23_0_COUT</Dynamic>
+            <Navigation>un1_cnt_delay_cry_23_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>un1_cnt_delay_cry_23_0_S1</Dynamic>
+            <Navigation>un1_cnt_delay_cry_23_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>33</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v&quot;:34:0:34:5|Optimizing register bit tx_data_r[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit tx_data_r[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v&quot;:34:0:34:5|Pruning register bit 0 of tx_data_r[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 0 of tx_data_r[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL271 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:215:0:215:5|Pruning unused bits 35 to 32 of seg_data[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL271</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>215</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>215</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused bits 35 to 32 of seg_data[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 319 to 295 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 319 to 295 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 293 to 289 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 293 to 289 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 287 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 287 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 285 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 285 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 283 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 283 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 281 to 278 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 281 to 278 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 276 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 276 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 274 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 274 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 271 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 271 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 269 to 266 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 269 to 266 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 263 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 263 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 261 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 261 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 259 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 259 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 255 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 255 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 253 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 253 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 251 to 250 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 251 to 250 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 247 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 247 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 245 to 241 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 245 to 241 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 239 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 239 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 237 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 237 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 235 to 230 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 235 to 230 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 225 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 225 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 223 to 222 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 223 to 222 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 220 to 218 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 220 to 218 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 216 to 215 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 216 to 215 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 213 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 213 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 211 to 210 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 211 to 210 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 207 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 207 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 205 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 205 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 203 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 203 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 201 to 199 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 201 to 199 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 197 to 195 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 197 to 195 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 193 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 193 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 191 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 191 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 189 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 189 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 187 to 183 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 187 to 183 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 181 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 181 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 175 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 175 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 173 to 171 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 173 to 171 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 168 to 167 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 168 to 167 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 165 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 165 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 163 to 161 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 163 to 161 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 159 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 159 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 157 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 157 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 155 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 155 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 151 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 151 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 148 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 148 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 146 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 146 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 143 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 143 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 140 to 138 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 140 to 138 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 135 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 135 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 132 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 132 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 129 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 129 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 127 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 127 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 123 to 122 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 123 to 122 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 120 to 119 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 120 to 119 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 115 to 114 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 115 to 114 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 111 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 111 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 107 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 107 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 103 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 103 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 99 to 98 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 99 to 98 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 95 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 95 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 91 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 91 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 88 to 87 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 88 to 87 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 79 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 79 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 75 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 75 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 71 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 71 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 63 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 63 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 57 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 57 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 55 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 55 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 47 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 47 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 39 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 39 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 31 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 31 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 23 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 23 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 20 to 19 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 20 to 19 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 15 to 0 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 15 to 0 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 7 of tx_data_in[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 7 of tx_data_in[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 3 of cnt_main[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 3 of cnt_main[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Initial value is not supported on state machine state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Initial value is not supported on state machine state</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 45 of char[46:40]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 45 of char[46:40]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 68 of char[70:64]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 68 of char[70:64]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 30 to 29 of char[30:24]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 30 to 29 of char[30:24]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 83 of char[86:80]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 83 of char[86:80]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 106 of char[106:104]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 106 of char[106:104]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 109 of char[110:108]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 109 of char[110:108]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 126 of char[126:124]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 126 of char[126:124]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 153 of char[154:152]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 153 of char[154:152]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 170 of char[170:169]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 170 of char[170:169]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 180 to 177 of char[180:176]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 180 to 177 of char[180:176]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 209 of char[209:208]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 209 of char[209:208]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 229 to 227 of char[229:226]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 229 to 227 of char[229:226]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 249 of char[249:248]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 249 of char[249:248]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bits 258 to 257 of char[258:256]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 258 to 257 of char[258:256]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 265 of char[265:264]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 265 of char[265:264]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v&quot;:58:0:58:5|Pruning register bit 273 of char[273:272]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 273 of char[273:272]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v&quot;:64:0:64:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v&quot;:64:0:64:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v&quot;:83:0:83:5|Initial value is not supported on state machine state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v</Navigation>
+            <Navigation>83</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>83</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Initial value is not supported on state machine state</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v&quot;:31:0:31:5|Pruning register bits 12 to 7 of cnt[12:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 12 to 7 of cnt[12:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[150:149] because it is equivalent to instance char[125:124]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[150:149] because it is equivalent to instance char[125:124]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[125:124] because it is equivalent to instance char[105:104]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[125:124] because it is equivalent to instance char[105:104]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[78:76] because it is equivalent to instance char[102:100]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[78:76] because it is equivalent to instance char[102:100]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[145:144] because it is equivalent to instance char[113:112]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[145:144] because it is equivalent to instance char[113:112]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[142:141] because it is equivalent to instance char[134:133]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[142:141] because it is equivalent to instance char[134:133]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[128] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[128] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[147] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[147] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[156] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[156] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[160] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[160] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing sequential instance char[158] because it is equivalent to instance char[154]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance char[158] because it is equivalent to instance char[154]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\baud.v&quot;:31:0:31:5|Found inferred clock WIFI_ESP8266|clk which controls 262 sequential elements including Baud_tx.cnt[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\baud.v</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock WIFI_ESP8266|clk which controls 262 sequential elements including Baud_tx.cnt[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:108:33:108:43|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:107:33:107:43|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:106:33:106:43|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:105:33:105:43|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:104:33:104:43|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:103:33:103:43|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:102:33:102:43|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:101:33:101:43|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:108:33:108:43|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:107:33:107:43|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:106:33:106:43|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:105:33:105:43|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:104:33:104:43|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:103:33:103:43|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:102:33:102:43|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v&quot;:101:33:101:43|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[89] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[89] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[104] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[104] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[110] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[110] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[113] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[113] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[118] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[118] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[134] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[134] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[136] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[136] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[84] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[84] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[93] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[93] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v&quot;:58:0:58:5|Removing instance char[101] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance char[101] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock WIFI_ESP8266|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock WIFI_ESP8266|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

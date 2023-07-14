@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Voltage_Meas" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Voltage_Meas"/>
+        <Source name="Voltage_Meas.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Voltage_Meas"/>
+        </Source>
+        <Source name="pll/pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="ADC081S101_driver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="bin_to_bcd.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Segment_led.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Voltage_Meas.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Voltage_Meas1.sty"/>
+</BaliProject>

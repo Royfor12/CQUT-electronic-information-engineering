@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.614
+TNS   : -76.805
+
+Type  : Slow 1200mV 85C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -2.579
+TNS   : -61.394
+
+Type  : Slow 1200mV 85C Model Setup 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : -0.749
+TNS   : -13.780
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -65.454
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : -1.487
+TNS   : -59.480
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.487
+TNS   : -44.610
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.399
+TNS   : -69.341
+
+Type  : Slow 1200mV 0C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -2.397
+TNS   : -57.066
+
+Type  : Slow 1200mV 0C Model Setup 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : -0.655
+TNS   : -10.953
+
+Type  : Slow 1200mV 0C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -65.454
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : -1.487
+TNS   : -59.480
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.487
+TNS   : -44.610
+
+Type  : Fast 1200mV 0C Model Setup 'Segment_scan:u3|clk_40khz'
+Slack : -0.445
+TNS   : -8.022
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.406
+TNS   : -7.129
+
+Type  : Fast 1200mV 0C Model Setup 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Segment_scan:u3|clk_40khz'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -52.097
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Uart_Bus:u1|Uart_Rx:Uart_Rx_uut|rx_data_valid'
+Slack : -1.000
+TNS   : -40.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Segment_scan:u3|clk_40khz'
+Slack : -1.000
+TNS   : -30.000
+
+------------------------------------------------------------

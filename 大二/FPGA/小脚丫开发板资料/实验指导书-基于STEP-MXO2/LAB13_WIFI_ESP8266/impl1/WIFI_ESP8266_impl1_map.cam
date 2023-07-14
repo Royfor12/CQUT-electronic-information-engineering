@@ -1,0 +1,64 @@
+[ START MERGED ]
+rst_n_c_i rst_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+Baud_tx/GND
+Baud_rx/GND
+Segment_scan_uut/GND
+cnt_delay_s_0_S1[23]
+cnt_delay_s_0_COUT[23]
+num_cry_0_S0[0]
+N_2
+num_s_0_S1[7]
+num_s_0_COUT[7]
+un1_cnt_delay_cry_9_0_S1
+un1_cnt_delay_cry_9_0_S0
+N_3
+un1_cnt_delay_cry_10_0_S1
+un1_cnt_delay_cry_10_0_S0
+un1_cnt_delay_cry_12_0_S1
+un1_cnt_delay_cry_12_0_S0
+un1_cnt_delay_cry_14_0_S1
+un1_cnt_delay_cry_14_0_S0
+un1_cnt_delay_cry_16_0_S1
+un1_cnt_delay_cry_16_0_S0
+un1_cnt_delay_cry_18_0_S1
+un1_cnt_delay_cry_18_0_S0
+un1_cnt_delay_cry_20_0_S1
+un1_cnt_delay_cry_20_0_S0
+un1_cnt_delay_cry_22_0_S1
+un1_cnt_delay_cry_22_0_S0
+un1_cnt_delay_cry_23_0_S1
+un1_cnt_delay_cry_23_0_COUT
+Baud_tx/cnt_cry_0_S0[0]
+Baud_tx/N_1
+Baud_tx/cnt_cry_0_COUT[5]
+Baud_rx/cnt_cry_0_S0_0[0]
+Baud_rx/N_1
+Baud_rx/cnt_cry_0_COUT_0[5]
+Segment_scan_uut/cnt_cry_0_S0_1[0]
+Segment_scan_uut/N_1
+Segment_scan_uut/cnt_cry_0_COUT[7]
+Segment_scan_uut/cnt_write_lcry_0_S1
+Segment_scan_uut/cnt_write_lcry_0_S0
+Segment_scan_uut/N_2
+Segment_scan_uut/cnt_write_cry_0_COUT[4]
+cnt_delay_cry_0_S0[0]
+N_1
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.0.99.2 -- WARNING: Map write only section -- Tue Jan 29 10:41:32 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "wifi_tx" SITE "F13" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "seg_din" SITE "P13" ;
+LOCATE COMP "seg_sck" SITE "M4" ;
+LOCATE COMP "seg_rck" SITE "P3" ;
+LOCATE COMP "uart_tx" SITE "F12" ;
+LOCATE COMP "wifi_rx" SITE "G12" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

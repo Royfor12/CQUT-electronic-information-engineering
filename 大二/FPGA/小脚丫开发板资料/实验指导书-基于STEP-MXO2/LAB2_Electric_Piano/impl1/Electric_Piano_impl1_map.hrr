@@ -1,0 +1,52 @@
+---------------------------------------------------
+Report for cell Electric_Piano
+   Instance path: Electric_Piano
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     118.00        100.0
+                                  LUT4	     162.00        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	         89        100.0
+                                RIPPLE	         35        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                Beeper	          1        60.9
+                        Array_KeyBoard	          1        38.7
+---------------------------------------------------
+Report for cell Beeper
+   Instance path: Electric_Piano/beeper_I_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      71.83        60.9
+                                  LUT4	     103.00        63.6
+                                PFUREG	         17        19.1
+                                RIPPLE	         27        77.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  tone	          1        37.1
+                         PWM(WIDTH=16)	          1        23.7
+---------------------------------------------------
+Report for cell PWM(WIDTH=16)
+   Instance path: Electric_Piano/beeper_I_0/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.00        23.7
+                                  LUT4	       1.00         0.6
+                                PFUREG	         17        19.1
+                                RIPPLE	         27        77.1
+---------------------------------------------------
+Report for cell tone
+   Instance path: Electric_Piano/beeper_I_0/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      43.83        37.1
+                                  LUT4	     102.00        63.0
+---------------------------------------------------
+Report for cell Array_KeyBoard
+   Instance path: Electric_Piano/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      45.67        38.7
+                                  LUT4	      58.00        35.8
+                                PFUREG	         72        80.9
+                                RIPPLE	          8        22.9

@@ -1,0 +1,16 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":18:7:18:13|Synthesizing module LCD_RGB in library work.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":90:23:90:30|Removing redundant assignment.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit data_reg[8] is always 1.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v":19:7:19:13|Synthesizing module LCD_RAM in library work.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Synthesizing module Picture_display in library work.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Register bit lcd_dc is always 1.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register state.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register cnt_scan.
+@N|Running in 64-bit mode
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Selected library: work cell: Picture_display view verilog as top level
+@N: NF107 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Selected library: work cell: Picture_display view verilog as top level
+

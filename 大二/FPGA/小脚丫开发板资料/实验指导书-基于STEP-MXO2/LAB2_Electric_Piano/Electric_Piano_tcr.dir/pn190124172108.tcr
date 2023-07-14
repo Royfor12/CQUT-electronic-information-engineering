@@ -1,0 +1,13 @@
+#Start recording tcl command: 1/24/2019 15:00:18
+#Project Location: F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano; Project name: Electric_Piano
+prj_project new -name "Electric_Piano" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Array_KeyBoard.v" "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Beeper.v" "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Electric_Piano.v" "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/PWM.v" "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/tone.v"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_src add -exclude "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/impl1/impl1.xcf"
+prj_src enable "F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/impl1/impl1.xcf"
+pgr_project close
+prj_run Export -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 1/24/2019 17:21:08

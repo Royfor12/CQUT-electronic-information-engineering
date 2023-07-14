@@ -1,0 +1,164 @@
+[ START MERGED ]
+rst_n_c_i rst_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+u1/GND
+u2/GND
+u3/GND
+GND
+u1/CLKINTFB
+u1/DPHSRC
+u1/PLLACK
+u1/PLLDATO0
+u1/PLLDATO1
+u1/PLLDATO2
+u1/PLLDATO3
+u1/PLLDATO4
+u1/PLLDATO5
+u1/PLLDATO6
+u1/PLLDATO7
+u1/REFCLK
+u1/INTLOCK
+u1/LOCK
+u1/CLKOS3
+u1/CLKOS2
+u1/CLKOS
+u2/cnt_cry_0_COUT[17]
+u2/un3_x_cnt_cry_0_0_S1
+u2/un3_x_cnt_cry_0_0_S0
+u2/N_5
+u2/un3_x_cnt_s_15_0_S1
+u2/un3_x_cnt_s_15_0_COUT
+u2/un1_y_cnt_4_cry_0_0_S0
+u2/N_6
+u2/un1_y_cnt_4_s_15_0_S1
+u2/un1_y_cnt_4_s_15_0_COUT
+u2/un1_x_cnt_3_cry_0_0_S1
+u2/un1_x_cnt_3_cry_0_0_S0
+u2/N_7
+u2/un1_x_cnt_3_cry_5_0_COUT
+u2/un1_x_set_2_cry_0_0_S1
+u2/un1_x_set_2_cry_0_0_S0
+u2/N_8
+u2/un1_x_set_2_s_15_0_S1
+u2/un1_x_set_2_s_15_0_COUT
+u2/un2_rom_addr_cry_0_0_S1
+u2/un2_rom_addr_cry_0_0_S0
+u2/N_9
+u2/un2_rom_addr_cry_5_0_COUT
+u2/un1_y_set_2_cry_0_0_S1
+u2/un1_y_set_2_cry_0_0_S0
+u2/N_10
+u2/un1_y_set_2_s_15_0_S1
+u2/un1_y_set_2_s_15_0_COUT
+u2/un1_y_cnt_1_cry_0_0_S1
+u2/un1_y_cnt_1_cry_0_0_S0
+u2/N_11
+u2/un1_y_cnt_1_cry_1_0_S1
+u2/un1_y_cnt_1_cry_1_0_S0
+u2/un1_y_cnt_1_cry_3_0_S1
+u2/un1_y_cnt_1_cry_3_0_S0
+u2/un1_y_cnt_1_cry_5_0_S1
+u2/un1_y_cnt_1_cry_5_0_S0
+u2/un1_y_cnt_1_cry_7_0_S1
+u2/un1_y_cnt_1_cry_7_0_S0
+u2/un1_y_cnt_1_cry_9_0_S1
+u2/un1_y_cnt_1_cry_9_0_S0
+u2/un1_y_cnt_1_cry_11_0_S1
+u2/un1_y_cnt_1_cry_11_0_S0
+u2/un1_y_cnt_1_cry_13_0_S1
+u2/un1_y_cnt_1_cry_13_0_S0
+u2/un1_y_cnt_1_cry_15_0_S0
+u2/un1_y_cnt_1_cry_15_0_COUT
+u2/un1_x_cnt_1_cry_0_0_S1
+u2/un1_x_cnt_1_cry_0_0_S0
+u2/N_12
+u2/un1_x_cnt_1_cry_1_0_S1
+u2/un1_x_cnt_1_cry_1_0_S0
+u2/un1_x_cnt_1_cry_3_0_S1
+u2/un1_x_cnt_1_cry_3_0_S0
+u2/un1_x_cnt_1_cry_5_0_S1
+u2/un1_x_cnt_1_cry_5_0_S0
+u2/un1_x_cnt_1_cry_7_0_S1
+u2/un1_x_cnt_1_cry_7_0_S0
+u2/un1_x_cnt_1_cry_9_0_S1
+u2/un1_x_cnt_1_cry_9_0_S0
+u2/un1_x_cnt_1_cry_11_0_S1
+u2/un1_x_cnt_1_cry_11_0_S0
+u2/un1_x_cnt_1_cry_13_0_S1
+u2/un1_x_cnt_1_cry_13_0_S0
+u2/un1_x_cnt_1_cry_15_0_S0
+u2/un1_x_cnt_1_cry_15_0_COUT
+u2/un1_y_cnt_3_cry_0_0_S1
+u2/un1_y_cnt_3_cry_0_0_S0
+u2/N_13
+u2/un1_y_cnt_3_cry_1_0_S1
+u2/un1_y_cnt_3_cry_1_0_S0
+u2/un1_y_cnt_3_cry_3_0_S1
+u2/un1_y_cnt_3_cry_3_0_S0
+u2/un1_y_cnt_3_cry_5_0_S1
+u2/un1_y_cnt_3_cry_5_0_S0
+u2/un1_y_cnt_3_cry_7_0_S1
+u2/un1_y_cnt_3_cry_7_0_S0
+u2/un1_y_cnt_3_cry_9_0_S1
+u2/un1_y_cnt_3_cry_9_0_S0
+u2/un1_y_cnt_3_cry_11_0_S1
+u2/un1_y_cnt_3_cry_11_0_S0
+u2/un1_y_cnt_3_cry_13_0_S1
+u2/un1_y_cnt_3_cry_13_0_S0
+u2/un1_y_cnt_3_cry_15_0_S0
+u2/un1_y_cnt_3_cry_15_0_COUT
+u2/un1_x_cnt_139_cry_0_0_S1
+u2/un1_x_cnt_139_cry_0_0_S0
+u2/N_14
+u2/un1_x_cnt_139_cry_1_0_S1
+u2/un1_x_cnt_139_cry_1_0_S0
+u2/un1_x_cnt_139_cry_3_0_S1
+u2/un1_x_cnt_139_cry_3_0_S0
+u2/un1_x_cnt_139_cry_5_0_S1
+u2/un1_x_cnt_139_cry_5_0_S0
+u2/un1_x_cnt_139_cry_7_0_S1
+u2/un1_x_cnt_139_cry_7_0_S0
+u2/un1_x_cnt_139_cry_9_0_S1
+u2/un1_x_cnt_139_cry_9_0_S0
+u2/un1_x_cnt_139_cry_11_0_S1
+u2/un1_x_cnt_139_cry_11_0_S0
+u2/un1_x_cnt_139_cry_13_0_S1
+u2/un1_x_cnt_139_cry_13_0_S0
+u2/un1_x_cnt_139_cry_15_0_S0
+u2/un1_x_cnt_139_cry_15_0_COUT
+u2/cnt_cry_0_S0[0]
+u2/N_1
+u3/Q_1_0_7_DO17
+u3/Q_1_0_7_DO16
+u3/Q_1_0_7_DO15
+u3/Q_1_0_7_DO14
+u3/Q_1_0_7_DO13
+u3/Q_1_0_7_DO12
+u3/Q_1_0_7_DO11
+u3/Q_1_0_7_DO8
+u3/Q_1_0_7_DO7
+u3/Q_1_0_7_DO6
+u3/Q_1_0_7_DO5
+u3/Q_1_0_7_DO4
+u3/Q_1_0_7_DO3
+u3/Q_1_0_7_DO2
+u3/Q_1_0_7_DO1
+u3/Q_1_0_7_DO0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.0.99.2 -- WARNING: Map write only section -- Tue Jan 29 10:30:52 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "sync_v" SITE "G13" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "vga[2]" SITE "P8" ;
+LOCATE COMP "vga[1]" SITE "N7" ;
+LOCATE COMP "vga[0]" SITE "P7" ;
+LOCATE COMP "sync_h" SITE "N8" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+FREQUENCY NET "clk_c" 12.000000 MHz ;
+FREQUENCY NET "clk_240mhz_0_0" 240.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

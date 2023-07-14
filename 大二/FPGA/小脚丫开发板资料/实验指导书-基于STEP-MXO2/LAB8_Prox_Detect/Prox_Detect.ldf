@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Prox_Detect" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="Prox_Detect"/>
+        <Source name="APDS_9901_Driver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Decoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Prox_Detect.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Prox_Detect"/>
+        </Source>
+        <Source name="Prox_Detect.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Prox_Detect1.sty"/>
+</BaliProject>

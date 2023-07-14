@@ -1,0 +1,75 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Type_system
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":18:7:18:20|Synthesizing module Array_KeyBoard in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":56:17:56:25|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":18:7:18:13|Synthesizing module Decoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":48:25:48:32|Removing redundant assignment.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Optimizing register bit seg_data[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Decoder.v":27:0:27:5|Pruning register bits 7 to 5 of seg_data[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Segment_led.v":18:7:18:17|Synthesizing module Segment_led in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Type_system.v":18:7:18:17|Synthesizing module Type_system in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":46:1:46:6|Pruning register bit 15 of cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB1_Type_system\Array_KeyBoard.v":63:1:63:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:04:39 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:04:39 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Jan 24 11:04:39 2019
+
+###########################################################]

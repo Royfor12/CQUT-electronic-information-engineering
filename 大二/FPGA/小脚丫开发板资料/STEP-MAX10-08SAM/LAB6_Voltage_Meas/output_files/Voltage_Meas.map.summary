@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jun 11 14:06:48 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Voltage_Meas
+Top-level Entity Name : Voltage_Meas
+Family : MAX 10
+Total logic elements : 160
+    Total combinational functions : 152
+    Dedicated logic registers : 26
+Total registers : 26
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

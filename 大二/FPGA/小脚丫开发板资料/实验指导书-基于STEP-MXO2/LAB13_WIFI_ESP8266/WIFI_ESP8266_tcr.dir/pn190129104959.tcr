@@ -1,0 +1,9 @@
+#Start recording tcl command: 1/29/2019 10:39:37
+#Project Location: F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266; Project name: WIFI_ESP8266
+prj_project new -name "WIFI_ESP8266" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "synplify"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/Segment_scan.v" "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/WIFI_ESP8266.v" "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/Uart_Bus/Baud.v" "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Rx.v" "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/Uart_Bus/Uart_Tx.v"
+prj_project save
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+#Stop recording: 1/29/2019 10:49:59

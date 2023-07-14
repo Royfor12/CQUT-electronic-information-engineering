@@ -1,0 +1,412 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "Voltage_Meas_impl1.ngd" -o "Voltage_Meas_impl1_map.ncd" -pr "Voltage_Meas_impl1.prf" -mp "Voltage_Meas_impl1.mrp" -lpf "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/impl1/Voltage_Meas_impl1.lpf" -lpf "F:/Fpga_Project/BaseBoard/LAB6_Voltage_Meas/Voltage_Meas.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Voltage_Meas_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     24 out of  4635 (1%)
+      PFU registers:           24 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       118 out of  2160 (5%)
+      SLICEs as Logic/ROM:    118 out of  2160 (5%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:          9 out of  2160 (0%)
+   Number of LUT4s:        236 out of  4320 (5%)
+      Number used as logic LUTs:        218
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       18
+      Number used as shift registers:     0
+   Number of PIO sites used: 23 + 4(JTAG) out of 105 (26%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+     Net clk_24mhz: 19 loads, 19 rising, 0 falling (Driver: u1/PLLInst_0 )
+   Number of Clock Enables:  9
+     Net u2/clk_24mhz_enable_1: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_2: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_3: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_4: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_5: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_14: 4 loads, 4 LSLICEs
+     Net u2/clk_24mhz_enable_8: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_15: 1 loads, 1 LSLICEs
+     Net u2/clk_24mhz_enable_16: 1 loads, 1 LSLICEs
+   Number of LSRs:  1
+     Net u2/cnt_7__N_35: 4 loads, 4 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rst_n_c: 27 loads
+     Net bin_code_15: 15 loads
+     Net u2/cnt_3: 14 loads
+     Net u2/cnt_1: 13 loads
+     Net u2/cnt_2: 13 loads
+     Net bin_code_12: 12 loads
+     Net bin_code_13: 11 loads
+     Net u3/bcd_code_19__N_139: 11 loads
+     Net u3/bcd_code_19__N_157: 11 loads
+     Net u3/bcd_code_19__N_175: 11 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 50 MB
+
+Dumping design to file Voltage_Meas_impl1_map.ncd.
+
+ncd2vdb "Voltage_Meas_impl1_map.ncd" ".vdbs/Voltage_Meas_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+
+mpartrce -p "Voltage_Meas_impl1.p2t" -f "Voltage_Meas_impl1.p3t" -tf "Voltage_Meas_impl1.pt" "Voltage_Meas_impl1_map.ncd" "Voltage_Meas_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Voltage_Meas_impl1_map.ncd"
+Fri Jan 25 14:26:41 2019
+
+PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Voltage_Meas_impl1_map.ncd Voltage_Meas_impl1.dir/5_1.ncd Voltage_Meas_impl1.prf
+Preference file: Voltage_Meas_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Voltage_Meas_impl1_map.ncd.
+Design name: Voltage_Meas
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   23+4(JTAG)/280     10% used
+                  23+4(JTAG)/105     26% bonded
+
+   SLICE            118/2160          5% used
+
+   GSR                1/1           100% used
+   PLL                1/2            50% used
+
+
+Number of Signals: 258
+Number of Connections: 941
+
+Pin Constraint Summary:
+   23 out of 23 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_24mhz (driver: u1/PLLInst_0, clk load #: 18)
+
+
+No signal is selected as secondary clock.
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..................
+Placer score = 50523.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  50290
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_24mhz" from CLKOP on comp "u1/PLLInst_0" on PLL site "LPLL", clk load = 18
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   23 + 4(JTAG) out of 280 (9.6%) PIO sites used.
+   23 + 4(JTAG) out of 105 (25.7%) bonded PIO sites used.
+   Number of PIO comps: 23; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 9 / 26 ( 34%) | 3.3V       | -         |
+| 1        | 5 / 26 ( 19%) | 3.3V       | -         |
+| 2        | 0 / 28 (  0%) | -          | -         |
+| 3        | 1 / 7 ( 14%)  | 3.3V       | -         |
+| 4        | 4 / 8 ( 50%)  | 3.3V       | -         |
+| 5        | 4 / 10 ( 40%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file Voltage_Meas_impl1.dir/5_1.ncd.
+
+0 connections routed; 941 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 4 secs 
+
+Start NBR router at 14:26:45 01/25/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 14:26:45 01/25/19
+
+Start NBR section for initial routing at 14:26:45 01/25/19
+Level 4, iteration 1
+25(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 14:26:45 01/25/19
+Level 4, iteration 1
+12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+Level 4, iteration 2
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+Level 4, iteration 3
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+Level 4, iteration 6
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 4 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:26:45 01/25/19
+
+Start NBR section for re-routing at 14:26:46 01/25/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.552ns/0.000ns; real time: 5 secs 
+
+Start NBR section for post-routing at 14:26:46 01/25/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 35.552ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 5 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  941 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Voltage_Meas_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 35.552
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Voltage_Meas_impl1.t2b" -w "Voltage_Meas_impl1.ncd" -jedec "Voltage_Meas_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Voltage_Meas_impl1.ncd.
+Design name: Voltage_Meas
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Voltage_Meas_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Voltage_Meas_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

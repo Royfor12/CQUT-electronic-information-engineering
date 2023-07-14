@@ -1,0 +1,332 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Jan 29 10:08:01 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     Picture_display
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 970.337ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3BX    CK             \LCD_RGB_uut/num_delay_i1  (from clk_c +)
+   Destination:    FD1P3DX    D              \LCD_RGB_uut/cnt_delay_i15  (to clk_c +)
+
+   Delay:                  29.503ns  (36.3% logic, 63.7% route), 25 logic levels.
+
+ Constraint Details:
+
+     29.503ns data_path \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 970.337ns
+
+ Path Details: \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCD_RGB_uut/num_delay_i1 (from clk_c)
+Route         4   e 1.398                                  \LCD_RGB_uut/num_delay[1]
+LUT4        ---     0.493              C to Z              \LCD_RGB_uut/LessThan_127_i4_4_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n4_adj_786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i6_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n6_adj_780
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i8_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n8
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i10_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n10_adj_777
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i12_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n12_adj_776
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i14_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n14_adj_775
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i16_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n16
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i18_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n18_adj_770
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i20_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n20
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i22_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n22
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i24_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n24_adj_762
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i26_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n26_adj_759
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i28_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n28_adj_756
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i30_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n30
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i32_3_lut
+Route         4   e 1.340                                  n786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/i3050_2_lut
+Route        15   e 1.811                                  \LCD_RGB_uut/n5643
+A1_TO_FCO   ---     0.827           B[2] to COUT           \LCD_RGB_uut/add_128_3
+Route         1   e 0.020                                  \LCD_RGB_uut/n10445
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_5
+Route         1   e 0.020                                  \LCD_RGB_uut/n10446
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_7
+Route         1   e 0.020                                  \LCD_RGB_uut/n10447
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_9
+Route         1   e 0.020                                  \LCD_RGB_uut/n10448
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_11
+Route         1   e 0.020                                  \LCD_RGB_uut/n10449
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_13
+Route         1   e 0.020                                  \LCD_RGB_uut/n10450
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_15
+Route         1   e 0.020                                  \LCD_RGB_uut/n10451
+FCI_TO_F    ---     0.598            CIN to S[2]           \LCD_RGB_uut/add_128_17
+Route         1   e 0.941                                  \LCD_RGB_uut/n4239
+                  --------
+                   29.503  (36.3% logic, 63.7% route), 25 logic levels.
+
+
+Passed:  The following path meets requirements by 970.337ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3BX    CK             \LCD_RGB_uut/num_delay_i1  (from clk_c +)
+   Destination:    FD1P3DX    D              \LCD_RGB_uut/cnt_delay_i15  (to clk_c +)
+
+   Delay:                  29.503ns  (36.3% logic, 63.7% route), 25 logic levels.
+
+ Constraint Details:
+
+     29.503ns data_path \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 970.337ns
+
+ Path Details: \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCD_RGB_uut/num_delay_i1 (from clk_c)
+Route         4   e 1.398                                  \LCD_RGB_uut/num_delay[1]
+LUT4        ---     0.493              C to Z              \LCD_RGB_uut/LessThan_127_i4_4_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n4_adj_786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i6_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n6_adj_780
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i8_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n8
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i10_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n10_adj_777
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i12_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n12_adj_776
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i14_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n14_adj_775
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i16_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n16
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i18_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n18_adj_770
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i20_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n20
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i22_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n22
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i24_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n24_adj_762
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i26_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n26_adj_759
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i28_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n28_adj_756
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i30_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n30
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i32_3_lut
+Route         4   e 1.340                                  n786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/i3050_2_lut
+Route        15   e 1.811                                  \LCD_RGB_uut/n5643
+A1_TO_FCO   ---     0.827           B[2] to COUT           \LCD_RGB_uut/add_128_3
+Route         1   e 0.020                                  \LCD_RGB_uut/n10445
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_5
+Route         1   e 0.020                                  \LCD_RGB_uut/n10446
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_7
+Route         1   e 0.020                                  \LCD_RGB_uut/n10447
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_9
+Route         1   e 0.020                                  \LCD_RGB_uut/n10448
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_11
+Route         1   e 0.020                                  \LCD_RGB_uut/n10449
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_13
+Route         1   e 0.020                                  \LCD_RGB_uut/n10450
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_15
+Route         1   e 0.020                                  \LCD_RGB_uut/n10451
+FCI_TO_F    ---     0.598            CIN to S[2]           \LCD_RGB_uut/add_128_17
+Route         1   e 0.941                                  \LCD_RGB_uut/n4239
+                  --------
+                   29.503  (36.3% logic, 63.7% route), 25 logic levels.
+
+
+Passed:  The following path meets requirements by 970.514ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3BX    CK             \LCD_RGB_uut/num_delay_i1  (from clk_c +)
+   Destination:    FD1P3DX    D              \LCD_RGB_uut/cnt_delay_i15  (to clk_c +)
+
+   Delay:                  29.326ns  (35.9% logic, 64.1% route), 24 logic levels.
+
+ Constraint Details:
+
+     29.326ns data_path \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 970.514ns
+
+ Path Details: \LCD_RGB_uut/num_delay_i1 to \LCD_RGB_uut/cnt_delay_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCD_RGB_uut/num_delay_i1 (from clk_c)
+Route         4   e 1.398                                  \LCD_RGB_uut/num_delay[1]
+LUT4        ---     0.493              C to Z              \LCD_RGB_uut/LessThan_127_i4_4_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n4_adj_786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i6_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n6_adj_780
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i8_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n8
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i10_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n10_adj_777
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i12_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n12_adj_776
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i14_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n14_adj_775
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i16_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n16
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i18_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n18_adj_770
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i20_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n20
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i22_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n22
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i24_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n24_adj_762
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i26_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n26_adj_759
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i28_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n28_adj_756
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i30_3_lut
+Route         1   e 0.941                                  \LCD_RGB_uut/n30
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/LessThan_127_i32_3_lut
+Route         4   e 1.340                                  n786
+LUT4        ---     0.493              A to Z              \LCD_RGB_uut/i3050_2_lut
+Route        15   e 1.811                                  \LCD_RGB_uut/n5643
+A1_TO_FCO   ---     0.827           B[2] to COUT           \LCD_RGB_uut/add_128_5
+Route         1   e 0.020                                  \LCD_RGB_uut/n10446
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_7
+Route         1   e 0.020                                  \LCD_RGB_uut/n10447
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_9
+Route         1   e 0.020                                  \LCD_RGB_uut/n10448
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_11
+Route         1   e 0.020                                  \LCD_RGB_uut/n10449
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_13
+Route         1   e 0.020                                  \LCD_RGB_uut/n10450
+FCI_TO_FCO  ---     0.157            CIN to COUT           \LCD_RGB_uut/add_128_15
+Route         1   e 0.020                                  \LCD_RGB_uut/n10451
+FCI_TO_F    ---     0.598            CIN to S[2]           \LCD_RGB_uut/add_128_17
+Route         1   e 0.941                                  \LCD_RGB_uut/n4239
+                  --------
+                   29.326  (35.9% logic, 64.1% route), 24 logic levels.
+
+Report: 29.663 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |  1000.000 ns|    29.663 ns|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  20732 paths, 842 nets, and 2609 connections (94.0% coverage)
+
+
+Peak memory: 147193856 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,16 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jan 29 10:41:39 2019 *
+NOTE DESIGN NAME: WIFI_ESP8266 *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS wifi_tx : F13 : out *
+NOTE PINS clk : C1 : in *
+NOTE PINS seg_din : P13 : out *
+NOTE PINS seg_sck : M4 : out *
+NOTE PINS seg_rck : P3 : out *
+NOTE PINS uart_tx : F12 : out *
+NOTE PINS wifi_rx : G12 : in *
+NOTE PINS rst_n : L14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

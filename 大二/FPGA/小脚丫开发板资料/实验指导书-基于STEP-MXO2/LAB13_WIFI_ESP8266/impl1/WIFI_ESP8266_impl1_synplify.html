@@ -1,0 +1,1049 @@
+<HTML>
+<HEAD><TITLE>Synthesis Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Tue Jan 29 10:39:55 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Rx.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v" (library work)
+Verilog syntax check successful!
+Selecting top level module WIFI_ESP8266
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":18:7:18:10|Synthesizing module Baud in library work.
+
+	BPS_PARA=32'b00000000000000000000000001101000
+   Generated name = Baud_104s
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v":18:7:18:13|Synthesizing module Uart_Tx in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v":34:0:34:5|Optimizing register bit tx_data_r[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Tx.v":34:0:34:5|Pruning register bit 0 of tx_data_r[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Rx.v":18:7:18:13|Synthesizing module Uart_Rx in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Uart_Rx.v":80:17:80:27|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":18:7:18:18|Synthesizing module Segment_scan in library work.
+
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":83:0:83:5|Feedback mux created for signal data[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_2_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_3_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_4_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_5_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_6_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_7_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_8_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_9_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":48:0:48:5|Register bit seg_10_[6] is always 0.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":18:7:18:18|Synthesizing module WIFI_ESP8266 in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":89:38:89:45|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":184:26:184:35|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":186:20:186:29|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":197:26:197:35|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":199:20:199:29|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":222:22:222:29|Removing redundant assignment.
+@W: CL271 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":215:0:215:5|Pruning unused bits 35 to 32 of seg_data[35:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Feedback mux created for signal tx_data_valid. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Feedback mux created for signal tx_data_in[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Feedback mux created for signal num[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Feedback mux created for signal char[319:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[9] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[10] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[11] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[12] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[13] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[14] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[15] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[19] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[20] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[23] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[31] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[39] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[47] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[55] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[57] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[63] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[71] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[75] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[79] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[87] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[88] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[91] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[95] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[98] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[99] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[103] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[107] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[111] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[114] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[115] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[119] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[120] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[122] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[123] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[127] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[129] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[132] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[135] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[138] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[139] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[140] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[143] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[146] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[148] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[151] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[155] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[157] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[159] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[161] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[162] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[163] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[165] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[167] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[168] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[171] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[172] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[173] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[175] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[181] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[183] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[184] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[185] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[186] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[187] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[189] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[191] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[193] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[195] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[196] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[197] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[199] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[200] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[201] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[203] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[205] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[207] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[210] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[211] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[213] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[215] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[216] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[218] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[219] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[220] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[222] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[223] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[225] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[230] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[231] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[232] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[233] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[234] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[235] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[237] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[239] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[241] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[242] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[243] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[244] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[245] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[247] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[250] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[251] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[253] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[255] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[259] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[261] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[263] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[266] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[267] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[268] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[269] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[271] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[274] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[276] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[278] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[279] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[280] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[281] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[283] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[285] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[287] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[289] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[290] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[291] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[292] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[293] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[295] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[296] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[297] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[298] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[299] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[300] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[301] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[302] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[303] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[304] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[305] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[306] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[307] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[308] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[309] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[310] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[311] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[312] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[313] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[314] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[315] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[316] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[317] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[318] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit char[319] is always 0.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 319 to 295 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 293 to 289 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 287 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 285 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 283 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 281 to 278 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 276 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 274 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 271 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 269 to 266 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 263 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 261 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 259 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 255 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 253 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 251 to 250 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 247 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 245 to 241 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 239 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 237 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 235 to 230 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 225 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 223 to 222 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 220 to 218 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 216 to 215 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 213 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 211 to 210 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 207 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 205 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 203 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 201 to 199 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 197 to 195 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 193 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 191 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 189 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 187 to 183 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 181 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 175 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 173 to 171 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 168 to 167 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 165 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 163 to 161 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 159 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 157 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 155 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 151 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 148 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 146 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 143 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 140 to 138 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 135 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 132 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 129 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 127 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 123 to 122 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 120 to 119 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 115 to 114 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 111 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 107 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 103 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 99 to 98 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 95 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 91 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 88 to 87 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 79 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 75 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 71 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 63 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 57 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 55 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 47 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 39 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 31 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 23 of char[319:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 20 to 19 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 15 to 0 of char[319:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Register bit tx_data_in[7] is always 0.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 7 of tx_data_in[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 3 of cnt_main[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 5 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0100
+   1000
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Initial value is not supported on state machine state
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Trying to extract state machine for register cnt_txmd.
+Extracted state machine for register cnt_txmd
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 45 of char[46:40]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 68 of char[70:64]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 30 to 29 of char[30:24]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 83 of char[86:80]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 106 of char[106:104]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 109 of char[110:108]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 126 of char[126:124]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 153 of char[154:152]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 170 of char[170:169]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 180 to 177 of char[180:176]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 209 of char[209:208]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 229 to 227 of char[229:226]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 249 of char[249:248]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bits 258 to 257 of char[258:256]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 265 of char[265:264]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\WIFI_ESP8266.v":58:0:58:5|Pruning register bit 273 of char[273:272]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":64:0:64:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":64:0:64:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":83:0:83:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   000
+   001
+   010
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Segment_scan.v":83:0:83:5|Initial value is not supported on state machine state
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\Uart_Bus\Baud.v":31:0:31:5|Pruning register bits 12 to 7 of cnt[12:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 86MB peak: 89MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:39:56 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:39:56 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:39:56 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:39:57 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Jan 29 10:39:57 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\WIFI_ESP8266_impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\WIFI_ESP8266_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[150:149] because it is equivalent to instance char[125:124]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[125:124] because it is equivalent to instance char[105:104]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[78:76] because it is equivalent to instance char[102:100]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[145:144] because it is equivalent to instance char[113:112]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[142:141] because it is equivalent to instance char[134:133]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[128] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[147] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[156] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[160] because it is equivalent to instance char[110]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance char[158] because it is equivalent to instance char[154]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist WIFI_ESP8266
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                    Requested     Requested     Clock                               Clock                   Clock
+Clock                                    Frequency     Period        Type                                Group                   Load 
+--------------------------------------------------------------------------------------------------------------------------------------
+Segment_scan|clk_40khz_derived_clock     1.0 MHz       1000.000      derived (from WIFI_ESP8266|clk)     Inferred_clkgroup_0     31   
+WIFI_ESP8266|clk                         1.0 MHz       1000.000      inferred                            Inferred_clkgroup_0     262  
+======================================================================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\baud.v":31:0:31:5|Found inferred clock WIFI_ESP8266|clk which controls 262 sequential elements including Baud_tx.cnt[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+Encoding state machine cnt_txmd[4:0] (in view: work.WIFI_ESP8266(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine state[4:0] (in view: work.WIFI_ESP8266(verilog))
+original code -> new code
+   0000 -> 00001
+   0001 -> 00010
+   0010 -> 00100
+   0100 -> 01000
+   1000 -> 10000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 10:39:58 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Jan 29 10:39:58 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":108:33:108:43|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":107:33:107:43|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":106:33:106:43|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":105:33:105:43|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":104:33:104:43|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":103:33:103:43|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":102:33:102:43|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":101:33:101:43|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":108:33:108:43|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":108:33:108:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":107:33:107:43|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":107:33:107:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":106:33:106:43|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":106:33:106:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":105:33:105:43|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":105:33:105:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":104:33:104:43|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":104:33:104:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":103:33:103:43|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":103:33:103:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":102:33:102:43|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":102:33:102:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":101:33:101:43|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":101:33:101:43|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 11 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine cnt_txmd[4:0] (in view: work.WIFI_ESP8266(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine state[4:0] (in view: work.WIFI_ESP8266(verilog))
+original code -> new code
+   0000 -> 00001
+   0001 -> 00010
+   0010 -> 00100
+   0100 -> 01000
+   1000 -> 10000
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Found counter in view:work.WIFI_ESP8266(verilog) instance num[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Found counter in view:work.WIFI_ESP8266(verilog) instance cnt_delay[23:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[89] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[104] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[110] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[113] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[118] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[134] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[136] because it is equivalent to instance char[86]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[84] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[93] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing instance char[101] because it is equivalent to instance char[74]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance num_delay[0] (in view: work.WIFI_ESP8266(verilog)) because it does not drive other instances.
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\baud.v":31:0:31:5|Found counter in view:work.Baud_104s(verilog) instance cnt[6:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\uart_tx.v":47:0:47:5|Found counter in view:work.Uart_Tx(verilog) instance num[3:0] 
+@N: BN362 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\uart_bus\uart_tx.v":34:0:34:5|Removing sequential instance tx_data_r[8] (in view: work.Uart_Tx(verilog)) because it does not drive other instances.
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":83:0:83:5|Found counter in view:work.Segment_scan(verilog) instance cnt_write[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":64:0:64:5|Found counter in view:work.Segment_scan(verilog) instance cnt[8:0] 
+@N: BN362 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\segment_scan.v":83:0:83:5|Removing sequential instance data[15] (in view: work.Segment_scan(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 148MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 172MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		   987.93ns		 401 /       212
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 172MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab13_wifi_esp8266\wifi_esp8266.v":58:0:58:5|Removing sequential instance num_delay[12] (in view: work.WIFI_ESP8266(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 172MB)
+
+@N: MT611 :|Automatically generated clock Segment_scan|clk_40khz_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 211 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+29 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   211        char[16]       
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 172MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\WIFI_ESP8266_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 169MB peak: 172MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\WIFI_ESP8266_impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 175MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 175MB)
+
+@W: MT420 |Found inferred clock WIFI_ESP8266|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 10:40:00 2019
+#
+
+
+Top view:               WIFI_ESP8266
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 988.613
+
+                     Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock       Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------
+WIFI_ESP8266|clk     1.0 MHz       87.8 MHz      1000.000      11.387        988.613     inferred     Inferred_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                              |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------
+WIFI_ESP8266|clk  WIFI_ESP8266|clk  |  1000.000    988.613  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: WIFI_ESP8266|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                                   Arrival            
+Instance          Reference            Type        Pin     Net               Time        Slack  
+                  Clock                                                                         
+------------------------------------------------------------------------------------------------
+cnt_delay[9]      WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[9]      1.044       988.613
+cnt_delay[10]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[10]     1.044       988.756
+cnt_delay[11]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[11]     1.044       988.756
+cnt_delay[12]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[12]     1.044       988.899
+cnt_delay[13]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[13]     1.044       988.899
+cnt_delay[14]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[14]     1.044       989.042
+cnt_delay[15]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[15]     1.044       989.042
+cnt_delay[16]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[16]     1.044       989.184
+cnt_delay[17]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[17]     1.044       989.184
+cnt_delay[18]     WIFI_ESP8266|clk     FD1P3DX     Q       cnt_delay[18]     1.044       989.327
+================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                     Required            
+Instance          Reference            Type        Pin     Net                 Time         Slack  
+                  Clock                                                                            
+---------------------------------------------------------------------------------------------------
+cnt_delay[23]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[23]     999.894      988.613
+cnt_delay[21]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[21]     999.894      988.756
+cnt_delay[22]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[22]     999.894      988.756
+cnt_delay[19]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[19]     999.894      988.899
+cnt_delay[20]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[20]     999.894      988.899
+cnt_delay[17]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[17]     999.894      989.042
+cnt_delay[18]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[18]     999.894      989.042
+cnt_delay[15]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[15]     999.894      989.184
+cnt_delay[16]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[16]     999.894      989.184
+cnt_delay[13]     WIFI_ESP8266|clk     FD1P3DX     D       cnt_delay_s[13]     999.894      989.327
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      11.281
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     988.613
+
+    Number of logic level(s):                23
+    Starting point:                          cnt_delay[9] / Q
+    Ending point:                            cnt_delay[23] / D
+    The start point is clocked by            WIFI_ESP8266|clk [rising] on pin CK
+    The end   point is clocked by            WIFI_ESP8266|clk [rising] on pin CK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+cnt_delay[9]                       FD1P3DX      Q        Out     1.044     1.044       -         
+cnt_delay[9]                       Net          -        -       -         -           2         
+un1_cnt_delay_cry_9_0              CCU2D        B1       In      0.000     1.044       -         
+un1_cnt_delay_cry_9_0              CCU2D        COUT     Out     1.545     2.588       -         
+un1_cnt_delay_cry_9                Net          -        -       -         -           1         
+un1_cnt_delay_cry_10_0             CCU2D        CIN      In      0.000     2.588       -         
+un1_cnt_delay_cry_10_0             CCU2D        COUT     Out     0.143     2.731       -         
+un1_cnt_delay_cry_11               Net          -        -       -         -           1         
+un1_cnt_delay_cry_12_0             CCU2D        CIN      In      0.000     2.731       -         
+un1_cnt_delay_cry_12_0             CCU2D        COUT     Out     0.143     2.874       -         
+un1_cnt_delay_cry_13               Net          -        -       -         -           1         
+un1_cnt_delay_cry_14_0             CCU2D        CIN      In      0.000     2.874       -         
+un1_cnt_delay_cry_14_0             CCU2D        COUT     Out     0.143     3.017       -         
+un1_cnt_delay_cry_15               Net          -        -       -         -           1         
+un1_cnt_delay_cry_16_0             CCU2D        CIN      In      0.000     3.017       -         
+un1_cnt_delay_cry_16_0             CCU2D        COUT     Out     0.143     3.160       -         
+un1_cnt_delay_cry_17               Net          -        -       -         -           1         
+un1_cnt_delay_cry_18_0             CCU2D        CIN      In      0.000     3.160       -         
+un1_cnt_delay_cry_18_0             CCU2D        COUT     Out     0.143     3.302       -         
+un1_cnt_delay_cry_19               Net          -        -       -         -           1         
+un1_cnt_delay_cry_20_0             CCU2D        CIN      In      0.000     3.302       -         
+un1_cnt_delay_cry_20_0             CCU2D        COUT     Out     0.143     3.445       -         
+un1_cnt_delay_cry_21               Net          -        -       -         -           1         
+un1_cnt_delay_cry_22_0             CCU2D        CIN      In      0.000     3.445       -         
+un1_cnt_delay_cry_22_0             CCU2D        COUT     Out     0.143     3.588       -         
+un1_cnt_delay_cry_23_cry           Net          -        -       -         -           1         
+un1_cnt_delay_cry_23_0             CCU2D        CIN      In      0.000     3.588       -         
+un1_cnt_delay_cry_23_0             CCU2D        S0       Out     1.685     5.273       -         
+un1_cnt_delay_cry_23               Net          -        -       -         -           3         
+cnt_txmd_ns_4_0_.state_ns_i[1]     ORCALUT4     A        In      0.000     5.273       -         
+cnt_txmd_ns_4_0_.state_ns_i[1]     ORCALUT4     Z        Out     1.344     6.617       -         
+cnt_delay                          Net          -        -       -         -           25        
+cnt_delay_cry_0[0]                 CCU2D        A1       In      0.000     6.617       -         
+cnt_delay_cry_0[0]                 CCU2D        COUT     Out     1.545     8.161       -         
+cnt_delay_cry[0]                   Net          -        -       -         -           1         
+cnt_delay_cry_0[1]                 CCU2D        CIN      In      0.000     8.161       -         
+cnt_delay_cry_0[1]                 CCU2D        COUT     Out     0.143     8.304       -         
+cnt_delay_cry[2]                   Net          -        -       -         -           1         
+cnt_delay_cry_0[3]                 CCU2D        CIN      In      0.000     8.304       -         
+cnt_delay_cry_0[3]                 CCU2D        COUT     Out     0.143     8.447       -         
+cnt_delay_cry[4]                   Net          -        -       -         -           1         
+cnt_delay_cry_0[5]                 CCU2D        CIN      In      0.000     8.447       -         
+cnt_delay_cry_0[5]                 CCU2D        COUT     Out     0.143     8.590       -         
+cnt_delay_cry[6]                   Net          -        -       -         -           1         
+cnt_delay_cry_0[7]                 CCU2D        CIN      In      0.000     8.590       -         
+cnt_delay_cry_0[7]                 CCU2D        COUT     Out     0.143     8.733       -         
+cnt_delay_cry[8]                   Net          -        -       -         -           1         
+cnt_delay_cry_0[9]                 CCU2D        CIN      In      0.000     8.733       -         
+cnt_delay_cry_0[9]                 CCU2D        COUT     Out     0.143     8.875       -         
+cnt_delay_cry[10]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[11]                CCU2D        CIN      In      0.000     8.875       -         
+cnt_delay_cry_0[11]                CCU2D        COUT     Out     0.143     9.018       -         
+cnt_delay_cry[12]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[13]                CCU2D        CIN      In      0.000     9.018       -         
+cnt_delay_cry_0[13]                CCU2D        COUT     Out     0.143     9.161       -         
+cnt_delay_cry[14]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[15]                CCU2D        CIN      In      0.000     9.161       -         
+cnt_delay_cry_0[15]                CCU2D        COUT     Out     0.143     9.304       -         
+cnt_delay_cry[16]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[17]                CCU2D        CIN      In      0.000     9.304       -         
+cnt_delay_cry_0[17]                CCU2D        COUT     Out     0.143     9.447       -         
+cnt_delay_cry[18]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[19]                CCU2D        CIN      In      0.000     9.447       -         
+cnt_delay_cry_0[19]                CCU2D        COUT     Out     0.143     9.589       -         
+cnt_delay_cry[20]                  Net          -        -       -         -           1         
+cnt_delay_cry_0[21]                CCU2D        CIN      In      0.000     9.589       -         
+cnt_delay_cry_0[21]                CCU2D        COUT     Out     0.143     9.732       -         
+cnt_delay_cry[22]                  Net          -        -       -         -           1         
+cnt_delay_s_0[23]                  CCU2D        CIN      In      0.000     9.732       -         
+cnt_delay_s_0[23]                  CCU2D        S0       Out     1.549     11.281      -         
+cnt_delay_s[23]                    Net          -        -       -         -           1         
+cnt_delay[23]                      FD1P3DX      D        In      0.000     11.281      -         
+=================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 175MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 175MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 211 of 4320 (5%)
+PIC Latch:       0
+I/O cells:       8
+
+
+Details:
+CCU2D:          44
+FD1P3AX:        53
+FD1P3BX:        19
+FD1P3DX:        87
+FD1S3AX:        7
+FD1S3BX:        1
+FD1S3DX:        39
+GSR:            1
+IB:             3
+IFS1P3DX:       1
+INV:            1
+L6MUX21:        20
+OB:             5
+OFS1P3BX:       1
+OFS1P3DX:       3
+ORCALUT4:       391
+PFUMX:          31
+PUR:            1
+VHI:            6
+VLO:            6
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 33MB peak: 175MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Jan 29 10:40:00 2019
+
+###########################################################]
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

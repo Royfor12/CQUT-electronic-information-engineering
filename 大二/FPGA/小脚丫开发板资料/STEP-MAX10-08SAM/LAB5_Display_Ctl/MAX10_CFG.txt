@@ -1,0 +1,15 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//CP2102接口，都是FPGA的tx和rx
+uart_rx		,	PIN_B4
+
+//74HC595接口
+seg_rck		,	PIN_A14
+seg_sck		,	PIN_B13
+seg_din		,	PIN_B15

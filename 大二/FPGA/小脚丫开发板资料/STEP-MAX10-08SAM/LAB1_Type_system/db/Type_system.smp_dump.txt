@@ -1,0 +1,7 @@
+
+State Machine - |Type_system|Array_KeyBoard:u1|c_state
+Name c_state.STATE3 c_state.STATE2 c_state.STATE1 c_state.STATE0 
+c_state.STATE0 0 0 0 0 
+c_state.STATE1 0 0 1 1 
+c_state.STATE2 0 1 0 1 
+c_state.STATE3 1 0 0 1 

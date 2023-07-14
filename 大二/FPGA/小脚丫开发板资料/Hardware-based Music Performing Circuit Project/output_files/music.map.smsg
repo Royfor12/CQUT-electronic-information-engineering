@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at SPKER.v(4): always construct contains both blocking and non-blocking assignments File: E:/FPGA/Hardware-based Music Performing Circuit Project/SPKER.v Line: 4

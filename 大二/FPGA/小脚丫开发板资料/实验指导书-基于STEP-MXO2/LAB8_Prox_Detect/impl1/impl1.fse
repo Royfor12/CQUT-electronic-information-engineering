@@ -1,0 +1,22 @@
+
+fsm_encoding {7681681} onehot
+
+fsm_state_encoding {7681681} IDLE {000000001}
+
+fsm_state_encoding {7681681} MAIN {000000010}
+
+fsm_state_encoding {7681681} MODE1 {000000100}
+
+fsm_state_encoding {7681681} MODE2 {000001000}
+
+fsm_state_encoding {7681681} START {000010000}
+
+fsm_state_encoding {7681681} WRITE {000100000}
+
+fsm_state_encoding {7681681} READ {001000000}
+
+fsm_state_encoding {7681681} STOP {010000000}
+
+fsm_state_encoding {7681681} DELAY {100000000}
+
+fsm_registers {7681681} {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

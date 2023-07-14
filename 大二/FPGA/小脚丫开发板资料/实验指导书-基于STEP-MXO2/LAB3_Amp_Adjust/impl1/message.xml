@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/amp_adjust.v(18): </Dynamic>
+            <Dynamic>Amp_Adjust</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/amp_adjust.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v(18): </Dynamic>
+            <Dynamic>Encoder</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v(59): </Dynamic>
+            <Dynamic>A_state</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v(77): </Dynamic>
+            <Dynamic>B_state</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/encoder.v</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/decoder.v(18): </Dynamic>
+            <Dynamic>Decoder</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/decoder.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab3_amp_adjust/segment_led.v(18): </Dynamic>
+            <Dynamic>Segment_led</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab3_amp_adjust/segment_led.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=u1/B_state_N_39 loads=1 clock_loads=1
+   Signal=u1/clk_500us loads=4 clock_loads=3
+   Signal=u1/A_state_N_49 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=u1/B_state_N_39 loads=1 clock_loads=1
+   Signal=u1/clk_500us loads=4 clock_loads=3
+   Signal=u1/A_state_N_49 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

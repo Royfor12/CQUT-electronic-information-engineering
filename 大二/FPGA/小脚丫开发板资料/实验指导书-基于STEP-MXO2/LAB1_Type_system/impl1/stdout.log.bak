@@ -1,0 +1,127 @@
+Running in Lattice mode
+
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+
+
+Starting:    C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+Hostname:    LAPTOP-PB48E8ID
+Date:        Thu Jan 24 11:04:39 2019
+Version:     L-2016.09L
+
+Arguments:   -product synplify_pro -batch Type_system_impl1_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+Technology initialized from device list to: LATTICE-XP
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srr to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\backup\Type_system_impl1.srr
+
+log file: "F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srr"
+
+Running: impl1 in foreground
+
+
+
+Running proj_1|impl1
+
+
+Running: compile (Compile) on proj_1|impl1
+# Thu Jan 24 11:04:39 2019
+
+
+Running: compile_flow (Compile Process) on proj_1|impl1
+# Thu Jan 24 11:04:39 2019
+
+
+Running: compiler (Compile Input) on proj_1|impl1
+# Thu Jan 24 11:04:39 2019
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_comp.srs to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srs
+
+
+compiler completed
+# Thu Jan 24 11:04:40 2019
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl1
+# Thu Jan 24 11:04:40 2019
+
+
+multi_srs_gen completed
+# Thu Jan 24 11:04:41 2019
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_mult.srs to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srs
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srr to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srf
+
+Complete: Compile Process on proj_1|impl1
+
+
+Running: premap (Pre-mapping) on proj_1|impl1
+# Thu Jan 24 11:04:41 2019
+
+
+premap completed with warnings
+# Thu Jan 24 11:04:41 2019
+
+Return Code: 1
+Run Time:00h:00m:00s
+
+Complete: Compile on proj_1|impl1
+
+
+Running: map (Map) on proj_1|impl1
+# Thu Jan 24 11:04:41 2019
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl1
+# Thu Jan 24 11:04:41 2019
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\synwork\Type_system_impl1_m.srm to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srm
+
+
+fpga_mapper completed with warnings
+# Thu Jan 24 11:04:42 2019
+
+Return Code: 1
+Run Time:00h:00m:01s
+
+Complete: Map on proj_1|impl1
+
+Copied F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srr to F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\Type_system_impl1.srf
+
+Complete: Logic Synthesis on proj_1|impl1
+
+TCL script complete: "Type_system_impl1_synplify.tcl"
+
+exit status=0
+
+exit status=0
+
+Save changes for project:
+F:\Fpga_Project\BaseBoard\LAB1_Type_system\impl1\proj_1.prj
+
+batch mode default:no
+

@@ -1,0 +1,13 @@
+#Start recording tcl command: 1/29/2019 10:11:47
+#Project Location: F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver; Project name: Screen_Saver
+prj_project new -name "Screen_Saver" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Screen_Saver.v" "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/step_rom.v" "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Vga_Module.v"
+prj_project save
+prj_src add "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/Param_define.v"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB12_Screen_Saver/pll_mxo2/pll_mxo2.ipx"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+#Stop recording: 1/29/2019 10:37:45

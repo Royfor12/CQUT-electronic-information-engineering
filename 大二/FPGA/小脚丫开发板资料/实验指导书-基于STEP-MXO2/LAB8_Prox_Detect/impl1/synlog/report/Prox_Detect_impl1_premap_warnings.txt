@@ -1,0 +1,1 @@
+@W: MT529 :"f:\fpga_project\baseboard\lab8_prox_detect\apds_9901_driver.v":50:1:50:6|Found inferred clock Prox_Detect|clk which controls 5 sequential elements including u1.cnt_400khz[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

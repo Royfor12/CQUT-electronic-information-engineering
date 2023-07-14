@@ -1,0 +1,67 @@
+----------------------------------------------------------------------
+Report for cell Screen_Saver.verilog
+
+Register bits: 118 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       7
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       90       100.0
+                            EHXPLLJ        1       100.0
+                            FD1P3BX       13       100.0
+                            FD1P3DX       99       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        3       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                INV        4       100.0
+                            L6MUX21       12       100.0
+                                 OB        5       100.0
+                           OFS1P3BX        2       100.0
+                           ORCALUT4      173       100.0
+                            PDPW8KC        8       100.0
+                              PFUMX       39       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                         Vga_Module        1       100.0
+                           pll_mxo2        1       100.0
+                           step_rom        1       100.0
+                            
+                         TOTAL           463           
+----------------------------------------------------------------------
+Report for cell step_rom.netlist
+     Instance path:  u3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            PDPW8KC        8       100.0
+                                VLO        1        25.0
+                            
+                         TOTAL             9           
+----------------------------------------------------------------------
+Report for cell Vga_Module.netlist
+     Instance path:  u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       90       100.0
+                            FD1P3BX       13       100.0
+                            FD1P3DX       99       100.0
+                            FD1S3BX        1       100.0
+                                INV        3        75.0
+                            L6MUX21       12       100.0
+                           ORCALUT4      170        98.3
+                              PFUMX       39       100.0
+                                VHI        1        50.0
+                                VLO        1        25.0
+                            
+                         TOTAL           429           
+----------------------------------------------------------------------
+Report for cell pll_mxo2.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLJ        1       100.0
+                                VLO        1        25.0
+                            
+                         TOTAL             2           

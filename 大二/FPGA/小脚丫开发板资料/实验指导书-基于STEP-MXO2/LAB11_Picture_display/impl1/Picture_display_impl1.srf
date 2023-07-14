@@ -1,0 +1,1246 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Tue Jan 29 10:06:19 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module Picture_display
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":18:7:18:13|Synthesizing module LCD_RGB in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":90:23:90:30|Removing redundant assignment.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_62_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_63_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_64_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_65_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_66_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_67_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_68_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_69_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_70_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_71_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Object reg_init_72_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|Some of the address location in the memory "reg_init" are not assigned.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal ram_data_r[131:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_res. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_din. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_dc. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal lcd_clk. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Feedback mux created for signal data_reg[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit state_back[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_0_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_1_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_2_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_3_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_4_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_5_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_6_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_7_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_8_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_9_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":179:0:179:5|Register bit reg_setxy_10_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_0_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_1_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_2_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_3_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_4_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_5_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_6_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_7_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_8_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_9_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_10_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_11_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_12_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_13_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_14_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_15_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_16_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_17_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_18_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_19_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_20_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_21_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_22_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_23_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_24_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_25_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_26_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_27_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_28_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_29_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_30_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_31_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_32_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_33_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_34_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_35_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_36_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_37_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_38_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_39_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_40_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_41_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[7] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_42_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_43_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_44_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_45_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_46_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_47_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_48_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_49_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_50_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_51_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_52_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_53_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_54_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_55_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_56_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_57_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_58_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_59_[8] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_60_[8] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[7] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":195:0:195:5|Register bit reg_init_61_[8] is always 0.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bit 2 of state_back[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RAM.v":19:7:19:13|Synthesizing module LCD_RAM in library work.
+
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\Picture_display.v":18:7:18:21|Synthesizing module Picture_display in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_main[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt_write[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 15 to 6 of cnt[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 5 of cnt_write[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Pruning register bits 7 to 1 of cnt_main[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Initial value is not supported on state machine state
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":60:0:60:5|Trying to extract state machine for register cnt_scan.
+Extracted state machine for register cnt_scan
+State machine has 6 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+   00000100
+   00000101
+@A: CL153 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|*Unassigned bits of reg_init_62_[8:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"F:\Fpga_Project\BaseBoard\LAB11_Picture_display\LCD_RGB.v":51:10:51:17|*Unassigned bits of reg_init_63_[8:0] are referenced and tied to 0 -- simulation mismatch possible.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 84MB peak: 86MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:06:19 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:06:19 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:06:19 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\synwork\Picture_display_impl1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 10:06:21 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Jan 29 10:06:21 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_clk_en (in view: work.LCD_RGB(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Picture_display
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+
+Clock Summary
+*****************
+
+Start                   Requested     Requested     Clock        Clock                   Clock
+Clock                   Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------
+Picture_display|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     236  
+==============================================================================================
+
+@W: MT529 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found inferred clock Picture_display|clk which controls 236 sequential elements including LCD_RGB_uut.state_back[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Encoding state machine cnt_scan[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   00000000 -> 000001
+   00000001 -> 000010
+   00000010 -> 000100
+   00000011 -> 001000
+   00000100 -> 010000
+   00000101 -> 100000
+Encoding state machine state[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 10:06:22 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Jan 29 10:06:22 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[8:7] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[5] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[3] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[1:0] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[8:7] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|Found ROM .delname. (in view: work.LCD_RGB(verilog)) with 11 words by 2 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[5] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|Found ROM .delname. (in view: work.LCD_RGB(verilog)) with 11 words by 1 bit.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[3] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|Found ROM .delname. (in view: work.LCD_RGB(verilog)) with 11 words by 1 bit.
+@W: FA239 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|ROM data_reg_5[1:0] (in view: work.LCD_RGB(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":117:21:117:35|Found ROM .delname. (in view: work.LCD_RGB(verilog)) with 11 words by 2 bits.
+@N: FX493 |Applying initial value "00" on instance LCD_RGB_uut.state_back[1:0].
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+Encoding state machine cnt_scan[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   00000000 -> 000001
+   00000001 -> 000010
+   00000010 -> 000100
+   00000011 -> 001000
+   00000100 -> 010000
+   00000101 -> 100000
+Encoding state machine state[5:0] (in view: work.LCD_RGB(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance x_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance y_cnt[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_init[7:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_write[4:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Found counter in view:work.LCD_RGB(verilog) instance cnt_delay[15:0] 
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[131] because it is equivalent to instance LCD_RGB_uut.ram_data_r[130]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[130] because it is equivalent to instance LCD_RGB_uut.ram_data_r[129]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[129] because it is equivalent to instance LCD_RGB_uut.ram_data_r[128]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[128] because it is equivalent to instance LCD_RGB_uut.ram_data_r[127]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[127] because it is equivalent to instance LCD_RGB_uut.ram_data_r[126]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[126] because it is equivalent to instance LCD_RGB_uut.ram_data_r[125]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[125] because it is equivalent to instance LCD_RGB_uut.ram_data_r[124]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[124] because it is equivalent to instance LCD_RGB_uut.ram_data_r[123]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[123] because it is equivalent to instance LCD_RGB_uut.ram_data_r[122]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing instance LCD_RGB_uut.ram_data_r[122] because it is equivalent to instance LCD_RGB_uut.ram_data_r[121]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance ram_data_r[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance num_delay[0] (in view: work.LCD_RGB(verilog)) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+
+@N: FX211 |Packed ROM LCD_RAM_uut.Q_1_0[131:22] (8 input, 110 output) to Block SelectRAM 
+@N: FX214 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":102:21:102:34|Generating ROM LCD_RGB_uut.data_reg_cnst_0[8:0] (in view: work.Picture_display(verilog)).
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 148MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 157MB peak: 159MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   985.95ns		 247 /       110
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 159MB)
+
+@N: BN362 :"f:\fpga_project\baseboard\lab11_picture_display\lcd_rgb.v":60:0:60:5|Removing sequential instance LCD_RGB_uut.num_delay[4] (in view: work.Picture_display(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 158MB peak: 159MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 116 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+===================================== Non-Gated/Non-Generated Clocks ======================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                    
+-----------------------------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   116        LCD_RGB_uut.data_reg_cnst_0_dreg[8]
+===========================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 159MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\synwork\Picture_display_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 159MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB11_Picture_display\impl1\Picture_display_impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 161MB peak: 163MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 160MB peak: 163MB)
+
+@W: MT420 |Found inferred clock Picture_display|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 10:06:24 2019
+#
+
+
+Top view:               Picture_display
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 984.803
+
+                        Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock          Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk     1.0 MHz       65.8 MHz      1000.000      15.197        984.803     inferred     Inferred_clkgroup_0
+============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------
+Picture_display|clk  Picture_display|clk  |  1000.000    984.803  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Picture_display|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                         Arrival            
+Instance                Reference               Type        Pin      Net                 Time        Slack  
+                        Clock                                                                               
+------------------------------------------------------------------------------------------------------------
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO8      ram_data_r[27]      8.210       984.803
+LCD_RAM_uut.Q_1_0_4     Picture_display|clk     PDPW8KC     DO0      ram_data_r[91]      8.210       984.803
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO7      ram_data_r[26]      8.210       985.335
+LCD_RAM_uut.Q_1_0_4     Picture_display|clk     PDPW8KC     DO17     ram_data_r[90]      8.210       985.335
+LCD_RAM_uut.Q_1_0_1     Picture_display|clk     PDPW8KC     DO1      ram_data_r[38]      8.210       985.366
+LCD_RAM_uut.Q_1_0_1     Picture_display|clk     PDPW8KC     DO17     ram_data_r[36]      8.210       985.366
+LCD_RAM_uut.Q_1_0_5     Picture_display|clk     PDPW8KC     DO9      ram_data_r[100]     8.210       985.366
+LCD_RAM_uut.Q_1_0_5     Picture_display|clk     PDPW8KC     DO11     ram_data_r[102]     8.210       985.366
+LCD_RAM_uut.Q_1_0_0     Picture_display|clk     PDPW8KC     DO10     ram_data_r[11]      8.210       985.606
+LCD_RAM_uut.Q_1_0_1     Picture_display|clk     PDPW8KC     DO6      ram_data_r[43]      8.210       985.606
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                Starting                                                        Required            
+Instance                        Reference               Type        Pin     Net                 Time         Slack  
+                                Clock                                                                               
+--------------------------------------------------------------------------------------------------------------------
+LCD_RGB_uut.data_reg_ret_12     Picture_display|clk     FD1P3AX     D       N_1728              1000.089     984.803
+LCD_RGB_uut.data_reg_ret_8      Picture_display|clk     FD1P3AX     D       data_reg_10[0]      999.894      985.226
+LCD_RGB_uut.data_reg_ret_5      Picture_display|clk     FD1P3AX     D       ram_data_r_pmux     1000.089     985.892
+LCD_RGB_uut.cnt_delay[15]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[15]     999.894      989.176
+LCD_RGB_uut.cnt_delay[13]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[13]     999.894      989.318
+LCD_RGB_uut.cnt_delay[14]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[14]     999.894      989.318
+LCD_RGB_uut.cnt_delay[11]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[11]     999.894      989.461
+LCD_RGB_uut.cnt_delay[12]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[12]     999.894      989.461
+LCD_RGB_uut.cnt_delay[9]        Picture_display|clk     FD1P3DX     D       cnt_delay_s[9]      999.894      989.604
+LCD_RGB_uut.cnt_delay[10]       Picture_display|clk     FD1P3DX     D       cnt_delay_s[10]     999.894      989.604
+====================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      15.286
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     984.803
+
+    Number of logic level(s):                8
+    Starting point:                          LCD_RAM_uut.Q_1_0_0 / DO8
+    Ending point:                            LCD_RGB_uut.data_reg_ret_12 / D
+    The start point is clocked by            Picture_display|clk [rising] on pin CLKR
+    The end   point is clocked by            Picture_display|clk [rising] on pin CK
+
+Instance / Net                                      Pin      Pin               Arrival     No. of    
+Name                                   Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+LCD_RAM_uut.Q_1_0_0                    PDPW8KC      DO8      Out     8.210     8.210       -         
+ram_data_r[27]                         Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_109        ORCALUT4     A        In      0.000     8.210       -         
+LCD_RGB_uut.ram_data_r_pmux_109        ORCALUT4     Z        Out     1.017     9.227       -         
+N_129                                  Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_111        ORCALUT4     D        In      0.000     9.227       -         
+LCD_RGB_uut.ram_data_r_pmux_111        ORCALUT4     Z        Out     1.017     10.243      -         
+N_1517                                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_112        ORCALUT4     A        In      0.000     10.243      -         
+LCD_RGB_uut.ram_data_r_pmux_112        ORCALUT4     Z        Out     1.017     11.260      -         
+N_1518                                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_113        ORCALUT4     B        In      0.000     11.260      -         
+LCD_RGB_uut.ram_data_r_pmux_113        ORCALUT4     Z        Out     1.017     12.277      -         
+N_1519                                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_130_bm     ORCALUT4     A        In      0.000     12.277      -         
+LCD_RGB_uut.ram_data_r_pmux_130_bm     ORCALUT4     Z        Out     1.017     13.294      -         
+ram_data_r_pmux_130_bm                 Net          -        -       -         -           1         
+LCD_RGB_uut.ram_data_r_pmux_130        PFUMX        ALUT     In      0.000     13.294      -         
+LCD_RGB_uut.ram_data_r_pmux_130        PFUMX        Z        Out     0.286     13.580      -         
+N_1536                                 Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_10[0]             ORCALUT4     C        In      0.000     13.580      -         
+LCD_RGB_uut.data_reg_10[0]             ORCALUT4     Z        Out     1.089     14.669      -         
+data_reg_10[0]                         Net          -        -       -         -           2         
+LCD_RGB_uut.data_reg_ret_12_RNO        ORCALUT4     C        In      0.000     14.669      -         
+LCD_RGB_uut.data_reg_ret_12_RNO        ORCALUT4     Z        Out     0.617     15.286      -         
+N_1728                                 Net          -        -       -         -           1         
+LCD_RGB_uut.data_reg_ret_12            FD1P3AX      D        In      0.000     15.286      -         
+=====================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 161MB peak: 163MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 161MB peak: 163MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 109 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       7
+Block Rams : 7 of 10 (70%)
+
+
+Details:
+CCU2D:          40
+FD1P3AX:        25
+FD1P3BX:        4
+FD1P3DX:        69
+FD1S3BX:        1
+FD1S3DX:        6
+GSR:            1
+IB:             2
+INV:            4
+L6MUX21:        10
+OB:             5
+OFS1P3DX:       4
+ORCALUT4:       233
+PDPW8KC:        7
+PFUMX:          26
+PUR:            1
+ROM64X1A:       9
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 32MB peak: 163MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Jan 29 10:06:24 2019
+
+###########################################################]

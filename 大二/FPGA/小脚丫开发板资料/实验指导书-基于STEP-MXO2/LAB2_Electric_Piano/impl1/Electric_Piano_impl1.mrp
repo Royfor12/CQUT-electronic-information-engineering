@@ -1,0 +1,402 @@
+
+        Lattice Mapping Report File for Design Module 'Electric_Piano'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Electric_Piano_impl1.ngd -o Electric_Piano_impl1_map.ncd -pr
+     Electric_Piano_impl1.prf -mp Electric_Piano_impl1.mrp -lpf F:/Fpga_Project/
+     BaseBoard/LAB2_Electric_Piano/impl1/Electric_Piano_impl1.lpf -lpf
+     F:/Fpga_Project/BaseBoard/LAB2_Electric_Piano/Electric_Piano.lpf -c 0 -gui
+     
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
+Mapped on:  01/24/19  15:29:46
+
+Design Summary
+--------------
+
+   Number of registers:     89 out of  4635 (2%)
+      PFU registers:           89 out of  4320 (2%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       118 out of  2160 (5%)
+      SLICEs as Logic/ROM:    118 out of  2160 (5%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         35 out of  2160 (2%)
+   Number of LUT4s:        232 out of  4320 (5%)
+      Number used as logic LUTs:        162
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       70
+      Number used as shift registers:     0
+   Number of PIO sites used: 11 + 4(JTAG) out of 105 (14%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 24 loads, 24 rising, 0 falling (Driver: PIO clk )
+     Net clk_200hz: 24 loads, 0 rising, 24 falling (Driver: u1/clk_200hz_38 )
+
+                                    Page 1
+
+
+
+
+Design:  Electric_Piano                                Date:  01/24/19  15:29:46
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  5
+     Net clk_c_enable_8: 5 loads, 5 LSLICEs
+     Net u1/clk_200hz_N_40_enable_48: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_40_enable_38: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_40_enable_46: 6 loads, 6 LSLICEs
+     Net u1/clk_200hz_N_40_enable_42: 6 loads, 6 LSLICEs
+   Number of LSRs:  3
+     Net clk_200hz_N_42: 8 loads, 8 LSLICEs
+     Net beeper_I_0/u2/cnt_15__N_192: 9 loads, 9 LSLICEs
+     Net u1/n811: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net key_out_4: 25 loads
+     Net key_out_8: 25 loads
+     Net key_out_6: 24 loads
+     Net key_out_9: 23 loads
+     Net key_out_1: 22 loads
+     Net key_out_13: 22 loads
+     Net key_out_3: 22 loads
+     Net key_out_11: 21 loads
+     Net key_out_5: 21 loads
+     Net key_out_10: 20 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| beeper              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  Electric_Piano                                Date:  01/24/19  15:29:46
+
+IO (PIO) Attributes (cont)
+--------------------------
+| col[3]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i1162 undriven or does not drive anything - clipped.
+Signal u1/clk_200hz_N_40 was merged into signal clk_200hz
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal u1/cnt_109_110_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u1/cnt_109_110_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u1/cnt_109_110_add_4_15/CO undriven or does not drive anything - clipped.
+     
+Signal beeper_I_0/u2/sub_71_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/add_6_17/S1 undriven or does not drive anything - clipped.
+Signal beeper_I_0/u2/add_6_17/CO undriven or does not drive anything - clipped.
+Signal beeper_I_0/u2/sub_72_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/add_6_1/S0 undriven or does not drive anything - clipped.
+Signal beeper_I_0/u2/add_6_1/CI undriven or does not drive anything - clipped.
+Signal beeper_I_0/u2/sub_71_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+
+                                    Page 3
+
+
+
+
+Design:  Electric_Piano                                Date:  01/24/19  15:29:46
+
+Removed logic (cont)
+--------------------
+Signal beeper_I_0/u2/sub_71_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_71_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal beeper_I_0/u2/sub_72_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Block u1/i1164 was optimized away.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+
+
+
+
+                                    Page 4
+
+
+
+
+Design:  Electric_Piano                                Date:  01/24/19  15:29:46
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 33 
+
+     Type and instance name of component: 
+   Register : beeper_I_0/u2/cnt_i0
+   Register : beeper_I_0/u2/cnt_i1
+   Register : beeper_I_0/u2/cnt_i2
+   Register : beeper_I_0/u2/cnt_i3
+   Register : beeper_I_0/u2/cnt_i4
+   Register : beeper_I_0/u2/cnt_i5
+   Register : beeper_I_0/u2/cnt_i6
+   Register : beeper_I_0/u2/cnt_i7
+   Register : beeper_I_0/u2/cnt_i8
+   Register : beeper_I_0/u2/cnt_i9
+   Register : beeper_I_0/u2/cnt_i10
+   Register : beeper_I_0/u2/cnt_i11
+   Register : beeper_I_0/u2/cnt_i12
+   Register : beeper_I_0/u2/cnt_i13
+   Register : beeper_I_0/u2/cnt_i14
+   Register : beeper_I_0/u2/cnt_i15
+   Register : u1/cnt_109_110__i1
+   Register : u1/row_i0_i2
+   Register : u1/row_i0_i3
+   Register : u1/cnt_109_110__i2
+   Register : u1/cnt_109_110__i3
+   Register : u1/cnt_109_110__i4
+   Register : u1/cnt_109_110__i5
+   Register : u1/cnt_109_110__i6
+   Register : u1/cnt_109_110__i7
+   Register : u1/cnt_109_110__i8
+   Register : u1/cnt_109_110__i9
+   Register : u1/cnt_109_110__i10
+   Register : u1/cnt_109_110__i11
+   Register : u1/cnt_109_110__i12
+   Register : u1/cnt_109_110__i13
+   Register : u1/cnt_109_110__i14
+
+                                    Page 5
+
+
+
+
+Design:  Electric_Piano                                Date:  01/24/19  15:29:46
+
+GSR Usage (cont)
+----------------
+   Register : u1/cnt_109_110__i15
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 50 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

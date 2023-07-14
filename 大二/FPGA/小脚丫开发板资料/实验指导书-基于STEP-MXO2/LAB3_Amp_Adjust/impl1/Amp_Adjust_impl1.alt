@@ -1,0 +1,30 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Jan 24 17:22:58 2019 *
+NOTE DESIGN NAME: Amp_Adjust *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS key_b : F3 : in *
+NOTE PINS key_a : E3 : in *
+NOTE PINS rst_n : L14 : in *
+NOTE PINS clk : C1 : in *
+NOTE PINS seg_2[0] : C12 : out *
+NOTE PINS seg_2[1] : B14 : out *
+NOTE PINS seg_2[2] : J1 : out *
+NOTE PINS seg_2[3] : H1 : out *
+NOTE PINS seg_2[4] : H2 : out *
+NOTE PINS seg_2[5] : B12 : out *
+NOTE PINS seg_2[6] : A11 : out *
+NOTE PINS seg_2[7] : K1 : out *
+NOTE PINS seg_2[8] : A12 : out *
+NOTE PINS seg_1[0] : A10 : out *
+NOTE PINS seg_1[1] : C11 : out *
+NOTE PINS seg_1[2] : F2 : out *
+NOTE PINS seg_1[3] : E1 : out *
+NOTE PINS seg_1[4] : E2 : out *
+NOTE PINS seg_1[5] : A9 : out *
+NOTE PINS seg_1[6] : B9 : out *
+NOTE PINS seg_1[7] : F1 : out *
+NOTE PINS seg_1[8] : C9 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

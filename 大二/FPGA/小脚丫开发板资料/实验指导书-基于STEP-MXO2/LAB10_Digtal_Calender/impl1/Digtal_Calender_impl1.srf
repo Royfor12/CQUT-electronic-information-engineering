@@ -1,0 +1,820 @@
+#Build: Synplify Pro L-2016.09L, Build 077R, Dec  2 2016
+#install: C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-PB48E8ID
+
+# Tue Jan 29 09:52:28 2019
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Digtal_Calender.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Debounce.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v" (library work)
+@I::"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v" (library work)
+Verilog syntax check successful!
+Selecting top level module Digtal_Calender
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":18:7:18:13|Synthesizing module Encoder in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":42:19:42:27|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":59:22:59:28|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":77:22:77:28|Removing redundant assignment.
+@W: CL118 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":74:1:74:4|Latch generated from always block for signal B_state; possible missing assignment in an if or case statement.
+@W: CL118 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":56:1:56:4|Latch generated from always block for signal A_state; possible missing assignment in an if or case statement.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Debounce.v":18:7:18:14|Synthesizing module Debounce in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Debounce.v":69:19:69:27|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":18:7:18:15|Synthesizing module mode_ctrl in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":51:15:51:19|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":74:19:74:25|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":158:24:158:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":170:24:170:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":182:25:182:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":192:25:192:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":205:25:205:31|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":216:26:216:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":226:26:226:32|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":237:25:237:31|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":250:24:250:30|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\mode_ctrl.v":262:25:262:32|Removing redundant assignment.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":18:7:18:20|Synthesizing module DS1340Z_driver in library work.
+
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":77:18:77:25|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":178:55:178:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":181:55:181:57|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":192:59:192:63|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":200:53:200:55|Removing redundant assignment.
+@N: CG179 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":203:53:203:55|Removing redundant assignment.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_year[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_week[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_sec[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_mon[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_min[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_hour[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_day[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal rtc_data_r[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Feedback mux created for signal data_wr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":18:7:18:18|Synthesizing module Segment_scan in library work.
+
+@A: CL282 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":88:0:88:5|Feedback mux created for signal data[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_0_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_1_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_2_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_3_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_4_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_5_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_6_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_7_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_8_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[4] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_9_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_10_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_11_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_12_[6] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[0] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[1] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[2] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[5] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_13_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[3] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_14_[6] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[0] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[1] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[2] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[3] is always 0.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[4] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[5] is always 1.
+@N: CL189 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":48:0:48:5|Register bit seg_15_[6] is always 1.
+@N: CG364 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Digtal_Calender.v":18:7:18:21|Synthesizing module Digtal_Calender in library work.
+
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":69:0:69:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":69:0:69:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":88:0:88:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   000
+   001
+   010
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":88:0:88:5|Initial value is not supported on state machine state
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit cnt_read[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning register bits 4 to 3 of cnt_read[4:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":32:0:32:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":32:0:32:5|Pruning register bit 12 of cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 85MB peak: 94MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:52:29 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:52:29 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:52:29 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 29 09:52:30 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Jan 29 09:52:30 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\Digtal_Calender_impl1_scck.rpt 
+Printing clock  summary report in "F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\Digtal_Calender_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\debounce.v":66:0:66:5|Removing sequential instance key_state[0] (in view: work.Debounce(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Digtal_Calender
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                       Requested     Requested     Clock                                  Clock                   Clock
+Clock                                       Frequency     Period        Type                                   Group                   Load 
+--------------------------------------------------------------------------------------------------------------------------------------------
+DS1340Z_driver|clk_400khz_derived_clock     1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Inferred_clkgroup_0     104  
+Digtal_Calender|clk                         1.0 MHz       1000.000      inferred                               Inferred_clkgroup_0     121  
+Encoder|clk_500us_derived_clock             1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Inferred_clkgroup_0     6    
+Segment_scan|clk_40khz_derived_clock        1.0 MHz       1000.000      derived (from Digtal_Calender|clk)     Inferred_clkgroup_0     31   
+System                                      1.0 MHz       1000.000      system                                 system_clkgroup         2    
+============================================================================================================================================
+
+@W: MT531 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":74:1:74:4|Found signal identified as System clock which controls 2 sequential elements including u1.B_state.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":32:0:32:5|Found inferred clock Digtal_Calender|clk which controls 121 sequential elements including u1.cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+Encoding state machine state[5:0] (in view: work.DS1340Z_driver(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 29 09:52:31 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Jan 29 09:52:31 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:33:02
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":113:32:113:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":112:32:112:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":111:32:111:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":110:32:110:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":109:32:109:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":108:32:108:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":107:32:107:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":106:32:106:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":113:32:113:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":113:32:113:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":112:32:112:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":112:32:112:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":111:32:111:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":111:32:111:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":110:32:110:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":110:32:110:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":109:32:109:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":109:32:109:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":108:32:108:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":108:32:108:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":107:32:107:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":107:32:107:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@W: FA239 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":106:32:106:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":106:32:106:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\debounce.v":46:0:46:5|Found counter in view:work.Debounce(verilog) instance cnt[17:0] 
+Encoding state machine state[2:0] (in view: work.Segment_scan(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":88:0:88:5|Found counter in view:work.Segment_scan(verilog) instance cnt_write[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":69:0:69:5|Found counter in view:work.Segment_scan(verilog) instance cnt[8:0] 
+Encoding state machine state[5:0] (in view: work.DS1340Z_driver(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 151MB peak: 152MB)
+
+@N: MF578 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Incompatible asynchronous control logic preventing generated clock conversion of u1.key_b_r2 (in view: work.Digtal_Calender(verilog)).
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Removing sequential instance u1.key_b_r2 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":47:0:47:5|Removing sequential instance u1.key_a_r2 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Removing sequential instance u1.key_b_r1 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":47:0:47:5|Removing sequential instance u1.key_a_r1 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 152MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 156MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 156MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 156MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 156MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 156MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 207MB peak: 209MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		   987.03ns		 777 /       263
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 207MB peak: 209MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 206MB peak: 209MB)
+
+@N: MT611 :|Automatically generated clock DS1340Z_driver|clk_400khz_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Encoder|clk_500us_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Segment_scan|clk_40khz_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 255 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 10 clock pin(s) of sequential element(s)
+134 instances converted, 10 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0002       clk                 port                   255        u4.data_wr[7]  
+=======================================================================================
+====================================================================== Gated/Generated Clocks ======================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     Explanation                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u1.clk_500us        FD1S3DX                10         u1.key_a_r1_0       No generated or derived clock directive on output of sequential instance
+====================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 170MB peak: 209MB)
+
+Writing Analyst data base F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\synwork\Digtal_Calender_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 206MB peak: 209MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\Digtal_Calender_impl1.edi
+L-2016.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 210MB peak: 212MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 212MB)
+
+@W: MT420 |Found inferred clock Digtal_Calender|clk with period 1000.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 29 09:52:34 2019
+#
+
+
+Top view:               Digtal_Calender
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 986.821
+
+                        Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock          Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------
+Digtal_Calender|clk     1.0 MHz       75.9 MHz      1000.000      13.179        986.821     inferred     Inferred_clkgroup_0
+System                  1.0 MHz       357.6 MHz     1000.000      2.797         997.203     system       system_clkgroup    
+============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------
+System               System               |  1000.000    997.203  |  No paths    -      |  No paths    -      |  No paths    -    
+System               Digtal_Calender|clk  |  1000.000    997.203  |  No paths    -      |  No paths    -      |  No paths    -    
+Digtal_Calender|clk  Digtal_Calender|clk  |  1000.000    986.821  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Digtal_Calender|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                                   Arrival            
+Instance          Reference               Type        Pin     Net            Time        Slack  
+                  Clock                                                                         
+------------------------------------------------------------------------------------------------
+u3.adj_mon[5]     Digtal_Calender|clk     FD1S3DX     Q       adj_mon[5]     1.228       986.821
+u3.adj_mon[6]     Digtal_Calender|clk     FD1S3DX     Q       adj_mon[6]     1.228       986.821
+u3.adj_mon[7]     Digtal_Calender|clk     FD1S3DX     Q       adj_mon[7]     1.204       986.845
+u3.adj_mon[1]     Digtal_Calender|clk     FD1S3DX     Q       adj_mon[1]     1.228       986.893
+u3.adj_mon[2]     Digtal_Calender|clk     FD1S3DX     Q       adj_mon[2]     1.228       986.893
+u3.adj_day[0]     Digtal_Calender|clk     FD1S3BX     Q       adj_day[0]     1.244       986.909
+u3.adj_day[3]     Digtal_Calender|clk     FD1S3DX     Q       adj_day[3]     1.228       986.925
+u3.adj_day[6]     Digtal_Calender|clk     FD1S3DX     Q       adj_day[6]     1.220       986.925
+u3.adj_day[1]     Digtal_Calender|clk     FD1S3DX     Q       adj_day[1]     1.204       986.941
+u3.adj_day[2]     Digtal_Calender|clk     FD1S3DX     Q       adj_day[2]     1.204       986.941
+================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                   Starting                                                       Required            
+Instance           Reference               Type        Pin     Net                Time         Slack  
+                   Clock                                                                              
+------------------------------------------------------------------------------------------------------
+u3.adj_day[7]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[7]      1000.089     986.821
+u3.adj_day[5]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[5]      1000.089     986.963
+u3.adj_day[6]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[6]      1000.089     986.963
+u3.adj_day[3]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[3]      1000.089     987.106
+u3.adj_day[4]      Digtal_Calender|clk     FD1S3DX     D       N_152              1000.089     987.106
+u3.adj_day[1]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[1]      1000.089     987.249
+u3.adj_day[2]      Digtal_Calender|clk     FD1S3DX     D       adj_day_35[2]      1000.089     987.249
+u3.adj_day[0]      Digtal_Calender|clk     FD1S3BX     D       N_63_i             1000.089     989.326
+u3.adj_sec[5]      Digtal_Calender|clk     FD1S3DX     D       adj_sec_12[5]      1000.089     991.146
+u3.adj_week[7]     Digtal_Calender|clk     FD1S3DX     D       adj_week_10[7]     1000.089     991.248
+======================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      13.268
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     986.821
+
+    Number of logic level(s):                13
+    Starting point:                          u3.adj_mon[5] / Q
+    Ending point:                            u3.adj_day[7] / D
+    The start point is clocked by            Digtal_Calender|clk [rising] on pin CK
+    The end   point is clocked by            Digtal_Calender|clk [rising] on pin CK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+u3.adj_mon[5]                         FD1S3DX      Q        Out     1.228     1.228       -         
+adj_mon[5]                            Net          -        -       -         -           9         
+u3.adj_day130_6_0_a3_i_o2             ORCALUT4     A        In      0.000     1.228       -         
+u3.adj_day130_6_0_a3_i_o2             ORCALUT4     Z        Out     1.089     2.317       -         
+N_274                                 Net          -        -       -         -           2         
+u3.adj_day130_6_0_a3_i_o2_RNIUEHC     ORCALUT4     A        In      0.000     2.317       -         
+u3.adj_day130_6_0_a3_i_o2_RNIUEHC     ORCALUT4     Z        Out     1.153     3.469       -         
+N_277                                 Net          -        -       -         -           3         
+u3.adj_day129_0_a2_0_o2               ORCALUT4     B        In      0.000     3.469       -         
+u3.adj_day129_0_a2_0_o2               ORCALUT4     Z        Out     1.225     4.694       -         
+adj_day129                            Net          -        -       -         -           5         
+u3.adj_day_4_sqmuxa_3                 ORCALUT4     C        In      0.000     4.694       -         
+u3.adj_day_4_sqmuxa_3                 ORCALUT4     Z        Out     1.017     5.711       -         
+adj_day_4_sqmuxa_3                    Net          -        -       -         -           1         
+u3.un1_adj_day_4_sqmuxa_1             ORCALUT4     D        In      0.000     5.711       -         
+u3.un1_adj_day_4_sqmuxa_1             ORCALUT4     Z        Out     1.017     6.728       -         
+un1_adj_day_4_sqmuxa_1                Net          -        -       -         -           1         
+u3.un1_adj_day_1_sqmuxa               ORCALUT4     C        In      0.000     6.728       -         
+u3.un1_adj_day_1_sqmuxa               ORCALUT4     Z        Out     1.313     8.041       -         
+un1_adj_day_1_sqmuxa                  Net          -        -       -         -           17        
+u3.un1_disp_en103_14_RNIBP5R          ORCALUT4     B        In      0.000     8.041       -         
+u3.un1_disp_en103_14_RNIBP5R          ORCALUT4     Z        Out     1.089     9.129       -         
+un1_disp_en103_14_RNIBP5R             Net          -        -       -         -           2         
+u3.adj_day_35_1_i_m3_i_m3_cry_0_0     CCU2D        C1       In      0.000     9.129       -         
+u3.adj_day_35_1_i_m3_i_m3_cry_0_0     CCU2D        COUT     Out     1.545     10.674      -         
+adj_day_35_1_i_m3_i_m3_cry_0          Net          -        -       -         -           1         
+u3.adj_day_35_1_i_m3_i_m3_cry_1_0     CCU2D        CIN      In      0.000     10.674      -         
+u3.adj_day_35_1_i_m3_i_m3_cry_1_0     CCU2D        COUT     Out     0.143     10.817      -         
+adj_day_35_1_i_m3_i_m3_cry_2          Net          -        -       -         -           1         
+u3.adj_day_35_1_i_m3_i_m3_cry_3_0     CCU2D        CIN      In      0.000     10.817      -         
+u3.adj_day_35_1_i_m3_i_m3_cry_3_0     CCU2D        COUT     Out     0.143     10.960      -         
+adj_day_35_1_i_m3_i_m3_cry_4          Net          -        -       -         -           1         
+u3.adj_day_35_1_i_m3_i_m3_cry_5_0     CCU2D        CIN      In      0.000     10.960      -         
+u3.adj_day_35_1_i_m3_i_m3_cry_5_0     CCU2D        COUT     Out     0.143     11.102      -         
+adj_day_35_1_i_m3_i_m3_cry_6          Net          -        -       -         -           1         
+u3.adj_day_35_1_i_m3_i_m3_s_7_0       CCU2D        CIN      In      0.000     11.102      -         
+u3.adj_day_35_1_i_m3_i_m3_s_7_0       CCU2D        S0       Out     1.549     12.651      -         
+N_862                                 Net          -        -       -         -           1         
+u3.adj_day_35[7]                      ORCALUT4     C        In      0.000     12.651      -         
+u3.adj_day_35[7]                      ORCALUT4     Z        Out     0.617     13.268      -         
+adj_day_35[7]                         Net          -        -       -         -           1         
+u3.adj_day[7]                         FD1S3DX      D        In      0.000     13.268      -         
+====================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                          Arrival            
+Instance              Reference     Type         Pin     Net            Time        Slack  
+                      Clock                                                                
+-------------------------------------------------------------------------------------------
+u1.key_a_r1_0         System        FD1S3AX      Q       key_a_r1       1.180       997.203
+u1.key_b_r1_0         System        FD1S3AX      Q       key_b_r1       1.180       997.203
+u1.B_state            System        FD1S3DX      Q       B_state_0      1.044       997.339
+u1.key_a_r2_0         System        FD1S3AX      Q       key_a_r2       1.044       997.339
+u1.key_b_r2_0         System        FD1S3AX      Q       key_b_r2       1.044       997.339
+u1.key_b_r2_ret_1     System        FD1S3IX      Q       B_state4       1.044       997.339
+u1_key_a_rio          System        IFS1P3DX     Q       u1.key_a_r     1.108       997.347
+u1_key_b_rio          System        IFS1P3DX     Q       u1.key_b_r     1.108       997.347
+u1.A_state            System        FD1S3DX      Q       A_state_0      1.044       998.428
+u1.key_a_r2_ret_1     System        FD1S3IX      Q       A_state4       1.044       998.428
+===========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                           Required            
+Instance              Reference     Type        Pin     Net              Time         Slack  
+                      Clock                                                                  
+---------------------------------------------------------------------------------------------
+u1.A_state            System        FD1S3DX     D       A_state_en2      1000.089     997.203
+u1.B_state            System        FD1S3DX     D       B_state_en2      1000.089     997.203
+u1.L_pulse            System        FD1S3DX     D       un1_A_neg[0]     1000.089     997.203
+u1.R_pulse            System        FD1S3DX     D       un1_A_pos[0]     1000.089     997.203
+u1.key_a_r2_ret_1     System        FD1S3IX     CD      key_a_r1_i       999.197      998.017
+u1.key_b_r2_ret_1     System        FD1S3IX     CD      key_b_r1_i       999.197      998.017
+u1.A_state_r          System        FD1S3AX     D       A_state          1000.089     998.292
+u1.key_a_r2_0         System        FD1S3AX     D       key_a_r1         999.894      998.715
+u1.key_b_r2_0         System        FD1S3AX     D       key_b_r1         999.894      998.715
+u1.key_a_r1_0         System        FD1S3AX     D       key_a_r          999.894      998.787
+=============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         1000.089
+
+    - Propagation time:                      2.885
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 997.203
+
+    Number of logic level(s):                2
+    Starting point:                          u1.key_a_r1_0 / Q
+    Ending point:                            u1.A_state / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            System [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+u1.key_a_r1_0      FD1S3AX      Q        Out     1.180     1.180       -         
+key_a_r1           Net          -        -       -         -           5         
+u1.A_state5        ORCALUT4     A        In      0.000     1.180       -         
+u1.A_state5        ORCALUT4     Z        Out     1.089     2.269       -         
+A_state5           Net          -        -       -         -           2         
+u1.A_state_en2     ORCALUT4     D        In      0.000     2.269       -         
+u1.A_state_en2     ORCALUT4     Z        Out     0.617     2.885       -         
+A_state_en2        Net          -        -       -         -           1         
+u1.A_state         FD1S3DX      D        In      0.000     2.885       -         
+=================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 212MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 212MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 265 of 4320 (6%)
+PIC Latch:       0
+I/O cells:       10
+
+
+Details:
+BB:             1
+CCU2D:          65
+FD1P3AX:        87
+FD1P3BX:        10
+FD1P3DX:        38
+FD1S3AX:        8
+FD1S3BX:        9
+FD1S3DX:        103
+FD1S3IX:        2
+GSR:            1
+IB:             5
+IFS1P3DX:       4
+INV:            4
+L6MUX21:        26
+OB:             4
+OFS1P3BX:       1
+OFS1P3DX:       3
+ORCALUT4:       738
+PFUMX:          66
+PUR:            1
+VHI:            6
+VLO:            6
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 33MB peak: 212MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Tue Jan 29 09:52:35 2019
+
+###########################################################]

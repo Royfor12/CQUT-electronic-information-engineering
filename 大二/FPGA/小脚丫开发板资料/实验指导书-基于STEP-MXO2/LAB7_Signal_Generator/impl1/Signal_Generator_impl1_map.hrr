@@ -1,0 +1,73 @@
+---------------------------------------------------
+Report for cell Signal_Generator
+   Instance path: Signal_Generator
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      70.00        100.0
+                                  LUT4	      78.00        100.0
+                                 IOBUF	          8        100.0
+                                PFUREG	         86        100.0
+                                RIPPLE	         30        100.0
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               Encoder	          1        24.2
+                              Debounce	          1        19.5
+                     DAC081S101_driver	          1        32.6
+                                   DDS	          1         6.7
+                            logic_ctrl	          1        17.0
+---------------------------------------------------
+Report for cell logic_ctrl
+   Instance path: Signal_Generator/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.92        17.0
+                                  LUT4	      16.00        20.5
+                                PFUREG	         12        14.0
+                                RIPPLE	          5        16.7
+---------------------------------------------------
+Report for cell DAC081S101_driver
+   Instance path: Signal_Generator/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.83        32.6
+                                  LUT4	      38.00        48.7
+                                PFUREG	         18        20.9
+                                RIPPLE	          4        13.3
+---------------------------------------------------
+Report for cell Encoder
+   Instance path: Signal_Generator/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.92        24.2
+                                  LUT4	      15.00        19.2
+                                PFUREG	         25        29.1
+                                RIPPLE	          7        23.3
+---------------------------------------------------
+Report for cell Debounce
+   Instance path: Signal_Generator/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      13.67        19.5
+                                  LUT4	       8.00        10.3
+                                PFUREG	         23        26.7
+                                RIPPLE	         10        33.3
+---------------------------------------------------
+Report for cell DDS
+   Instance path: Signal_Generator/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.67         6.7
+                                  LUT4	       1.00         1.3
+                                PFUREG	          8         9.3
+                                RIPPLE	          4        13.3
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   rom	          1         0.0
+---------------------------------------------------
+Report for cell rom
+   Instance path: Signal_Generator/u4/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        100.0

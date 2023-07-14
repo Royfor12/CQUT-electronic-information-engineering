@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"f:\fpga_project\baseboard\lab9_digital_thm\segment_scan.v":78:0:78:5|Found inferred clock Digital_THM|clk which controls 15 sequential elements including u3.clk_40khz. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

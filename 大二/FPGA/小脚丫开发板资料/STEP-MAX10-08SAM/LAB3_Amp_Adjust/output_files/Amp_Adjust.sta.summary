@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.545
+TNS   : -61.611
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -1.256
+TNS   : -1.256
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -1.229
+TNS   : -1.229
+
+Type  : Slow 1200mV 85C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.678
+TNS   : -1.349
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.348
+TNS   : -57.505
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -1.101
+TNS   : -1.101
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -1.039
+TNS   : -1.039
+
+Type  : Slow 1200mV 0C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.516
+TNS   : -1.015
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.814
+TNS   : -8.685
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|clk_500us'
+Slack : -0.066
+TNS   : -0.107
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|key_b_r1'
+Slack : -0.011
+TNS   : -0.011
+
+Type  : Fast 1200mV 0C Model Setup 'Encoder:u1|key_a_r1'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|key_b_r1'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|key_a_r1'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Encoder:u1|clk_500us'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -33.398
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|clk_500us'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_b_r1'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Encoder:u1|key_a_r1'
+Slack : 0.428
+TNS   : 0.000
+
+------------------------------------------------------------

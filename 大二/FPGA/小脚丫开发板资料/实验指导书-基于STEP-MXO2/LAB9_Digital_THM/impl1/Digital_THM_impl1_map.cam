@@ -1,0 +1,113 @@
+[ START MERGED ]
+rst_n_c_i rst_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+u2/GND
+u3/VCC
+u3/GND
+u1/GND
+VCC
+GND
+u2/c_s_13_0_S1
+u2/c_s_13_0_COUT
+u2/un1_T_code_0_cry_0_0_S1
+u2/un1_T_code_0_cry_0_0_S0
+u2/N_3
+u2/un1_T_code_0_cry_1_0_S1
+u2/un1_T_code_0_cry_1_0_S0
+u2/un1_T_code_0_cry_3_0_S1
+u2/un1_T_code_0_cry_3_0_S0
+u2/un1_T_code_0_cry_5_0_S1
+u2/un1_T_code_0_cry_5_0_S0
+u2/un1_T_code_0_cry_7_0_S1
+u2/un1_T_code_0_cry_7_0_S0
+u2/un1_T_code_0_cry_9_0_S1
+u2/un1_T_code_0_cry_9_0_S0
+u2/un1_T_code_0_cry_11_0_S1
+u2/un1_T_code_0_cry_11_0_S0
+u2/un1_T_code_0_cry_13_0_S0
+u2/un1_T_code_0_cry_27_0_COUT
+u2/un1_T_code_0_4_cry_3_0_S1
+u2/un1_T_code_0_4_cry_3_0_S0
+u2/N_4
+u2/un1_T_code_0_4_cry_18_0_COUT
+u2/un1_H_code_0_cry_4_0_S1
+u2/un1_H_code_0_cry_4_0_S0
+u2/N_5
+u2/un1_H_code_0_cry_5_0_S1
+u2/un1_H_code_0_cry_5_0_S0
+u2/un1_H_code_0_cry_7_0_S1
+u2/un1_H_code_0_cry_7_0_S0
+u2/un1_H_code_0_cry_9_0_S1
+u2/un1_H_code_0_cry_9_0_S0
+u2/un1_H_code_0_cry_11_0_S1
+u2/un1_H_code_0_cry_11_0_S0
+u2/un1_H_code_0_cry_13_0_S1
+u2/un1_H_code_0_cry_13_0_S0
+u2/un1_H_code_0_s_25_0_S1
+u2/un1_H_code_0_s_25_0_COUT
+u2/un1_H_code_0_5_cry_3_0_S1
+u2/un1_H_code_0_5_cry_3_0_S0
+u2/N_6
+u2/un1_H_code_0_5_cry_20_0_COUT
+u2/H_code_i[4]
+u2/un1_H_code_0_4_cry_4_0_S0
+u2/N_7
+u2/un1_H_code_0_4_s_25_0_S1
+u2/un1_H_code_0_4_s_25_0_COUT
+u2/un1_T_code_0_6_cry_0_0_S1
+u2/un1_T_code_0_6_cry_0_0_S0
+u2/N_8
+u2/un1_T_code_0_6_cry_19_0_COUT
+u2/c_cry_0_0_S1
+u2/c_cry_0_0_S0
+u2/N_2
+u3/cnt_cry_0_S0[0]
+u3/N_2
+u3/cnt_cry_0_COUT[7]
+u3/cnt_write_lcry_0_S1
+u3/cnt_write_lcry_0_S0
+u3/N_10
+u3/cnt_write_cry_0_COUT[4]
+u1/cnt_delay_lcry_0_S1
+u1/cnt_delay_lcry_0_S0
+u1/N_1
+u1/cnt_delay_cry_0_COUT[22]
+u1/un1_cnt_delay_cry_4_0_S1
+u1/un1_cnt_delay_cry_4_0_S0
+u1/N_2
+u1/un1_cnt_delay_cry_5_0_S1
+u1/un1_cnt_delay_cry_5_0_S0
+u1/un1_cnt_delay_cry_7_0_S1
+u1/un1_cnt_delay_cry_7_0_S0
+u1/un1_cnt_delay_cry_9_0_S1
+u1/un1_cnt_delay_cry_9_0_S0
+u1/un1_cnt_delay_cry_11_0_S1
+u1/un1_cnt_delay_cry_11_0_S0
+u1/un1_cnt_delay_cry_13_0_S1
+u1/un1_cnt_delay_cry_13_0_S0
+u1/un1_cnt_delay_cry_15_0_S1
+u1/un1_cnt_delay_cry_15_0_S0
+u1/un1_cnt_delay_cry_17_0_S1
+u1/un1_cnt_delay_cry_17_0_S0
+u1/un1_cnt_delay_cry_19_0_S1
+u1/un1_cnt_delay_cry_19_0_S0
+u1/un1_cnt_delay_cry_21_0_S1
+u1/un1_cnt_delay_cry_21_0_S0
+u1/un1_cnt_delay_cry_23_0_S0
+u1/un1_cnt_delay_cry_23_0_COUT
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.0.99.2 -- WARNING: Map write only section -- Tue Jan 29 09:48:57 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "i2c_sda" SITE "B8" ;
+LOCATE COMP "i2c_scl" SITE "C8" ;
+LOCATE COMP "clk" SITE "C1" ;
+LOCATE COMP "seg_din" SITE "P13" ;
+LOCATE COMP "seg_sck" SITE "M4" ;
+LOCATE COMP "seg_rck" SITE "P3" ;
+LOCATE COMP "rst_n" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

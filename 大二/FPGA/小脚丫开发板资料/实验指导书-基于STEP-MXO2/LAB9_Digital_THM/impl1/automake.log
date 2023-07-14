@@ -1,0 +1,563 @@
+
+edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/impl1" -path "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM"   "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/impl1/Digital_THM_impl1.edi" "Digital_THM_impl1.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="NACK"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DELAY"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STOP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="START"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE2"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE1"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MAIN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CNT_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MAIN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CNT_40KHz"  />
+Writing the design to Digital_THM_impl1.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data"  -p "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/impl1" -p "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM"  "Digital_THM_impl1.ngo" "Digital_THM_impl1.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Digital_THM_impl1.ngo' ...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_23_0_COUT" arg2="u1/un1_cnt_delay_cry_23_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_23_0_S0" arg2="u1/un1_cnt_delay_cry_23_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_21_0_S0" arg2="u1/un1_cnt_delay_cry_21_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_21_0_S1" arg2="u1/un1_cnt_delay_cry_21_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_19_0_S0" arg2="u1/un1_cnt_delay_cry_19_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_19_0_S1" arg2="u1/un1_cnt_delay_cry_19_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_17_0_S0" arg2="u1/un1_cnt_delay_cry_17_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_17_0_S1" arg2="u1/un1_cnt_delay_cry_17_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_15_0_S0" arg2="u1/un1_cnt_delay_cry_15_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_15_0_S1" arg2="u1/un1_cnt_delay_cry_15_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_13_0_S0" arg2="u1/un1_cnt_delay_cry_13_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_13_0_S1" arg2="u1/un1_cnt_delay_cry_13_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_11_0_S0" arg2="u1/un1_cnt_delay_cry_11_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_11_0_S1" arg2="u1/un1_cnt_delay_cry_11_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_9_0_S0" arg2="u1/un1_cnt_delay_cry_9_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_9_0_S1" arg2="u1/un1_cnt_delay_cry_9_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_7_0_S0" arg2="u1/un1_cnt_delay_cry_7_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_7_0_S1" arg2="u1/un1_cnt_delay_cry_7_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_5_0_S0" arg2="u1/un1_cnt_delay_cry_5_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_5_0_S1" arg2="u1/un1_cnt_delay_cry_5_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_4_0_S0" arg2="u1/un1_cnt_delay_cry_4_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/un1_cnt_delay_cry_4_0_S1" arg2="u1/un1_cnt_delay_cry_4_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/cnt_delay_cry_0_COUT[22]" arg2="u1/cnt_delay_cry_0_COUT[22]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/cnt_delay_lcry_0_S0" arg2="u1/cnt_delay_lcry_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u1/cnt_delay_lcry_0_S1" arg2="u1/cnt_delay_lcry_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u3/cnt_write_cry_0_COUT[4]" arg2="u3/cnt_write_cry_0_COUT[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u3/cnt_write_lcry_0_S0" arg2="u3/cnt_write_lcry_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u3/cnt_write_lcry_0_S1" arg2="u3/cnt_write_lcry_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u3/cnt_cry_0_COUT[7]" arg2="u3/cnt_cry_0_COUT[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u3/cnt_cry_0_S0[0]" arg2="u3/cnt_cry_0_S0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_6_cry_19_0_COUT" arg2="u2/un1_T_code_0_6_cry_19_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_6_cry_0_0_S0" arg2="u2/un1_T_code_0_6_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_6_cry_0_0_S1" arg2="u2/un1_T_code_0_6_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_4_s_25_0_COUT" arg2="u2/un1_H_code_0_4_s_25_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_4_s_25_0_S1" arg2="u2/un1_H_code_0_4_s_25_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_4_cry_4_0_S0" arg2="u2/un1_H_code_0_4_cry_4_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/H_code_i[4]" arg2="u2/H_code_i[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_5_cry_20_0_COUT" arg2="u2/un1_H_code_0_5_cry_20_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_5_cry_3_0_S0" arg2="u2/un1_H_code_0_5_cry_3_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_5_cry_3_0_S1" arg2="u2/un1_H_code_0_5_cry_3_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_s_25_0_COUT" arg2="u2/un1_H_code_0_s_25_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_s_25_0_S1" arg2="u2/un1_H_code_0_s_25_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_13_0_S0" arg2="u2/un1_H_code_0_cry_13_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_13_0_S1" arg2="u2/un1_H_code_0_cry_13_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_11_0_S0" arg2="u2/un1_H_code_0_cry_11_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_11_0_S1" arg2="u2/un1_H_code_0_cry_11_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_9_0_S0" arg2="u2/un1_H_code_0_cry_9_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_9_0_S1" arg2="u2/un1_H_code_0_cry_9_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_7_0_S0" arg2="u2/un1_H_code_0_cry_7_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_7_0_S1" arg2="u2/un1_H_code_0_cry_7_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_5_0_S0" arg2="u2/un1_H_code_0_cry_5_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_5_0_S1" arg2="u2/un1_H_code_0_cry_5_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_4_0_S0" arg2="u2/un1_H_code_0_cry_4_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_H_code_0_cry_4_0_S1" arg2="u2/un1_H_code_0_cry_4_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_4_cry_18_0_COUT" arg2="u2/un1_T_code_0_4_cry_18_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_4_cry_3_0_S0" arg2="u2/un1_T_code_0_4_cry_3_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_4_cry_3_0_S1" arg2="u2/un1_T_code_0_4_cry_3_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_27_0_COUT" arg2="u2/un1_T_code_0_cry_27_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_13_0_S0" arg2="u2/un1_T_code_0_cry_13_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_11_0_S0" arg2="u2/un1_T_code_0_cry_11_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_11_0_S1" arg2="u2/un1_T_code_0_cry_11_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_9_0_S0" arg2="u2/un1_T_code_0_cry_9_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_9_0_S1" arg2="u2/un1_T_code_0_cry_9_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_7_0_S0" arg2="u2/un1_T_code_0_cry_7_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_7_0_S1" arg2="u2/un1_T_code_0_cry_7_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_5_0_S0" arg2="u2/un1_T_code_0_cry_5_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_5_0_S1" arg2="u2/un1_T_code_0_cry_5_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_3_0_S0" arg2="u2/un1_T_code_0_cry_3_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_3_0_S1" arg2="u2/un1_T_code_0_cry_3_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_1_0_S0" arg2="u2/un1_T_code_0_cry_1_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_1_0_S1" arg2="u2/un1_T_code_0_cry_1_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_0_0_S0" arg2="u2/un1_T_code_0_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/un1_T_code_0_cry_0_0_S1" arg2="u2/un1_T_code_0_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/c_s_13_0_COUT" arg2="u2/c_s_13_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/c_s_13_0_S1" arg2="u2/c_s_13_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/c_cry_0_0_S0" arg2="u2/c_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u2/c_cry_0_0_S1" arg2="u2/c_cry_0_0_S1"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="77"  />
+
+Design Results:
+   1242 blocks expanded
+Complete the first expansion.
+Writing 'Digital_THM_impl1.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "Digital_THM_impl1.ngd" -o "Digital_THM_impl1_map.ncd" -pr "Digital_THM_impl1.prf" -mp "Digital_THM_impl1.mrp" -lpf "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/impl1/Digital_THM_impl1_synplify.lpf" -lpf "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/Digital_THM.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.0.99.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Digital_THM_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+3 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="rst_n_c"  />
+
+
+
+Design Summary:
+   Number of registers:    304 out of  4635 (7%)
+      PFU registers:          299 out of  4320 (7%)
+      PIO registers:            5 out of   315 (2%)
+   Number of SLICEs:       496 out of  2160 (23%)
+      SLICEs as Logic/ROM:    496 out of  2160 (23%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        110 out of  2160 (5%)
+   Number of LUT4s:        986 out of  4320 (23%)
+      Number used as logic LUTs:        766
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      220
+      Number used as shift registers:     0
+   Number of PIO sites used: 7 + 4(JTAG) out of 105 (10%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_c: 183 loads, 183 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  29
+     Net seg_sck_1_sqmuxa_i_a3_RNICG302: 1 loads, 0 LSLICEs
+     Net cnt_RNIHK5U3[0]: 1 loads, 0 LSLICEs
+     Net un1_scl_2_sqmuxa_0_2_RNIBKD93: 1 loads, 0 LSLICEs
+     Net u1/cnt_main_RNICOSO2[0]: 4 loads, 4 LSLICEs
+     Net u1/data_r_RNO[1]: 1 loads, 1 LSLICEs
+     Net u1/data_r_RNO[0]: 1 loads, 1 LSLICEs
+     Net u1/state_RNIJAPP1[2]: 1 loads, 1 LSLICEs
+     Net G_58: 31 loads, 31 LSLICEs
+     Net u1/sda_cl_1_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/sda_cl_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/sda_RNO: 1 loads, 1 LSLICEs
+     Net u1/cnt_main_RNI9J2O2_0[0]: 2 loads, 2 LSLICEs
+     Net u1/un1_data_wr_1_sqmuxa_0_a2_0_RNIS5DQ1: 3 loads, 3 LSLICEs
+     Net u1/data_rce[2]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[3]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[4]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[5]: 1 loads, 1 LSLICEs
+     Net u1/data_rce[6]: 1 loads, 1 LSLICEs
+     Net u1/cnt_mode2_4_i_o2_0_RNI394N1[0]: 4 loads, 4 LSLICEs
+     Net u1/cnt_mode2_4_i_o2_0_RNIC20H1[1]: 4 loads, 4 LSLICEs
+     Net u1/state_RNII5PA1[1]: 2 loads, 2 LSLICEs
+     Net u1/ack_flag_RNO: 1 loads, 1 LSLICEs
+     Net u1/ack_RNO_0: 1 loads, 1 LSLICEs
+     Net u1/cnt_main_RNI9J2O2[0]: 8 loads, 8 LSLICEs
+     Net T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62: 21 loads, 21 LSLICEs
+     Net u3/clk_40khz_RNIF6K71: 6 loads, 6 LSLICEs
+     Net state_RNI8L2V1[0]: 70 loads, 70 LSLICEs
+     Net un1_state_5_0_a3_RNIE1172: 1 loads, 0 LSLICEs
+     Net cnt_write_RNI0SKT1[5]: 1 loads, 0 LSLICEs
+   Number of local set/reset loads for net rst_n_c merged into GSR:  103
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rst_n_c: 90 loads
+     Net state_RNI8L2V1[0]: 70 loads
+     Net G_58: 47 loads
+     Net u1/state[0]: 35 loads
+     Net u1/state[5]: 30 loads
+     Net u3/cnt_mainf[2]: 28 loads
+     Net u1/un1_state_15_0_i: 24 loads
+     Net T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62: 21 loads
+     Net u1/state[6]: 19 loads
+     Net u1/cnt_main[1]: 16 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 55 MB
+
+Dumping design to file Digital_THM_impl1_map.ncd.
+
+mpartrce -p "Digital_THM_impl1.p2t" -f "Digital_THM_impl1.p3t" -tf "Digital_THM_impl1.pt" "Digital_THM_impl1_map.ncd" "Digital_THM_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Digital_THM_impl1_map.ncd"
+Tue Jan 29 09:48:58 2019
+
+PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Digital_THM_impl1_map.ncd Digital_THM_impl1.dir/5_1.ncd Digital_THM_impl1.prf
+Preference file: Digital_THM_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Digital_THM_impl1_map.ncd.
+Design name: Digital_THM
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    7+4(JTAG)/280     4% used
+                   7+4(JTAG)/105     10% bonded
+   IOLOGIC            5/280           1% used
+
+   SLICE            496/2160         22% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 1306
+Number of Connections: 3819
+
+Pin Constraint Summary:
+   7 out of 7 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 183)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 3 signals are selected to use the secondary clock routing resources:
+    state_RNI8L2V1[0] (driver: u3/SLICE_226, clk load #: 0, sr load #: 0, ce load #: 70)
+    G_58 (driver: SLICE_343, clk load #: 0, sr load #: 0, ce load #: 31)
+    T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62 (driver: u1/SLICE_361, clk load #: 0, sr load #: 0, ce load #: 21)
+
+Signal rst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+......................
+Placer score = 175966.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  171330
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 183
+  SECONDARY "state_RNI8L2V1[0]" from F1 on comp "u3/SLICE_226" on site "R12C15D", clk load = 0, ce load = 70, sr load = 0
+  SECONDARY "G_58" from F1 on comp "SLICE_343" on site "R12C17B", clk load = 0, ce load = 31, sr load = 0
+  SECONDARY "T_code_1_sqmuxa_0_a4_0_a2_0_RNI6MU62" from F1 on comp "u1/SLICE_361" on site "R12C17A", clk load = 0, ce load = 21, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 3 out of 8 (37%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   7 + 4(JTAG) out of 280 (3.9%) PIO sites used.
+   7 + 4(JTAG) out of 105 (10.5%) bonded PIO sites used.
+   Number of PIO comps: 7; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 2 / 26 (  7%) | 3.3V       | -         |
+| 1        | 1 / 26 (  3%) | 3.3V       | -         |
+| 2        | 3 / 28 ( 10%) | 3.3V       | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 0 / 8 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file Digital_THM_impl1.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 3819 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 4 secs 
+
+Start NBR router at 09:49:02 01/29/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 09:49:02 01/29/19
+
+Start NBR section for initial routing at 09:49:02 01/29/19
+Level 4, iteration 1
+117(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 09:49:02 01/29/19
+Level 4, iteration 1
+41(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+Level 4, iteration 2
+18(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+Level 4, iteration 3
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+Level 4, iteration 5
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+Level 4, iteration 6
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+
+Start NBR section for re-routing at 09:49:02 01/29/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+
+Start NBR section for post-routing at 09:49:02 01/29/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 4 secs 
+Total REAL time: 4 secs 
+Completely routed.
+End of route.  3819 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Digital_THM_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Digital_THM_impl1.t2b" -w "Digital_THM_impl1.ncd" -jedec "Digital_THM_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Digital_THM_impl1.ncd.
+Design name: Digital_THM
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Digital_THM_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Digital_THM_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

@@ -1,0 +1,21 @@
+@W: CL118 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":74:1:74:4|Latch generated from always block for signal B_state; possible missing assignment in an if or case statement.
+@W: CL118 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":56:1:56:4|Latch generated from always block for signal A_state; possible missing assignment in an if or case statement.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL169 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":69:0:69:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":69:0:69:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v":88:0:88:5|Initial value is not supported on state machine state
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Optimizing register bit cnt_read[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":93:0:93:5|Pruning register bits 4 to 3 of cnt_read[4:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v":60:0:60:5|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":32:0:32:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v":32:0:32:5|Pruning register bit 12 of cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

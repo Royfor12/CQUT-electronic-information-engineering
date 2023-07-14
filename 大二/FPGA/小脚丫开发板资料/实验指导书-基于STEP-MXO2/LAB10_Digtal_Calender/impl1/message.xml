@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>NACK</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STOP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>START</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MAIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CNT_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MAIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CNT_40KHz</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CNT_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>KEY_WIDTH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>NUM_250US</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u4/un1_cnt_main_3_s_5_0_COUT</Dynamic>
+            <Navigation>u4/un1_cnt_main_3_s_5_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u4/un1_cnt_main_3_s_5_0_S1</Dynamic>
+            <Navigation>u4/un1_cnt_main_3_s_5_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u4/un1_cnt_main_3_cry_0_0_S0</Dynamic>
+            <Navigation>u4/un1_cnt_main_3_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u5/cnt_write_cry_0_COUT[4]</Dynamic>
+            <Navigation>u5/cnt_write_cry_0_COUT[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u5/cnt_write_lcry_0_S0</Dynamic>
+            <Navigation>u5/cnt_write_lcry_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u5/cnt_write_lcry_0_S1</Dynamic>
+            <Navigation>u5/cnt_write_lcry_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u5/cnt_cry_0_COUT[7]</Dynamic>
+            <Navigation>u5/cnt_cry_0_COUT[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u5/cnt_cry_0_S0_0[0]</Dynamic>
+            <Navigation>u5/cnt_cry_0_S0_0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_sec_6_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_sec_6_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_sec_6_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_sec_6_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_sec_6_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_sec_6_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_sec_6_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_sec_6_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_week_1_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_week_1_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_week_1_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_week_1_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_week_1_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_week_1_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_week_1_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_week_1_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_mon_7_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_mon_7_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_mon_7_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_mon_7_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_mon_7_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_mon_7_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_mon_7_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_mon_7_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_min_6_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_min_6_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_min_6_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_min_6_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_min_6_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_min_6_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_min_6_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_min_6_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_hour_4_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_hour_4_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_hour_4_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_hour_4_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_hour_4_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_hour_4_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_hour_4_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_hour_4_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_year_6_s_7_0_COUT</Dynamic>
+            <Navigation>u3/un1_adj_year_6_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_year_6_s_7_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_year_6_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_year_6_cry_0_0_S0</Dynamic>
+            <Navigation>u3/un1_adj_year_6_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/un1_adj_year_6_cry_0_0_S1</Dynamic>
+            <Navigation>u3/un1_adj_year_6_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/adj_day_35_1_i_m3_i_m3_s_7_0_COUT</Dynamic>
+            <Navigation>u3/adj_day_35_1_i_m3_i_m3_s_7_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/adj_day_35_1_i_m3_i_m3_s_7_0_S1</Dynamic>
+            <Navigation>u3/adj_day_35_1_i_m3_i_m3_s_7_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S0</Dynamic>
+            <Navigation>u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S1</Dynamic>
+            <Navigation>u3/adj_day_35_1_i_m3_i_m3_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u2/cnt_s_0_COUT[17]</Dynamic>
+            <Navigation>u2/cnt_s_0_COUT[17]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u2/cnt_s_0_S1[17]</Dynamic>
+            <Navigation>u2/cnt_s_0_S1[17]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u2/cnt_cry_0_S0[0]</Dynamic>
+            <Navigation>u2/cnt_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un5_cnt_s_11_0_COUT</Dynamic>
+            <Navigation>u1/un5_cnt_s_11_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un5_cnt_s_11_0_S1</Dynamic>
+            <Navigation>u1/un5_cnt_s_11_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un5_cnt_cry_0_0_S0</Dynamic>
+            <Navigation>u1/un5_cnt_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>u1/un5_cnt_cry_0_0_S1</Dynamic>
+            <Navigation>u1/un5_cnt_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>43</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v&quot;:74:1:74:4|Latch generated from always block for signal B_state; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v</Navigation>
+            <Navigation>74</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>74</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Latch generated from always block for signal B_state; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v&quot;:56:1:56:4|Latch generated from always block for signal A_state; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v</Navigation>
+            <Navigation>56</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>56</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Latch generated from always block for signal A_state; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit ack_cl to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register ack_cl. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v&quot;:69:0:69:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v&quot;:69:0:69:5|Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 9 of cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL249 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v&quot;:88:0:88:5|Initial value is not supported on state machine state</Dynamic>
+            <Navigation>CL249</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Segment_scan.v</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Initial value is not supported on state machine state</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_400khz[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_read[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Optimizing register bit cnt_read[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt_read[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:93:0:93:5|Pruning register bits 4 to 3 of cnt_read[4:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 4 to 3 of cnt_read[4:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v&quot;:60:0:60:5|Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\DS1340Z_driver.v</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 9 to 4 of cnt_400khz[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v&quot;:32:0:32:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v&quot;:32:0:32:5|Pruning register bit 12 of cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\Encoder.v</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 12 of cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT531 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v&quot;:74:1:74:4|Found signal identified as System clock which controls 2 sequential elements including u1.B_state.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance.</Dynamic>
+            <Navigation>MT531</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v</Navigation>
+            <Navigation>74</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>74</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Found signal identified as System clock which controls 2 sequential elements including u1.B_state.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v&quot;:32:0:32:5|Found inferred clock Digtal_Calender|clk which controls 121 sequential elements including u1.cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock Digtal_Calender|clk which controls 121 sequential elements including u1.cnt[11:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:113:32:113:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:112:32:112:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:111:32:111:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:110:32:110:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:109:32:109:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:108:32:108:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:107:32:107:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:106:32:106:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:113:32:113:42|ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>113</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_9[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:112:32:112:42|ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_8[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:111:32:111:42|ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_7[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:110:32:110:42|ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>110</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_6[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:109:32:109:42|ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_5[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:108:32:108:42|ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>108</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_4[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:107:32:107:42|ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_3[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v&quot;:106:32:106:42|ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>ROM data_2[14:8] (in view: work.Segment_scan(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock Digtal_Calender|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Digtal_Calender|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

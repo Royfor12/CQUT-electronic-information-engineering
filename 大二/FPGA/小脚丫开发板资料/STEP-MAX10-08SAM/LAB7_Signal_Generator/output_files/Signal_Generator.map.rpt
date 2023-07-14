@@ -1,0 +1,592 @@
+Analysis & Synthesis report for Signal_Generator
+Wed Jun 13 10:17:07 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for DDS:u4|rom:u1|altsyncram:altsyncram_component|altsyncram_qn81:auto_generated
+ 16. Parameter Settings for User Entity Instance: Debounce:u2
+ 17. Parameter Settings for User Entity Instance: DDS:u4|rom:u1|altsyncram:altsyncram_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "DDS:u4"
+ 20. Port Connectivity Checks: "Debounce:u2"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jun 13 10:17:07 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Signal_Generator                            ;
+; Top-level Entity Name              ; Signal_Generator                            ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 144                                         ;
+;     Total combinational functions  ; 133                                         ;
+;     Dedicated logic registers      ; 85                                          ;
+; Total registers                    ; 85                                          ;
+; Total pins                         ; 8                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,048                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08SAM153C8G     ;                    ;
+; Top-level entity name                                                      ; Signal_Generator   ; Signal_Generator   ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
+; Signal_Generator.v               ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v     ;         ;
+; Debounce.v                       ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Debounce.v             ;         ;
+; Encoder.v                        ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v              ;         ;
+; logic_ctrl.v                     ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v           ;         ;
+; DDS.v                            ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DDS.v                  ;         ;
+; rom/rom.v                        ; yes             ; User Wizard-Generated File       ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/rom.v              ;         ;
+; DAC081S101_driver.v              ; yes             ; User Verilog HDL File            ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DAC081S101_driver.v    ;         ;
+; rom/sin.mif                      ; yes             ; User Memory Initialization File  ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/sin.mif            ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc          ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc              ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; db/altsyncram_qn81.tdf           ; yes             ; Auto-Generated Megafunction      ; F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/db/altsyncram_qn81.tdf ;         ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 144       ;
+;                                             ;           ;
+; Total combinational functions               ; 133       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 49        ;
+;     -- 3 input functions                    ; 35        ;
+;     -- <=2 input functions                  ; 49        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 83        ;
+;     -- arithmetic mode                      ; 50        ;
+;                                             ;           ;
+; Total registers                             ; 85        ;
+;     -- Dedicated logic registers            ; 85        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 8         ;
+; Total memory bits                           ; 2048      ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 71        ;
+; Total fan-out                               ; 769       ;
+; Average fan-out                             ; 3.18      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                   ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                            ; Entity Name       ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |Signal_Generator                            ; 133 (0)             ; 85 (0)                    ; 2048        ; 0          ; 0            ; 0       ; 0         ; 8    ; 0            ; 0          ; |Signal_Generator                                                                              ; Signal_Generator  ; work         ;
+;    |DAC081S101_driver:u5|                    ; 26 (26)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|DAC081S101_driver:u5                                                         ; DAC081S101_driver ; work         ;
+;    |DDS:u4|                                  ; 37 (37)             ; 8 (8)                     ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|DDS:u4                                                                       ; DDS               ; work         ;
+;       |rom:u1|                               ; 0 (0)               ; 0 (0)                     ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|DDS:u4|rom:u1                                                                ; rom               ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|DDS:u4|rom:u1|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
+;             |altsyncram_qn81:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|DDS:u4|rom:u1|altsyncram:altsyncram_component|altsyncram_qn81:auto_generated ; altsyncram_qn81   ; work         ;
+;    |Debounce:u2|                             ; 26 (26)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|Debounce:u2                                                                  ; Debounce          ; work         ;
+;    |Encoder:u1|                              ; 30 (30)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|Encoder:u1                                                                   ; Encoder           ; work         ;
+;    |logic_ctrl:u3|                           ; 14 (14)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Signal_Generator|logic_ctrl:u3                                                                ; logic_ctrl        ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+; Name                                                                                    ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF           ;
++-----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+; DDS:u4|rom:u1|altsyncram:altsyncram_component|altsyncram_qn81:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; ./rom/sin.mif ;
++-----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                             ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 17.0    ; N/A          ; N/A          ; |Signal_Generator|DDS:u4|rom:u1 ; rom/rom.v       ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; Encoder:u1|B_state                                 ; Encoder:u1|WideNor1 ; yes                    ;
+; Encoder:u1|A_state                                 ; Encoder:u1|WideNor0 ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; DDS:u4|phase_acc[1..15]                ; Merged with DDS:u4|phase_acc[0]        ;
+; DDS:u4|phase_acc[0]                    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 16 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 85    ;
+; Number of registers using Synchronous Clear  ; 39    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 65    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; logic_ctrl:u3|f_inc[19]                ; 3       ;
+; logic_ctrl:u3|f_inc[17]                ; 3       ;
+; DAC081S101_driver:u5|dac_sync          ; 1       ;
+; Debounce:u2|key_jit_r[0]               ; 2       ;
+; Debounce:u2|key_jit[0]                 ; 4       ;
+; Total number of inverted registers = 5 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Signal_Generator|logic_ctrl:u3|f_inc[23]      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Signal_Generator|DAC081S101_driver:u5|data[6] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Signal_Generator|logic_ctrl:u3|f_inc[19]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Source assignments for DDS:u4|rom:u1|altsyncram:altsyncram_component|altsyncram_qn81:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------+
+; Assignment                      ; Value              ; From ; To                                    ;
++---------------------------------+--------------------+------+---------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
++---------------------------------+--------------------+------+---------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Debounce:u2 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; KEY_WIDTH      ; 1     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DDS:u4|rom:u1|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------+
+; Parameter Name                     ; Value                ; Type                           ;
++------------------------------------+----------------------+--------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                        ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                        ;
+; WIDTH_A                            ; 8                    ; Signed Integer                 ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                 ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                 ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                        ;
+; WIDTH_B                            ; 1                    ; Untyped                        ;
+; WIDTHAD_B                          ; 1                    ; Untyped                        ;
+; NUMWORDS_B                         ; 1                    ; Untyped                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
+; INIT_FILE                          ; ./rom/sin.mif        ; Untyped                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                        ;
+; DEVICE_FAMILY                      ; MAX 10               ; Untyped                        ;
+; CBXI_PARAMETER                     ; altsyncram_qn81      ; Untyped                        ;
++------------------------------------+----------------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                          ;
++-------------------------------------------+-----------------------------------------------+
+; Name                                      ; Value                                         ;
++-------------------------------------------+-----------------------------------------------+
+; Number of entity instances                ; 1                                             ;
+; Entity Instance                           ; DDS:u4|rom:u1|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                           ;
+;     -- WIDTH_A                            ; 8                                             ;
+;     -- NUMWORDS_A                         ; 256                                           ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                        ;
+;     -- WIDTH_B                            ; 1                                             ;
+;     -- NUMWORDS_B                         ; 1                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                     ;
++-------------------------------------------+-----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DDS:u4"                                                                                                                                            ;
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; p_inc   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (24 bits) it drives.  Extra input bit(s) "p_inc[23..1]" will be connected to GND. ;
+; p_inc   ; Input  ; Info     ; Stuck at GND                                                                                                                                    ;
+; dac_clk ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Debounce:u2"                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; key_jit   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; key_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 85                          ;
+;     CLR               ; 18                          ;
+;     CLR SCLR          ; 39                          ;
+;     ENA               ; 8                           ;
+;     ENA CLR           ; 8                           ;
+;     plain             ; 12                          ;
+; cycloneiii_lcell_comb ; 134                         ;
+;     arith             ; 50                          ;
+;         2 data inputs ; 37                          ;
+;         3 data inputs ; 13                          ;
+;     normal            ; 84                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 49                          ;
+; cycloneiii_ram_block  ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.17                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Jun 13 10:16:55 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Signal_Generator -c Signal_Generator
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file signal_generator.v
+    Info (12023): Found entity 1: Signal_Generator File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.v
+    Info (12023): Found entity 1: Debounce File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Debounce.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
+    Info (12023): Found entity 1: Encoder File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file logic_ctrl.v
+    Info (12023): Found entity 1: logic_ctrl File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file dds.v
+    Info (12023): Found entity 1: DDS File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DDS.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file rom/rom.v
+    Info (12023): Found entity 1: rom File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/rom.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file dac081s101_driver.v
+    Info (12023): Found entity 1: DAC081S101_driver File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DAC081S101_driver.v Line: 18
+Info (12127): Elaborating entity "Signal_Generator" for the top level hierarchy
+Info (12128): Elaborating entity "Encoder" for hierarchy "Encoder:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 41
+Warning (10235): Verilog HDL Always Construct warning at Encoder.v(59): variable "A_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 59
+Warning (10240): Verilog HDL Always Construct warning at Encoder.v(55): inferring latch(es) for variable "A_state", which holds its previous value in one or more paths through the always construct File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 55
+Warning (10235): Verilog HDL Always Construct warning at Encoder.v(77): variable "B_state" is read inside the Always Construct but isn't in the Always Construct's Event Control File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 77
+Warning (10240): Verilog HDL Always Construct warning at Encoder.v(73): inferring latch(es) for variable "B_state", which holds its previous value in one or more paths through the always construct File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 73
+Info (10041): Inferred latch for "B_state" at Encoder.v(73) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 73
+Info (10041): Inferred latch for "A_state" at Encoder.v(55) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 55
+Info (12128): Elaborating entity "Debounce" for hierarchy "Debounce:u2" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 53
+Info (12128): Elaborating entity "logic_ctrl" for hierarchy "logic_ctrl:u3" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 66
+Warning (10240): Verilog HDL Always Construct warning at logic_ctrl.v(48): inferring latch(es) for variable "f_inc", which holds its previous value in one or more paths through the always construct File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[0]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[1]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[2]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[3]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[4]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[5]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[6]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[7]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[8]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[9]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[10]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[11]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[12]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[13]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[14]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (10041): Inferred latch for "f_inc[15]" at logic_ctrl.v(48) File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/logic_ctrl.v Line: 48
+Info (12128): Elaborating entity "DDS" for hierarchy "DDS:u4" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 79
+Info (12128): Elaborating entity "rom" for hierarchy "DDS:u4|rom:u1" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DDS.v Line: 60
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DDS:u4|rom:u1|altsyncram:altsyncram_component" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "DDS:u4|rom:u1|altsyncram:altsyncram_component" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/rom.v Line: 82
+Info (12133): Instantiated megafunction "DDS:u4|rom:u1|altsyncram:altsyncram_component" with the following parameter: File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/rom/rom.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "./rom/sin.mif"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qn81.tdf
+    Info (12023): Found entity 1: altsyncram_qn81 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/db/altsyncram_qn81.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_qn81" for hierarchy "DDS:u4|rom:u1|altsyncram:altsyncram_component|altsyncram_qn81:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "DAC081S101_driver" for hierarchy "DAC081S101_driver:u5" File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Signal_Generator.v Line: 90
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch Encoder:u1|B_state has unsafe behavior File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 71
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Encoder:u1|key_b_r1 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 63
+Warning (13012): Latch Encoder:u1|A_state has unsafe behavior File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Encoder:u1|key_a_r1 File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/Encoder.v Line: 45
+Info (13000): Registers with preset signals will power-up high File: F:/Fpga_Project/BaseBoard3.0_Demo/LAB7_Signal_Generator/DAC081S101_driver.v Line: 26
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 145 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Wed Jun 13 10:17:07 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
+
+

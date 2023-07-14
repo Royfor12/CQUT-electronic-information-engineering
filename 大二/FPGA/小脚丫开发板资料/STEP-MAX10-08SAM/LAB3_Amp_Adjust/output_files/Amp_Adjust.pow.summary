@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Fri May 25 17:24:42 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Amp_Adjust
+Top-level Entity Name : Amp_Adjust
+Family : MAX 10
+Device : 10M08SAM153C8G
+Power Models : Final
+Total Thermal Power Dissipation : 149.20 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 110.87 mW
+I/O Thermal Power Dissipation : 38.33 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

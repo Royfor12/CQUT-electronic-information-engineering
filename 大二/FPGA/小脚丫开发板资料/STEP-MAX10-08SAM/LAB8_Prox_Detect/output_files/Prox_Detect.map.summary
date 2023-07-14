@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Jun 21 10:09:24 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Prox_Detect
+Top-level Entity Name : Prox_Detect
+Family : MAX 10
+Total logic elements : 394
+    Total combinational functions : 324
+    Dedicated logic registers : 171
+Total registers : 171
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

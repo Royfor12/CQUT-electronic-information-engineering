@@ -1,0 +1,10 @@
+#Start recording tcl command: 1/29/2019 09:52:05
+#Project Location: F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender; Project name: Digtal_Calender
+prj_project new -name "Digtal_Calender" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "synplify"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/Debounce.v" "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/Digtal_Calender.v" "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/DS1340Z_driver.v" "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/Encoder.v" "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/mode_ctrl.v" "F:/Fpga_Project/BaseBoard/LAB10_Digtal_Calender/Segment_scan.v"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+#Stop recording: 1/29/2019 09:57:58

@@ -1,0 +1,57 @@
+--altsyncram ADDRESS_ACLR_A="NONE" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" CYCLONEII_M4K_COMPATIBILITY="ON" DEVICE_FAMILY="MAX 10" ENABLE_RUNTIME_MOD="YES" INIT_FILE="../music.mif" INSTANCE_NAME="rom" LOW_POWER_MODE="AUTO" NUMWORDS_A=256 OPERATION_MODE="ROM" OUTDATA_ACLR_A="NONE" OUTDATA_REG_A="UNREGISTERED" WIDTH_A=4 WIDTH_BYTEENA_A=1 WIDTHAD_A=8 address_a clock0 q_a CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 18.1 cbx_altera_syncram_nd_impl 2018:09:12:13:04:24:SJ cbx_altsyncram 2018:09:12:13:04:24:SJ cbx_cycloneii 2018:09:12:13:04:24:SJ cbx_lpm_add_sub 2018:09:12:13:04:24:SJ cbx_lpm_compare 2018:09:12:13:04:24:SJ cbx_lpm_decode 2018:09:12:13:04:24:SJ cbx_lpm_mux 2018:09:12:13:04:24:SJ cbx_mgl 2018:09:12:13:10:36:SJ cbx_nadder 2018:09:12:13:04:24:SJ cbx_stratix 2018:09:12:13:04:24:SJ cbx_stratixii 2018:09:12:13:04:24:SJ cbx_stratixiii 2018:09:12:13:04:24:SJ cbx_stratixv 2018:09:12:13:04:24:SJ cbx_util_mgl 2018:09:12:13:04:24:SJ  VERSION_END
+
+
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the applicable agreement for further details.
+
+
+FUNCTION altsyncram_5oc2 (address_a[7..0], address_b[7..0], clock0, clock1, data_b[3..0], wren_b)
+RETURNS ( q_a[3..0], q_b[3..0]);
+FUNCTION sld_mod_ram_rom (data_read[3..0])
+WITH ( CVALUE, IS_DATA_IN_RAM, IS_READABLE, NODE_NAME, NUMWORDS, SHIFT_COUNT_BITS, WIDTH_WORD, WIDTHAD)
+RETURNS ( address[7..0], data_write[3..0], enable_write, tck_usr);
+
+--synthesis_resources = M9K 1 sld_mod_ram_rom 1 
+SUBDESIGN altsyncram_b8b1
+( 
+	address_a[7..0]	:	input;
+	clock0	:	input;
+	q_a[3..0]	:	output;
+) 
+VARIABLE 
+	altsyncram1 : altsyncram_5oc2;
+	mgl_prim2 : sld_mod_ram_rom
+		WITH (
+			CVALUE = "0000",
+			IS_DATA_IN_RAM = 1,
+			IS_READABLE = 1,
+			NODE_NAME = 1919905024,
+			NUMWORDS = 256,
+			SHIFT_COUNT_BITS = 3,
+			WIDTH_WORD = 4,
+			WIDTHAD = 8
+		);
+
+BEGIN 
+	altsyncram1.address_a[] = address_a[];
+	altsyncram1.address_b[] = mgl_prim2.address[];
+	altsyncram1.clock0 = clock0;
+	altsyncram1.clock1 = mgl_prim2.tck_usr;
+	altsyncram1.data_b[] = mgl_prim2.data_write[];
+	altsyncram1.wren_b = mgl_prim2.enable_write;
+	mgl_prim2.data_read[] = altsyncram1.q_b[];
+	q_a[] = altsyncram1.q_a[];
+END;
+--VALID FILE

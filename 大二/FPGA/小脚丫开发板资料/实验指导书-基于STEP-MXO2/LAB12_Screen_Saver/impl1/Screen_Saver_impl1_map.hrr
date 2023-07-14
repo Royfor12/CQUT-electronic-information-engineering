@@ -1,0 +1,38 @@
+---------------------------------------------------
+Report for cell Screen_Saver
+   Instance path: Screen_Saver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     179.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	     176.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	          7        100.0
+                                PFUREG	        116        100.0
+                                RIPPLE	         90        100.0
+                                   EBR	          8        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              step_rom	          1         0.0
+                              pll_mxo2	          1         0.0
+                            Vga_Module	          1        99.0
+---------------------------------------------------
+Report for cell step_rom
+   Instance path: Screen_Saver/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          8        100.0
+---------------------------------------------------
+Report for cell Vga_Module
+   Instance path: Screen_Saver/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     177.25        99.0
+                                  LUT4	     173.00        98.3
+                                PFUREG	        113        97.4
+                                RIPPLE	         90        100.0
+---------------------------------------------------
+Report for cell pll_mxo2
+   Instance path: Screen_Saver/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

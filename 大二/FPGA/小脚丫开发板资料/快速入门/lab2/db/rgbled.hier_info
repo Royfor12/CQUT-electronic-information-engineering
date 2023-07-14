@@ -1,0 +1,9 @@
+|rgbled
+sw[0] => led[0].DATAIN
+sw[1] => led[1].DATAIN
+sw[2] => led[2].DATAIN
+led[0] << sw[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] << sw[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] << sw[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

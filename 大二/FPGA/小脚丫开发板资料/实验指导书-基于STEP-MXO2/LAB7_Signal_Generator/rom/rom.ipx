@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="rom" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 01 25 15:56:17.207" version="5.4" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="" type="" modified="2019 01 25 15:56:17.207"/>
+		<File name="f:/fpga_project/baseboard/lab7_signal_generator/rom/sin.mem" type="mem" modified="2016 11 09 11:31:23.672"/>
+		<File name="rom.lpc" type="lpc" modified="2019 01 25 15:56:15.231"/>
+		<File name="rom.v" type="top_level_verilog" modified="2019 01 25 15:56:15.347"/>
+		<File name="rom_tmpl.v" type="template_verilog" modified="2019 01 25 15:56:15.351"/>
+		<File name="tb_rom_tmpl.v" type="testbench_verilog" modified="2019 01 25 15:56:15.377"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,104 @@
+----------------------------------------------------------------------
+Report for cell WIFI_ESP8266.verilog
+
+Register bits: 211 of 4320 (5%)
+PIC Latch:       0
+I/O cells:       8
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       44       100.0
+                            FD1P3AX       53       100.0
+                            FD1P3BX       19       100.0
+                            FD1P3DX       87       100.0
+                            FD1S3AX        7       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX       39       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                           IFS1P3DX        1       100.0
+                                INV        1       100.0
+                            L6MUX21       20       100.0
+                                 OB        5       100.0
+                           OFS1P3BX        1       100.0
+                           OFS1P3DX        3       100.0
+                           ORCALUT4      391       100.0
+                              PFUMX       31       100.0
+                                PUR        1       100.0
+                                VHI        6       100.0
+                                VLO        6       100.0
+SUB MODULES 
+                          Baud_104s        1       100.0
+                        Baud_104s_0        1       100.0
+                       Segment_scan        1       100.0
+                            Uart_Rx        1       100.0
+                            Uart_Tx        1       100.0
+                            
+                         TOTAL           725           
+----------------------------------------------------------------------
+Report for cell Segment_scan.netlist
+     Instance path:  Segment_scan_uut
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        20.5
+                            FD1P3AX       15        28.3
+                            FD1P3DX       11        12.6
+                            FD1S3DX       10        25.6
+                            L6MUX21       20       100.0
+                           ORCALUT4      145        37.1
+                              PFUMX       30        96.8
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL           242           
+----------------------------------------------------------------------
+Report for cell Uart_Rx.netlist
+     Instance path:  Uart_Rx_uut
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX       17        19.5
+                            FD1S3AX        2        28.6
+                            FD1S3DX        5        12.8
+                           ORCALUT4       19         4.9
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            45           
+----------------------------------------------------------------------
+Report for cell Baud_104s_0.netlist
+  Original Cell name Baud_104s
+     Instance path:  Baud_rx
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        4         9.1
+                            FD1S3DX        8        20.5
+                           ORCALUT4        5         1.3
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            19           
+----------------------------------------------------------------------
+Report for cell Uart_Tx.netlist
+     Instance path:  Uart_Tx_uut
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX       12        13.8
+                            FD1S3DX        1         2.6
+                           ORCALUT4       20         5.1
+                              PFUMX        1         3.2
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell Baud_104s.netlist
+  Original Cell name Baud_104s
+     Instance path:  Baud_tx
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        4         9.1
+                            FD1S3DX        8        20.5
+                           ORCALUT4        5         1.3
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            19           

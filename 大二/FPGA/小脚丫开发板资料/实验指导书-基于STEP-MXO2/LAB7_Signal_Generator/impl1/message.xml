@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v(18): </Dynamic>
+            <Dynamic>Signal_Generator</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(18): </Dynamic>
+            <Dynamic>Encoder</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(59): </Dynamic>
+            <Dynamic>A_state</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v(77): </Dynamic>
+            <Dynamic>B_state</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/encoder.v</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/debounce.v(18): </Dynamic>
+            <Dynamic>Debounce</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/debounce.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v(18): </Dynamic>
+            <Dynamic>logic_ctrl</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/dds.v(18): </Dynamic>
+            <Dynamic>DDS</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/dds.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/rom/rom.v(8): </Dynamic>
+            <Dynamic>rom</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/rom/rom.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>C:/Program Files (x86)/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v(76): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Dynamic>p_inc</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/signal_generator.v</Navigation>
+            <Navigation>76</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/dac081s101_driver.v(18): </Dynamic>
+            <Dynamic>DAC081S101_driver</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/dac081s101_driver.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\u3/wave</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v(56): </Dynamic>
+            <Dynamic>\u3/f_inc_i13</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/logic_ctrl.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>f:/fpga_project/baseboard/lab7_signal_generator/dds.v(35): </Dynamic>
+            <Dynamic>\u4/phase_acc_478__i15</Dynamic>
+            <Navigation>f:/fpga_project/baseboard/lab7_signal_generator/dds.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=u1/clk_500us loads=4 clock_loads=3
+   Signal=u1/A_state_N_49 loads=1 clock_loads=1
+   Signal=u1/B_state_N_39 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=u1/clk_500us loads=4 clock_loads=3
+   Signal=u1/A_state_N_49 loads=1 clock_loads=1
+   Signal=u1/B_state_N_39 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

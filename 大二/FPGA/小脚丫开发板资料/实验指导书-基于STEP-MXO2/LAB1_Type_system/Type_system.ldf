@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Type_system" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Type_system"/>
+        <Source name="Type_system.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Type_system"/>
+        </Source>
+        <Source name="Array_KeyBoard.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Decoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Segment_led.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Type_system.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Type_system1.sty"/>
+</BaliProject>

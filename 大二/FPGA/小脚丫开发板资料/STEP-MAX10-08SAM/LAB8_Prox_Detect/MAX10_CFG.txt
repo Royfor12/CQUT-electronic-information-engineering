@@ -1,0 +1,33 @@
+To			,	Location
+
+//FPGA 时钟
+clk			,	PIN_J5
+
+//按键模块
+rst_n		,	PIN_J9
+
+//LED灯模块
+led[0]		,	PIN_K11
+led[1]		,	PIN_L11
+led[2]		,	PIN_K12
+led[3]		,	PIN_L15
+led[4]		,	PIN_M12
+led[5]		,	PIN_M14
+led[6]		,	PIN_N14
+led[7]		,	PIN_N15
+
+//三色灯1 MSB~LSB = {Red,Green,Blue}
+rgb_1[0]	,	PIN_E14
+rgb_1[1]	,	PIN_E15
+rgb_1[2]	,	PIN_G15
+
+//三色灯2 MSB~LSB = {Red,Green,Blue}
+rgb_2[0]	,	PIN_D12
+rgb_2[1]	,	PIN_C14
+rgb_2[2]	,	PIN_C15
+
+//双列直插GPIO管脚，按照外设功能命名
+
+//I2C功能接口
+i2c_scl		,	PIN_M4
+i2c_sda		,	PIN_P3

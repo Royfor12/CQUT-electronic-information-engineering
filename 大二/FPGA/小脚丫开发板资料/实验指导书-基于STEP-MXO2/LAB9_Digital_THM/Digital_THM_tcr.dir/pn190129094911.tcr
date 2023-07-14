@@ -1,0 +1,10 @@
+#Start recording tcl command: 1/29/2019 09:42:50
+#Project Location: F:/Fpga_Project/BaseBoard/LAB9_Digital_THM; Project name: Digital_THM
+prj_project new -name "Digital_THM" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "synplify"
+prj_src add "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/bin_to_bcd.v" "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/Calculate.v" "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/Digital_THM.v" "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/Segment_scan.v" "F:/Fpga_Project/BaseBoard/LAB9_Digital_THM/SHT20_Driver.v"
+prj_project save
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+launch_synplify_prj impl1
+prj_run Export -impl impl1
+#Stop recording: 1/29/2019 09:49:11

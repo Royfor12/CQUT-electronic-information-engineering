@@ -1,0 +1,20 @@
+|divide
+clk => clk_p.CLK
+clk => cnt_p[0].CLK
+clk => cnt_p[1].CLK
+clk => cnt_p[2].CLK
+clk => cnt_n[0].CLK
+clk => cnt_n[1].CLK
+clk => cnt_n[2].CLK
+clk => clk_n.CLK
+rst_n => clk_n.OUTPUTSELECT
+rst_n => cnt_p[0].ACLR
+rst_n => cnt_p[1].ACLR
+rst_n => cnt_p[2].ACLR
+rst_n => clk_p.ACLR
+rst_n => cnt_n[0].ACLR
+rst_n => cnt_n[1].ACLR
+rst_n => cnt_n[2].ACLR
+clkout << clkout.DB_MAX_OUTPUT_PORT_TYPE
+
+

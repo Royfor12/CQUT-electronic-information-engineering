@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Digtal_Calender" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="Digtal_Calender"/>
+        <Source name="Digtal_Calender.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Digtal_Calender"/>
+        </Source>
+        <Source name="Encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="mode_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="DS1340Z_driver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Segment_scan.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Digtal_Calender.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Digtal_Calender1.sty"/>
+</BaliProject>

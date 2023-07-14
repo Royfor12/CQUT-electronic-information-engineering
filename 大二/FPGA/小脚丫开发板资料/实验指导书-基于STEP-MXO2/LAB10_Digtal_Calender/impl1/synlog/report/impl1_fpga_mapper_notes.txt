@@ -1,0 +1,34 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":113:32:113:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":112:32:112:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":111:32:111:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":110:32:110:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":109:32:109:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":108:32:108:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":107:32:107:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO106 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":106:32:106:42|Found ROM .delname. (in view: work.Segment_scan(verilog)) with 16 words by 7 bits.
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\debounce.v":46:0:46:5|Found counter in view:work.Debounce(verilog) instance cnt[17:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":88:0:88:5|Found counter in view:work.Segment_scan(verilog) instance cnt_write[5:0] 
+@N: MO231 :"f:\fpga_project\baseboard\lab10_digtal_calender\segment_scan.v":69:0:69:5|Found counter in view:work.Segment_scan(verilog) instance cnt[8:0] 
+@N: MF578 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Incompatible asynchronous control logic preventing generated clock conversion of u1.key_b_r2 (in view: work.Digtal_Calender(verilog)).
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Removing sequential instance u1.key_b_r2 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":47:0:47:5|Removing sequential instance u1.key_a_r2 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":65:0:65:5|Removing sequential instance u1.key_b_r1 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: BN362 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":47:0:47:5|Removing sequential instance u1.key_a_r1 (in view: work.Digtal_Calender(verilog)) because it does not drive other instances.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":92:0:92:5|Replicating instance u1.L_pulse (in view: work.Digtal_Calender(verilog)) with 25 loads 2 times to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\mode_ctrl.v":46:0:46:5|Replicating instance u3.state[2] (in view: work.Digtal_Calender(verilog)) with 51 loads 3 times to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\mode_ctrl.v":46:0:46:5|Replicating instance u3.state[1] (in view: work.Digtal_Calender(verilog)) with 33 loads 3 times to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\mode_ctrl.v":46:0:46:5|Replicating instance u3.state[0] (in view: work.Digtal_Calender(verilog)) with 36 loads 3 times to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\encoder.v":99:0:99:5|Replicating instance u1.R_pulse (in view: work.Digtal_Calender(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\mode_ctrl.v":126:0:126:5|Replicating instance u3.adj_year[0] (in view: work.Digtal_Calender(verilog)) with 11 loads 1 time to improve timing.
+@N: FX271 :"f:\fpga_project\baseboard\lab10_digtal_calender\mode_ctrl.v":126:0:126:5|Replicating instance u3.adj_year[1] (in view: work.Digtal_Calender(verilog)) with 9 loads 1 time to improve timing.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MT611 :|Automatically generated clock DS1340Z_driver|clk_400khz_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Encoder|clk_500us_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock Segment_scan|clk_40khz_derived_clock is not used and is being removed
+@N: FX1056 |Writing EDF file: F:\Fpga_Project\BaseBoard\LAB10_Digtal_Calender\impl1\impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

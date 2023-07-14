@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Jun 22 09:46:04 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Digital_THM
+Top-level Entity Name : Digital_THM
+Family : MAX 10
+Total logic elements : 950
+    Total combinational functions : 901
+    Dedicated logic registers : 190
+Total registers : 190
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

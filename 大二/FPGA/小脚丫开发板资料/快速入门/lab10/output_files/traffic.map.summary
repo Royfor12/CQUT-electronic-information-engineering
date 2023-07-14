@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jan 07 13:52:16 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : traffic
+Top-level Entity Name : traffic
+Family : MAX 10
+Total logic elements : 77
+    Total combinational functions : 72
+    Dedicated logic registers : 47
+Total registers : 47
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

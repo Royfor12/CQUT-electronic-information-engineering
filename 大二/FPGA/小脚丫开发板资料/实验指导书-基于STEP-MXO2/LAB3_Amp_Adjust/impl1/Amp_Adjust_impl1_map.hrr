@@ -1,0 +1,47 @@
+---------------------------------------------------
+Report for cell Amp_Adjust
+   Instance path: Amp_Adjust
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.00        100.0
+                                  LUT4	      47.00        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	         33        100.0
+                                RIPPLE	          7        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        Segment_led_U0	          1         8.3
+                           Segment_led	          1        14.6
+                               Encoder	          1        52.9
+                               Decoder	          1        23.2
+---------------------------------------------------
+Report for cell Segment_led
+   Instance path: Amp_Adjust/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.67        14.6
+                                  LUT4	      10.33        22.0
+---------------------------------------------------
+Report for cell Segment_led_U0
+   Instance path: Amp_Adjust/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.67         8.3
+                                  LUT4	       7.00        14.9
+---------------------------------------------------
+Report for cell Encoder
+   Instance path: Amp_Adjust/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.92        52.9
+                                  LUT4	      15.00        31.9
+                                PFUREG	         25        75.8
+                                RIPPLE	          7        100.0
+---------------------------------------------------
+Report for cell Decoder
+   Instance path: Amp_Adjust/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.42        23.2
+                                  LUT4	      13.67        29.1
+                                PFUREG	          8        24.2

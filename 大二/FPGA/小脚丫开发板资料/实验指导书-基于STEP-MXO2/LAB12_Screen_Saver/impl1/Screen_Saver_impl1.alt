@@ -1,0 +1,15 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jan 29 10:31:11 2019 *
+NOTE DESIGN NAME: Screen_Saver *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS sync_v : G13 : out *
+NOTE PINS clk : C1 : in *
+NOTE PINS vga[2] : P8 : out *
+NOTE PINS vga[1] : N7 : out *
+NOTE PINS vga[0] : P7 : out *
+NOTE PINS sync_h : N8 : out *
+NOTE PINS rst_n : L14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

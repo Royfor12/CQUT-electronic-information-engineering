@@ -1,0 +1,75 @@
+----------------------------------------------------------------------
+Report for cell Electric_Piano.TECH
+Register bits:  89 of 4635 (1.920%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        35          100.0
+                            FD1P3AX         4          100.0
+                            FD1P3AY        50          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        30          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                                INV         1          100.0
+                               LUT4       162          100.0
+                                 OB         5          100.0
+                              PFUMX         5          100.0
+SUB MODULES
+                     Array_KeyBoard         1
+                             Beeper         1
+                      PWM(WIDTH=16)         1
+                               tone         1
+                              TOTAL       308
+----------------------------------------------------------------------
+Report for cell Beeper.v1
+Instance Path : beeper_I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        27           77.1
+                            FD1S3AY         1          100.0
+                            FD1S3IX        15           50.0
+                            FD1S3JX         1          100.0
+                               LUT4       103           63.6
+                              PFUMX         4           80.0
+SUB MODULES
+                      PWM(WIDTH=16)         1
+                               tone         1
+                              TOTAL       153
+----------------------------------------------------------------------
+Report for cell PWM(WIDTH=16).v1
+Instance Path : beeper_I_0.u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        27           77.1
+                            FD1S3AY         1          100.0
+                            FD1S3IX        15           50.0
+                            FD1S3JX         1          100.0
+                               LUT4         1            0.6
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell tone.v1
+Instance Path : beeper_I_0.u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       102           63.0
+                              PFUMX         4           80.0
+                              TOTAL       106
+----------------------------------------------------------------------
+Report for cell Array_KeyBoard.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8           22.9
+                            FD1P3AX         4          100.0
+                            FD1P3AY        50          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX        15           50.0
+                                INV         1          100.0
+                               LUT4        58           35.8
+                              PFUMX         1           20.0
+                              TOTAL       140

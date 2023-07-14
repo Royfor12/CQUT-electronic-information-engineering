@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Picture_display_impl1.log"
+-o "Picture_display_impl1.csv"
+-pr "Picture_display_impl1.prf"

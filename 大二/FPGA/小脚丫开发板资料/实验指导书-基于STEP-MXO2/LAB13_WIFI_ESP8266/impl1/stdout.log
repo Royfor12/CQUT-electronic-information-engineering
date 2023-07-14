@@ -1,0 +1,81 @@
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files (x86)/lscc/diamond/3.9_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+Running in Lattice mode
+
+Starting:    C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synplify.exe
+Install:     C:\Program Files (x86)\lscc\diamond\3.9_x64\synpbase
+Hostname:    LAPTOP-PB48E8ID
+Date:        Tue Jan 29 10:49:08 2019
+Version:     L-2016.09L
+
+Arguments:   -product synplify_pro -tcl F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/impl1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+Technology initialized from device list to: LATTICE-XP
+TCL script complete: "F:/Fpga_Project/BaseBoard/LAB13_WIFI_ESP8266/impl1/launch_synplify.tcl"
+New HDL Analyst: enabled
+log file: "F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.srr"
+Running: impl1 in foreground
+
+Running impl1_syn|impl1
+
+Running: compile (Compile) on impl1_syn|impl1
+# Tue Jan 29 10:49:11 2019
+
+Running: compile_flow (Compile Process) on impl1_syn|impl1
+# Tue Jan 29 10:49:11 2019
+
+Running: compiler (Compile Input) on impl1_syn|impl1
+# Tue Jan 29 10:49:11 2019
+Copied F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_comp.srs to F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.srs
+
+compiler completed
+# Tue Jan 29 10:49:13 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on impl1_syn|impl1
+# Tue Jan 29 10:49:13 2019
+
+multi_srs_gen completed
+# Tue Jan 29 10:49:13 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_mult.srs to F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.srs
+Complete: Compile Process on impl1_syn|impl1
+
+Running: premap (Pre-mapping) on impl1_syn|impl1
+# Tue Jan 29 10:49:13 2019
+
+premap completed with warnings
+# Tue Jan 29 10:49:14 2019
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on impl1_syn|impl1
+
+Running: map (Map) on impl1_syn|impl1
+# Tue Jan 29 10:49:14 2019
+
+Running: fpga_mapper (Map & Optimize) on impl1_syn|impl1
+# Tue Jan 29 10:49:14 2019
+Note: Opening local project RTL file 'F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.srs'
+Copied F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\synwork\impl1_m.srm to F:\Fpga_Project\BaseBoard\LAB13_WIFI_ESP8266\impl1\impl1.srm
+
+fpga_mapper completed with warnings
+# Tue Jan 29 10:49:17 2019
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Map on impl1_syn|impl1
+Complete: Logic Synthesis on impl1_syn|impl1
+exit status=0

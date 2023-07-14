@@ -1,0 +1,77 @@
+# Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
+# Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Fri Jan 25 17:08:38 2019
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "Prox_Detect"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                      Ending                                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Prox_Detect|clk                               Prox_Detect|clk                               |     1000.000         |     No paths         |     No paths         |     No paths                         
+APDS_9901_Driver|clk_400khz_derived_clock     APDS_9901_Driver|clk_400khz_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+APDS_9901_Driver|clk_400khz_derived_clock     APDS_9901_Driver|dat_valid_derived_clock      |     1000.000         |     No paths         |     No paths         |     No paths                         
+APDS_9901_Driver|dat_valid_derived_clock      APDS_9901_Driver|dat_valid_derived_clock      |     1000.000         |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:i2c_scl
+p:i2c_sda (bidir end point)
+p:i2c_sda (bidir start point)
+p:led[0]
+p:led[1]
+p:led[2]
+p:led[3]
+p:led[4]
+p:led[5]
+p:led[6]
+p:led[7]
+p:rst_n
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

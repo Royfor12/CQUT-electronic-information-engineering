@@ -1,0 +1,14 @@
+
+State Machine - |WIFI_ESP8266|state
+Name state.IDLE state.DELAY state.REMD state.TXMD state.MAIN 
+state.IDLE 0 0 0 0 0 
+state.MAIN 1 0 0 0 1 
+state.TXMD 1 0 0 1 0 
+state.REMD 1 0 1 0 0 
+state.DELAY 1 1 0 0 0 
+
+State Machine - |WIFI_ESP8266|Segment_scan:Segment_scan_uut|state
+Name state.IDLE state.WRITE state.MAIN 
+state.IDLE 0 0 0 
+state.MAIN 1 0 1 
+state.WRITE 1 1 0 

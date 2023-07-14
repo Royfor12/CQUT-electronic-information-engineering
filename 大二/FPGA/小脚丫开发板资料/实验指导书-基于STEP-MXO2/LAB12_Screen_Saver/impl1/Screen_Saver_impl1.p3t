@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Screen_Saver_impl1.log"
+-o "Screen_Saver_impl1.csv"
+-pr "Screen_Saver_impl1.prf"
