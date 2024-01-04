@@ -1,4 +1,4 @@
-# CQUT-电子信息工程及其相关专业学习资料
+# CQUT-电子信息工程及其相关专业学习资料![](https://img.shields.io/badge/license-MIT-blue)
 
 你没有必要在物理实验上花费太多的时间，你有更值得做的事情！
 
