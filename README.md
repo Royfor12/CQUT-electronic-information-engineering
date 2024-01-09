@@ -15,5 +15,7 @@
 2024/1/9更新
 **新增数字信号处理**\
 **17-18年数电试卷AB卷**\
-https://img.shields.io/badge/just%20the%20message-8A2BE2[智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)
-https://img.shields.io/badge/just%20the%20message-ff6e7f[FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
+https://img.shields.io/badge/just%20the%20message-8A2BE2
+[智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)
+https://img.shields.io/badge/just%20the%20message-ff6e7f
+[FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
