@@ -16,6 +16,6 @@
 **新增数字信号处理**\
 **17-18年数电试卷AB卷**\
 
-友情链接🔗
+友情链接🔗\
 [智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)\
 [FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
