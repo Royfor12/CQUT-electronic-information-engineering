@@ -1,0 +1,69 @@
+|Block1
+seg_[0] <= DECL7s:inst.seg_led_1[0]
+seg_[1] <= DECL7s:inst.seg_led_1[1]
+seg_[2] <= DECL7s:inst.seg_led_1[2]
+seg_[3] <= DECL7s:inst.seg_led_1[3]
+seg_[4] <= DECL7s:inst.seg_led_1[4]
+seg_[5] <= DECL7s:inst.seg_led_1[5]
+seg_[6] <= DECL7s:inst.seg_led_1[6]
+seg_[7] <= DECL7s:inst.seg_led_1[7]
+seg_[8] <= DECL7s:inst.seg_led_1[8]
+clk => fenpin:inst2.clkin
+
+
+|Block1|DECL7s:inst
+seg_data_1[0] => seg.RADDR
+seg_data_1[1] => seg.RADDR1
+seg_data_1[2] => seg.RADDR2
+seg_data_1[3] => seg.RADDR3
+seg_led_1[0] <= seg.DATAOUT
+seg_led_1[1] <= seg.DATAOUT1
+seg_led_1[2] <= seg.DATAOUT2
+seg_led_1[3] <= seg.DATAOUT3
+seg_led_1[4] <= seg.DATAOUT4
+seg_led_1[5] <= seg.DATAOUT5
+seg_led_1[6] <= seg.DATAOUT6
+seg_led_1[7] <= seg.DATAOUT7
+seg_led_1[8] <= seg.DATAOUT8
+
+
+|Block1|cnt4:inst1
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|fenpin:inst2
+clkin => clkout~reg0.CLK
+clkin => cntp[0].CLK
+clkin => cntp[1].CLK
+clkin => cntp[2].CLK
+clkin => cntp[3].CLK
+clkin => cntp[4].CLK
+clkin => cntp[5].CLK
+clkin => cntp[6].CLK
+clkin => cntp[7].CLK
+clkin => cntp[8].CLK
+clkin => cntp[9].CLK
+clkin => cntp[10].CLK
+clkin => cntp[11].CLK
+clkin => cntp[12].CLK
+clkin => cntp[13].CLK
+clkin => cntp[14].CLK
+clkin => cntp[15].CLK
+clkin => cntp[16].CLK
+clkin => cntp[17].CLK
+clkin => cntp[18].CLK
+clkin => cntp[19].CLK
+clkin => cntp[20].CLK
+clkin => cntp[21].CLK
+clkin => cntp[22].CLK
+clkin => cntp[23].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

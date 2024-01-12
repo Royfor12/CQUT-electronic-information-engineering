@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Mar 22 12:01:56 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : fenpin
+Top-level Entity Name : Block1
+Family : MAX 10
+Device : 10M02SCM153I7G
+Timing Models : Final
+Total logic elements : 60 / 2,304 ( 3 % )
+    Total combinational functions : 60 / 2,304 ( 3 % )
+    Dedicated logic registers : 29 / 2,304 ( 1 % )
+Total registers : 29
+Total pins : 10 / 112 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

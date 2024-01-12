@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -2.378
+TNS   : -43.177
+
+Type  : Slow 1200mV 100C Model Setup 'fenpin:inst2|clkout'
+Slack : -0.301
+TNS   : -1.144
+
+Type  : Slow 1200mV 100C Model Hold 'fenpin:inst2|clkout'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : 0.669
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'fenpin:inst2|clkout'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -1.997
+TNS   : -34.036
+
+Type  : Slow 1200mV -40C Model Setup 'fenpin:inst2|clkout'
+Slack : -0.122
+TNS   : -0.433
+
+Type  : Slow 1200mV -40C Model Hold 'fenpin:inst2|clkout'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.583
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'fenpin:inst2|clkout'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -0.395
+TNS   : -3.499
+
+Type  : Fast 1200mV -40C Model Setup 'fenpin:inst2|clkout'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'fenpin:inst2|clkout'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -28.770
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'fenpin:inst2|clkout'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

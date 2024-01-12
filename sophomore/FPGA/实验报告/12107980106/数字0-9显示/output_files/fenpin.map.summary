@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Mar 22 12:01:47 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : fenpin
+Top-level Entity Name : Block1
+Family : MAX 10
+Total logic elements : 59
+    Total combinational functions : 59
+    Dedicated logic registers : 29
+Total registers : 29
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
