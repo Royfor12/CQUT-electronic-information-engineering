@@ -96,7 +96,13 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [中山大学课程资料分享](https://github.com/sysuexam/SYSU-Exam)
 - [南京大学课程复习资料](https://github.com/idealclover/NJU-Review-Materials)
 - [重庆邮电大学课程攻略共享计划](https://github.com/NMID-CQUPT/CLF-CQPUT?tab=readme-ov-file)
-
+### 🔗友情链接\
+- [智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)
+- [FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
+- [stm32迷宫小车的课程设计](https://github.com/zycould25/CQUTstm32MazeCar)
+- [电子实训蓝牙主控版](https://github.com/Royfor12/CQUT_Bluetooth_PCB)
+- [重庆理工大学宽带使用路由器的方案](https://github.com/IYATT-yx/CQUT-Router)
+- [重庆邮电大学数字电路实验2022级报告-基于FPGA的数字电子钟的设计与实现](https://github.com/ZHYLAR/CQUPT_Digital_circuit_SHIYAN?tab=readme-ov-file)
 ## 🙏 致谢
 
 浙江大学课程攻略共享计划\
@@ -122,6 +128,4 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 **C语言**\
 未完待续……
 
-友情链接🔗\
-[智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)\
-[FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
+
