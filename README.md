@@ -1,6 +1,13 @@
-# CQUT-电子信息工程及其相关专业学习资料![](https://img.shields.io/badge/license-MIT-blue)
+# 💡 课程攻略共享计划
 
-你没有必要在物理实验上花费太多的时间，你有更值得做的事情！
+[![](https://img.shields.io/github/watchers/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/watchers)
+[![](https://img.shields.io/github/stars/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/stargazers)
+[![](https://img.shields.io/github/forks/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/network/members)
+[![](https://img.shields.io/github/issues-pr-closed-raw/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/issues)
+![](https://img.shields.io/github/repo-size/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)
+![](https://img.shields.io/badge/license-MIT-blue)
+
+
 
 2023/7/14更新
 **重新调整了文件结构**\
