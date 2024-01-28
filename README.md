@@ -103,12 +103,6 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [电子实训蓝牙主控版](https://github.com/Royfor12/CQUT_Bluetooth_PCB)
 - [重庆理工大学宽带使用路由器的方案](https://github.com/IYATT-yx/CQUT-Router)
 - [重庆邮电大学数字电路实验2022级报告-基于FPGA的数字电子钟的设计与实现](https://github.com/ZHYLAR/CQUPT_Digital_circuit_SHIYAN?tab=readme-ov-file)
-## 🙏 致谢
-
-浙江大学课程攻略共享计划\
-重庆邮电大学课程攻略共享计划\
-本项目的贡献者\
-(more to be added....)
 
 ## 📔更新日志
 2023/7/14更新
@@ -128,4 +122,9 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 **C语言**\
 未完待续……
 
+## 🙏 致谢
 
+浙江大学课程攻略共享计划\
+重庆邮电大学课程攻略共享计划\
+本项目的贡献者\
+(more to be added....)
