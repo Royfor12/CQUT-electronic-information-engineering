@@ -5,7 +5,6 @@
 [![](https://img.shields.io/github/forks/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/network/members)
 [![](https://img.shields.io/github/issues-pr-closed-raw/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/issues)
 ![](https://img.shields.io/github/repo-size/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)
-![](https://img.shields.io/badge/license-MIT-blue)
 
 ## ⚡ 前言
 
@@ -103,7 +102,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 浙江大学课程攻略共享计划\
 重庆邮电大学课程攻略共享计划\
 本项目的贡献者\
-(more to be added....)\
+(more to be added....)
 
 ## 📔更新日志
 2023/7/14更新
