@@ -1,3 +1,4 @@
+![avatar](https://www.cqut.edu.cn/images/logo.png)
 # 💡 课程攻略共享计划
 
 [![](https://img.shields.io/github/watchers/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/watchers)
