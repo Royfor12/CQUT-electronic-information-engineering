@@ -30,7 +30,7 @@
 
 借用浙大的课程攻略中的一句话：**我希望只要是前人走过的弯路，后人就不必再走。这是我的信念，也是我建立这个项目的原因。**
 
-## ⚡ 特性
+## 📣 特性
 
 本项目迄今为止收录了以下内容：
 
@@ -44,7 +44,7 @@
 
 等等，目前项目所涵盖的科目还很少。
 
-## ⚡ 平台
+## 🦧 平台
 
 以下摘录自浙江大学课程攻略共享计划
 
@@ -54,7 +54,17 @@
 > - GitHub 项目可以使用目录进行文件组织，并且每个目录均可以在显示文件列表的同时显示一个 README，十分适合本项目的需求。
 > - GitHub 带有便捷的 Issue 和 Pull Request 协作功能，并且可以方便地对贡献的质量进行监督和调整。
 
-## ⚡ 贡献
+## ⏬ 下载
+
+我们在这里介绍两种下载文件的方式：
+
+1. 你当然可以克隆或者下载整个项目，但因为整个项目较大，可能对于一部分人不太方便。这里对于使用Chrome和Firefox的用户，我们推荐一个[Chrome插件](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en)和[Firefox插件](https://addons.mozilla.org/en-US/firefox/addon/gitzip/)，**GitZip**。该插件可以让我们只下载项目中我们感兴趣的那些文件夹，也就是我们所感兴趣的课程的资料。同时对Opera用户来说，大部分的Chrome插件都可以通过一款名为[Install Chrome Extensions](https://addons.opera.com/zh-cn/extensions/details/install-chrome-extensions/)的Opera插件安装使用，GitZip也不例外。而对于使用其他浏览器的朋友来说，很遗憾，这个插件暂时只能在这三款浏览器中使用。
+2. 或者复制该文件夹的网址，粘贴入[DownGit](https://minhaskamal.github.io/DownGit/#/home)中，选择**download**即可。
+
+注：对于第一种方法而言，它需要使用者拥有github账号，并且该插件需要使用者的授权；而第二种方法虽然一次只能下载一个文件夹，但它并不需要使用者拥有github账号。
+
+
+## 🚛 贡献
 
 知识创造来源于知识传承，希望优秀而努力的你也能为这个项目做贡献，为后来的学弟学妹们搭桥铺路。
 
@@ -68,6 +78,8 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 4. 科目文件夹不存在，打开任意文件夹，点击upload，把浏览器地址中的文件夹名称改为你想要新建的文件夹名称，然后回车，上传你的文件。
 
 或者也可以直接附加在 **Issue** 中，由维护者进行添加。
+如果希望匿名贡献，可以email至[此邮箱](mailto:Roy120550@gmail.com) 
+由于本仓库未启用 `git-lfs`，因此请不要上传单个超过 100M 的文件，否则 commit 无效。
 
 ## 📄 许可
 
@@ -81,13 +93,13 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 
 > 抱歉，我们无法对项目中信息的准确性或真实性做任何承诺。
 
+> 本项目建立的初衷是为了方便同学们更好地学习相关课程。**严禁用于任何商业用途!**
+
 **如果有侵权情况，请PR或者[向我们发送邮件](mailto:Roy120550@gmail.com) 联系删除，带来不便还请您谅解。**
 
 ## 👍 其他高校资料库链接
 
 - [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
-- [气垫船计划——免费、去中心化的北京大学往年题资料库](https://github.com/martinwu42/project-hover)
-- [北京大学信科学生会学术部资料库](https://github.com/EECS-PKU-XSB/Shared-learning-materials)
 - [北大计算机课程大作业](https://github.com/tongtzeho/PKUCourse)
 - [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
 - [中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
@@ -96,7 +108,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [中山大学课程资料分享](https://github.com/sysuexam/SYSU-Exam)
 - [南京大学课程复习资料](https://github.com/idealclover/NJU-Review-Materials)
 - [重庆邮电大学课程攻略共享计划](https://github.com/NMID-CQUPT/CLF-CQPUT?tab=readme-ov-file)
-### 🔗友情链接\
+### 🔗友情链接
 - [智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)
 - [FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
 - [stm32迷宫小车的课程设计](https://github.com/zycould25/CQUTstm32MazeCar)
@@ -116,8 +128,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 2023/11/7更新
 **新增工程电磁场与现代编码技术**\
 2024/1/9更新
-**新增数字信号处理**\
-**17-18年数电试卷AB卷**\
+**新增数字信号处理、17-18年数电试卷AB卷**\
 2024/1/12更新
 **C语言**\
 未完待续……
