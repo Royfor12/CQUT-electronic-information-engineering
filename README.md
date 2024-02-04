@@ -100,6 +100,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 ## 👍 其他高校资料库链接
 
 - [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
+- [朋辈辅学「实用技能拾遗」课程仓库](https://github.com/TonyCrane/PracticalSkillsTutorial/?tab=readme-ov-file)
 - [北大计算机课程大作业](https://github.com/tongtzeho/PKUCourse)
 - [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
 - [中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
