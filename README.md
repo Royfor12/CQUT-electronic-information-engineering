@@ -5,6 +5,7 @@
 [![](https://img.shields.io/github/forks/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/network/members)
 [![](https://img.shields.io/github/issues-pr-closed-raw/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/issues)
 ![](https://img.shields.io/github/repo-size/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)
+![Platform](https://img.shields.io/badge/platform-windows%20|%20linux%20|%20macos-green.svg)
 
 ## ⚡ 前言
 
