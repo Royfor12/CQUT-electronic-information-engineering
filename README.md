@@ -110,6 +110,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [中山大学课程资料分享](https://github.com/sysuexam/SYSU-Exam)
 - [南京大学课程复习资料](https://github.com/idealclover/NJU-Review-Materials)
 - [重庆邮电大学课程攻略共享计划](https://github.com/NMID-CQUPT/CLF-CQPUT?tab=readme-ov-file)
+- [北京航空航天大学(北航)课程作业资料共享计划](https://github.com/TheBloodthirster/BUAA_Course_Sharing)
 ### 🔗友情链接
 - [智能硬件课程设计](https://github.com/Royfor12/CQUT_esp32_for_elink)
 - [FPGA课程设计](https://github.com/Royfor12/CQUT-FPGA-Electric_Piano)
