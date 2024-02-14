@@ -1,6 +1,6 @@
 # vscode环境配置指南
 
-本指南只适用于基于ARM架构的Mac os
+本指南只适用于基于ARM架构的Mac os\n
 X86架构的Mac os请自行尝试
 
 ## 1. 安装VSCode
@@ -139,4 +139,4 @@ X86架构的Mac os请自行尝试
 
 请确保端口号与Tomcat配置中的监听端口一致，默认情况下是8080。如果出现中文乱码问题，请参照之前关于编码设置的回答进行调整。同时检查防火墙设置和Tomcat日志以确保没有其他错误或阻塞情况。
 
-* [本项目地址😤](https://github.com/Royfor12/CQUT-electronic-information-engineering)
+* [本项目地址😤](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/Junior/DataVisualization/vscode%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
