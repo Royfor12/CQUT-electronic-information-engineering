@@ -256,8 +256,11 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 
 ## 🍻赞助
 Buy me coffee.\
-![image](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg =200)
-![image](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg =200)
+
+<div  align="center">   
+<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg" width="500px">
+<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg" width="500px">
+</div>
 
 
 ## 🙏 致谢
