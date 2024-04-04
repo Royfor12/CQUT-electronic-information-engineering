@@ -254,6 +254,12 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 **C语言**\
 未完待续……
 
+## 🍻赞助
+Buy me coffee.
+![image](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg)
+![image](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg)
+
+
 ## 🙏 致谢
 
 浙江大学课程攻略共享计划\
