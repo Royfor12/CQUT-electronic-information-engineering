@@ -255,11 +255,11 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 未完待续……
 
 ## 🍻赞助
-Buy me coffee.\
+Buy me coffee.
 
 <div  align="center">   
-<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg" width="500px">
-<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg" width="500px">
+<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg" width="200px">
+<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg" width="200px">
 </div>
 
 
