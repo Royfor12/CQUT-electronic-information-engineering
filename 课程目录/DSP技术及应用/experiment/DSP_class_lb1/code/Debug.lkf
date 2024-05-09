@@ -1,0 +1,4 @@
+-z -c -m"./Debug/volume.map" -o"./Debug/volume.out" -stack400h -w -x -i"C:/CCStudio_v3.3PLA/C5400/xdais/lib" -i"C:/CCStudio_v3.3PLA/C5400/csl/lib" -i"C:/CCStudio_v3.3PLA/C5400/cgtools/lib"
+"E:\study\Junior study\dsp\experiment\DSP_class_lb1\lab01-elementary CCS\volume.cmd"
+"E:\study\Junior study\dsp\experiment\DSP_class_lb1\code\Debug\volume.obj"
+"C:\CCStudio_v3.3PLA\C5400\cgtools\lib\rts.lib"

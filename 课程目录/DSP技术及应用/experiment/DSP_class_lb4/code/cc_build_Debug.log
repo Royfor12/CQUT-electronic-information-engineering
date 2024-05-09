@@ -1,0 +1,8 @@
+-------------------------  DSP_class_lb2.pjt - Debug  -------------------------
+[lab4.asm] "C:\CCStudio_v3.3PLA\C5400\cgtools\bin\cl500" -g -pdsw225 -fr"E:/study/Junior study/dsp/experiment/DSP_class_lb4/code/Debug" -d"_DEBUG" -@"Debug.lkf" "lab4.asm"
+
+[Linking...] "C:\CCStudio_v3.3PLA\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

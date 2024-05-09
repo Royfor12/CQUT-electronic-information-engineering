@@ -1,0 +1,13 @@
+------------------------------  fft.pjt - Debug  ------------------------------
+[FFT.asm] "c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"C:/ti/myprojects/EDULab/Lab06-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "FFT.asm"
+
+[ffttable.asm] "c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"C:/ti/myprojects/EDULab/Lab06-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "ffttable.asm"
+
+[main.c] "c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"C:/ti/myprojects/EDULab/Lab06-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "main.c"
+"main.c", line 87: warning: variable "j" was declared but never referenced
+"main.c", line 90: warning: variable "fft_log" was declared but never referenced
+
+[Linking...] "c:\ti\c5400\cgtools\bin\cl500" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 2 Warnings, 0 Remarks.

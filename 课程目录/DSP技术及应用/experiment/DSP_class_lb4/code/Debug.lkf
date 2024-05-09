@@ -1,0 +1,4 @@
+-z -estart -heap100 -m"./Debug/DSP_class_lb2.map" -o"./Debug/DSP_class_lb2.out" -stack400h -w -x -i"C:/CCStudio_v3.3PLA/C5400/xdais/lib" -i"C:/CCStudio_v3.3PLA/C5400/csl/lib" -i"C:/CCStudio_v3.3PLA/C5400/cgtools/lib"
+"E:\study\Junior study\dsp\experiment\DSP_class_lb4\code\lab4.cmd"
+"E:\study\Junior study\dsp\experiment\DSP_class_lb4\code\Debug\lab4.obj"
+"E:\study\Junior study\dsp\experiment\DSP_class_lb4\code\rts.lib"

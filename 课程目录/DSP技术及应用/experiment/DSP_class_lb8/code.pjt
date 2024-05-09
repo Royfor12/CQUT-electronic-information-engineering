@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\study\Junior study\dsp\experiment\DSP_class_lb8\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="Lab07-FFT\FFT.asm"
+Source="Lab07-FFT\ffttable.asm"
+Source="Lab07-FFT\main.c"
+Source="Lab07-FFT\evm5416.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\code.map" -o".\Debug\code.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\code.map" -o".\Release\code.out" -w -x
+
+["Lab07-FFT\evm5416.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["Lab07-FFT\evm5416.cmd" Settings: "Release"]
+LinkOrder=1
+

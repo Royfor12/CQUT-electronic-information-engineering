@@ -1,0 +1,148 @@
+******************************************************************************
+              TMS320C54x Linker PC v4.2.0                      
+******************************************************************************
+>> Linked Thu Mar 14 09:14:39 2024
+
+OUTPUT FILE NAME:   <./Debug/volume.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000152
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  VECT                  00000080   00000080  00000000  00000080  RWIX
+  PRAM                  00000100   00001f00  0000011a  00001de6  RWIX
+
+PAGE 1:
+  DRAM                  00002000   00001000  000004f5  00000b0b  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000100    00000100     
+                  00000100    00000052     rts.lib : exit.obj (.text)
+                  00000152    0000004a             : boot.obj (.text)
+                  0000019c    00000046     volume.obj (.text)
+                  000001e2    00000017     rts.lib : args_main.obj (.text)
+                  000001f9    00000007             : _lock.obj (.text)
+
+.data      0    00000100    00000000     UNINITIALIZED
+
+.cinit     0    00000200    0000001a     
+                  00000200    0000000a     volume.obj (.cinit)
+                  0000020a    00000009     rts.lib : exit.obj (.cinit)
+                  00000213    00000006             : _lock.obj (.cinit)
+                  00000219    00000001     --HOLE-- [fill = 0]
+
+.stack     1    00002000    00000400     UNINITIALIZED
+                  00002000    00000400     --HOLE--
+
+.bss       1    00002400    000000f5     UNINITIALIZED
+                  00002400    000000d0     volume.obj (.bss)
+                  000024d0    00000023     rts.lib : exit.obj (.bss)
+                  000024f3    00000002             : _lock.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00002400   .bss
+00000100   .data
+00000100   .text
+0000014f   C$$EXIT
+00000400   __STACK_SIZE
+ffffffff   ___binit__
+00002400   ___bss__
+ffffffff   ___c_args__
+00000200   ___cinit__
+00000100   ___data__
+00000100   ___edata__
+000024f5   ___end__
+00000200   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+000001e2   __args_main
+000024f1   __cleanup_ptr
+000024f2   __dtors_ptr
+00000001   __lflags
+000024f3   __lock
+000001f9   __nop
+000001fa   __register_lock
+000001fd   __register_unlock
+000024f4   __unlock
+0000014f   _abort
+0000012d   _atexit
+00000152   _c_int00
+00000100   _exit
+00002400   _inp_buffer
+000024c8   _input
+000001ca   _main
+00002464   _out_buffer
+000024c9   _output
+0000019c   _read_signals
+000024cb   _str
+000024ca   _volume
+000001a2   _write_buffer
+ffffffff   binit
+00000200   cinit
+00000100   edata
+000024f5   end
+00000200   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   .data
+00000100   .text
+00000100   ___data__
+00000100   ___edata__
+00000100   ___text__
+00000100   _exit
+00000100   edata
+0000012d   _atexit
+0000014f   C$$EXIT
+0000014f   _abort
+00000152   _c_int00
+0000019c   _read_signals
+000001a2   _write_buffer
+000001ca   _main
+000001e2   __args_main
+000001f9   __nop
+000001fa   __register_lock
+000001fd   __register_unlock
+00000200   ___cinit__
+00000200   ___etext__
+00000200   cinit
+00000200   etext
+00000400   __STACK_SIZE
+00002400   .bss
+00002400   ___bss__
+00002400   _inp_buffer
+00002464   _out_buffer
+000024c8   _input
+000024c9   _output
+000024ca   _volume
+000024cb   _str
+000024f1   __cleanup_ptr
+000024f2   __dtors_ptr
+000024f3   __lock
+000024f4   __unlock
+000024f5   ___end__
+000024f5   end
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[43 symbols]

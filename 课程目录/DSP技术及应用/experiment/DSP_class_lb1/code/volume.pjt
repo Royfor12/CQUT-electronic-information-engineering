@@ -1,0 +1,35 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\study\Junior study\dsp\experiment\DSP_class_lb1\code\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\lab01-elementary CCS\volume.C"
+Source="C:\CCStudio_v3.3PLA\C5400\cgtools\lib\rts.lib"
+Source="..\lab01-elementary CCS\volume.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\volume.map" -o".\Debug\volume.out" -stack400h -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\volume.map" -o".\Release\volume.out" -w -x
+
+["..\lab01-elementary CCS\volume.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["..\lab01-elementary CCS\volume.cmd" Settings: "Release"]
+LinkOrder=1
+

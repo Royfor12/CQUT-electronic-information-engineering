@@ -1,0 +1,164 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC Version 3.83                
+******************************************************************************
+>> Linked Tue May 31 19:20:13 2005
+
+OUTPUT FILE NAME:   <./Debug/fft.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000236
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG0                   00000100   00001f00  000009eb  RW X
+         P_VECT                  00007f80   00000080  00000000  R IX
+
+PAGE  1: BLOCKMEM                00002400   00000600  00000400  RWIX
+         DATA0                   00003000   00001800  00001800  RW X
+         DATA1                   00004800   00002000  0000082e  RW X
+         DATASD                  00007000   00001000  00000c00  RW X
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.mculist   0    00000100    00000000     UNINITIALIZED
+
+.text      0    00000100    000001d9     
+                  00000100    000000d9     FFT.obj (.text)
+                  000001d9    0000005d     main.obj (.text)
+                  00000236    0000004a     rts.lib : boot.obj (.text)
+                  00000280    00000052             : exit.obj (.text)
+                  000002d2    00000007             : _lock.obj (.text)
+
+.cinit     0    000002d9    00000812     
+                  000002d9    00000802     main.obj (.cinit)
+                  00000adb    00000009     rts.lib : exit.obj (.cinit)
+                  00000ae4    00000006             : _lock.obj (.cinit)
+                  00000aea    00000001     --HOLE-- [fill = 0]
+
+.vectors   0    00007f80    00000000     UNINITIALIZED
+
+.data      1    00000000    00000000     UNINITIALIZED
+
+sine1      1    00002400    00000200     
+                  00002400    00000200     ffttable.obj (sine1)
+
+cosine1    1    00002800    00000200     
+                  00002800    00000200     ffttable.obj (cosine1)
+
+d_input    1    00003000    00000800     UNINITIALIZED
+                  00003000    00000800     FFT.obj (d_input)
+
+fft_data   1    00003800    00000800     UNINITIALIZED
+                  00003800    00000800     FFT.obj (fft_data)
+
+fft_out    1    00004000    00000800     UNINITIALIZED
+                  00004000    00000800     FFT.obj (fft_out)
+
+.const     1    00004800    00000000     UNINITIALIZED
+
+.cio       1    00004800    00000000     UNINITIALIZED
+
+.sysmem    1    00004800    00000000     UNINITIALIZED
+
+.bss       1    00004800    0000082e     UNINITIALIZED
+                  00004800    00000804     main.obj (.bss)
+                  00005004    00000023     rts.lib : exit.obj (.bss)
+                  00005027    00000005     FFT.obj (.bss)
+                  0000502c    00000002     rts.lib : _lock.obj (.bss)
+
+.heap      1    00007000    00000000     UNINITIALIZED
+
+.stack     1    00007000    00000c00     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00004800   .bss
+00000000   .data
+00000100   .text
+000002cf   C$$EXIT
+00000c00   __STACK_SIZE
+00004800   ___bss__
+000002d9   ___cinit__
+00000000   ___data__
+00000000   ___edata__
+0000502e   ___end__
+000002d9   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+00005025   __cleanup_ptr
+00005026   __dtors_ptr
+00000001   __lflags
+0000502c   __lock
+000002d2   __nop
+000002d3   __register_lock
+000002d6   __register_unlock
+0000502d   __unlock
+000002cf   _abort
+000002ad   _atexit
+00000100   _cFFT
+00000236   _c_int00
+00005000   _data2
+00005002   _data3
+00000280   _exit
+00004800   _finput
+000001d9   _main
+000002d9   cinit
+00002800   cosine
+00000000   edata
+0000502e   end
+000002d9   etext
+ffffffff   pinit
+00002400   sine
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___data__
+00000000   ___edata__
+00000000   .data
+00000000   edata
+00000001   __lflags
+00000100   .text
+00000100   _cFFT
+00000100   ___text__
+000001d9   _main
+00000236   _c_int00
+00000280   _exit
+000002ad   _atexit
+000002cf   C$$EXIT
+000002cf   _abort
+000002d2   __nop
+000002d3   __register_lock
+000002d6   __register_unlock
+000002d9   cinit
+000002d9   ___cinit__
+000002d9   ___etext__
+000002d9   etext
+00000c00   __STACK_SIZE
+00002400   sine
+00002800   cosine
+00004800   _finput
+00004800   ___bss__
+00004800   .bss
+00005000   _data2
+00005002   _data3
+00005025   __cleanup_ptr
+00005026   __dtors_ptr
+0000502c   __lock
+0000502d   __unlock
+0000502e   end
+0000502e   ___end__
+ffffffff   ___pinit__
+ffffffff   pinit
+
+[37 symbols]

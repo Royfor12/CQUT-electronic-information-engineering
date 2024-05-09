@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/fft.map" -o"./Debug/fft.out" -w -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"C:\ti\myprojects\EDULab\Lab06-FFT\fft\Debug\FFT.obj"
+"C:\ti\myprojects\EDULab\Lab06-FFT\fft\Debug\ffttable.obj"
+"C:\ti\myprojects\EDULab\Lab06-FFT\fft\Debug\main.obj"
+"C:\ti\myprojects\EDULab\Lab06-FFT\evm5416.cmd"

@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\ti\myprojects\Lab06-FFT\fft\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\FFT.asm"
+Source="..\ffttable.asm"
+Source="..\main.c"
+Source="..\evm5416.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\ti\myprojects\Lab06-FFT\fft\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"C:\ti\myprojects\Lab06-FFT\fft\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\fft.map" -o".\Debug\fft.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\fft.map" -o".\Release\fft.out" -w -x
+
