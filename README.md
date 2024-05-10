@@ -1,4 +1,4 @@
-![avatar](https://www.cqut.edu.cn/images/logo.png)
+![avatar](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/cqut_logo.png)
 
 # 💡 课程攻略共享计划
 
