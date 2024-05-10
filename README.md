@@ -200,8 +200,8 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [重庆邮电大学数字电路实验2022级报告-基于FPGA的数字电子钟的设计与实现](https://github.com/ZHYLAR/CQUPT_Digital_circuit_SHIYAN?tab=readme-ov-file)
 
 ## 📔待办事项
-- [] 制定使用指南
-- [] 设计一个网页便于检索与预览
+- [ ] 制定使用指南
+- [ ] 设计一个网页便于检索与预览
 
 ## 🍻赞助
 Buy me coffee.
