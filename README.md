@@ -218,3 +218,7 @@ Buy me coffee.
 重庆邮电大学课程攻略共享计划\
 本项目的贡献者\
 (more to be added....)
+
+## ✨Stars
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Royfor12/CQUT-electronic-information-engineering&type=Date)](https://github.com/Royfor12/CQUT-electronic-information-engineering&Date)
