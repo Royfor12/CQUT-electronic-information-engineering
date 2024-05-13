@@ -1,4 +1,4 @@
-![avatar](https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/cqut_logo.png)
+![avatar](https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/cqut_logo.png)
 
 # 💡 课程攻略共享计划
 
@@ -39,7 +39,8 @@ CQUT-electronic-information-engineering
 ├─ DSP技术及应用
 ├─ FPGA
 ├─ MicroPython
-├─ c
+├─ C语言
+├─ 操作系统
 ├─ 中国近代史
 ├─ 习中特
 ├─ 信号与系统
@@ -48,16 +49,23 @@ CQUT-electronic-information-engineering
 ├─ 大学物理实验
 ├─ 工程电磁场
 ├─ 工程经济学
+├─ 化工原理
 ├─ 微机原理及应用
+├─ 无线传感器网络
+├─ 物理化学
 ├─ 数字信号处理
 ├─ 数学竞赛
 ├─ 数据与系统
 ├─ 数据可视化
 ├─ 数电
-├─ 智能数据分析程序设计（python）
+├─ 算法分析与设计
+├─ 智能数据分析程序设计 (Python)
 ├─ 机械制图与CAD基础
 ├─ 机械制造基础训练实训
 ├─ 机械工程材料往年题
+├─ 计算机网络
+├─ 计算机组成原理
+├─ 开关电源 (廖兴林)
 ├─ 概率论与数理统计
 ├─ 模电
 ├─ 毛中特
@@ -108,6 +116,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 2. Fork本项目。
 3. 科目文件夹存在，打开对应文件夹，点击upload，上传你的文件。
 4. 科目文件夹不存在，打开任意文件夹，点击upload，把浏览器地址中的文件夹名称改为你想要新建的文件夹名称，然后回车，上传你的文件。
+5. 确定无误后，在自己的复刻项目中点击上方的`Pull requests`向原仓库提交拉取请求合并。
 
 或者也可以直接附加在 **Issue** 中，由维护者进行添加。
 如果希望匿名贡献，可以email至[此邮箱Roy120550@gmail.com](mailto:Roy120550@gmail.com)
@@ -206,9 +215,9 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 ## 🍻赞助
 Buy me coffee.
 
-<div  align="center">   
-<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/Alipay.jpg" width="200px">
-<img src="https://github.com/Royfor12/CQUT-electronic-information-engineering/blob/main/image/WeChat.jpg" width="200px">
+<div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/Alipay.jpg" width="200px">
+    <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/WeChat.jpg" width="200px">
 </div>
 
 
