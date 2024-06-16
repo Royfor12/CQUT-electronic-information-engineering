@@ -46,6 +46,7 @@ CQUT-electronic-information-engineering
 ├─ 信号与系统
 ├─ 创业基础
 ├─ 复变函数与积分变换
+├─ 大学物理学
 ├─ 大学物理实验
 ├─ 工程电磁场
 ├─ 工程经济学
@@ -80,6 +81,7 @@ CQUT-electronic-information-engineering
 ├─ 虚拟显示技术
 ├─ 车联网技术导论_参考资料
 ├─ 软件工程教案
+├─ 通信软件技术 (Java)
 ├─ 通信原理
 ├─ 高等数学【机电】
 └─ 高频电子线路
@@ -215,7 +217,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 ## 🍻赞助
 Buy me coffee.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/Alipay.jpg" width="200px">
     <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/WeChat.jpg" width="200px">
 </div>
