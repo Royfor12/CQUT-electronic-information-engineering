@@ -1,3 +1,0 @@
-1.Hello是四种方法实现n的阶乘
-2.Nine是输出九九乘法表
-3.Person是声明银行账户Person类
