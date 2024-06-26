@@ -61,6 +61,7 @@ CQUT-electronic-information-engineering
 ├─ 数电
 ├─ 算法分析与设计
 ├─ 智能数据分析程序设计 (Python)
+├─ 制图测绘
 ├─ 机械制图与CAD基础
 ├─ 机械制造基础训练实训
 ├─ 机械工程材料往年题
