@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		.node {
+			stroke: #fff;
+			stroke-width: 1.5px;
+		}
+
+		.link {
+			stroke: #999;
+			stroke-opacity: .6;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="../d3/d3.v3.min.js"></script>
+	<script>
+		var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.98;
+		var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.9;
+		var color = d3.scale.category20();
+		var force = d3.layout.force()
+			.charge(-120)
+			.linkDistance(200)
+			.size([width, height]);
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height);
+		var array = ["周登义", "向险峰", "汪治华"];
+		d3.json("a.json", function (error, graph) {
+			console.log(graph);
+			force.nodes(graph.nodes)
+				.links(graph.links)
+				.start();
+
+			var node = svg.selectAll(".node")
+				.data(graph.nodes)
+				.enter().append("circle")
+				.attr("class", "node")
+				.attr("r", 40)//修改节点半径
+				.style("fill", function (d) { return color(d.group); })
+				.call(force.drag)
+				.text(function (d) { return d.name; });
+			// 添加节点文本
+			var nodetext = svg.selectAll(".nodetext")
+				.data(graph.nodes)
+				.enter().append("text")
+				.attr("class", "nodetext")
+				.text(function (d, i) { // 根据索引i设置不同的文本内容
+					return array[i]; // 返回索引加1作为文本内容，这样第一个节点是"0"，第二个是"1"，依此类推
+				})
+				.attr("text-anchor", "middle") // 文本水平居中
+				.attr("dominant-baseline", "central") // 文本垂直居中
+				.attr("dx", function (d) { return d.r; }) // 根据节点半径设置文本的水平偏移量，确保文本居中
+				.attr("dy", ".35em");
+
+			var link = svg.selectAll(".link")
+				.data(graph.links)
+				.enter().append("line")
+				.attr("class", "link")
+				.style("stroke-width", function (d) { return Math.sqrt(d.value); });
+			force.on("tick", function () {// 更新节点位置时同时更新文本位置
+				link.attr("x1", function (d) { return d.source.x; })
+					.attr("y1", function (d) { return d.source.y; })
+					.attr("x2", function (d) { return d.target.x; })
+					.attr("y2", function (d) { return d.target.y; });
+
+				node.attr("cx", function (d) { return d.x; })
+					.attr("cy", function (d) { return d.y; });
+				// 同步更新文本位置
+				// nodetext.attr("x", function (d) { return d.x; })
+				// 	.attr("y", function (d) { return d.y; });
+			});
+		});
+
+	</script>
+	<!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

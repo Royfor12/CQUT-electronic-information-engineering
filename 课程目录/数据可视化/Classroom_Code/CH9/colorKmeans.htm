@@ -1,0 +1,151 @@
+<html>
+	<body>
+	<center>
+	  <h2>基于K-Means聚类的图片色彩提取</h2>
+		<script src="https://www.lactame.com/lib/ml/4.0.0/ml.min.js" charset="utf-8"></script> 
+		<script src="d3.v5.min.js" charset="utf-8"></script>
+		<hr width=80%></hr>
+		<button id="blur">柔化</button><button id="kmeans">K-means填充</button><br>
+
+		<canvas id="myCanvas" width="600" height="400"></canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("myCanvas");
+			var cxt=c.getContext("2d");
+			var img=new Image()
+			img.src="flowerS.jpg"
+			img.onload = function () {
+				cxt.drawImage(img,0,0);
+				var imageData = cxt.getImageData(0,0,c.width, c.height);
+				var idata = imageData.data;
+				//dataMatrix
+				var DM=new Array(c.height);
+				var datargb=new Array(c.height*c.width);
+				for(var i=0;i<c.height;i++){
+						DM[i]=new Array(c.width);
+						for(var j=0;j<c.width;j++){
+							DM[i][j]=new Array(4);
+							DM[i][j][0]=idata[(i*(c.width)+j)*4];
+							DM[i][j][1]=idata[(i*(c.width)+j)*4+1];
+							DM[i][j][2]=idata[(i*(c.width)+j)*4+2];
+							DM[i][j][3]=idata[(i*(c.width)+j)*4+3];
+							datargb[i*c.width+j]=new Array(3);
+													datargb[i*c.width+j][0]=idata[(i*(c.width)+j)*4];
+							datargb[i*c.width+j][1]=idata[(i*(c.width)+j)*4+1];
+							datargb[i*c.width+j][2]=idata[(i*(c.width)+j)*4+2];
+							//datargb[i*c.height+j][3]=idata[(i*(c.width)+j)*4+3];						
+						}
+				}
+				var cent=new Array(7);
+				console.log(datargb.length,datargb[0],datargb[500],datargb[3000]);
+				//色彩聚类
+				for(var i=0;i<7;i++){
+					cent[i]=datargb[Math.floor(Math.random()*datargb.length)];
+					console.log(cent[i]);
+				}
+
+				var cc7 = ML.KMeans(datargb,7, {initialization: cent });
+				console.log(cc7);
+				console.log(cc7.centroids);
+				console.log(datargb.length);
+				var blurImage = function() {				
+					//9宫格平均，实现柔化Blur
+					for(var i=0;i<c.height;i++){				
+						for(var j=0;j<c.width;j++){
+							if((i>0)&&(i<c.height-1)&&(j>0)&&(j<c.width-1)){				  
+							DM[i][j][0]=(DM[i-1][j-1][0]+DM[i-1][j][0]+DM[i-1][j+1][0]+DM[i][j-1][0]+DM[i][j][0]+DM[i][j+1][0]+DM[i+1][j-1][0]+DM[i+1][j][0]+DM[i+1][j+1][0])/9;
+							DM[i][j][1]=(DM[i-1][j-1][1]+DM[i-1][j][1]+DM[i-1][j+1][1]+DM[i][j-1][1]+DM[i][j][1]+DM[i][j+1][1]+DM[i+1][j-1][1]+DM[i+1][j][1]+DM[i+1][j+1][1])/9;
+							DM[i][j][2]=(DM[i-1][j-1][2]+DM[i-1][j][2]+DM[i-1][j+1][2]+DM[i][j-1][2]+DM[i][j][2]+DM[i][j+1][2]+DM[i+1][j-1][2]+DM[i+1][j][2]+DM[i+1][j+1][2])/9;
+							}
+						}
+					}
+					for(var i=0;i<c.height;i++){					
+						for(var j=0;j<c.width;j++){					
+							idata[(i*(c.width)+j)*4]=DM[i][j][0];
+							idata[(i*(c.width)+j)*4+1]=DM[i][j][1];
+							idata[(i*(c.width)+j)*4+2]=DM[i][j][2];	
+													idata[(i*(c.width)+j)*4+3]=DM[i][j][3];						
+						}
+					}
+					cxt.putImageData(imageData, 0, 0);
+				};	
+				var kmeansImage = function() {	
+					console.log(cc7.centroids[0].centroid);
+					console.log(cc7.centroids[0].centroid[0]);
+					//用聚类中心填充
+					for(var i=0;i<c.height;i++){				
+						for(var j=0;j<c.width;j++){
+							if((i>0)&&(i<c.height-1)&&(j>0)&&(j<c.width-1)){
+								//求最短距离
+								var shortindex=0;
+								var shortsum=0;
+								for (var k=0;k<7 ;k++ )
+								{
+									var dis1=Math.pow(DM[i][j][0]-cc7.centroids[k].centroid[0],2);
+									var dis2=Math.pow(DM[i][j][1]-cc7.centroids[k].centroid[1],2);
+									var dis3=Math.pow(DM[i][j][2]-cc7.centroids[k].centroid[2],2);
+									var dis=Math.sqrt(dis1+dis2+dis3);
+																if (k==0)
+																{
+										shortsum=dis;
+										shortindex=k;
+																}
+									else
+										if (shortsum>dis)
+										{
+										shortsum=dis;
+										shortindex=k;
+										}
+								}
+								DM[i][j][0]=Math.floor(cc7.centroids[shortindex].centroid[0]);
+								DM[i][j][1]=Math.floor(cc7.centroids[shortindex].centroid[1]);
+								DM[i][j][2]=Math.floor(cc7.centroids[shortindex].centroid[2]);
+							}
+						}
+					}
+					for(var i=0;i<c.height;i++){					
+						for(var j=0;j<c.width;j++){					
+							idata[(i*(c.width)+j)*4]=DM[i][j][0];
+							idata[(i*(c.width)+j)*4+1]=DM[i][j][1];
+							idata[(i*(c.width)+j)*4+2]=DM[i][j][2];	
+													idata[(i*(c.width)+j)*4+3]=DM[i][j][3];						
+						}
+					}
+					cxt.putImageData(imageData, 0, 0);
+				};			
+				var blurBtn = document.getElementById('blur');
+				blurBtn.addEventListener('click',blurImage);
+				var kmeansBtn = document.getElementById('kmeans');
+				kmeansBtn.addEventListener('click',kmeansImage);
+				
+				var width=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)*0.98;
+				var height=(window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight)*0.9;
+				
+				var svg = d3.select("body")			//选择<body>
+								.append("svg")			//在<body>中添加<svg>
+								.attr("width", width)	//设定<svg>的宽度属性
+								.attr("height", height*0.5);//设定<svg>的高度属性	
+				rectwidth=width/7;
+				var rect = svg.selectAll("rect")
+									.data(cc7.centroids)		//绑定数据
+									.enter()			//获取enter部分
+									.append("rect")	    //添加rect元素，使其与绑定数组的长度一致
+									.attr("x", function(d,i){		//设置矩形的x坐标
+										return  i*rectwidth;
+									})
+									.attr("y", function(d){		//设置矩形的y坐标
+										return 50;
+									})
+									.attr("fill",function(d,i){
+										var r=Math.floor(d.centroid[0]);
+										var g=Math.floor(d.centroid[1]);
+										var b=Math.floor(d.centroid[2]);
+										return "rgb("+r+","+g+","+b+")"
+									})
+									.attr("width",rectwidth*0.9)
+									.attr("height",50);
+							
+				}
+      </script>
+		</center>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

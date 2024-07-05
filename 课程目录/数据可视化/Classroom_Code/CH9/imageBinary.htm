@@ -1,0 +1,54 @@
+<html>
+
+<body>
+	<center>
+		<h2>数据可视化之JS Canvas 图像处理</h2>
+		<button id="bin">二值化</button>
+		<hr width=70%>
+		</hr>
+		<canvas id="myCanvas" width="600" height="400" style="border:1px solid #c3c3c3;"></canvas>
+		<script type="text/javascript">
+			var c = document.getElementById("myCanvas");
+			var cxt = c.getContext("2d");
+			var img = new Image()
+			img.src = "cqut.jpg"
+			img.onload = function () {
+				// 获取图片实际宽高
+				var imgWidth = img.naturalWidth;
+				var imgHeight = img.naturalHeight;
+
+				// 将canvas的宽高设置为图片的实际宽高
+				c.width = imgWidth;
+				c.height = imgHeight;
+				cxt.drawImage(img, 0, 0);
+				var imageData = cxt.getImageData(0, 0, c.width, c.height);
+				var data = imageData.data;
+				var binImage = function () {
+					for (var i = 0; i < data.length; i += 4) {
+						var gray = Math.floor(imageData.data[i] * 0.3 + imageData.data[i + 1] * 0.59 + imageData.data[i + 2] * 0.11);
+						if (gray < 100) {
+							data[i] = 0; // red
+							data[i + 1] = 0; // green
+							data[i + 2] = 0; // blue
+							//console.log(gray);
+						}
+						else {
+							data[i] = 255; // red
+							data[i + 1] = 255; // green
+							data[i + 2] = 255; // blue
+						}
+					}
+					cxt.putImageData(imageData, 0, 0);
+				};
+				var binBtn = document.getElementById('bin');
+				binBtn.addEventListener('click', binImage);
+			}
+
+		</script>
+	</center>
+	<!-- Cloudflare Pages Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

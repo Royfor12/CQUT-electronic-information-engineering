@@ -1,0 +1,71 @@
+
+<html>
+
+<head>
+    <title>D3直方图-异步加载Json数据</title>
+    <script src="../d3/d3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <script>
+        var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.96;
+        var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.9;
+        
+        d3.json("data.json", function(data) { 
+            var colors = data.clr;
+            var heights = data.height;
+
+            if (colors.length !== heights.length) {
+                console.error('Colors and heights array lengths do not match!');
+                return;
+            }
+
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            var rectStep = width / heights.length;
+            var rectWidth = rectStep - 10;
+
+            var rects = svg.selectAll("rect")
+                .data(heights)
+                .enter()
+                .append("rect")
+                .attr("x", function(d, i) {
+                    return i * rectStep;
+                })
+                .attr("y", function(d) {
+                    return height - d; // 确保直方图从底部开始绘制
+                })
+                .attr("width", rectWidth)
+                .attr("height", function(d) {
+                    return d;
+                })
+                .attr("fill", function(d, i) {
+                    return colors[i];
+                });
+            var text = svg.selectAll("text")
+            .data(heights)			//绑定数据
+            .enter()				//获取enter部分
+            .append("text")			//添加text元素，使其与绑定数组的长度一致
+            .attr("fill", function (d,i) {
+                return colors[i];
+            })
+            .attr("font-size", "24px")
+            .attr("text-anchor", "middle")
+            .attr("x", function (d, i) {
+                return i * rectStep;
+            })
+            .attr("y", function (d) {
+                return height-d-26;
+            })
+            .attr("dx", rectWidth / 2)
+            .attr("dy", "1em")
+            .text(function (d) {
+                return Math.floor(d);
+            });
+        });
+    </script>
+</body>
+</html>

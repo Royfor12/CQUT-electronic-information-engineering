@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>直方图+彩色+文字（水平布局）</title>
+</head>
+<body>
+    <svg id="mySVG" width="800" height="600" version="1.1"></svg>
+	<script type="text/javascript">        
+		var mysvg = document.getElementById("mySVG");
+        var rec= new Array();
+        var txt=new Array();
+		for(var i=0;i<6;i++){
+			rec[i] = document.createElementNS('http://www.w3.org/2000/svg', "rect"); // 使用 createElementNS 创建 SVG 元素
+            txt[i] = document.createElementNS('http://www.w3.org/2000/svg', "text");
+			mysvg.appendChild(rec[i]);
+            mysvg.appendChild(txt[i]);
+            var w=Math.random()*255;
+            var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+			rec[i].setAttribute('y', 45 * i);
+            rec[i].setAttribute('x', 0);
+            rec[i].setAttribute('width', w);
+            rec[i].setAttribute('height', 40);
+            rec[i].style.fill = 'rgb('+r+','+g+','+b+')';
+
+            txt[i].setAttribute('y', (45 * i) + 20); // 文本位置微调以适应矩形框
+            txt[i].setAttribute('x', w); // 调整文本位置到矩形上方
+            txt[i].textContent = Math.floor(w);
+
+            // 将创建的元素添加到 DOM 中，而不是使用 outerHTML
+		}
+  </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

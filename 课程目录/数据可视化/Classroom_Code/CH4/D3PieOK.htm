@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>饼状图</title>
+</head>
+
+<body>
+	<script src="d3.v4.min.js" charset="utf-8"></script>
+	<script>
+		var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var width = w * 0.98;
+		var height = h * 0.96;
+		var dataset = [["Chrome", 39.49], ["IE", 29.06], ["QQ", 4.84], ["2345", 4.28], ["搜狗高速", 4.19], ["猎豹", 2.24], ["其他", 15.91]];
+		var svg = d3.select("body")
+			.append("svg")
+			.attr("width", width)
+			.attr("height", height);
+		var pie = d3.pie()
+			.value(function (d) { return d[1]; });
+		var piedata = pie(dataset);
+		var outerRadius = 150;	//外半径
+		var innerRadius = 0;	//内半径，为0则中间没有空白
+		var arc = d3.arc()	//弧生成器
+			.innerRadius(innerRadius)	//设置内半径
+			.outerRadius(outerRadius);	//设置外半径
+		var color = d3.scaleOrdinal(d3.schemeCategory10);
+		var arcs = svg.selectAll("g")
+			.data(piedata)
+			.enter()
+			.append("g")
+			.attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+		var originalColors = []; // 用于保存每个扇区的原始颜色
+
+		arcs.append("path") // 每个g元素都追加一个path元素
+			.attr("fill", function (d, i) {
+				console.log(color(i));
+				// 在这里保存原始颜色
+				if (!originalColors[i]) { // 防止重复赋值
+					originalColors[i] = color(i);
+				}
+				console.log(originalColors[i]);
+				console.info("这是一条信息提示");
+				return color(i);
+			})
+			.attr("d", function (d) {
+				return arc(d);
+			})
+			.on("mouseover", function (d, i) {
+				d3.select(this) // 选择当前path元素
+					.transition() // 添加过渡效果
+					.duration(200) // 设置过渡持续时间（可自定义）
+					.attr("fill", "red"); // 将颜色变为红色
+					console.log(i);
+			})
+			.on("mouseout", function (d, i) {
+				d3.select(this) // 选择当前path元素
+					.transition() // 添加过渡效果
+					.duration(200) // 设置过渡持续时间（与mouseover相同）
+					.attr("fill",originalColors[i]);  // 恢复原来的颜色
+					console.log(i);
+					console.log(originalColors[i]);
+			});
+			console.log(originalColors[1]);
+			console.log(originalColors[2]);
+		arcs.append("text")
+			.attr("transform", function (d) {
+				var x = arc.centroid(d)[0] * 1.1;
+				var y = arc.centroid(d)[1] * 1.1;
+				return "translate(" + x + "," + y + ")";
+			})
+			.attr("text-anchor", "middle")
+			.attr("font-size", function (d) {
+				return d.data[1] + "px";
+			})
+			.text(function (d) {
+				return d.value + "%";
+			})
+			.on("mouseover", function (d, i) {
+				if (d.data[1] < 10) {
+					d3.select(this)
+						.attr("font-size", 30);
+				}
+			})
+			.on("mouseout", function (d, i) {
+				if (d.data[1] < 10) {
+					d3.select(this)
+						.attr("font-size", function (d) {
+							return d.value + "px";
+						});
+				}
+			});
+		//添加连接弧外文字的直线元素
+		arcs.append("line")
+			.attr("stroke", "black")
+			.attr("x1", function (d) { return arc.centroid(d)[0] * 2; })
+			.attr("y1", function (d) { return arc.centroid(d)[1] * 2; })
+			.attr("x2", function (d) { return arc.centroid(d)[0] * 2.2; })
+			.attr("y2", function (d) { return arc.centroid(d)[1] * 2.2; });
+		//添加弧外的文字元素
+		arcs.append("text")
+			.attr("transform", function (d) {
+				var x = arc.centroid(d)[0] * 2.5;
+				var y = arc.centroid(d)[1] * 2.5;
+				return "translate(" + x + "," + y + ")";
+			})
+			.attr("text-anchor", "middle")
+			.attr("font-size", 12)
+			.text(function (d) {
+				return d.data[0];
+			});
+		console.log(dataset);
+		console.log(piedata);
+	</script>
+	<!-- Cloudflare Pages Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

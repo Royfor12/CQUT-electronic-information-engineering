@@ -1,0 +1,74 @@
+<html>  
+  <head>  
+        <meta charset="utf-8">  
+        <title>D3通过矩形绘制直方图</title>  
+  </head> 
+  <body>
+	<script src="../d3/d3.min.js" charset="utf-8"></script> 
+	<script>  
+		
+		var width=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)*0.98;
+		var height=(window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight)*0.9;
+		var color = d3.scale.category10();
+
+		var dataset =new Array(10);
+		for (var i=0;i<dataset.length;i++){
+			dataset[i]=height*Math.random();
+		}
+		// 倒置直方图，矩形顶部从y=0开始
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+// 矩形占据的宽度（包括空白），单位为像素
+var rectStep = width / dataset.length;
+// 矩形占据的宽度（不包括空白），单位为像素
+var rectWidth = rectStep - 10;
+
+var rect = svg.selectAll("rect")
+                .data(dataset)
+                .enter()
+                .append("rect")
+                .attr("x", function(d, i) {
+                    return i * rectStep;
+                })
+                // 修改y坐标为高度减去数据值，使矩形底边位于顶部
+                .attr("y", function(d) {
+                    return 0; // 直方图顶部（原点）
+                })
+                // 修改矩形高度为容器高度减去数据值
+                .attr("height", function(d) {
+                    return height - d; // 反转高度
+                })
+                .attr("fill", function(i) {
+                    return color(i);
+                })
+                .attr("width", rectWidth);
+
+               
+      var text = svg.selectAll("text")
+				.data(dataset)			//绑定数据
+				.enter()				//获取enter部分
+				.append("text")			//添加text元素，使其与绑定数组的长度一致
+				//.attr("fill","green")
+        .attr("fill", function(i) {
+                    return color(i);
+                })
+				.attr("font-size","24px")
+				.attr("text-anchor","middle")
+				.attr("x", function(d,i){
+					return i * rectStep;
+				})
+				.attr("y", function(d){
+					return height-d;
+				})
+				.attr("dx",rectWidth/2)
+				.attr("dy","1em")
+				.text(function(d){
+					return Math.floor(d);
+				});
+						
+	</script> 
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

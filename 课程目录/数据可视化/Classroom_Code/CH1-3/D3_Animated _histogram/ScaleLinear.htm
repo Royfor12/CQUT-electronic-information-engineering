@@ -1,0 +1,18 @@
+<html>
+<meta charset="utf-8">  
+  <head>   
+        <title>线性比例尺</title>  
+  </head> 
+  <body>
+	<script src="./rule/d3.v4.min.js" charset="utf-8"></script> 
+		<h1>运行结果请在Chrome看Console</h1>
+	<script>  
+		var x = d3.scaleLinear()
+				  .domain([10, 130])
+                  .range([0, 960]);
+		console.log(x(10));
+		console.log(x(100));
+		console.log(x(130));
+	</script> 
+   <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

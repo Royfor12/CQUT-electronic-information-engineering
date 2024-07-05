@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>
+			二叉树
+		</title>
+	</head>
+	<body>
+		<svg id="wcSvg" width=800 height=600 ></svg>
+		<script>
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+
+			var mysvg = document.getElementById("wcSvg");
+			mysvg.setAttribute("width",w*0.9);
+ 			mysvg.setAttribute("height",h*0.9);
+			var length=300;
+			rate=0.6;
+			var x0=w/2;
+			var y0=h;
+			var count=7;
+			var iter=0;
+
+			function changeLineColor(lineElement, diamondElement, hoverColor) {
+			  lineElement.style.stroke = hoverColor;
+			  if (diamondElement) {
+			    diamondElement.style.stroke = hoverColor;
+			  }
+			}
+
+			function resetLineColor(lineElement, diamondElement) {
+			  lineElement.style.stroke = 'rgb(0,' + iter + ',0)';
+			  if (diamondElement) {
+			    diamondElement.style.stroke = 'rgb(225, 0, 0)';
+			  }
+			}
+
+			function drawDiamond(x, y, size, parentLineElement) {
+				var diamond = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+				diamond.setAttribute('points',
+                    x + ',' + (y - size / 2) + ' ' +
+                    (x + size) + ',' + y + ' ' +
+                    x + ',' + (y + size * 1.5) + ' ' +
+                    (x - size) + ',' + y + ' ' +
+                    x + ',' + (y - size / 2)
+                );
+				diamond.style.stroke = 'rgb(225, 0, 0)';
+				diamond.style.strokeWidth = '2';
+				diamond.style.fill = 'none';
+				mysvg.appendChild(diamond);
+
+				// 保存父级线段元素引用并添加鼠标悬停事件监听器（示例颜色为红色）
+				diamond.parentLine = parentLineElement;
+				diamond.addEventListener('mouseover', function() {
+				  changeLineColor(this.parentLine, this, 'green');
+				});
+				diamond.addEventListener('mouseout', function() {
+				  resetLineColor(this.parentLine, this);
+				});
+				return diamond;
+			}
+
+			function createLine(x1, y1, x2, y2, count, iter) {
+				var svgline = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+				svgline.setAttribute('x1', x1);
+				svgline.setAttribute('y1', y1);
+				svgline.setAttribute('x2', x2);
+				svgline.setAttribute('y2', y2);
+				svgline.style.stroke = 'rgb(0,' + iter + ',0)';
+				svgline.style.strokeWidth = count + '';
+
+				// 添加鼠标悬停事件监听器（示例颜色为绿色）
+				svgline.addEventListener('mouseover', function() {
+				  changeLineColor(this, null, 'green');
+				});
+				svgline.addEventListener('mouseout', function() {
+				  resetLineColor(this, null);
+				});
+
+				mysvg.appendChild(svgline);
+				return svgline;
+			}
+
+			function show(x0,y0,length,rate,a,count){
+					var x1=x0;
+					var y1=y0;
+					var x2=x1+length*(0.5+0.5*Math.random())*Math.cos(a);
+					var y2=y1+length*(0.5+0.5*Math.random())*Math.sin(a);
+					var svgline = createLine(x1, y1, x2, y2, count, iter);
+
+					var rand=Math.random;
+					var aL=a-Math.PI/4*(0.5+0.5*Math.random());
+					var aR=a+Math.PI/4*(0.5+0.5*Math.random());
+					if(count>0){
+						show(x2,y2,length*rate,rate,aL,count-1);
+						show(x2,y2,length*rate,rate,aR,count-1);
+					}else {
+						var diamond = drawDiamond(x2, y2, length * rate * 0.8, svgline);
+					}
+			}
+			show(x0,y0,length,rate,-Math.PI/2,count);
+			show(x0,y0,length,rate,-Math.PI*31/64,count);
+			show(x0,y0,length,rate,-Math.PI*33/64,count);
+		</script>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

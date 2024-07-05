@@ -1,0 +1,103 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-04-18 20:42:31
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-04-20 19:59:03
+ * @FilePath: \Keshihua\ch8\CQUTmap.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>掩模-只展示地图指定区域</title>
+  <meta http-equiv="Content-Type" content="text[表情]ml; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <style>
+    body,
+    html,
+    #container {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: "微软雅黑";
+    }
+
+    .info {
+      z-index: 999;
+      width: auto;
+      min-width: 22rem;
+      padding: .75rem 1.25rem;
+      margin-left: 1.25rem;
+      position: fixed;
+      top: 1rem;
+      background-color: #fff;
+      border-radius: .25rem;
+      font-size: 14px;
+      color: #666;
+      box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+    }
+  <[表情]yle>
+  <script src="/[表情].bcebos.com/v1/mapopen/cms/bmapgldemo/custom/customgreen.js"></script>
+  <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=lgj1icmXqYZaTf7V9WOs7Hj1FspANFSE"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.5.0/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.5.0/dist/extension/bmap.min.js"></script>
+</head>
+
+<body>
+  <div id="container"></div>
+</body>
+
+<[表情]ml>
+<script>
+  var map = new BMapGL.Map('container', {
+    backgroundColor: [192, 214, 213, 100]
+  });
+  var testPt = new BMapGL.Point(106.537114, 29.459216);
+  map.centerAndZoom(testPt, 16);
+  map.enableScrollWheelZoom();
+  map.setMapStyleV2({
+    styleJson: StyleJson3
+  });
+
+  var bdary = new BMapGL.Boundary();
+
+  bdary.get("重庆理工大学(花溪校区)", function (rs) {
+    if (rs.status === 0) {
+      // 获取行政区边界坐标点
+      var campusBorderPoints = rs.boundaries[0].split(';').map(function (pointStr) {
+        var pointData = pointStr.split(',');
+        return new BMapGL.Point(parseFloat(pointData[0]), parseFloat(pointData[1]));
+      });
+
+      // 创建BMapGL.MapMask实例并设置选项
+      var mapmask = new BMapGL.MapMask(ptArr, {
+            isBuildingMask: true,
+            isPoiMask: true,
+            isMapMask: true,
+            showRegion: 'inside',
+            topFillColor: '#5679ea',
+            topFillOpacity: 0.5,
+            sideFillColor: '#5679ea',
+            sideFillOpacity: 0.9
+        });
+        map.addOverlay(mapmask);
+        var border = new BMapGL.Polyline(ptArr, {
+            strokeColor: '#4ca7a2',
+            strokeWeight: 3,
+            strokeOpacity: 1
+        });
+        map.addOverlay(border);
+    }
+  });
+
+  // 继续添加标记
+  var marker = new BMapGL.Marker(new BMapGL.Point(106.537114, 29.459216));
+  map.addOverlay(marker);
+  var marker2 = new BMapGL.Marker(new BMapGL.Point(106.535411, 29.463927));
+  map.addOverlay(marker2);
+</script>

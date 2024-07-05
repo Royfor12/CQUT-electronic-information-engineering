@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>基于GeoJSON绘制四川地图</title>
+  <style>
+    body {
+      /* background-image: url("./asset/bg_clear.png"); */
+      background-size: 100%;
+      background-blend-mode: soft-light;
+    }
+
+    .province {
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    .southchinasea {
+      stroke: black;
+      stroke-width: 1px;
+      fill: red;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="./rule/d3.v3.min.js" charset="utf-8"></script>
+  <script>
+    var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.98;
+    var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.98;
+
+    const linear = d3.scale.linear()
+      .domain([100, 5500])
+      .range([20, 180]);
+    //颜色比例尺
+    var color = d3.scale.category20();
+    var mapcolor = "#808080";
+    console.log(mapcolor);
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+    //定义地图的投影
+    const projection = d3.geo.mercator()
+      .center([107.3696, 30.2191])
+      .scale(4500)
+      .translate([width / 2, height / 2]);
+    //定义地形路径生成器
+    var path = d3.geo.path()
+      .projection(projection); //设定投影
+    //请求geojson
+    d3.json("sicuan.json", function (error, root) {
+      if (error)
+        return console.error(error);
+      console.log(root);
+      var groups = svg.append("g");
+      groups.selectAll("path")
+        .data(root.features)
+        .enter()
+        .append("path")
+        .attr("class", "province")
+        //使用路径生成器
+        .attr("fill", function (d, i) {
+          return mapcolor;
+        })
+        .attr("d", function (d, i) {
+          return path(d);
+        })
+        .on("mouseover", function (d, i) {
+          d3.select(this)
+            .attr("fill", "yellow");
+          console.log(this)
+        })
+      groups.on("mouseout", function (d, i) {
+        d3.selectAll('path')
+          .attr("fill", function (d, i) {
+            return color(i);
+          })
+      });
+      var text = svg.selectAll(".text")
+        .data(root.features)
+        .enter()
+        .append("text")
+        .attr("class", "text")
+        .text(function (d, i) {
+          return d.properties.name;
+        })
+        .attr("transform", function (d) {
+          var centroid = path.centroid(d),
+            x = centroid[0],
+            y = centroid[1];
+          return "translate(" + x + 10 + ", " + y + ")";
+        })
+        .attr("font-size", "10px");
+    });  
+  </script>
+</body>
+
+</html>

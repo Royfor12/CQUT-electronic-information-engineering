@@ -1,0 +1,33 @@
+{
+	"nodes": [
+		{
+			"name": "@",
+			"group": 0
+		},
+		{
+			"name": "a",
+			"group": 1
+		},
+		{
+			"name": "b",
+			"group": 2
+		}
+	],
+	"links": [
+		{
+			"source": 0,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 1,
+			"target": 2,
+			"value": 1
+		},
+		{
+			"source": 2,
+			"target": 0,
+			"value": 1
+		}
+	]
+}

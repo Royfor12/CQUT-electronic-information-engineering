@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+  <title>JS Bin</title>
+  <style>
+    #mapContainer {
+      width: 100%;
+      height: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mapContainer"></div>
+  <script type="text/javascript">
+    var mapChart = null; //表示地图绘制对象
+    function renderMap() { //绘制地图的主函数
+      var dom = document.getElementById("mapContainer");
+      //获取绘制地图的dom元素
+      if (mapChart == null) {
+        var mapChart = echarts.init(dom);
+      }
+      var option = null; //声明数据配置项
+      var main3city = [{
+          name: "雄县",
+          value: [116.12, 38.98]
+        },
+        {
+          name: "安新",
+          value: [115.92, 38.92]
+        },
+        {
+          name: "容城",
+          value: [115.86, 39.02]
+        }
+      ];
+      //雄安三县的经纬度
+      var line3city = [{
+        coords: [
+          [116.12, 38.98],
+          [115.92, 38.92],
+          [115.86, 39.02],
+          [116.12, 38.98]
+        ]
+      }];
+      //绘制曲线将三县连接在一起，必须是一个数组 此处表示首尾相连
+      var scatterArroundCity = [{
+          name: '滦平',
+          value: [117.53, 40.95]
+        },
+        {
+          name: '丰宁',
+          value: [116.63, 41.20]
+        },
+        {
+          name: '兴隆',
+          value: [117.48, 40.42]
+        },
+        {
+          name: '涿鹿',
+          value: [115.20, 40.37]
+        },
+        {
+          name: '怀来',
+          value: [115.54, 40.40]
+        },
+        {
+          name: '赤城',
+          value: [115.82, 40.92]
+        },
+        {
+          name: '三河',
+          value: [117.06, 39.97]
+        },
+        {
+          name: '大厂',
+          value: [116.98, 39.98]
+        },
+        {
+          name: '香河',
+          value: [117.00, 39.76]
+        },
+        {
+          name: '安次',
+          value: [116.69, 39.52]
+        },
+        {
+          name: '固安',
+          value: [116.29, 39.44]
+        },
+        {
+          name: '涞水',
+          value: [115.71, 39.39]
+        },
+        {
+          name: '涿州',
+          value: [115.98, 39.48]
+        },
+        {
+          name: '广阳',
+          value: [116.63, 39.48]
+        }
+      ]; //十四个县的经纬度
+      var lineArroundCity = [{
+        coords: [
+          [116.63, 41.20],
+          [117.53, 40.95],
+          [117.48, 40.42],
+          [117.06, 39.97],
+          [116.98, 39.98],
+          [117.00, 39.76],
+          [116.69, 39.52],
+          [116.63, 39.48],
+          [116.29, 39.44],
+          [115.98, 39.48],
+          [115.71, 39.39],
+          [115.20, 40.37],
+          [115.54, 40.40],
+          [115.82, 40.92],
+          [116.63, 41.20]
+        ]
+      }];
+      //连接十四个县的折线
+      var moveIndustryScatter = [{
+          name: "中关村",
+          value: [116.328896, 39.991002]
+        },
+        {
+          name: "保定中关村创新经济园区",
+          value: [115.475965, 38.915289]
+        },
+        {
+          name: "大红门",
+          value: [116.409404, 39.843288]
+        },
+        {
+          name: "白沟",
+          value: [116, 39]
+        }
+      ];
+      //迁移的地点坐标
+      var moveIndustryLines = [{
+          coords: [
+            [116.328896, 39.991002],
+            [115.475965, 38.915289]
+          ]
+        },
+        {
+          coords: [
+            [116.409404, 39.843288],
+            [116, 39]
+          ]
+        }
+      ];
+
+      option = {
+        animation: true, //是否使用动画效果
+        bmap: {
+          center: [116.2, 39.4],
+          zoom: 9,
+          roam: true
+        },
+        series: [{
+            type: 'lines',
+            name: '雄安三县',
+            coordinateSystem: 'bmap',
+            polyline: true,
+            data: line3city,
+            lineStyle: {
+              normal: {
+                width: 4
+              }
+            }
+          },
+          {
+            type: 'lines', //折线不支持地理坐标和极坐标
+            name: '围京14县',
+            coordinateSystem: 'bmap',
+            polyline: true,
+            data: lineArroundCity,
+            lineStyle: {
+              normal: {
+                color: 'rgba(255,69,0,0.6)',
+                width: 10,
+                opacity: 0.5,
+              }
+            }
+          },
+          {
+            type: 'scatter',
+            name: '环绕京城14县',
+            coordinateSystem: 'bmap',
+            data: scatterArroundCity,
+            symbolSize: 26,
+            label: {
+              normal: {
+                show: true,
+                formatter: '{b}',
+                position: 'right',
+                textStyle: {
+                  color: 'red',
+                  fontSize: 12
+                }
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: 'gold',
+                shadowBlur: 8,
+                shadowColor: '#333'
+              }
+            }
+          },
+          {
+            type: "scatter",
+            name: '迁移',
+            coordinateSystem: "bmap",
+            data: moveIndustryScatter,
+            symbolSize: 12,
+            label: {
+              normal: {
+                show: true,
+                formatter: '{b}',
+                position: 'right',
+                textStyle: {
+                  color: 'black',
+                  fontSize: 12
+                }
+              }
+            },
+            itemStyle: {
+              normal: {
+                color: '#008080',
+                shadowBlur: 2,
+                shadowColor: '#333'
+              }
+            }
+          },
+          {
+            type: 'effectScatter',
+            name: '主要三县数据',
+            coordinateSystem: 'bmap',
+            data: main3city,
+            symbolSize: 10,
+            showEffectOn: 'render',
+            rippleEffect: {
+              brushType: 'stroke',
+              scale: 12
+            },
+            hoverAnimation: true,
+            label: {
+              normal: {
+                show: true,
+                formatter: '{b}',
+                position: 'right',
+                textStyle: {
+                  color: '#800000',
+                  fontSize: 20
+                }
+              }
+            },
+            itemStyle: {
+              normal: {
+                borderWidth: 1,
+                color: 'red'
+              }
+            }
+          },
+        ]
+      }
+
+      mapChart.setOption(option); //先渲染地图，然后再获取控制
+      var bmap = mapChart.getModel().getComponent('bmap').getBMap();
+      bmap.addControl(new BMap.MapTypeControl());
+
+    }
+
+    renderMap();
+  </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+
+</html>

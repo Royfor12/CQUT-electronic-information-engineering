@@ -1,0 +1,70 @@
+<html>
+
+<body>
+	<center>
+		<h2>数据可视化之JS Canvas 图像处理</h2>
+		<button id="blur">柔化</button>
+		<hr width=70%>
+		</hr>
+		<canvas id="myCanvas" width="600" height="400"></canvas>
+		<script type="text/javascript">
+			var c = document.getElementById("myCanvas");
+			var cxt = c.getContext("2d");
+			var img = new Image()
+			img.src = "cqut.jpg"
+			img.onload = function () {
+				// 获取图片实际宽高
+				var imgWidth = img.naturalWidth;
+				var imgHeight = img.naturalHeight;
+
+				// 将canvas的宽高设置为图片的实际宽高
+				c.width = imgWidth;
+				c.height = imgHeight;
+				cxt.drawImage(img, 0, 0);
+				var imageData = cxt.getImageData(0, 0, c.width, c.height);
+				var data = imageData.data;
+				//dataMatrix
+				var DM = new Array(c.height);
+				for (var i = 0; i < c.height; i++) {
+					DM[i] = new Array(c.width);
+					for (var j = 0; j < c.width; j++) {
+						DM[i][j] = new Array(4);
+						DM[i][j][0] = data[(i * (c.width) + j) * 4];
+						DM[i][j][1] = data[(i * (c.width) + j) * 4 + 1];
+						DM[i][j][2] = data[(i * (c.width) + j) * 4 + 2];
+						DM[i][j][3] = data[(i * (c.width) + j) * 4 + 3];
+					}
+				}
+				var blurImage = function () {
+					//9宫格平均，实现柔化Blur
+					for (var i = 0; i < c.height; i++) {
+						for (var j = 0; j < c.width; j++) {
+							if ((i > 0) && (i < c.height - 1) && (j > 0) && (j < c.width - 1)) {
+								DM[i][j][0] = (DM[i - 1][j - 1][0] + DM[i - 1][j][0] + DM[i - 1][j + 1][0] + DM[i][j - 1][0] + DM[i][j][0] + DM[i][j + 1][0] + DM[i + 1][j - 1][0] + DM[i + 1][j][0] + DM[i + 1][j + 1][0]) / 9;
+								DM[i][j][1] = (DM[i - 1][j - 1][1] + DM[i - 1][j][1] + DM[i - 1][j + 1][1] + DM[i][j - 1][1] + DM[i][j][1] + DM[i][j + 1][1] + DM[i + 1][j - 1][1] + DM[i + 1][j][1] + DM[i + 1][j + 1][1]) / 9;
+								DM[i][j][2] = (DM[i - 1][j - 1][2] + DM[i - 1][j][2] + DM[i - 1][j + 1][2] + DM[i][j - 1][2] + DM[i][j][2] + DM[i][j + 1][2] + DM[i + 1][j - 1][2] + DM[i + 1][j][2] + DM[i + 1][j + 1][2]) / 9;
+							}
+						}
+					}
+					for (var i = 0; i < c.height; i++) {
+						for (var j = 0; j < c.width; j++) {
+							data[(i * (c.width) + j) * 4] = DM[i][j][0];
+							data[(i * (c.width) + j) * 4 + 1] = DM[i][j][1];
+							data[(i * (c.width) + j) * 4 + 2] = DM[i][j][2];
+							data[(i * (c.width) + j) * 4 + 3] = DM[i][j][3];
+						}
+					}
+					cxt.putImageData(imageData, 0, 0);
+				};
+				var blurBtn = document.getElementById('blur');
+				blurBtn.addEventListener('click', blurImage);
+			}
+
+		</script>
+	</center>
+	<!-- Cloudflare Pages Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

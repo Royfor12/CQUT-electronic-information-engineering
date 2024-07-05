@@ -1,0 +1,90 @@
+
+<html>  
+  <head>  
+        <meta charset="utf-8">  
+        <title>利用圆弧绘制饼状图</title>  
+  </head> 
+<body>
+	<script src="d3.v3.min.js" charset="utf-8"></script> 
+		<script>  
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			var width  =w*0.98;	//SVG绘制区域的宽度
+			var height =h*0.96;	//SVG绘制区域的高度				
+			var svg = d3.select("body")			//选择<body>
+						.append("svg")			//在<body>中添加<svg>
+						.attr("width", width)	//设定<svg>的宽度属性
+						.attr("height", height);//设定<svg>的高度属性
+			var dataset = [{ startAngle: 0 , endAngle: Math.PI * 0.3 },
+						   { startAngle: Math.PI * 0.3 , endAngle: Math.PI },
+						   { startAngle: Math.PI  , endAngle: Math.PI * 1.5 },
+						   { startAngle: Math.PI * 1.5, endAngle: Math.PI * 2 }];
+			//创建一个弧生成器
+			var arcPath = d3.svg.arc()
+							.innerRadius(30)
+							.outerRadius(100);
+			var color = d3.scale.category20();											
+			//添加路径
+			<!-- 选择SVG中的所有path元素 -->
+			svg.selectAll("path")
+				// 将数据集绑定到path元素上
+				.data(dataset)
+				// 对于数据集中每个没有对应path元素的点，创建一个新的path元素
+				.enter()
+				.append("path")
+				// 设置path元素的路径数据
+				.attr("d",function(d){ return arcPath(d); })	
+				// 将path元素移动到SVG的中心位置
+				.attr("transform","translate("+width/2+","+height/2+")")
+				// 设置path元素的边框颜色和宽度
+				.attr("stroke","black")
+				.attr("stroke-width","2px")
+				// 根据数据集中的索引为每个path元素设置不同的填充颜色
+				.attr("fill",function(d,i){ return color(i); });							
+			//添加文字
+	
+            svg.selectAll("text")
+                // 绑定数据集到选中的元素上
+                .data(dataset)
+                // 对于数据集中每一条数据，创建一个新的"text"元素
+                .enter()
+                .append("text")
+                // 设置新元素的位置，使其位于图表中心，并根据数据调整位置
+                .attr("transform",function(d){
+                    return "translate("+width/2+","+height/2+")" + 
+                            "translate(" + arcPath.centroid(d) + ")";
+                })
+                // 设置文本的对齐方式、颜色、字体大小
+                .attr("text-anchor","middle")
+                .attr("fill","white")
+                .attr("font-size","18px")
+                // 根据数据计算并设置文本内容，显示角度值
+                .text(function(d){ return Math.floor((d.endAngle - d.startAngle)*180/Math.PI) + "°"; });
+
+		var dataset2 = { startAngle:-Math.PI * 0.33, endAngle: Math.PI * 0.33 };
+				/**
+		 * 创建一个弧生成器，用于生成SVG中的弧形状。
+		 * 该生成器通过指定内径和外径来定义弧的大小。
+		 * 
+		 * @innerRadius 内部半径，默认值为50。
+		 * @outerRadius 外部半径，默认值为100。
+		 * @returns 返回一个配置了内径和外径的弧生成器对象。
+		 */
+		var arcPath2 = d3.svg.arc() // 创建弧生成器
+						.innerRadius(0) // 设置内径为0
+						.outerRadius(100); // 设置外径为100
+		svg.append("path") // 添加路径元素
+			.attr("d",arcPath2(dataset2)) // 设置路径的形状数据，使用dataset作为输入
+			.attr("transform","translate("+(width/2+85)+","+(height/2-100)+")") // 将路径移动到SVG中心点(250,250)
+			.attr("stroke","black") // 设置路径的边框颜色为黑色
+			.attr("stroke-width","3px") // 设置路径的边框宽度为3像素
+			.attr("fill","red"); // 设置路径的填充颜色为蓝色
+		svg.append("path") // 添加路径元素
+			.attr("d",arcPath2(dataset2)) // 设置路径的形状数据，使用dataset作为输入
+			.attr("transform","translate("+(width/2-85)+","+(height/2-100)+")") // 将路径移动到SVG中心点(250,250)
+			.attr("stroke","black") // 设置路径的边框颜色为黑色
+			.attr("stroke-width","3px") // 设置路径的边框宽度为3像素
+			.attr("fill","blue"); // 设置路径的填充颜色为蓝色
+			</script> 
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

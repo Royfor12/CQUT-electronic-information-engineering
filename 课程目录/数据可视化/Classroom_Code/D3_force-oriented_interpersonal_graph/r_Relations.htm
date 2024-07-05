@@ -1,0 +1,182 @@
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-image: url("./img/background/background.jpg");
+			background-size: 100%;
+			background-blend-mode: soft-light;
+		}
+		path {
+			fill: none;
+			stroke: #666;
+			stroke-width: 1.5px;
+		}
+		circle {
+			stroke: #333;
+			stroke-width: 1.5px;
+		}
+		.tooltip {
+			font-family: simsun;
+			font-size: 14px;
+			width: 200;
+			height: auto;
+			position: absolute;
+			text-align: left;
+			border-style: solid;
+			border-width: 2px;
+			background-color: white;
+			border-radius: 5px;
+		}
+
+		.node {
+			stroke: #fff;
+			stroke-width: 1.5px;
+		}
+
+		.link {
+			stroke: #999;
+			stroke-opacity: .6;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="./rule/d3.v3.min.js"></script>
+	<script>
+		var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 1;
+		var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 1;
+		var color = d3.scale.category20();
+		d3.json("r_details.json", function (error, graph) {
+			console.log(graph);
+			var force = d3.layout.force(graph)
+				.nodes(graph.nodes)
+				.links(graph.links)
+				.size([width, height])
+				.linkDistance(250)
+				.charge(-2500)
+				.on("tick", tick)
+				.start();
+			var svg = d3.select("body")
+				.append("svg")
+				.attr("width", width)
+				.attr("height", height);
+			//箭头绘制	
+			var defs = svg.append("defs");
+			var radius = 10;
+			var arrowMarker = defs.append("marker")
+				.attr("id", "arrow")
+				.attr("markerUnits", "strokeWidth")
+				.attr("markerWidth", "4")
+				.attr("markerHeight", "4")
+				.attr("viewBox", "0 0 4 4")
+				.attr("refX", 12 + radius / 0.9 - 2)   //实际是radius/strokeWidth
+				.attr("refY", 2)
+				.attr("orient", "auto");
+			var arrow_path = "M0,1 L4,2 L0,3 L0,1";
+			arrowMarker.append("path")
+				.attr("d", arrow_path);
+			var path = svg.selectAll("path")//用路径创建边
+				.data(graph.links)
+				.enter()
+				.append("path")
+				.attr("id", function (d, i) {
+					return "linkspath" + i;
+				})
+				.attr("class", "links")
+				.attr("marker-end", "url(#arrow)");
+			var img_h = 50;
+			var img_w = 50;
+			var radius = 23;
+			var circle = svg.selectAll("forceCircle")
+				.data(graph.nodes)
+				.enter()
+				.append("circle")
+				.attr("class", "forceCircle")
+				.attr("r", radius)
+				.style("stroke", "DarkGray")
+				.style("stroke-width", "1.0px")
+				.attr("fill", function (d, i) {//创建圆形图片
+					var defs = svg.append("defs").attr("id", "imgdefs");
+					var catpattern = defs.append("pattern")
+						.attr("id", "catpattern" + i)
+						.attr("height", 1)
+						.attr("width", 1);
+					catpattern.append("image")
+						.attr("x", - (img_w / 2 - radius + 5.8))
+						.attr("y", - (img_h / 2 - radius + 3.5))
+						.attr("width", img_w + 11)
+						.attr("height", img_h + 6)
+						.attr("xlink:href", "img/" + d.image);
+					return "url(#catpattern" + i + ")";
+				})
+				.call(force.drag);
+			var nodetext = svg.selectAll(".nodeText")
+				.data(graph.nodes)
+				.enter()
+				.append("text")
+				.attr("class", "nodeText")
+				.attr("x", function (d) { return d.x; })
+				.attr("y", function (d) { return d.y; })
+				.attr("dx", "-1.5em")
+				.attr("dy", "2em")
+				.style("font-size", "12px")
+				.attr("dx", "-1.5em")
+				.attr("dy", "3em")
+				.text(function (d) { return d.name; });
+			var pathtext = svg.selectAll('.pathText')
+				.data(graph.links)
+				.enter()
+				.append("text")
+				.attr("class", "pathText")
+				.append('textPath')
+				.attr("text-anchor", "middle")//居中
+				.style("stroke", "gray")
+				.style("font-size", 10)
+				.attr("startOffset", "50%")
+				.attr('xlink:href', function (d, i) { return "#linkspath" + i; })
+				.text(function (d) { return d.relation; });
+			function tick() {
+				path.attr("d", function (d) {
+					var dx = d.target.x - d.source.x;//增量
+					var dy = d.target.y - d.source.y;
+					return "M" + d.source.x + "," + d.source.y + "L" + d.target.x + "," + d.target.y;
+				});
+				circle.attr("transform", function (d) {
+					return "translate(" + d.x + "," + d.y + ")";
+				});
+				nodetext.attr("x", function (d) { return d.x; });
+				nodetext.attr("y", function (d) { return d.y; });
+			}
+			//添加一个提示框(需要提前对框(tolltip)进行定义)
+			var tooltip = d3.select("body")
+				.append("div")
+				.attr("class", "tooltip")
+				.style("opacity", 0.0)
+				.call(force.drag);
+			circle.on("mouseover", function (d) {
+				var Catcher = svg.selectAll("circle")
+				d3.select(this)
+					.attr("r", radius * 1.1)
+					.style("stroke", "#40E0D0")
+					.style("stroke-width", "5.0px")
+				tooltip.html(d.intro + "<br />")
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY + 20) + "px")
+					.style("opacity", 1.0);
+				d3.select(this)
+					.style("cursor", "move");
+			})
+				.on("mouseout", function (d) {
+					var Catcher = svg.selectAll("circle")
+						.attr("r", radius)
+						.style("stroke", "DarkGray")
+						.style("stroke-width", "1.0px")
+					tooltip.style("opacity", 0.0);
+				});
+		});
+	</script>
+</body>
+
+</html>

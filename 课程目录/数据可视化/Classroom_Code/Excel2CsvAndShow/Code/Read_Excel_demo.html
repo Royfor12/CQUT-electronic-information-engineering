@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="./rule/d3.v4.min.js"></script>
+    <title>sheet_to_json</title>
+</head>
+
+<body>
+    <input type="file" id="excel-file-input" accept=".xls, .xlsx">
+    <script>
+        /**
+         * 当excel文件输入框的值改变时，触发的事件监听器。
+         * 该监听器读取选中的Excel文件，并将其内容转换为JSON格式，以便进一步处理。
+         * @param {Event} e - 触发change事件的事件对象。
+         */
+        document.getElementById('excel-file-input').addEventListener('change', function (e) {
+            var file = e.target.files[0]; // 获取用户选中的文件
+            var reader = new FileReader(); // 创建一个FileReader对象来读取文件
+            reader.onload = function (e) {
+                var data = e.target.result; // 文件读取完成后的数据
+                var workbook = XLSX.read(data, { type: 'binary' }); // 使用XLSX库将数据解析为工作簿对象
+                var sheet_name_list = workbook.SheetNames; // 获取工作簿中的所有sheet名称
+                var worksheet = workbook.Sheets[sheet_name_list[0]];// 选择第一个sheet作为数据源
+                var data_json = XLSX.utils.sheet_to_json(worksheet); // 将选定的sheet转换为JSON格式
+                // 可视化处理后的数据
+                visualizeData(data_json);
+            };
+            reader.readAsBinaryString(file); // 读取文件内容
+        });
+        function visualizeData(data) {
+            console.info("这里将会进行数据可视化处理");//倒入成功后可以在控制台看见信息
+            var dataForPie = data.map(function (d) {
+                return +d['期末(必填)']; // 筛选出"期末(必填)"列的值
+            });
+            // 对期末成绩进行分段统计并计算百分比
+            // 定义桶的边界
+            var bins = [0, 60, 70, 80, 90, Infinity];
+            // 使用d3的histogram函数来计算数据的分布，设置桶的域根据dataForPie数据的最小和最大值，应用定义的桶边界
+            var groups = d3.histogram()
+                .domain(d3.extent(dataForPie)) // 设置域
+                .thresholds(bins)(dataForPie); // 应用桶边界计算数据分布
+            // 将每个桶中的数据点数量进行计数
+            var groupCounts = groups.map(function (group) { return group.length; });
+            // 计算所有桶中数据点的总数
+            var totalCount = groupCounts.reduce(function (a, b) { return a + b; }, 0);
+            // 计算每个桶中数据点数量占总数的百分比
+            var groupPercentages = groupCounts.map(function (count) {
+                return (count / totalCount);
+            });
+            var pieData = [
+                { label: '0-60', value: groupCounts[0] },
+                { label: '60-70', value: groupCounts[1] },
+                { label: '70-80', value: groupCounts[2] },
+                { label: '80-90', value: groupCounts[3] }
+            ];
+            for (var i = 0; i < pieData.length; i++) {
+                console.log(`分段 ${pieData[i].label} 的数量: ${pieData[i].value}`);
+            }
+        }
+    </script>
+</body>
+
+</html>

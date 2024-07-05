@@ -1,0 +1,25 @@
+<html>
+	<head>
+	    <title>直方图</title>
+	</head>
+	<body>
+		<svg id="mySVG" width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+		<script>
+			var x=100,y=300;
+			var mysvg = document.getElementById("mySVG");
+			var svgrec= new Array();
+			for(var i=0;i<6;i++){
+				svgrec[i] = document.createElement("rect");
+				mysvg.appendChild(svgrec[i]);
+				var h=Math.random()*300;
+				svgrec[i].outerHTML="<rect x="+(i*x)+" y="+(y-h)+" width=70 height="+(h)+" style='fill:red'>";
+			}
+		</script>
+		<p  align="center">
+		<video controls width="800px">
+			<source src="\MOOC\CH2\histogram.mp4"  type="video/mp4">
+		</video>
+		</p>
+			
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>直方图📊</title>
+</head>
+<body>
+    <svg id="mySVG" width="800" height="600" version="1.1" xmlns=""></svg>
+	<script type="text/javascript">
+		var mysvg = document.getElementById("mySVG");
+        var rec= new Array();
+		for(var i=0;i<6;i++){
+			rec[i] = document.createElement("rect");
+			mysvg.appendChild(rec[i]);
+			var h=Math.random()*300;
+            //rec[i].outerHTML="<rect x="+(20+80*i)+" y="+(400-h)+" width=70 height="+h+" style='fill:red'/>";
+			//rec[i].outerHTML="<rect x="+(60*i)+" y="+(400-h)+" width=55 height="+h+" style='fill:rgb(0,0,255)'/>";
+			//rec[i].outerHTML="<rect x="+(60*i)+" y="+(400-h)+" width=55 height="+h+" style='fill:rgb(0,0,"+Math.floor(h)+")'/>";
+			var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+			rec[i].outerHTML="<rect x="+(45*i)+" y="+(400-h)+" width=42 height="+h+" style='fill:rgb("+r+","+g+","+b+")'/>";
+
+		}
+	</script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

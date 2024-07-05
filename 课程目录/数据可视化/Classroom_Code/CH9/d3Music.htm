@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>
+		音乐可视化
+	</title>
+  </head>
+  <body>		
+		<div align="right">
+			  <audio id="audioElement" src="./music/I_Got_Smoke.mp3" controls="controls"></audio>
+		</div>
+		<svg id="wcSvg" width="1000" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+		<script>
+			var w=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+			var h=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+			console.log("w="+w+";h="+h);
+		    var x=w*0.98/100,y=500;
+			var mysvg = document.getElementById("wcSvg");
+			mysvg.setAttribute("width", w*0.98);
+
+			var svgrec= new Array();
+			for(var i=0;i<100;i++){
+				svgrec[i] = document.createElement("rect");
+				mysvg.appendChild(svgrec[i]);
+				var h=0;
+				svgrec[i].outerHTML="<rect x="+(i*x)+" y="+(y-h)+" width="+(x*0.9)+" height="+(h)+" style='fill:rgba(0,0,255,0.7)'>";
+			}
+			
+			//取音乐的频率
+		    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+		    var audioElement = document.getElementById('audioElement');
+		    console.log(audioElement[0]);
+		    var audioSrc = audioCtx.createMediaElementSource(audioElement);
+		    var analyser = audioCtx.createAnalyser();
+		    audioSrc.connect(analyser);
+		    audioSrc.connect(audioCtx.destination);
+
+		    var myhist = document.getElementsByTagName("rect");
+		    var frequencyData = new Uint8Array(100);
+		  
+		    function everyViz(){
+				analyser.getByteFrequencyData(frequencyData);
+
+				for(var idx in myhist) {
+					if (myhist[idx].getAttribute && frequencyData[idx])
+					{
+						myhist[idx].setAttribute("y", y-frequencyData[idx]);
+						myhist[idx].setAttribute("height", frequencyData[idx]);
+					}
+				}
+		   }		  
+		   window.setInterval(everyViz, 20);		  
+	</script>
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

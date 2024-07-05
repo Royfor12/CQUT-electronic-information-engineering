@@ -1,0 +1,44 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<svg id="mySvg" width=1600 height=1000 > 
+		
+		</svg>
+		<script>
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			
+			var treeSvg=document.getElementById("mySvg");
+			treeSvg.setAttribute("width",w*0.9);
+			treeSvg.setAttribute("height",h*0.98);
+			
+			var length=200;
+			var rate=0.75;
+			var count=7;
+			var a=Math.PI/4;
+			var x0=w/2;
+			var y0=h;
+			
+			function show(x0,y0,length,rate,a,count){
+				length=length*rate;
+				var x1=x0;
+				var y1=y0;
+				var x2=x1+length*Math.cos(a);
+				var y2=y1+length*Math.sin(a);
+				var myText=document.createElement("text");
+				treeSvg.appendChild(myText);
+				myText.outerHTML="<text x="+(x1)+" y="+y1+" textLength="+(length)+" style='fill:rgb(131,175,155);font-family:微软雅黑;font-size:"+(count*3)+"' transform='rotate("+(a*180/Math.PI)+","+x1+","+y1+")' >春风十里不如你</text>";
+				var aL=a-Math.PI/(Math.random()*20+3);
+				var aR=a+Math.PI/(Math.random()*20+3);
+				if(count>0){
+					show(x2,y2,length,rate,aL,count-1);
+					show(x2,y2,length,rate,aR,count-1);
+				}
+			}
+			show(x0,y0,length,rate,-Math.PI/3,count);
+			show(x0,y0,length,rate,-Math.PI/2,count);
+			show(x0,y0,length,rate,-Math.PI/2,count);
+		</script>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>	
+</html>

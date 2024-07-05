@@ -1,0 +1,40 @@
+<html>
+	<body>
+	<center>
+	    <h2>数据可视化之JS Canvas 图像处理</h2>
+		<button id="gray">灰度图</button>
+		<hr width=70%></hr>
+		<canvas id="myCanvas" width="600" height="400" style="border:1px solid #c3c3c3;"></canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("myCanvas");
+			var cxt=c.getContext("2d");
+			var img=new Image()
+			img.src="cqut.jpg"
+			img.onload = function () {
+				// 获取图片实际宽高
+				var imgWidth = img.naturalWidth;
+				var imgHeight = img.naturalHeight;
+
+				// 将canvas的宽高设置为图片的实际宽高
+				c.width = imgWidth;
+				c.height = imgHeight;
+				cxt.drawImage(img, 0, 0);
+				var imageData = cxt.getImageData(0,0,c.width, c.height);
+				var data = imageData.data;
+				var grayScale = function() {
+					for (var i = 0; i < data.length; i += 4) {
+						var avg = (data[i] + data[i +1] + data[i +2]) / 3;
+						data[i]     = avg; // red
+						data[i + 1] = avg; // green
+						data[i + 2] = avg; // blue
+					}			
+					cxt.putImageData(imageData, 0, 0);
+				};			
+				var grayBtn = document.getElementById('gray');
+				grayBtn.addEventListener('click',grayScale);
+			}
+						
+		</script>
+		</center>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="./rule/echarts.min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qyPN4gmGlct7r889Y3M0IOHXGta0n6qZ"></script>
+  <script type="text/javascript" src="./rule/bmap.min.js"></script>
+  <title>JS Bin</title>
+  <style>
+    #mapContainer {
+      width: 100%;
+      height: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mapContainer"></div>
+  <script>
+    var mapChart = null; //表示地图绘制对象
+    function renderMap() { //绘制地图的主函数
+      var dom = document.getElementById("mapContainer");
+      //获取绘制地图的dom元素
+      if (mapChart == null) {
+        var mapChart = echarts.init(dom);
+      }
+      var option = null; //声明数据配置项
+      var Location_1 = ["中山图书馆",[106.537114, 29.459216]];
+      var Location_2 = ["明德楼",[106.535399,29.463968]];
+      var Location_3 = ["教务处",[106.536397, 29.464051]];
+      var main3city = [{
+        name: Location_1[0],
+        value: Location_1[1]
+      },
+      {
+        name: Location_2[0],
+        value: Location_2[1]
+      },
+      {
+        name: Location_3[0],
+        value: Location_3[1]
+      }
+      ];
+      //雄安三县的经纬度
+      var line3city = [{
+        coords: [
+          Location_1[1],
+          Location_2[1],
+          Location_3[1],
+          Location_1[1]
+        ]
+      }];
+      //绘制曲线将三县连接在一起，必须是一个数组 此处表示首尾相连
+      var scatterArroundCity = [{
+        name: '滦平',
+        value: [117.53, 40.95]
+      },
+      {
+        name: '丰宁',
+        value: [116.63, 41.20]
+      },
+      {
+        name: '兴隆',
+        value: [117.48, 40.42]
+      },
+      {
+        name: '涿鹿',
+        value: [115.20, 40.37]
+      },
+      {
+        name: '怀来',
+        value: [115.54, 40.40]
+      },
+      {
+        name: '赤城',
+        value: [115.82, 40.92]
+      },
+      {
+        name: '三河',
+        value: [117.06, 39.97]
+      },
+      {
+        name: '大厂',
+        value: [116.98, 39.98]
+      },
+      {
+        name: '香河',
+        value: [117.00, 39.76]
+      },
+      {
+        name: '安次',
+        value: [116.69, 39.52]
+      },
+      {
+        name: '固安',
+        value: [116.29, 39.44]
+      },
+      {
+        name: '涞水',
+        value: [115.71, 39.39]
+      },
+      {
+        name: '涿州',
+        value: [115.98, 39.48]
+      },
+      {
+        name: '广阳',
+        value: [116.63, 39.48]
+      }
+      ]; //十四个县的经纬度
+      var lineArroundCity = [{
+        coords: [
+          [116.63, 41.20],
+          [117.53, 40.95],
+          [117.48, 40.42],
+          [117.06, 39.97],
+          [116.98, 39.98],
+          [117.00, 39.76],
+          [116.69, 39.52],
+          [116.63, 39.48],
+          [116.29, 39.44],
+          [115.98, 39.48],
+          [115.71, 39.39],
+          [115.20, 40.37],
+          [115.54, 40.40],
+          [115.82, 40.92],
+          [116.63, 41.20]
+        ]
+      }];
+      //连接十四个县的折线
+      var moveIndustryScatter = [{
+        name: "中关村",
+        value: [116.328896, 39.991002]
+      },
+      {
+        name: "保定中关村创新经济园区",
+        value: [115.475965, 38.915289]
+      },
+      {
+        name: "大红门",
+        value: [116.409404, 39.843288]
+      },
+      {
+        name: "白沟",
+        value: [116, 39]
+      }
+      ];
+      //迁移的地点坐标
+      var moveIndustryLines = [{
+        coords: [
+          [116.328896, 39.991002],
+          [115.475965, 38.915289]
+        ]
+      },
+      {
+        coords: [
+          [116.409404, 39.843288],
+          [116, 39]
+        ]
+      }
+      ];
+
+      option = {
+        animation: true, //是否使用动画效果
+        bmap: {
+          center: [106.534906, 29.460919],
+          zoom: 9,
+          roam: true
+        },
+        series: [{
+          type: 'lines',
+          name: '雄安三县',
+          coordinateSystem: 'bmap',
+          polyline: true,
+          data: line3city,
+          lineStyle: {
+            normal: {
+              width: 4
+            }
+          }
+        },
+        {
+          type: 'lines', //折线不支持地理坐标和极坐标
+          name: '围京14县',
+          coordinateSystem: 'bmap',
+          polyline: true,
+          data: lineArroundCity,
+          lineStyle: {
+            normal: {
+              color: 'rgba(255,69,0,0.6)',
+              width: 10,
+              opacity: 0.5,
+            }
+          }
+        },
+        {
+          type: 'scatter',
+          name: '环绕京城14县',
+          coordinateSystem: 'bmap',
+          data: scatterArroundCity,
+          symbolSize: 26,
+          label: {
+            normal: {
+              show: true,
+              formatter: '{b}',
+              position: 'right',
+              textStyle: {
+                color: 'red',
+                fontSize: 12
+              }
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: 'gold',
+              shadowBlur: 8,
+              shadowColor: 'purple'
+            }
+          }
+        },
+        {
+          type: "scatter",
+          name: '迁移',
+          coordinateSystem: "bmap",
+          data: moveIndustryScatter,
+          symbolSize: 12,
+          label: {
+            normal: {
+              show: true,
+              formatter: '{b}',
+              position: 'right',
+              textStyle: {
+                color: 'black',
+                fontSize: 12
+              }
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: 'blue',
+              shadowBlur: 10,
+              shadowColor: 'black'
+            }
+          }
+        },
+        {
+          type: 'effectScatter',
+          name: '主要三县数据',
+          coordinateSystem: 'bmap',
+          data: main3city,
+          symbolSize: 20,
+          showEffectOn: 'render',
+          rippleEffect: {
+            brushType: 'stroke',
+            scale: 6
+          },
+          hoverAnimation: true,
+          label: {
+            normal: {
+              show: true,
+              formatter: '{b}',
+              position: 'right',
+              textStyle: {
+                color: '#800000',
+                fontSize: 20
+              }
+            }
+          },
+          itemStyle: {
+            normal: {
+              borderWidth: 1,
+              color: 'red'
+            }
+          }
+        },
+        ]
+      }
+
+      // 遮罩函数
+      function addMask() {
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(116.403765, 39.914850), 5);
+        map.enableScrollWheelZoom();
+        $('#city').click(function () {
+          var city = $(':input').val();
+          var bdary = new BMap.Boundary();
+          bdary.get(city, function (rs) { //获取行政区域
+            map.clearOverlays(); //清除地图覆盖物      
+            var count = rs.boundaries.length; //行政区域的点有多少个
+            if (count === 0) {
+              alert('未能获取当前输入行政区域');
+              return;
+            }
+            var pointArray = [];
+            for (var i = 0; i < count; i++) {
+              var ply = new BMap.Polygon(rs.boundaries[i], {
+                strokeWeight: 2,
+                strokeColor: "#ff0000"
+              }); //建立多边形覆盖物
+              var str = JSON.stringify(ply.ia); //将BMap获取的行政区边界经纬度转为字符串
+              spiltStr(str);
+              map.addOverlay(ply); //添加覆盖物
+              pointArray = pointArray.concat(ply.getPath());
+            }
+            map.setViewport(pointArray); //调整视野 
+          });
+        });
+        //字符串封装为json
+        function spiltStr(city) {
+          //console.log(city+'---')
+          var str = "121.34277300108,31.300726938605;121.34023490295,31.30656768649;121.34101430412,31.321852305581;121.34532986852,31.32373744307;121.34507562469,31.326325179418;121.34279680099,31.327430729214;121.33368722478,31.352486594706;121.32863323993,31.355946076452;121.3306342856,31.389518049891;121.32683032531,31.41448550211;121.33644426228,31.420048486776;121.33796679321,31.419826266008;121.33974283911,31.427986737928;121.33898864558,31.440913595385;121.33444416932,31.453434852669;121.32712127167,31.459698918395;121.32359337774,31.475180614573;121.31526712011,31.489321129362;121.31449534014,31.502646507446;121.29513460234,31.511763775428;121.28658896966,31.509453948404;121.27854782016,31.503306859672;121.25459705023,31.498569551283;121.21061795124,31.479894989687;121.20080623465,31.473441396056;121.19227370437,31.461329066124;121.18074389625,31.455132109974;121.17248676891,31.457784975575;121.15417124487,31.449591888376;121.15190698691,31.44485092269;121.16995564339,31.438369269356;121.15641170403,31.42808158186;121.16368200305,31.418036455773;121.15615209913,31.408916433233;121.15389894579,31.396855643986;121.14636752368,31.389519869487;121.1216241984,31.381207905131;121.126436312,31.375522857236;121.11327467502,31.372544843095;121.11504878311,31.358515688821;121.12543166,31.355738088985;121.12517943556,31.350576427542;121.13706169265,31.348468587078;121.13626008815,31.30993641992;121.14684967884,31.308793560918;121.15113791549,31.315474234933;121.16066357022,31.29917558545;121.16692386311,31.291073907869;121.16166696203,31.285625519425;121.16718195826,31.276446521814;121.17544355574,31.279163976083;121.18898716896,31.263877724792;121.20505391684,31.260119976477;121.21562156159,31.267376880475;121.27097267115,31.262577404004;121.27425078362,31.26044885246;121.29337239048,31.249760859417;121.29940623897,31.238478630296;121.32079145614,31.233202075819;121.34077824014,31.238325554883;121.34559319768,31.244083837124;121.3549768665,31.248019413486;121.36690797737,31.246319504389;121.37222869771,31.253136099939;121.3863911862,31.256071762754;121.3808205898,31.26662893588;121.36689179338,31.268484647818;121.36561439598,31.274102752167;121.35038733712,31.278662550346;121.34277300108,31.300726938605";
+          var points = [];
+          $.each(str.split(";"), function (index, value) {
+            var point = {};
+            point.lng = value.split(',')[0];
+            point.lat = value.split(',')[1];
+            points.push(point);
+          });
+          var data = JSON.stringify(points);
+          if (city == data) {
+            console.log('true');
+          }
+          //console.log(data);
+        }
+
+      }
+
+      mapChart.setOption(option); //先渲染地图，然后再获取控制
+      var bmap = mapChart.getModel().getComponent('bmap').getBMap();
+      bmap.addControl(new BMap.MapTypeControl());
+      addMask()
+
+    }
+
+    renderMap();
+  </script>
+
+</html>

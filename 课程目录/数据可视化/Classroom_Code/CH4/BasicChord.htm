@@ -1,0 +1,42 @@
+
+<html>  
+  <head>   
+        <title>弦生成器</title>  
+  </head> 
+<body>
+	<script src="../d3.v3.min.js" charset="utf-8"></script> 
+	<script>  
+	    var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+		var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+		var width = w*0.98;
+		var height =h*0.96;		
+		var svg = d3.select("body")			//选择<body>
+					.append("svg")			//在<body>中添加<svg>
+					.attr("width", width)	//设定<svg>的宽度属性
+					.attr("height", height);//设定<svg>的高度属性
+		var dataset = {	source:{ startAngle: 0.2 , endAngle: Math.PI * 0.3 , radius: 200 },
+						target:{ startAngle: Math.PI * 1.0 , endAngle: Math.PI * 1.6 , radius:100 }};
+		//创建一个弦生成器
+		var chord = d3.svg.chord();					
+		//添加路径
+		svg.append("path")
+			.attr("d",chord(dataset)  )	
+			.attr("transform","translate("+width/2+","+height/2+")")
+			.attr("fill","yellow")
+			.attr("stroke","black")
+			.attr("stroke-width",3);
+		svg.append("circle")
+			.attr("r",100)	
+			.attr("transform","translate("+width/2+","+height/2+")")
+			.attr("fill","none")
+			.attr("stroke","blue")
+			.attr("stroke-width",1);	
+		svg.append("circle")
+			.attr("r",200)	
+			.attr("transform","translate("+width/2+","+height/2+")")
+			.attr("fill","none")
+			.attr("stroke","blue")
+			.attr("stroke-width",1);	
+	</script> 
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

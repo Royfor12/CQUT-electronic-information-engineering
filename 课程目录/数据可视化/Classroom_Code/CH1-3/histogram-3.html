@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>直方图+彩色+文字</title>
+</head>
+<body>
+    <svg id="mySVG" width="800" height="600" version="1.1"></svg>
+	<script type="text/javascript">        
+		var mysvg = document.getElementById("mySVG");
+        var rec= new Array();
+        var txt=new Array();
+		for(var i=0;i<6;i++){
+			rec[i] = document.createElement("rect");
+            txt[i] = document.createElement("text");
+			mysvg.appendChild(rec[i]);
+            mysvg.appendChild(txt[i]);
+            var h=Math.random()*255;
+            var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+			rec[i].outerHTML="<rect x="+(45*i)+" y="+(400-h)+" width=42 height="+h+" style='fill:rgb("+r+","+g+","+b+")'/>";
+            txt[i].outerHTML="<text x="+(10+45*i)+" y="+(400-h)+">"+Math.floor(h)+"</text>";
+        }
+  </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

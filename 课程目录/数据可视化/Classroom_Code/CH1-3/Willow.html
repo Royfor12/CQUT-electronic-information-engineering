@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>
+			仿真树画法
+		</title>
+	<head>
+	<body>
+	<svg id="svgTree" width="1536" height="759"></svg>
+	<script>
+        /*
+	  这个函数是画枝条的函数,每次调用画一个枝条,递归调用
+
+          参数说明:
+ 	      ctx: 是svg元素节点,用于添加枝条子节点(line),是整个树的容器;
+
+	      startX,startY: 是当前枝条的起始位置,因为这个函数是递归调用,所以每个枝条的起始是前一个枝条的末端位置
+	      
+ 	      length: 是当前枝条的长度,随机生成,随深度递减
+              
+	      depth: 是树的深度,表示有多少层枝条
+
+	      angle: 是当前枝条的偏移角度,随机生成
+
+	      branchWidth: 是当前枝条的的宽度,随深度递减
+
+	      angleFixed: 因为树干的偏移角度不会太大,所以当画的枝条为树干(深度小于3)时此参数为true
+
+	      color: 当前枝干的颜色,如果为null会用默认值
+  	*/
+	        var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+            var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+            var svgTree = document.getElementById("svgTree");
+            svgTree.setAttribute("width",w*0.96);
+            svgTree.setAttribute("height",h*0.9);
+	var drawTree = function (ctx, startX, startY, length, depth, angle, branchWidth, angleFixed, color) {
+    		var defaultAngle = Math.PI / 2;
+		    var defaultPercent = 0.1;
+            var direction = angle < 0 ? -1 : 1;  //angle<0 则 direction=-1, and vise versa.
+        	var defaultTime = 50;
+            var rand = Math.random;
+            var defaultBranchesNumber = angleFixed ? 2 : 3 * Math.random() + 1;   //
+        	var timing = angleFixed ? 10 : 20;
+    		var endX = startX + length * Math.cos(angle);
+        	var endY = startY + length * Math.sin(angle);
+            var newAngle;
+			var newLength;
+    		var lineCap;
+			var lineWidth;
+			var strokeWidth;
+    		if(--depth <= 0)   //先减后比较
+        		return true;
+    		lineCap = "round";
+    		lineWidth = branchWidth;
+    		strokeStyle = color == null ? "rgb(0, " + (((rand() * 64) +128) >>0) + ",0)" : color;   //>>0除以二的零次方，转整数
+    		var func = function(mStartX, mStartY, mEndX, mEndY){ 
+        		var aLine = document.createElement("line");
+				ctx.appendChild(aLine);
+        		aLine.outerHTML = "<line x1="+mStartX+" y1="+mStartY+" x2="+mEndX+" y2="+mEndY+
+				" style='stroke:"+ strokeStyle +";stroke-width:"+lineWidth+"' />";
+    		};  
+			func(startX, startY, endX, endY);
+
+    		branchWidth *= 0.55;
+    		for(var i = 0; i < defaultBranchesNumber; i++){
+        		newAngle = angleFixed ?i == 0 ? angle + defaultAngle / 3 : angle + defaultAngle / -3:angle + defaultAngle * rand() - defaultAngle / 2;
+        		newLength = angleFixed ? length * 0.7 : length * (rand() * 0.55 + 0.4);
+        		if(depth == mDepth - 1 && !angleFixed)
+            		newAngle = defaultAngle * direction * (rand() * 0.3 + 0.8);
+        		setTimeout(function (funcAngle, funcLength) {
+            			drawTree(ctx, endX, endY, funcLength, depth, funcAngle, branchWidth, angleFixed, color);
+        		}, timing, newAngle, newLength)
+    		}
+	};
+
+    // 获取svg节点
+	var svgTree = document.getElementById("svgTree");
+    // 定义树的深度为12
+	var mDepth = 12;
+    // 开始画树, 函数自身递归调用自己
+	setTimeout(function () {
+    		drawTree(svgTree, w/2, h, 170, mDepth, Math.PI / -2, 9, false, null);
+	}, 0);	
+</script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

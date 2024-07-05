@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        D3苹果二叉树交互效果
+    </title>
+    <!-- 引入D3.js v4库 -->
+    <script src="../d3/d3.v4.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <svg id="mySvg" width="800" height="600"></svg>
+    <script>
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var margin = { top: 20, right: 20, bottom: 20, left: 20 };
+        var innerWidth = width * 0.9 - margin.left - margin.right;
+        var innerHeight = height * 0.9 - margin.top - margin.bottom;
+        var svg = d3.select("#mySvg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        var length = 190;
+        var rate = 0.68;
+        var x0 = innerWidth / 2;
+        var y0 = innerHeight;
+        var count = 10;
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        function show(x0, y0, length, rate, angle, count, baseColor) {
+            //var lineColor = baseColor; // 初始颜色为传入的baseColor
+            var lineColor = getRandomColor();
+            var x1 = x0;
+            var y1 = y0;
+            var x2 = x1 + length * Math.cos(angle);
+            var y2 = y1 + length * Math.sin(angle);
+            var lineWidth = count / 2 + 1; // 线条宽度
+            var arrowRefY = lineWidth / 2; // 箭头锚点相对于线条终点的垂直偏移
+            var line = svg.append("line")
+                .attr("x1", x1)
+                .attr("y1", y1)
+                .attr("x2", x2)
+                .attr("y2", y2)
+                .style("stroke", lineColor)
+                .style("stroke-width", lineWidth)
+                .attr("marker-refY", arrowRefY) // 添加动态计算的 refY 值
+                .on("mouseover", function (d) {
+                    d3.select(this)
+                        .style("stroke", "red");
+                })
+                .on("mouseout", function (d) {
+                    d3.select(this)
+                        .style("stroke", lineColor); // 恢复原始颜色（可能是基础色或随机色）
+                });
+            if (count > 0) {
+                var aL = angle - Math.PI / 4 * (0.5 + 0.5 * Math.random());
+                var aR = angle + Math.PI / 4 * (0.5 + 0.5 * Math.random());
+                show(x2, y2, length * rate, rate, aL, count - 1, "brown");
+                show(x2, y2, length * rate, rate, aR, count - 1, "brown");
+            } if (count <= 1) {
+                svg.append("circle")
+                    .attr("cx", x1)
+                    .attr("cy", y1)
+                    .attr("r", 6 * Math.random())
+                    .attr("fill", "#ff6e7f")
+                    .on("mouseover", function (d) {
+                        d3.select(this)
+                            .attr("fill", "red");
+
+                    })
+                    .on("mouseout", function (d) {
+                        d3.select(this)
+                            .attr("fill", "green");
+
+                    });
+            }
+        }
+        show(x0, y0, length, rate, -Math.PI / 2, count + 1, "getRandomColor()");
+        show(x0, y0, length, rate, -7 * Math.PI / 16, count + 2, "getRandomColor()");
+        show(x0, y0, length, rate, -9 * Math.PI / 16, count + 2, "brown");
+    </script>
+</body>
+
+</html>

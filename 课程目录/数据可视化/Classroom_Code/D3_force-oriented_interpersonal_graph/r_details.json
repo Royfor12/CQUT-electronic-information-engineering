@@ -1,0 +1,37 @@
+{"nodes":
+	[	
+		{"name":"roy","image":"ccg.JPG","intro":"——一名普通大学生"},
+		{"name":"WPR","image":"ch.JPG","intro":"——数据可视化教师。"},
+		{"name":"CF","image":"cys.JPG","intro":"——DSP及应用教师。"},
+		{"name":"CJJ","image":"dyz.JPG","intro":"——一名普通大学生，现为重庆理工大学电气与电子工程学院电子信息工程专业119070201班学生。"},
+		{"name":"WT","image":"gxf.JPG","intro":"——一名普通大学生"},
+		{"name":"ZYC","image":"gxq.JPG","intro":"——是一名普通大学生"},
+	    {"name":"XAQ","image":"gyl.JPG","intro":"——志愿服务队主队长之一。"},
+		{"name":"demo1","image":"hlp.JPG","intro":"——demo。"},
+		{"name":"demo2","image":"jcm.JPG","intro":"——demo。"},
+		{"name":"demo3","image":"ldk.JPG","intro":"——demo。"},
+		{"name":"demo4","image":"oyj.JPG","intro":"——demo。"},
+		{"name":"demo5","image":"srj.JPG","intro":"——demo。"},
+		{"name":"demo6","image":"zdl.JPG","intro":"——demo。"}
+    ],
+"links":
+	[
+		{"source":0,"target":1,"relation":"师生"},{"source":0,"target":2,"relation":"师生"},{"source":0,"target":3,"relation":"同学&挚友"},
+	    {"source":0,"target":4,"relation":"同学"},{"source":0,"target":5,"relation":"室友"},{"source":0,"target":6,"relation":"同志"},
+		{"source":0,"target":7,"relation":"同志"},{"source":0,"target":8,"relation":"同志"},{"source":0,"target":9,"relation":"同志"},
+		{"source":0,"target":10,"relation":"同志"},{"source":0,"target":11,"relation":"师生"},{"source":0,"target":12,"relation":"师生"},
+		
+
+		{"source":1,"target":2,"relation":"同事"},{"source":1,"target":3,"relation":"师生"},{"source":1,"target":4,"relation":"师生"},
+		{"source":1,"target":5,"relation":"师生"},
+		{"source":2,"target":3,"relation":"师生"},{"source":2,"target":4,"relation":"师生"},{"source":2,"target":5,"relation":"师生"},
+		{"source":3,"target":4,"relation":"同学&挚友"},{"source":3,"target":5,"relation":"同学&挚友"},
+		{"source":4,"target":5,"relation":"同学&挚友"},
+
+		{"source":6,"target":7,"relation":"同志"},{"source":6,"target":8,"relation":"同志"},{"source":6,"target":9,"relation":"同志"},
+		{"source":6,"target":10,"relation":"同志"},
+		{"source":7,"target":8,"relation":"同志"},{"source":7,"target":9,"relation":"同志"},{"source":7,"target":10,"relation":"同志"},
+		{"source":8,"target":9,"relation":"同志"},{"source":8,"target":10,"relation":"同志"},
+		{"source":9,"target":10,"relation":"同志"}
+	]
+}

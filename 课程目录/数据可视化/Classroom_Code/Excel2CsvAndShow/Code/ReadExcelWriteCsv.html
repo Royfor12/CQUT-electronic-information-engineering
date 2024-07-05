@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>电子信息工程某班成绩统计</title>
+</head>
+
+<body>
+    <script src="./rule/d3.v4.min.js" charset="utf-8"></script>
+    <script>
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var width = w * 0.98;
+        var height = h * 0.96;
+        d3.csv("./PythonSort/data.csv", function (dataset) {
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+            var pie = d3.pie()
+                .value(function (d) {
+                    return d.number;
+                })
+            var piedata = pie(dataset);
+            var innerRadius = 50;
+            var arc = d3.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(function (d) {
+                    var value = d.value;
+                    return value * 5 + 100;
+                });
+            var color = d3.scaleOrdinal(d3.schemeCategory10);
+            var arcs = svg.selectAll("g")
+                .data(piedata)
+                .enter()
+                .append("g")
+                .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+            arcs.append("path")
+                .attr("fill", function (d, i) {
+                    return color(i);
+                })
+                .attr("d", function (d) {
+                    return arc(d);
+                });
+            arcs.append("text")
+                .attr("transform", function (d) {
+                    var x = arc.centroid(d)[0] * 1.1;
+                    var y = arc.centroid(d)[1] * 1.1;
+                    return "translate(" + x + "," + y + ")";
+                })
+                .attr("text-anchor", "middle")
+                .attr("font-size", function (d) {
+                    if (d.value > 24) {
+                        return 24 + "px"
+                    }
+                    else {
+                        return d.value + "px";
+                    }
+                })
+                .text(function (d) {
+                    return d.data["segment"] + "：" + d.data["number"] + "人";
+                })
+                .on("mouseover", function (d, i) {
+                    if (d.value < 12) {//实现字体大小的判断
+                        d3.select(this)
+                            .attr("font-size", 12)
+                    }
+                    d3.select(this)
+                        .attr("fill", d3.rgb(color(i)).brighter()); 
+                    svg.append("text")
+                        .attr("id", "info")
+                        .attr("x", width / 2)
+                        .attr("y", height / 2 - 25)
+                        .attr("text-anchor", "middle")
+                        .attr("font-size", 30)
+                        .text(d.data[0]);
+                    svg.append("text")
+                        .attr("id", "value")
+                        .attr("x", width / 2)
+                        .attr("y", height / 2 + 10)
+                        .attr("text-anchor", "middle")
+                        .attr("font-size", 24)
+                        .text((d.value / 0.91).toFixed(2) + "%");
+                })
+                .on("mouseout", function (d, i) {
+                    if (d.value < 12) {//实现移走之后字体恢复
+                        d3.select(this)
+                            .attr("font-size", d.value)
+                    }
+                    d3.select(this)
+                        .attr('fill', color("i"));
+                    d3.select('#info')
+                        .remove();
+                    d3.select('#value')
+                        .remove();
+                });
+        });
+    </script>
+</body>
+
+</html>

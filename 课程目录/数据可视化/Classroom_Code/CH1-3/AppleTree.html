@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<svg id="mySvg" width=800 height=600 ></svg>
+		<script>
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			var mysvg = document.getElementById("mySvg");
+			mysvg.setAttribute("width",w*0.96);
+			mysvg.setAttribute("height",h*0.99);
+			
+			var rate=0.7;
+			var x0=w/2;
+			var y0=h;
+			var count=7;
+            var str="依依袅袅复青青";
+			var fontsize=40;
+			var length=str.length*fontsize;
+			var iter=0
+			function show(x0,y0,length,rate,a,count){
+			    iter++;
+				var x1=x0;
+				var y1=y0;
+				fontsize=count*3;
+				length=str.length*fontsize;
+				var x2=x1+length*Math.cos(a);
+				var y2=y1+length*Math.sin(a);
+				var myText=document.createElement("text");
+				mysvg.appendChild(myText);
+				//myText.outerHTML="<text x="+(x1)+" y="+y1+" style='fill:green;font-size:"+(count*2)+"' rotate=90 >"+str+"</text>";
+				//myText.outerHTML="<text x="+(x1)+" y="+y1+" style='fill:green;font-size:"+(count*2)+"' transform='rotate(90,"+x1+","+y1+")' >"+str+"</text>";
+				myText.outerHTML="<text id="+iter+" x="+(x1)+" y="+y1+
+                  " style='fill:rgb(0,"+Math.floor(255*Math.random())+",0);font-size:"+(fontsize)+
+                  "' transform='rotate("+(a*180/Math.PI)+","+x1+","+y1+")' >"+str+"</text>";						  
+				var aL=a-Math.PI/4*(0.5+0.5*Math.random());
+				var aR=a+Math.PI/4*(0.5+0.5*Math.random());
+				if (count<=1){
+					var myCircle=document.createElement("circle");
+					mysvg.appendChild(myCircle);
+					myCircle.outerHTML="<circle cx="+x1+" cy="+y1+" r="+(6*Math.random())+" fill='red'/>"
+				}
+				if(count>0){
+					show(x2,y2,length*rate,rate,aL,count-1);
+					show(x2,y2,length*rate,rate,aR,count-1);
+				}
+			}
+			show(x0,y0,length,rate,-Math.PI/2,count);
+			show(x0,y0,length,rate,-Math.PI*7/16,count);
+			show(x0,y0,length,rate,-Math.PI*9/16,count);
+		</script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

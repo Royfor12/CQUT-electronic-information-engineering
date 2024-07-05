@@ -1,0 +1,197 @@
+<html>  
+  <head>  
+      <meta charset="utf-8">  
+      <title>交互式弦图</title>  
+	  <style>
+		  .outerPath{
+			stroke: black;
+		  }
+		  
+		  .outerText{
+			text-anchor: middle;
+			font-size: 16;
+		  }
+		  
+		  .innerPath{
+			stroke: black;
+		  }  
+	  </style>		
+  </head> 
+  <body>  
+		<script src="./rule/d3.v4.min.js" charset="utf-8"></script>   
+        <script>	
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			var width = w*0.98;
+			var height =h*0.96;						
+			var svg = d3.select("body")			
+						.append("svg")			
+						.attr("width", width)	
+						.attr("height", height);		
+			//1.确定初始数据
+			var continent = [ "亚洲" , "欧洲" , "非洲" , "美洲" , "大洋洲"  ];			
+			var population = [
+			  [ 9000,  870 , 3000 , 1000 , 5200 ],
+			  [ 3400,  8000 , 2300 , 4922 , 374  ],
+			  [ 2000,  2000 , 7700 , 4881 , 1050 ],
+			  [ 3000,  8012 , 5531 , 500 , 400  ],
+			  [ 3540,  4310 , 1500 , 1900 , 300 ]
+			];
+			//2.创建弦图生成器
+			var chord = d3.chord()
+						   .padAngle(0.03)
+						   .sortSubgroups(d3.ascending);					
+			//3.绘制并绑定数据			
+			//弦图的<g>元素
+			var gChord = svg.append("g")
+							.attr("transform","translate(" + width/2 + "," + height/2 + ")")
+							.datum(chord(population));
+			
+			//节点的<g>元素
+			var gOuter = gChord.append("g");
+			//弦的<g>元素
+			var gInner = gChord.append("g");
+			//颜色比例尺
+			var color20 = d3.scaleOrdinal(d3.schemeCategory10);
+			var innerRadius = width/3 * 0.5;
+			var outerRadius = innerRadius * 1.1;
+			
+			//弧生成器
+			var arcOuter =  d3.arc()
+						 .innerRadius(innerRadius)
+						 .outerRadius(outerRadius);
+			gOuter.selectAll(".outerPath")
+				.data(function(chords) { 
+					console.log(chords.groups);
+					return chords.groups;    //绑定节点数组
+				})
+				.enter()
+				.append("path")
+				.attr("class","outerPath")
+				.style("fill", function(d) { return color20(d.index); })
+				.attr("d", arcOuter )
+				
+			gOuter.selectAll(".outerText")
+				.data(function(chords) {
+					return chords.groups; 
+				})
+				.enter()
+				.append("text")
+				.each( function(d,i) {    //为被绑定的数据添加变量
+					d.angle = (d.startAngle + d.endAngle)/2;    //弧的中心角度
+					d.name = continent[i];    //节点名称
+				})
+				.attr("class","outerText")
+				.attr("dy",".35em")
+				.attr("transform", function(d){    //设定平移属性的值
+					temp_1=arcOuter.centroid(d)[1] *1.1;
+					temp_2=arcOuter.centroid(d)[1] *1.2;
+					temp_3=arcOuter.centroid(d)[0] *1.1;
+					temp_4=arcOuter.centroid(d)[0] *1.2;
+					temp=Math.pow(Math.pow((temp_2-temp_1),2)+Math.pow((temp_4-temp_3),2),1/2)*2.3
+					//先旋转d.angle(将该值转换为角度)
+					var result = "rotate(" + ( d.angle * 180 / Math.PI ) + ")";
+					//平移到外半径之外
+					result += "translate(0,"+ -1* ( outerRadius + temp) +")" ;
+					//对于弦图下方的文字，翻转180度(防止其是倒着的)				
+					if( d.angle > Math.PI * 3 / 4 &&  d.angle < Math.PI * 5 / 4 )
+						result += "rotate(180)";			
+						return result;
+				})
+				.text(function(d){
+					return d.name+":"+d.value;
+				});
+				console.log(temp);	
+			gOuter.selectAll(".line")
+				.data(function(chords) { 
+					console.log(chords.groups);
+					return chords.groups;    //绑定节点数组
+				})
+				.enter()
+				.append("line")
+                .attr("stroke", "red") // 将线条颜色改为红色
+                .style("stroke-width", "10px") // 适当增加线条粗细
+                .attr("x1", function(d) {
+                    return arcOuter.centroid(d)[0] * 1.1;
+                })
+                .attr("y1", function(d) {
+                    return arcOuter.centroid(d)[1] * 1.1;
+                })
+                .attr("x2", function(d) {
+                    return arcOuter.centroid(d)[0] * 1.2;
+                })
+                .attr("y2", function(d) {
+                    return arcOuter.centroid(d)[1] * 1.2;
+                });
+			//绘制弦
+			var arcInner =  d3.ribbon()
+							  .radius(innerRadius);			
+			gInner.selectAll(".innerPath")
+				.data(function(chords) {
+					console.log(chords);
+					return chords; 
+				})
+				.enter()
+				.append("path")
+				.attr("class","innerPath")
+				.attr("d", arcInner )
+				.style("fill", function(d) { return color20(d.source.index); });
+				
+			 // 定义一个全局变量存储默认的其他节点透明度
+			 var defaultOtherOpacity = 0.5;
+
+			// 修改fade函数以控制文本和弦的透明度
+			function fade(highlightOpacity, otherOpacityForChord) {
+				// 返回一个函数，该函数接收两个参数：g 和 i
+				return function(g, i) {
+					// 控制弦的透明度
+					gInner.selectAll(".innerPath")
+						.filter(function(d) {
+							return d.source.index !== i && d.target.index !== i;
+						})
+						.transition()
+						.duration(1000)
+						.style("opacity", otherOpacityForChord);
+				
+				// 控制文本的透明度
+				gOuter.selectAll(".outerText")
+					.filter(function(dText) {
+						// 假设dText与d有相同的索引结构，可以根据实际情况调整此条件
+						return dText.index !== i;
+					})
+					.transition()
+					.duration(1000)
+					.style("opacity", otherOpacityForChord);
+				
+	};
+}
+			// 添加鼠标悬浮事件
+			gOuter.selectAll(".outerPath")
+				.on("mouseover", function(d, i) {
+					// 鼠标悬浮时，高亮对应节点的弦，其他节点的弦和文本变为透明
+					fade(1.0, 0)(this, i);
+				})
+				.on("mouseout", function(d, i) {
+					// 鼠标离开时，其他节点的弦恢复至默认的50%透明度，文本也一同恢复
+					fade(0.0, defaultOtherOpacity)(this, i);
+				});
+			//添加鼠标交互
+			// gOuter.selectAll(".outerPath")
+			// 	.on("mouseover",fade(0.0))		//鼠标放到节点上
+			// 	.on("mouseout",fade(1.0));		//鼠标从节点上移开				
+			// function fade(opacity){
+			// 	//返回一个function(g, i)
+			// 	return function(g,i){
+					
+			// 		gInner.selectAll(".innerPath")	//选择所有的弦
+			// 				.filter( function(d) { 	//过滤器
+			// 					//没有连接到鼠标所在节点的弦才能通过
+			// 					return d.source.index != i && d.target.index != i; 
+			// 				})
+			// 				.transition()	//过渡
+			// 				.style("opacity", opacity);	//透明度
+			// 	}				
+			// }	 
+        </script>  
+    </body>  
+</html>  

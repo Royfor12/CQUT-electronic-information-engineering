@@ -1,0 +1,19 @@
+<html>
+	<meta charset="utf-8">  
+  <head>   
+        <title>分段线性色彩比例尺</title>  
+  </head> 
+  <body>
+	<script src="./rule/d3.v4.min.js" charset="utf-8"></script> 
+	<script>  
+		var color= d3.scaleLinear()
+				      .domain([-1, 0, 1])
+			          .range(["red", "white", "green"]);
+		console.log(color(-1));
+		console.log(color(0));
+		console.log(color(1));
+		console.log(color(-0.5));
+		console.log(color(0.5));
+	</script> 
+   </body>
+</html>

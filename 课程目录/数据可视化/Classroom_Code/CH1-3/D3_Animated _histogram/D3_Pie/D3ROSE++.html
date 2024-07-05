@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>D3玫瑰图交互提示框</title>
+    <style>
+        .tooltip {
+            font-family: simsun;
+            font-size: 25px;
+            width: 350;
+            height: auto;
+            position: absolute;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            background-color: rgba(6, 168, 98, 0.833);
+            border-radius: 25px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <script src="../rule/d3.v3.min.js"></script>
+    <script>
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        w = w * 0.98;
+        h = h * 0.9;
+        var color = ["#97DDC7", "#E0777D", "#FAF034", "#644CA8", "#97DDC7", "#DF54A7", "#72EE64", "#58DCC8", "#4678E4", "#E45D5D", "#6AD4DD",
+            "#FF71CD", "#FDAF7B", "#41C9E2", "#FFC700", "#67C6E3", "#A5DD9B", "#9195F6", "#BFEA7C", "#9F70FD", "#C6DCBA", "#FFD0EC",];
+        var randomNumber = Math.random() * 6;       // 生成0到6之间的随机小数
+        var randomInteger = Math.floor(randomNumber);   // 转换为整数
+        d3.json("fenshu.json", function (error, data) {
+            var dataset1 = [];
+            var sum = 0;
+            for (i in data.score) {
+                sum += parseInt(data.score[i]);
+                dataset1[i] = [];
+                dataset1[i].push([data.object[i]], [data.score[i]], [data.imformation[i]]);
+            }
+            console.log(sum);
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+            var pie = d3.layout.pie()
+                .value(function (d) {
+                    return d[1];
+                });
+            var format = d3.format(".2f");
+            var piedata = pie(dataset1);
+            var innerRadius = 80;
+            var outerRadius = 200;
+            var arc = d3.svg.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(function (d) {
+                    var value = d.value;
+                    return value * 2.1 + innerRadius;
+                });
+            var arcs = svg.selectAll("g")
+                .data(piedata)
+                .enter()
+                .append("g")
+                .attr("transform", "translate(" + (w / 2) + "," + (h / 2) + ")")
+                .on("mouseover", function (d, i) {
+                    d3.select(this)
+                        .select("path")
+                        .attr("fill", "#BFEA7C");
+                })
+                .on("mouseout", function (d, i) {
+                    var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);  // 生成随机颜色值
+                    d3.select(this)
+                        .select("path")
+                        .attr("fill", randomColor);  // 将随机颜色应用到图形上
+                })
+            arcs.append("path")
+                .attr("d", function (d) {
+                    return arc(d);
+                })
+                .attr("fill", function (d, i) {
+                    return color[Math.floor(Math.random() * 20) + 1];
+                })
+            // 定义用于放大的比例系数和临时存储原始路径数据的变量
+            var hoverScaleFactor = 1.1;
+            var originalArcData;
+
+            // 在arc数据绑定之前，保存原始路径数据
+            arcs.data(piedata)
+                .enter()
+                .append("g")
+                .each(function (d) {
+                    originalArcData = arc(d);
+                })
+                .attr("transform", "translate(" + (w / 2) + "," + (h / 2) + ")")
+                .on("mouseover", function (d, i) {
+                    // 鼠标悬停时更改颜色并放大扇区
+                    d3.select(this)
+                        .select("path")
+                        .transition()
+                        .duration(200)
+                        .attr("fill", "#FF0000") // 更改为红色
+                        .attrTween("d", function () {
+                            var current = this.__current__ || originalArcData;
+                            var interpolate = d3.interpolate(current, { endAngle: current.endAngle + 2 * Math.PI * (hoverScaleFactor - 1) });
+                            this.__current__ = interpolate(0);
+                            return function (t) {
+                                return arc(interpolate(t));
+                            };
+                        });
+
+                    // 显示中心文本
+                    showCenterText(d.data[0], d.data[1]);
+                })
+                .on("mouseout", function (d, i) {
+                    // 鼠标离开时恢复颜色和大小
+                    d3.select(this)
+                        .select("path")
+                        .transition()
+                        .duration(200)
+                        .attr("fill", function () {
+                            return color[Math.floor(Math.random() * 20) + 1];
+                        })
+                        .attrTween("d", function () {
+                            var current = this.__current__ || originalArcData;
+                            var interpolate = d3.interpolate(current, originalArcData);
+                            this.__current__ = interpolate(0);
+                            return function (t) {
+                                return arc(interpolate(t));
+                            };
+                        });
+
+                    // 移除中心文本
+                    hideCenterText();
+                });
+
+            // 添加显示中心文本的方法
+            function showCenterText(label, score) {
+                svg.select("#center-text-label").remove();
+                svg.select("#center-text-score").remove();
+
+                svg.append("text")
+                    .attr("id", "center-text-label")
+                    .attr("x", w / 2)
+                    .attr("y", h / 2)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", 30)
+                    .text(label);
+
+                svg.append("text")
+                    .attr("id", "center-text-score")
+                    .attr("x", w / 2)
+                    .attr("y", h / 2 + 24)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", 20)
+                    .text(score);
+            }
+
+            // 添加隐藏中心文本的方法
+            function hideCenterText() {
+                svg.select("#center-text-label").remove();
+                svg.select("#center-text-score").remove();
+            }
+            arcs.append("text")
+                .attr("transform", function (d) {
+                    var x = arc.centroid(d)[0] * 1;
+                    var y = arc.centroid(d)[1] * 1;
+                    return "translate(" + x + "," + y + ")";
+                })
+                .attr("text-anchor", "middle")
+                .attr("fontsize", function (d) {
+                    return d.data[1] * 2, "px";
+                })
+                .text(function (d) {
+                    return d.data[0] + ":" + d.value;
+                })
+                .on("mouseover", function (d, i) {
+                    if (d.data[1] < 80) {
+                        d3.select(this)
+                            .attr("font-size", 30);
+                    }
+                    svg.append("text")
+                        .attr("id", "inpo")
+                        .attr("x", width / 2)
+                        .attr("y", height / 2)
+                        .attr("text-anchor", "middle")
+                        .attr("font-size", 30)
+                        .text(d.data[0]);
+                    svg.append("text")
+                        .attr("id", "value")
+                        .attr("x", width / 2)
+                        .attr("y", height / 2 + 24)
+                        .attr("text-anchor", "middle")
+                        .attr("font-size", 20)
+                        .text(d.data[1]);
+                })
+                .on("mouseout", function (d, i) {
+                    if (d.data[1] < 80) {
+                        d3.select(this)
+                            .attr("font-size", function (d) {
+                                return d.data + "px";
+                            });
+                    }
+                    d3.select("#inpo")
+                        .remove();
+                    d3.select("#value")
+                        .remove();
+                });
+
+            var tooltip = d3.select("body")
+                .append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0.0);
+            arcs.on("mouseover", function (d) {
+                tooltip.html(d.data[0] + "课程简介：" + d.data[2])
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY + 10) + "px")
+                    .style("opacity", 0.5);
+                    showCenterText(d.data[0], d.data[1]);
+            })
+                .on("mousemove", function (d) {
+                    tooltip.style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY + 20) + "px");
+                })
+                .on("mouseout", function (d) {
+                    tooltip.style("opacity", 0.0);
+                    hideCenterText();
+                });
+
+        })
+
+
+    </script>
+</body>
+
+</html>

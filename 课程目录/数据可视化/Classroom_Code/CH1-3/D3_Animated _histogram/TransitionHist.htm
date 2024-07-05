@@ -1,0 +1,90 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>D3elastic动画-直方图</title>
+</head>
+
+<body>
+	<script src="./rule/d3.v3.min.js" charset="utf-8"></script>
+	<script>
+
+		var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.98;
+		var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.9;
+		var color = d3.scale.category10();
+
+		var dataset = new Array(10);
+		for (var i = 0; i < dataset.length; i++) {
+			dataset[i] = height * Math.random();
+		}
+		var svg = d3.select("body")			//选择<body>
+			.append("svg")			//在<body>中添加<svg>
+			.attr("width", width)	//设定<svg>的宽度属性
+			.attr("height", height);//设定<svg>的高度属性				
+		//矩形所占的宽度（包括空白），单位为像素		
+		var rectStep = width / dataset.length;
+		//矩形所占的宽度（不包括空白），单位为像素
+		var rectWidth = rectStep - 15;
+		var rect = svg.selectAll("rect")
+			.data(dataset)		//绑定数据
+			.enter()			//获取enter部分
+			.append("rect")	    //添加rect元素，使其与绑定数组的长度一致
+			.attr("x", function (d, i) {		//设置矩形的x坐标
+				return i * rectStep;
+			})
+			.attr("y", height)
+			.attr("fill", function (i) {
+				return color(i);
+			})
+			.attr("width", rectWidth)		//设置矩形的宽度
+			.attr("height", 0)
+			.on("click", function (d, i) {		//警告：d3.event必须在动画变换前面，否则将报错
+				d3.select(this)
+					.attr("fill", "red");
+			})
+			.on("mouseover", function (d, i) {	//警告：d3.event必须在动画变换前面，否则将报错
+				d3.select(this)
+					.attr("fill", "yellow");
+			})
+			.on("mouseout", function (d, i) {	//警告：d3.event必须在动画变换前面，否则将报错
+				d3.select(this)
+					.transition()
+					.duration(500)
+					.attr("fill", function (i) { return color(i) });	//取颜色重新赋值以还原
+			})
+			.transition()
+			.duration(1800)
+			.ease("elastic")
+			.attr("y", function (d) {		//设置矩形的y坐标
+				return height - d;
+			})
+			.attr("height", function (d) {	//设置矩形的高度
+				return d;
+			});
+		var text = svg.selectAll("text")
+			.data(dataset)
+			.enter()
+			.append("text")
+			.attr("x", function (d, i) {		//设置矩形的x坐标
+				return i * rectStep + rectWidth / 3;
+			})
+			.attr("y", height)
+			.attr("fill", function (i) {
+				return color(i);
+			})
+			.transition()
+			.duration(2000)
+			.ease("elastic")
+			.attr("y", function (d) {		//设置矩形的y坐标
+				return height - d - 5;
+			})
+			.text(function (d) {
+				return d.toFixed(0);
+			})
+			.attr("font-size", function (d) {
+				return 15 + "px";
+			});				
+	</script>
+</body>
+
+</html>

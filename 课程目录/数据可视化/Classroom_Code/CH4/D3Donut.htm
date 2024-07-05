@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>环图</title>
+    </head>
+    <body>
+		<script src="../d3.v4.min.js" charset="utf-8"></script> 
+        <script>
+        var dataset = [["Chrome",39.49],["IE",29.06],["QQ",4.84],["2345",4.28],["搜狗高速",4.19],["猎豹",2.24],["其他",15.91]];
+
+        //转化数据为适合生成饼图的对象数组		
+        var pie = d3.pie()
+					.value(function(d){return d[1];});
+
+        var width=400;
+        var height=400;
+
+        var outerRadius=width/2;//外半径        
+        var innerRadius=width/3;//圆环内半径
+
+        //用svg的path绘制弧形的内置方法		
+        var arc=d3.arc()//设置弧度的内外径，等待传入的数据生成弧度
+            .outerRadius(outerRadius)
+            .innerRadius(innerRadius);
+
+        var svg=d3.select("body")
+                .append("svg")
+                .attr("width",width)
+                .attr("height",height);
+
+        var color = d3.scaleOrdinal(d3.schemeCategory10);//创建序数比例尺和包括10中颜色的输出范围
+
+        //准备分组,把每个分组移到图表中心
+        var arcs=svg.selectAll("g")
+            .data(pie(dataset))
+            .enter()
+            .append("g")
+            //移到图表中心
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");//translate(a,b)a表示横坐标起点，b表示纵坐标起点
+
+        //为组中每个元素绘制弧形路路径
+        arcs.append("path")//每个g元素都追加一个path元素用绑定到这个g的数据d生成路径信息
+            .attr("fill",function(d,i){//填充颜色
+                return color(i);
+            })
+            .attr("d",arc)//将角度转为弧度（d3使用弧度绘制
+			.on('mouseover',function(d,i){
+			    d3.select(this)
+				.attr("fill", d3.rgb(color(i)).brighter());	
+				svg.append("text")
+				   .attr("id","info")
+				   .attr("x",width/2)
+				   .attr("y",height/2-25)
+				   .attr("text-anchor","middle")
+				   .attr("font-size",36)
+				   .text(d.data[0]);
+				svg.append("text")
+				   .attr("id","value")
+				   .attr("x",width/2)
+				   .attr("y",height/2+25)
+				   .attr("text-anchor","middle")
+				   .attr("font-size",36)
+				   .text(d.value+"%");
+			})
+			.on('mouseout',function(d,i){
+				d3.select(this)
+				.attr("fill",color(i));	
+				d3.select("#info")
+				.remove();
+				d3.select("#value")
+				.remove();
+			});
+
+        //为组中每个元素添加文本
+        arcs.append("text")//每个g元素都追加一个path元素用绑定到这个g的数据d生成路径信息
+            .attr("transform",function(d){ 
+                return "translate("+arc.centroid(d)+")";//计算每个弧形的中心点（几何中心）
+            })
+            .attr("text-anchor","middle")
+			.attr("font-size",12)
+            .text(function(d){
+                return d.value;//这里已经转为对象了
+            });
+		
+        </script>
+
+    <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

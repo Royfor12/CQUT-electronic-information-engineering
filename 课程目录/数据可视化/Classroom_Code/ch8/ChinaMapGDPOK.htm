@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>基于GeoJSON绘制中国GDP2016数据地图</title>
+  <style>
+    .province {
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    .southchinasea {
+      stroke: black;
+      stroke-width: 1px;
+      fill: red;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="../d3/d3.v3.min.js" charset="utf-8"></script>
+  <script>
+    var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.98;
+    var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.98;
+
+    const gdp = [
+      ["密云县", 48.3, 251.1],
+      ["怀柔区", 39.3, 259.4],
+      ["房山区", 109.6, 606.6],
+      ["延庆县", 32.7, 122.7],
+      ["门头沟区", 31.1, 157.9],
+      ["昌平区", 201.0, 753.4],
+      ["大兴区", 169.4, 583.21],
+      ["顺义区", 107.5, 1591.6],
+      ["平谷区", 43.7, 218.3],
+      ["通州区", 142.8, 574.8],
+      ["朝阳区", 385.6, 5171.0],
+      ["海淀区", 359.3, 5395.2],
+      ["丰台区", 225.5, 1297.0],
+      ["石景山区", 63.4, 482.1],
+      ["西城区", 125.9, 3602.4],
+      ["东城区", 87.8, 2061.8],
+      ["西城区", 125.9, 3602.4],
+      ["东城区", 87.8, 2061.81]
+    ];
+
+    const linear = d3.scale.linear()
+      .domain([100, 5500])
+      .range([20, 180]);
+
+    var mapcolor = new Array();
+    for (var i = 0; i < 18; i++) {
+      mapcolor[i] = "#" + "00"+parseInt(255 - linear(gdp[i][2])).toString(16) + "00";
+    }
+    console.log(mapcolor);
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    //定义地图的投影
+    const projection = d3.geo.mercator()
+      .center([116.3956, 39.93])
+      .scale(15000)
+      .translate([width / 2, height / 2]);
+
+    //定义地形路径生成器
+    var path = d3.geo.path()
+      .projection(projection); //设定投影
+
+    //请求china.geojson
+    d3.json("beijing.json", function (error, root) {
+      if (error)
+        return console.error(error);
+      console.log(root);
+
+      var groups = svg.append("g");
+
+      groups.selectAll("path")
+        .data(root.features)
+        .enter()
+        .append("path")
+        .attr("class", "province")
+        .attr("fill", function (d, i) {
+          return mapcolor[i];
+        })
+        .attr("d", path) //使用路径生成器
+        .on("mouseover", function (d, i) {
+          d3.select(this)
+            .attr("fill", "yellow");
+
+          console.log('over')
+        })
+        .on("mouseout", function (d, i) {
+          d3.select(this)
+            .attr("fill", mapcolor[i]);
+        });
+      var texts = svg.selectAll(".texts")
+        .data(root.features)
+        .enter()
+        .append("text")
+        .attr("class", "texts")
+        .text(function (d) {
+          return d.properties.name;
+        })
+        .attr("transform", function (d) {
+          var centroid = path.centroid(d),
+            x = centroid[0],
+            y = centroid[1];
+          if ((d.properties.name == "河北") || (d.properties.name == "澳门") || (d.properties.name == "安徽"))
+            y = y + 25;
+          return "translate(" + x + ", " + y + ")";
+        })
+        .attr('fill', '#AAA')
+        .attr("font-size", "12px");
+    });
+    //请求southchinasea.svg
+    // d3.xml("southchinasea.svg", function (error, xmlDocument) {
+    // 	svg.html(function (d) {
+    // 		return d3.select(this).html() + xmlDocument.getElementsByTagName("g")[0].outerHTML;
+    // 	});
+    // 	d3.select("#southchinasea")
+    // 		.attr("transform", "translate(840,380)scale(0.5)")
+    // 		.attr("class", "southchinasea");
+    // });
+  </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+
+</html>

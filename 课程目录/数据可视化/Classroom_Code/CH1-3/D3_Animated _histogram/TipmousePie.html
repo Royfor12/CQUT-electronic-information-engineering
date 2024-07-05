@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Subject Radar Chart with D3.js</title>
+	<style>
+		/* 添加CSS样式 */
+		.tooltip {
+			position: absolute;
+			text-align: center;
+			padding: 4px;
+			background-color: lightgray;
+			border: 1px solid black;
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="radar-chart"></div>
+	<div id="tooltip" class="tooltip"></div>
+
+	<script src="../d3/d3.v7.min.js"></script>
+	<script>
+		// 定义数据
+		var subjects = subjectData.map(function (d) { return d.subject; });
+		var scores = subjectData.map(function (d) { return d.score; });
+		var subjectData = [
+			{ subject: '线性代数', score: 60, description: '介绍线性代数的基本概念和运算...' },
+			{ subject: '高等数学', score: 70, description: '涵盖了多元函数微积分、常微分方程等内容...' },
+			{ subject: 'FPGA', score: 80, description: '涉及现场可编程逻辑门阵列的设计与应用...' },
+			{ subject: '信号与系统', score: 90, description: '研究信号的分析、变换和系统的特性...' }
+		];
+		// 设置SVG大小和其他变量
+		var width = 600,
+			height = 600,
+			radius = Math.min(width, height) / 2,
+			color = d3.scaleOrdinal(d3.schemeCategory10);
+
+		// 创建SVG容器
+		var svg = d3.select('#radar-chart')
+			.append('svg')
+			.attr('width', width)
+			.attr('height', height)
+			.append('g')
+			.attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+
+		// 构建玫瑰图
+		// 计算最大值用于归一化
+		var maxValue = d3.max(scores);
+
+		// 计算总角度（假设是全圆）
+		var totalAngle = 2 * Math.PI;
+
+		// 计算每个轴之间的角度间隔
+		var angleSlice = totalAngle / subjects.length;
+
+		// 创建scale以映射数据到适当的半径位置
+		var radarScale = d3.scaleLinear()
+			.domain([0, maxValue])
+			.range([0, radius]);
+
+		// 计算所有轴线的位置
+		var axisLines = subjects.map((_, i) => {
+			var lineData = [];
+			for (let j = 0; j <= radarScale(maxValue); j += radarScale.step()) {
+				let [x, y] = polarToCartesian(radius, j, angleSlice * i, totalAngle / 2);
+				lineData.push({ x, y });
+			}
+			return lineData;
+		});
+		// 绘制轴线
+		var axis = svg.selectAll('.axis')
+			.data(axisLines)
+			.enter().append('g')
+			.attr('class', 'axis');
+
+		axis.append('line')
+			.attr('x1', d => d[0].x)
+			.attr('y1', d => d[0].y)
+			.attr('x2', d => d[d.length - 1].x)
+			.attr('y2', d => d[d.length - 1].y);
+
+		// 辅助函数：极坐标转直角坐标
+		function polarToCartesian(r, t, a, b) {
+			var x = r * Math.cos(t) * Math.sin(a) + b * Math.cos(a);
+			var y = r * Math.sin(t) * Math.sin(a) + b * Math.sin(a);
+			return [x, y];
+		}
+		// 将每个科目的得分转换为极坐标
+		var subjectCoordinates = subjectData.map((subject, i) => {
+			return [
+				polarToCartesian(
+					radarScale(subject.score),
+					angleSlice * i,
+					radius,
+					totalAngle / 2
+				)
+			];
+		});
+
+		// 绘制数据点并连线
+		var polygons = svg.selectAll('polygon')
+			.data([subjectCoordinates])
+			.enter().append('polygon')
+			.attr('points', d => d.flatMap(point => [point[0].x, point[0].y]).join(' '))
+			.style('fill', '#69b3a2')
+			.style('stroke', '#4c4c4c');
+
+		// 绘制中心点
+		svg.append('circle')
+			.attr('cx', 0)
+			.attr('cy', 0)
+			.attr('r', 5)
+			.style('fill', '#4c4c4c');
+
+		// 添加鼠标悬停事件监听器
+		var circles = svg.selectAll('circle') // 假设每个科目对应一个圆圈
+			.on('mouseover', function (d, i) {
+				// 显示提示框
+				var mouseCoords = d3.mouse(svg.node());
+				var tooltipText = subjectData[i].description;
+				d3.select('#tooltip')
+					.style('display', 'block')
+					.style('left', (mouseCoords[0] + 10) + 'px')
+					.style('top', (mouseCoords[1] - 10) + 'px')
+					.html(tooltipText);
+			})
+			.on('mouseout', function () {
+				// 鼠标离开时隐藏提示框
+				d3.select('#tooltip').style('display', 'none');
+			});
+
+		// 继续完成雷达图的绘制细节...
+	</script>
+</body>
+
+</html>

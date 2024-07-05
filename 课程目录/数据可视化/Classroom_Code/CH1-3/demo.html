@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>BinTree with Diamond</title>
+	</head>
+	<body>
+		<svg id="mySvg" width=800 height=600 ></svg>
+		<script>
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			var mysvg = document.getElementById("mySvg");
+			mysvg.setAttribute("width",w*0.9);
+			mysvg.setAttribute("height",h*0.9);
+			var length=200;
+			rate=0.6;
+			var x0=w/2;
+			var y0=h;
+			var count=7;
+
+			function drawDiamond(x, y, size) {
+				var diamond = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+				diamond.setAttribute('points', 
+					x + ',' + (y - size / 2) + ' ' +
+					(x + size / 2) + ',' + y + ' ' +
+					x + ',' + (y + size / 2) + ' ' +
+					(x - size / 2) + ',' + y
+				);
+				diamond.style.stroke = 'rgb(99, 99, 99)';
+				diamond.style.strokeWidth = '2';
+				diamond.style.fill = 'red'; // 将填充颜色改为红色
+				mysvg.appendChild(diamond);
+			}
+
+			function show(x0,y0,length,rate,a,count){
+				var x1=x0;
+				var y1=y0;
+				var x2=x1+length*Math.cos(a);
+				var y2=y1+length*Math.sin(a);
+				svgline= document.createElementNS('http://www.w3.org/2000/svg', "line");
+				mysvg.appendChild(svgline);
+				svgline.setAttribute('x1', x1);
+				svgline.setAttribute('y1', y1);
+				svgline.setAttribute('x2', x2);
+				svgline.setAttribute('y2', y2);
+				svgline.style.stroke = 'rgb(99,99,99)';
+				svgline.style.strokeWidth = '2';
+
+				var aL=a-Math.PI/4;
+				var aR=a+Math.PI/4;
+				if(count>0){
+					show(x2,y2,length*rate,rate,aL,count-1);
+					show(x2,y2,length*rate,rate,aR,count-1);
+				} else {
+					drawDiamond(x2, y2, length * rate * 0.8); // 在递归结束时绘制钻石
+				}
+			}
+			show(x0,y0,length,rate,-Math.PI/2,count);
+		</script>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+
+<body>
+	<center>
+		<h2>数据可视化之JS Canvas 图像处理</h2>
+		<button id="invert" color="blue">负片</button>
+		<hr width=70%>
+		</hr>
+		<canvas id="myCanvas" width="600" height="400" style="border:1px solid #c3c3c3;"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var img = new Image();
+
+			img.src = "cqut.jpg";
+			img.onload = function () {
+				// 获取图片实际宽高
+				var imgWidth = img.naturalWidth;
+				var imgHeight = img.naturalHeight;
+
+				// 将canvas的宽高设置为图片的实际宽高
+				canvas.width = imgWidth;
+				canvas.height = imgHeight;
+
+				// 绘制图片，此时canvas已自适应图片大小
+				ctx.drawImage(img, 0, 0);
+
+				// 定义负片处理函数并添加点击事件监听器
+				var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+				var data = imageData.data;
+
+				var invert = function () {
+					for (var i = 0; i < data.length; i += 4) {
+						data[i] = 255 - data[i];     // red
+						data[i + 1] = 255 - data[i + 1]; // green
+						data[i + 2] = 255 - data[i + 2]; // blue
+					}
+
+					ctx.putImageData(imageData, 0, 0);
+				};
+
+				var invertBtn = document.getElementById('invert');
+				invertBtn.addEventListener('click', invert);
+			};
+		</script>
+	</center>
+	<!-- Cloudflare Pages Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

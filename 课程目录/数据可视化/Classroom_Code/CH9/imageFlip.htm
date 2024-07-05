@@ -1,0 +1,91 @@
+<html>
+
+<body>
+	<center>
+		<h2>数据可视化之JS Canvas 图像处理</h2>
+		<button id="flip">垂直翻转</button>
+		<hr width=70%>
+		</hr>
+		<canvas id="myCanvas" width="600" height="400"></canvas>
+		<script type="text/javascript">
+			// 获取Canvas元素和上下文
+			var c = document.getElementById("myCanvas");
+			var cxt = c.getContext("2d");
+			// 创建并加载图像
+			var img = new Image()
+			img.src = "cqut.jpg"
+			img.onload = function () {
+				// 在canvas上绘制图像
+				cxt.drawImage(img, 0, 0);
+				// 获取图像数据
+				var imageData = cxt.getImageData(0, 0, c.width, c.height);
+				var data = imageData.data;
+				// 初始化二维数组以存储图像数据
+				var DM = new Array(c.height);
+				for (var i = 0; i < c.height; i++) {
+					DM[i] = new Array(c.width);
+					for (var j = 0; j < c.width; j++) {
+						DM[i][j] = new Array(4);
+						// 填充数据矩阵
+						DM[i][j][0] = data[(i * (c.width) + j) * 4];
+						DM[i][j][1] = data[(i * (c.width) + j) * 4 + 1];
+						DM[i][j][2] = data[(i * (c.width) + j) * 4 + 2];
+						DM[i][j][3] = data[(i * (c.width) + j) * 4 + 3];
+					}
+				}
+				// 定义垂直翻转函数
+				var flipImage = function () {
+					// 交换像素数据实现垂直翻转
+					var tempPix
+					for (var i = 0; i < c.height; i++) {
+						for (var j = 0; j < c.width; j++) {
+							if ((i > 0) && (i < c.height - 1) && (j > 0) && (j < c.width - 1)) {
+								if (i < c.height / 2) { // 修改此处判断条件，从 j 改为 i
+									for (var k = 0; k < 4; k++) {
+										tempPix = DM[i][j][k];
+										DM[i][j][k] = DM[c.height - 1 - i][j][k]; // 修改此处交换逻辑，交换 i 而非 j
+										DM[c.height - 1 - i][j][k] = tempPix;
+									}
+								}
+							}
+						}
+					}
+					// 交换像素数据实现水平翻转
+					var tempPix1
+					for (var i = 0; i < c.height; i++) {
+						for (var j = 0; j < c.width; j++) {
+							if ((i > 0) && (i < c.height - 1) && (j > 0) && (j < c.width - 1)) {
+								if (j < c.width / 2) {
+									for (var k = 0; k < 4; k++) {
+										tempPix1 = DM[i][j][k];
+										DM[i][j][k] = DM[i][c.width - 1 - j][k];
+										DM[i][c.width - 1 - j][k] = tempPix1;
+									}
+								}
+							}
+						}
+					}
+					// 更新canvas上的图像数据
+					for (var i = 0; i < c.height; i++) {
+						for (var j = 0; j < c.width; j++) {
+							data[(i * (c.width) + j) * 4] = DM[i][j][0];
+							data[(i * (c.width) + j) * 4 + 1] = DM[i][j][1];
+							data[(i * (c.width) + j) * 4 + 2] = DM[i][j][2];
+							data[(i * (c.width) + j) * 4 + 3] = DM[i][j][3];
+						}
+					}
+					cxt.putImageData(imageData, 0, 0);
+				};
+				// 为按钮添加点击事件以触发图像翻转
+				var flipBtn = document.getElementById('flip');
+				flipBtn.addEventListener('click', flipImage);
+			}
+
+		</script>
+	</center>
+	<!-- Cloudflare Pages Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics -->
+</body>
+
+</html>

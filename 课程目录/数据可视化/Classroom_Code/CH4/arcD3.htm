@@ -1,0 +1,43 @@
+<html>  
+  <head>  
+        <meta charset="utf-8">  
+        <title>D3弧线生成器</title>  
+  </head> 
+<body>
+
+	<script src="d3.v3.min.js" charset="utf-8"></script> 
+	<script>  
+		var width  = 5000;	//SVG绘制区域的宽度
+		var height = 5000;	//SVG绘制区域的高度	
+		var svg = d3.select("body")			//选择<body>
+					.append("svg")			//在<body>中添加<svg>
+					.attr("width", width)	//设定<svg>的宽度属性
+					.attr("height", height);//设定<svg>的高度属性
+		var dataset = { startAngle:-Math.PI * 0.33, endAngle: Math.PI * 0.33 };
+				/**
+		 * 创建一个弧生成器，用于生成SVG中的弧形状。
+		 * 该生成器通过指定内径和外径来定义弧的大小。
+		 * 
+		 * @innerRadius 内部半径，默认值为50。
+		 * @outerRadius 外部半径，默认值为100。
+		 * @returns 返回一个配置了内径和外径的弧生成器对象。
+		 */
+		var arcPath = d3.svg.arc() // 创建弧生成器
+						.innerRadius(0) // 设置内径为50
+						.outerRadius(200); // 设置外径为100
+	        <!-- 添加一个路径元素到SVG中 -->
+		svg.append("path") // 添加路径元素
+			.attr("d",arcPath(dataset)) // 设置路径的形状数据，使用dataset作为输入
+			.attr("transform","translate(250,250)") // 将路径移动到SVG中心点(250,250)
+			.attr("stroke","black") // 设置路径的边框颜色为黑色
+			.attr("stroke-width","3px") // 设置路径的边框宽度为3像素
+			.attr("fill","red"); // 设置路径的填充颜色为蓝色
+		svg.append("path") // 添加路径元素
+			.attr("d",arcPath(dataset)) // 设置路径的形状数据，使用dataset作为输入
+			.attr("transform","translate(594,250)") // 将路径移动到SVG中心点(250,250)
+			.attr("stroke","black") // 设置路径的边框颜色为黑色
+			.attr("stroke-width","3px") // 设置路径的边框宽度为3像素
+			.attr("fill","blue"); // 设置路径的填充颜色为蓝色
+	</script> 
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

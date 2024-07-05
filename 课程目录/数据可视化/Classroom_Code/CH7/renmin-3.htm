@@ -1,0 +1,111 @@
+<html>    
+  <head>      
+	<title>
+		《人名的名义》人物关系
+	</title>
+  </head>   
+  <body style=" opacity:1"> 
+    <script src="../d3.v3.min.js" charset="utf-8" ></script>	
+	<script type="text/javascript">  
+		var  width=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)*0.98;
+		var  height=(window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight)*0.9;
+		var  img_h=50;
+		var  img_w=50;
+		var  radius=10;
+		var svg=d3.select("body")  
+                .append("svg")  
+                .attr("width",width)  
+                .attr("height",height); 	
+		var nodes=[{name:"侯亮平",image:"hlp.jpg",intro:"——侯亮平是最高检反贪局侦查处处长，汉东省人民检察院副检察长兼反贪局局长。经过与腐败违法分子的斗争，最终将一批腐败分子送上了审判台，正义战胜邪恶，自己也迎来了成长。"},
+				{name:"高育良",image:"gyl.jpg",intro:"——高育良是汉东省省委副书记兼政法委书记。年近六十，是一个擅长太极功夫的官场老手。侯亮平、陈海和祁同伟都是其学生。"},
+				{name:"祁同伟",image:"qtw.jpg",intro:"——祈同伟是汉东省公安厅厅长。出身农民，曾想凭自己的努力走上去，内心渴望成为一个胜天半子的人，但现实却沉重地打击了他，进而走上了不归路"},
+				{name:"陈海",image:"ch.jpg",intro:"——陈海是汉东省人民检察院反贪局局长。他不畏强权、裁决果断，一出场就与汉东官场权利正面交锋；他廉明正直、重情重义，与好兄弟侯亮平携手战斗在反腐第一线，他遭遇暗害惨出车祸而躺在医院。"},
+				{name:"蔡成功",image:"ccg.jpg",intro:"——蔡成功是汉东省大风厂董事长、法人代表，为人狡诈，为了招标成功而贿赂政府官员，甚至连发小反贪局局长侯亮平也企图想去贿赂。"},
+				{name:"高小琴",image:"gxq.jpg",intro:"——高小琴是山水集团董事长，也是一位叱咤于政界和商界的风云人物，处事圆滑、精明干练。在与官员沟通时更是辩口利辞，沉稳大气，拥有高智商和高情商，并得到以“猴精”著称的反贪局长侯亮平冠以“美女蛇”的称号。"},
+	            {name:"高小凤",image:"gxf.jpg",intro:"——高小凤是高小琴的孪生妹妹，高育良的情妇。"},
+				{name:"陆亦可",image:"lyk.jpg",intro:"——陆亦可是汉东省检察院反贪局的女检查官，表面冷峻决绝，内心重情重义。大龄未嫁的她面临着家庭逼婚的困境，而她抗婚是因为对反贪局长陈海一往情深。然而陈海惨遭横祸，她收起悲愤去探求真相拨云见雾，同时在公安局长赵东来的追求中获得真爱。"},
+				{name:"赵东来",image:"zdl.jpg",intro:"——赵东来是汉东省京州市公安局局长。看似直来直去，但却深谋远虑，智勇双全。为了保护正义的尊严，报着坚决整治恶势力的决心，在与检察部门的合作中从最初的质疑到之后的通力配合，展现出现代执法机构的反腐决心。"},
+				{name:"陈岩石",image:"cys.jpg",intro:"——陈岩石是离休干部、汉东省检察院前常务副检察长。充满正义，平凡而普通的共产党人。对大老虎赵立春，以各种形式执着举报了十二年。在这场关系党和国家生死存亡的斗争中，老人家以耄耋高龄，义无反顾"},
+				{name:"李达康",image:"ldk.jpg",intro:"——李达康是汉东省省委常委，京州市市委书记，是一个正义无私的好官。但为人过于爱惜自己的羽毛，对待身边的亲人和朋友显得过于无情"},
+				{name:"沙瑞金",image:"srj.jpg",intro:"——沙瑞金是汉东省省委书记。刚至汉东便发生丁义珍出逃美国事件，又遇到大风厂案。深知汉东政治情况的沙瑞金支持侯亮平查案，要求他上不封顶。"},
+				{name:"欧阳菁",image:"oyj.jpg",intro:"——欧阳菁是汉东省京州市城市银行副行长，京州市市委书记李达康的妻子，后因感情不和离婚。她曾利用职务的便利贪赃枉法。"},
+				{name:"丁义珍",image:"dyz.jpg",intro:"——丁义珍英文名汤姆丁。汉东省京州市副市长兼光明区区委书记。贪污腐败，逃往国外。"},
+				{name:"季昌明",image:"jcm.jpg",intro:"——季昌明是汉东省省级检察院检察长。清廉负责，为人正直，性格温和，但也有些拘泥于教条。对初到汉东省的侯亮平提供了极大地帮助，为破解案件起到了极大地作用。"},
+				{name:"钟小艾",image:"zxa.jpg",intro:"——钟小艾是侯亮平的妻子，中纪委调查组的委派员。"},
+				{name:"赵瑞龙",image:"zrl.jpg",intro:"——赵瑞龙是副国级人物赵立春的公子哥，官二代，打着老子的旗子，黑白两道通吃，权倾一时。把汉东省搅得天翻地覆。"}];
+		var edges=[{source:0,target:1,relation:"师生"},{source:0,target:2,relation:"同门"},{source:0,target:3,relation:"同学&挚友"},
+	           {source:0,target:4,relation:"发小"},{source:0,target:7,relation:"同事"}, {source:0,target:15,relation:"夫妻"}, 
+			   {source:14,target:0,relation:"上下级"},{source:1,target:2,relation:"师生"},{source:1,target:3,relation:"师生"}, 
+			   {source:1,target:6,relation:"情人"}, {source:1,target:11,relation:"上下级"},{source:1,target:10,relation:"政敌"},
+			   {source:2,target:5,relation:"情人"}, {source:2,target:3,relation:"同门&陷害"},  {source:2,target:11,relation:"上下级"},
+			   {source:3,target:9,relation:"父子"},{source:4,target:5,relation:"商业对手"},{source:5,target:6,relation:"孪生姐妹"}, 
+			   {source:8,target:11,relation:"上下级"},{source:9,target:11,relation:"故交"},
+			   {source:10,target:11,relation:"上下级"},{source:10,target:12,relation:"夫妻"},{source:13,target:10,relation:"上下级"},
+			   {source:12,target:4,relation:"受贿关系"},{source:16,target:2,relation:"利益关系"},{source:16,target:5,relation:"利益关系"}];
+			   
+		var force=d3.layout.force()
+                .nodes(nodes)
+				.links(edges)
+				.size([width,height])
+				.linkDistance(150)
+				.charge(-600)
+                .start();
+	
+		//绘制
+		var color=d3.scale.category20();	
+		var lines=svg.selectAll(".forceLine")
+	             .data(edges)
+				 .enter()
+          	     .append("line")
+				 .attr("class","forceLine")
+				 .style("stroke","gray")
+				 .style("opacity",0.4)
+                 .style("stroke-width",1);	 
+		var edges_text = svg.selectAll(".linetext")
+                                .data(edges)
+                                .enter()
+                                .append("text")
+                                .attr("class","linetext")
+                                .text(function(d){
+                                    return d.relation;})
+								.style("stroke","gray")
+								.style("font-size",8);									
+		var circles=svg.selectAll("forceCircle")
+	               .data(nodes)
+				   .enter()
+				   .append("circle")
+				   .attr("class","forceCircle")
+				   .attr("r",function(d,i){return d.weight*2;})
+				   .style("stroke","DarkGray")
+				   .style("stroke-width","1.0px")
+				   .attr("fill",function(d,i){return color(i);})
+				   .call(force.drag);  
+	    var texts=svg.selectAll(".forceText")
+                 .data(nodes)
+				 .enter()
+				 .append("text")
+				 .attr("class","forceText")
+				 .attr("x",function(d){return d.x;})
+				 .attr("y",function(d){return d.y;})
+				 .style("stroke", "#336666")
+				 .style("stroke-family","仿宋")
+				 .style("font-size","10px")
+                 .attr("dx","-1.5em")
+				 .attr("dy","1.5em")
+				 .text(function(d){return d.name;});
+				 	
+		force.on("tick",function(){
+	          lines.attr("x1",function(d){return d.source.x;});
+              lines.attr("y1",function(d){return d.source.y;});
+              lines.attr("x2",function(d){return d.target.x;});
+              lines.attr("y2",function(d){return d.target.y;});			  
+			  circles.attr("cx",function(d){return d.x;});
+			  circles.attr("cy",function(d){return d.y;});
+			  texts.attr("x",function(d){return d.x;});
+			  texts.attr("y",function(d){return d.y;});
+			  edges_text.attr("x",function(d){ return (d.source.x + d.target.x) / 2 ; });
+              edges_text.attr("y",function(d){ return (d.source.y + d.target.y) / 2 ; });
+		});
+	</script>
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

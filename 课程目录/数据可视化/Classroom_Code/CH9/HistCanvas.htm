@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+	   
+		<canvas id="myCanvas" width="1200" height="700"></canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("myCanvas");
+			var cxt=c.getContext("2d");
+			var n=10;
+			var x=100,y=500
+			for(var i=0;i<n;i++){
+			    var h=Math.floor(Math.random()*y);
+				cxt.fillStyle="#0000FF";
+				cxt.fillRect(i*(x+10),y-h,x,h);
+			}			
+		</script>
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
