@@ -46,6 +46,7 @@ CQUT-electronic-information-engineering
 ├─ 信号与系统
 ├─ 创业基础
 ├─ 复变函数与积分变换
+├─ 大学物理学
 ├─ 大学物理实验
 ├─ 工程电磁场
 ├─ 工程经济学
@@ -60,6 +61,7 @@ CQUT-electronic-information-engineering
 ├─ 数电
 ├─ 算法分析与设计
 ├─ 智能数据分析程序设计 (Python)
+├─ 制图测绘
 ├─ 机械制图与CAD基础
 ├─ 机械制造基础训练实训
 ├─ 机械工程材料往年题
@@ -80,6 +82,7 @@ CQUT-electronic-information-engineering
 ├─ 虚拟显示技术
 ├─ 车联网技术导论_参考资料
 ├─ 软件工程教案
+├─ 通信软件技术 (Java)
 ├─ 通信原理
 ├─ 高等数学【机电】
 └─ 高频电子线路
@@ -207,6 +210,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [电子实训蓝牙主控版](https://github.com/Royfor12/CQUT_Bluetooth_PCB)
 - [重庆理工大学宽带使用路由器的方案](https://github.com/IYATT-yx/CQUT-Router)
 - [重庆邮电大学数字电路实验2022级报告-基于FPGA的数字电子钟的设计与实现](https://github.com/ZHYLAR/CQUPT_Digital_circuit_SHIYAN?tab=readme-ov-file)
+- [基于STM32的万年历](https://github.com/CQUT-handsomeboy/RTC_lab)
 
 ## 📔待办事项
 - [ ] 制定使用指南
@@ -215,7 +219,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 ## 🍻赞助
 Buy me coffee.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/Alipay.jpg" width="200px">
     <img src="https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/WeChat.jpg" width="200px">
 </div>
