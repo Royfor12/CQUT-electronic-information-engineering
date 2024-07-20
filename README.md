@@ -225,12 +225,11 @@ Buy me coffee.
 </div>
 
 
-## 🙏 致谢
+## ✨ 鸣谢
 
-浙江大学课程攻略共享计划\
-重庆邮电大学课程攻略共享计划\
-本项目的贡献者\
-(more to be added....)
+<a href="https://github.com/Royfor12/CQUT-electronic-information-engineering/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Royfor12/CQUT-electronic-information-engineering"/>
+</a>
 
 ## ✨Stars
 
