@@ -9,6 +9,10 @@
 ![](https://img.shields.io/github/repo-size/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-windows%20|%20linux%20|%20macos-green.svg)
 
+## ❗ 写在最前
+
+如果你打开本网页不知如何操作或检索所需的资源，请先点击[GitHub使用指南](https://www.bilibili.com/video/BV1hS4y1S7wL)。
+
 ## ⚡ 前言
 
 网络冲浪🏄时发现了：浙江大学的课程攻略共享计划与上海交通大学生存手册，深受震撼。\
@@ -50,6 +54,7 @@ CQUT-electronic-information-engineering
 ├─ 大学物理实验
 ├─ 工程电磁场
 ├─ 工程经济学
+├─ 工程力学 (理论力学)
 ├─ 化工原理
 ├─ 微机原理及应用
 ├─ 无线传感器网络
