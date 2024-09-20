@@ -7,6 +7,7 @@
 公众号：重理工物理实验
 
 选课系统(仅限CQUT校园网/内网访问、独立于正方教务系统，课表不会显示)：https://syxk.cqut.edu.cn/
+
 初始账号密码：均为学号(及时修改密码，避免账号被他人盗用恶意篡改选课信息)
 
 实验第一课：介绍物理实验基本信息、要求等
@@ -19,5 +20,8 @@
 
 ## 下载
 
-还在做别急
-<br><h1>资源贡献</h1><br>希望大家能多多贡献资源，促进仓库良性发展，帮助更多的同学考个好成绩！
+[点击下载压缩包](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Royfor12/CQUT-electronic-information-engineering/tree/main/%E8%AF%BE%E7%A8%8B%E7%9B%AE%E5%BD%95/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C)
+
+---
+
+希望大家能多多贡献资源，促进仓库良性发展，帮助更多的同学考个好成绩！
