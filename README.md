@@ -77,6 +77,7 @@ CQUT-electronic-information-engineering
 ├─ 模电
 ├─ 毛中特
 ├─ 现代编码技术
+├─ 线性代数
 ├─ 电力电子技术
 ├─ 电子信息大三上课程设计
 ├─ 电子实验
@@ -216,6 +217,7 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 - [重庆理工大学宽带使用路由器的方案](https://github.com/IYATT-yx/CQUT-Router)
 - [重庆邮电大学数字电路实验2022级报告-基于FPGA的数字电子钟的设计与实现](https://github.com/ZHYLAR/CQUPT_Digital_circuit_SHIYAN?tab=readme-ov-file)
 - [基于STM32的万年历](https://github.com/CQUT-handsomeboy/RTC_lab)
+- [影梭-无需ROOT的虚拟定位APP](https://github.com/ZCShou/GoGoGo)
 
 ## 📔待办事项
 - [ ] 制定使用指南
@@ -223,7 +225,6 @@ Issue、PR、纠错、补充、上传攻略，完全欢迎！
 
 ## 🍻赞助
 Buy me coffee.
-
 
 ## ✨ 鸣谢
 
