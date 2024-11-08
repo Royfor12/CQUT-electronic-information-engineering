@@ -1,12 +1,12 @@
-![avatar](https://raw.githubusercontent.com/Royfor12/CQUT-electronic-information-engineering/main/image/cqut_logo.png)
+![avatar](https://raw.githubusercontent.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme/main/image/cqut_logo.png)
 
 # 💡 课程攻略共享计划
 
-[![](https://img.shields.io/github/watchers/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/watchers)
-[![](https://img.shields.io/github/stars/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/stargazers)
-[![](https://img.shields.io/github/forks/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/network/members)
-[![](https://img.shields.io/github/issues-pr-closed-raw/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/issues)
-![](https://img.shields.io/github/repo-size/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)
+[![](https://img.shields.io/github/watchers/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme/watchers)
+[![](https://img.shields.io/github/stars/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme/stargazers)
+[![](https://img.shields.io/github/forks/Royfor12/CQUT-electronic-information-engineering.svg?style=flat)](https://github.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme/network/members)
+[![](https://img.shields.io/github/issues-pr-closed-raw/Royfor12/CQUT-Course-Guide-Sharing-Scheme.svg?style=flat)](https://github.com/Royfor12/CQUT-electronic-information-engineering/issues)
+![](https://img.shields.io/github/repo-size/Royfor12/CQUT-Course-Guide-Sharing-Scheme.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-windows%20|%20linux%20|%20macos-green.svg)
 
 ## ❗ 写在最前
@@ -172,10 +172,10 @@ Buy me coffee.
 
 ## ✨ 鸣谢
 
-<a href="https://github.com/Royfor12/CQUT-electronic-information-engineering/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Royfor12/CQUT-electronic-information-engineering"/>
+<a href="https://github.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Royfor12/CQUT-Course-Guide-Sharing-Scheme"/>
 </a>
 
 ## ✨Stars
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Royfor12/CQUT-electronic-information-engineering&type=Date)](https://github.com/Royfor12/CQUT-electronic-information-engineering&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Royfor12/CQUT-Course-Guide-Sharing-Scheme&type=Date)](https://github.com/Royfor12/CQUT-Course-Guide-Sharing-Scheme&Date)
