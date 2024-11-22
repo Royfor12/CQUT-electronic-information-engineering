@@ -43,44 +43,67 @@
 ***********************************/
 
 #include <stdio.h>
+#define Max_Length 100
 
-int main()
-{
+void shift(int n, int k, int x, int matrix[Max_Length][Max_Length], int result[Max_Length]) {
+    int temp[Max_Length]; // 临时数组，用于存储需要移动的列
+    int shifted[Max_Length][Max_Length];  // 存储移动后的矩阵
+
+    // 复制原始矩阵到 shifted 数组中
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            shifted[i][j] = matrix[i][j];
+        }
+    }
+    
+    for(int col = 1; col < n; col += 2) {
+        int shift = (col / 2 % k) + 1;  // 计算当前列需要移动的位数
+        
+        // 将当前列的元素存储到临时数组中
+        for(int i = 0; i < n; i++) {
+            temp[i] = matrix[i][col];
+        }
+        
+        // 将临时数组中的元素向下移动 shift 位，并用 x 填充顶部的空位
+        for(int i = 0; i < shift; i++) {
+            shifted[i][col] = x;
+        }
+        
+        // 将临时数组中的元素向下移动 shift 位，并用原来的元素填充底部的空位
+        for(int i = shift; i < n; i++) {
+            shifted[i][col] = temp[i-shift];
+        }
+    }
+    
+    // 计算每一行的元素和
+    for(int i = 0; i < n; i++) {
+        result[i] = 0;
+        for(int j = 0; j < n; j++) {
+            result[i] += shifted[i][j];
+        }
+    }
+}
+
+int main() {
     int n, k, x;
+    int matrix[Max_Length][Max_Length];
+    int result[Max_Length];
+    
     scanf("%d %d %d", &n, &k, &x);
-    int a[n][n];
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            scanf("%d", &a[i][j]);
+    
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
         }
     }
-
-    for (int j = 1; j < n; j += 2) {
-        int move = (j / 2) % 2 == 0 ? 1 : 2;  // 1, 2, 1, 2, ... 交替平移
-
-        // 从底部开始向下平移
-        for (int i = n - 1; i >= move; i--) {
-            a[i][j] = a[i - move][j];
-        }
-
-        // 填充上方的空位
-        for (int i = 0; i < move; i++) {
-            a[i][j] = x;
-        }
-    }
-
-    for (int i = 0; i < n; i++) {
-        int sum = 0;
-        for (int j = 0; j < n; j++) {
-            sum += a[i][j];
-        }
-        if (i == 0) {
-            printf("%d", sum);
-        } else {
-            printf(" %d", sum);
-        }
+    
+    shift(n, k, x, matrix, result);
+    
+    for(int i = 0; i < n; i++) {
+        printf("%d", result[i]);
+        if(i < n-1) printf(" ");
     }
     printf("\n");
-
+    
     return 0;
 }
