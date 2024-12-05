@@ -25,7 +25,7 @@
             <td class=xl66 width=87 style='border-left:none;width:52pt'>D</td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
-            <td rowspan=5 height=135 class=xl71 style='height:80.0pt;border-top:none'>样<br>品<br>1</td>
+            <td rowspan=5 height=135 class=xl71 style='height:80.0pt;border-top:none'>样品1</td>
             <td class=xl67 style='border-top:none;border-left:none'>U<font class="font9"><sub>H</sub></font><font class="font7">/V</font></td>
             <td class=xl68 style='border-top:none;border-left:none'>0.000 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.193 </td>
@@ -110,13 +110,9 @@
             <td class=xl68 style='border-top:none;border-left:none'>0.005 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.004 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.004 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
-            <td rowspan=5 height=135 class=xl71 style='height:80.0pt;border-top:none'>样<br>品<br>2</td>
+            <td rowspan=5 height=135 class=xl71 style='height:80.0pt;border-top:none'>样品2</td>
             <td class=xl67 style='border-top:none;border-left:none'>U<font class="font9"><sub>H</sub></font><font class="font7">/V</font></td>
             <td class=xl68 style='border-top:none;border-left:none'>0.000 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.106 </td>
@@ -129,10 +125,6 @@
             <td class=xl68 style='border-top:none;border-left:none'>1.286 </td>
             <td class=xl68 style='border-top:none;border-left:none'>1.586 </td>
             <td class=xl68 style='border-top:none;border-left:none'>1.964 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
             <td height=27 class=xl67 style='height:16.0pt;border-top:none;border-left:none'>H<font class="font7">/T</font></td>
@@ -147,10 +139,6 @@
             <td class=xl68 style='border-top:none;border-left:none'>428.667 </td>
             <td class=xl68 style='border-top:none;border-left:none'>528.667 </td>
             <td class=xl68 style='border-top:none;border-left:none'>654.667 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
             <td height=27 class=xl67 style='height:16.0pt;border-top:none;border-left:none'>U<font class="font9"><sub>B</sub></font><font class="font7">/V</font></td>
@@ -165,10 +153,6 @@
             <td class=xl68 style='border-top:none;border-left:none'>0.229 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.237 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.249 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
             <td height=27 class=xl67 style='height:16.0pt;border-top:none;border-left:none'>B<font class="font7">/T</font></td>
@@ -183,10 +167,6 @@
             <td class=xl68 style='border-top:none;border-left:none'>1.908 </td>
             <td class=xl68 style='border-top:none;border-left:none'>1.975 </td>
             <td class=xl68 style='border-top:none;border-left:none'>2.075 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
         <tr height=27 style='mso-height-source:userset;height:16.0pt'>
             <td height=27 class=xl67 style='height:16.0pt;border-top:none;border-left:none'>μ</td>
@@ -201,31 +181,6 @@
             <td class=xl68 style='border-top:none;border-left:none'>0.004 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.004 </td>
             <td class=xl68 style='border-top:none;border-left:none'>0.003 </td>
-            <td class=xl69></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
-            <td class=xl65></td>
         </tr>
-        <![if supportMisalignedColumns]>
-            <tr height=0 style='display:none'>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=106 style='width:64pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-                <td width=87 style='width:52pt'></td>
-            </tr>
-        <![endif]>
     </tbody>
 </table>
